@@ -8,13 +8,27 @@ class Produits extends CI_Controller
 
     public function liste()
     {
+            // Charge la librairie 'database'
+    $this->load->database();
+      // Exécute la requête 
+      $results = $this->db->query("SELECT * FROM produits");  
+
+    // Récupération des résultats    
+    $aListe = $results->result(); 
+
+        // Ajoute des résultats de la requête au tableau des variables à transmettre à la vue   
+        $aView["liste_produits"] = $aListe;
         // Déclaration du tableau associatif à tranmettre à la vue
         $aProduits = array();
+        $aViewHeader = ["title" => "Liste des produits"];
 
-        // Dans le tableau, on créé une donnée 'prénom' qui a pour valeur 'Dave'    
-        $aProduits['produit'] = ["Aramis", "Athos", "Clatronic", "Camping", "Green"];
+    // Appel des différents morceaux de vues
+    $this->load->view('header', $aViewHeader);
+    $this->load->view('liste', $aView);
 
-        // On passe le tableau en second argument de la méthode 
-        $this->load->view('liste', $aProduits);
+    /* On pourrait très bien avoir des variables à passer au morceau de vue 'footer', 
+    * mais, juste pour vous embêter, ce n'est pas le cas dans cet exemple ! 
+    */
+    $this->load->view('footer');
     }
 }
