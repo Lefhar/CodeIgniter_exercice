@@ -45,16 +45,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                       <li class="nav-item">
-                    <a class="nav-link" href="index.php">Accueil</a>
+                    <a class="nav-link" href="<?php echo site_url("index.php");?>">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="liste.php">Nos produits</a>
+                    <a class="nav-link" href="<?php echo site_url("produits/liste");?>">Nos produits</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.php">Contact</a>
+                    <a class="nav-link" href="<?php echo site_url("contact.php");?>">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="accueil.php">A propos</a>
+                    <a class="nav-link" href="<?php echo site_url("accueil.php");?>">A propos</a>
                 </li>
               
             </ul>

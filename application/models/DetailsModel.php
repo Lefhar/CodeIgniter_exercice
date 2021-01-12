@@ -30,7 +30,7 @@ class detailsModel extends CI_Model
         // var_dump($aProduit);
         foreach ($aProduit as $head)
 {
-        $aViewHeader = ["title" => "$head->cat_nom $head->pro_libelle"];
+        $aViewHeader = ["title" => "$head->cat_nom $head->pro_libelle","description" => "Modification de $head->cat_nom $head->pro_libelle"];
 }
     // Appel des différents morceaux de vues
     $this->load->view('header', $aViewHeader);

@@ -1,4 +1,4 @@
-<!-- application/views/liste.php -->
+<!-- application/views/detail.php -->
 <div class="container-fluid">
     <div class="row">
 <div class="col-12">   
@@ -24,7 +24,7 @@ $stock = $row->pro_stock - $row->pro_bloque;
       <p class="card-text">Référence : '.$row->pro_ref.'</p>
       <p class="card-text">catégorie : '.$row->cat_nom.'</p>
       <p class="card-text">Ajouté le : '.$row->pro_d_ajout.'</p>
-      <a href="update_form.php?pro_id='.$row->pro_id.'" class="btn btn-primary">Modifier</a>   <a href="detail.php?pro_id='.$row->pro_id.'&del=1"   class="btn btn-danger">Supprimer le produit</a>
+      <a href="'.site_url('produits/modifier/'.$row->pro_id).'" class="btn btn-primary">Modifier</a>   <a href="'.site_url('produits/detail/'.$row->pro_id.'/delete/').'"   class="btn btn-danger">Supprimer le produit</a>
   
   ';
       
