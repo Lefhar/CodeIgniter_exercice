@@ -28,7 +28,17 @@ class ajouterModel extends CI_Model
             $data = $this->input->post();
     
             // Définition des filtres, ici une valeur doit avoir été saisie pour le champ 'pro_ref'
-            $this->form_validation->set_rules("pro_ref", "Référence", "required");
+            $this->form_validation->set_rules('pro_ref', 'Référence', 'required|min_length[6]|max_length[10]|xss_clean', array("required" => "Le %s doit être obligatoire.", "min_length" => "Le %s doit avoir longueur minimum de 6 caractères.", "max_length" => "Le %s doit avoir longueur minimum de 10 caractères."));
+
+            // Définition des filtres, ici une valeur doit avoir été saisie pour le champ 'pro_libelle'
+            $this->form_validation->set_rules('pro_libelle', 'Libellé', 'required|min_length[6]|xss_clean', array("required" => "Le %s doit être obligatoire.", "min_length" => "Le %s doit avoir longueur minimum de 6 caractères.", "max_length" => "Le %s doit avoir longueur minimum de 200 caractères."));
+
+
+            // Définition des filtres, ici une valeur doit avoir été saisie pour le champ 'pro_stock'
+            $this->form_validation->set_rules('pro_stock', 'Stock', 'required|min_length[200]|numeric|xss_clean', array("required" => "Le %s doit être obligatoire.", "min_length" => "Le %s doit avoir longueur minimum de 6 caractères.", "max_length" => "Le %s doit avoir longueur minimum de 200 caractères.", "numeric" => "Le %s doit être une valeur numérique."));
+
+
+            
     
             if ($this->form_validation->run() == FALSE)
             { // Echec de la validation, on réaffiche la vue formulaire 

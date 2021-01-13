@@ -93,12 +93,13 @@
         $option = array();//on déclare le tableau
             foreach ($categorie as $key => $row) 
             {
+                
             $option[$row->cat_id] = $row->cat_nom;// donné du tableaux
             }
 
         $variable = array('id' => 'cat_id','class' => 'form-control');
         // liste déroulante des catégories
-        echo form_dropdown('cat_id',$option,'',$variable).'
+        echo form_dropdown('pro_cat_id',$option,'',$variable).'
         </div>
         </div>  ';
 
