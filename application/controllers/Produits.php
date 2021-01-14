@@ -43,6 +43,10 @@ class Produits extends CI_Controller
  
     public function ajouter()
     {
+
+      // On créé un tableau de configuration pour l'upload
+
+  
       // Chargement du modèle 'produitsModel'
       $this->load->model('ajouterModel');
     
@@ -50,6 +54,7 @@ class Produits extends CI_Controller
       * qui retourne le tableau de résultat ici affecté dans la variable $aListe (un tableau) 
       * remarque la syntaxe $this->nomModele->methode()       
       */
+
       $aListe = $this->ajouterModel->ajouter();
     } // -- ajouter()
 
