@@ -11,11 +11,11 @@ class produitsModel extends CI_Model
             // Charge la librairie 'database'
     $this->load->database();
       // Exécute la requête 
-      if(!empty($champs)&&$champs =='cat_nom'&&$order =='asc')
+      if(!empty($champs)&&$champs =='cat'&&$order =='asc')
       {
             $order = "order by cat_nom asc";
       }
-      elseif(!empty($champs)&&$champs =='cat_nom'&&$order =='desc')
+      elseif(!empty($champs)&&$champs =='cat'&&$order =='desc')
       {
         $order = "order by cat_nom desc";
       }

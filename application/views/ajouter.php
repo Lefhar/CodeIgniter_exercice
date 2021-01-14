@@ -17,8 +17,6 @@
           <fieldset>
 
           <?php    
-      $data = array('name' => 'pro_d_ajout','id' => 'pro_d_ajout','class' => 'form-control','type' => 'hidden','value' => ''.date('Y-m-d').'');
-      echo form_input($data);
           //label Référence
         $data = array('class' => 'col-sm-2 col-form-label col-12');
         echo '<div class="form-group row">'.form_label('Référence', 'pro_ref',$data).'

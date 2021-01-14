@@ -19,6 +19,13 @@ class modifierModel extends CI_Model
         // Requête de sélection de l'enregistrement souhaité, ici le produit 7 
         $produit = $this->db->query("SELECT * FROM produits WHERE pro_id= ?", $id);
         $aView["produit"] = $produit->row(); // première ligne du résultat
+        
+        $categorie = $this->db->query("SELECT cat_nom, cat_id  FROM  categories  ORDER BY cat_nom asc");  
+
+        // Récupération des résultats    
+        $aCat = $categorie->result(); 
+        $aView["categorie"] = $aCat;
+
         $aViewHeader = ["title" => "Modifier un produit"];
         $this->load->view('header', $aViewHeader);
         if ($this->input->post()) 
