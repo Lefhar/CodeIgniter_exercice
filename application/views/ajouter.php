@@ -83,18 +83,31 @@
         </div>  ';
 
 
-        //label Prix
+        //label stock
         $data = array('class' => 'col-sm-2 col-form-label col-12');
          echo '<div class="form-group row">
          '.form_label('Stock', 'pro_stock',$data).'
          <div class="col-sm-10 col-12"> ';
-        //input Prix
+        //input stock
          $data = array('name' => 'pro_stock','id' => 'pro_stock','class' => 'form-control','type' => 'number', 'value' => ''.set_value('pro_stock').'');
         echo form_input($data).'
         '.form_error('pro_stock').'
         </div>
         </div>  ';
         
+        //label bloqué
+        $data = array('class' => 'col-sm-2 col-form-label col-12');
+
+        echo '<div class="form-group row">'.form_label('Produit bloqué', 'pro_bloque',$data).'
+        <div class="col-sm-10 col-12">
+        <div class="checkbox ">';
+        //input pro bloqué
+         $data = array('name' => 'pro_bloque','id' => 'pro_bloque','class' => 'form-control','data-toggle' => 'toggle','data-onstyle'=>'danger','data-offstyle'=>'success', 'data-on' => 'Oui', 'data-off' => 'Non', 'value' => ''.set_value('pro_bloque').'');
+         echo form_checkbox($data,'',FALSE).'
+         </div>
+          </div>
+              </div> ';
+
         //label catégorie
          $data = array('class' => 'col-sm-2 col-form-label col-12');
         echo '<div class="form-group row">

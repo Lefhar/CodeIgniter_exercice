@@ -65,13 +65,26 @@ class Produits extends CI_Controller
       // Chargement du modèle 'produitsModel'
       $this->load->model('modifierModel');
     
-      /* On appelle la méthode liste() du modèle,
-      * qui retourne le tableau de résultat ici affecté dans la variable $aListe (un tableau) 
+      /* On appelle la méthode modifier($id) du modèle,
+      * qui retourne les champs sur le produit 
       * remarque la syntaxe $this->nomModele->methode()       
       */
       $aListe = $this->modifierModel->modifier($id);
     } 
 
+
+    public function delete()
+    {
+        $id =$this->uri->segment(3);  
+      // Chargement du modèle 'produitsModel'
+      $this->load->model('deleteModel');
+    
+      /* On appelle la méthode liste() du modèle,
+      * qui retourne le tableau de résultat ici affecté dans la variable $aListe (un tableau) 
+      * remarque la syntaxe $this->nomModele->methode()       
+      */
+      $aListe = $this->deleteModel->delete($id);
+    } 
 }     
 
 ?>

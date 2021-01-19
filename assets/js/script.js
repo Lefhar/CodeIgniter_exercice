@@ -672,3 +672,15 @@ let confirpassword = false
      
         d.innerHTML = '<br><input type="file" name="pro_photo" id="pro_photo" class="form-control-file" >';
      }
+
+     window.onclick = function () {
+        var input = document.getElementById('pro_bloque');
+    
+        if (input.checked==true) 
+        {
+            document.getElementById('pro_bloque').value = 1;
+        } else {
+            document.getElementById('pro_bloque').value = 0;
+        }
+        console.log(input.checked);
+    }

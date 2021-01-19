@@ -107,7 +107,7 @@
         <div class="col-sm-10 col-12">
         <div class="checkbox '.$bloque.'">';
         //input pro bloqué
-         $data = array('name' => 'pro_bloque','id' => 'pro_bloque','class' => 'form-control','data-toggle' => 'toggle','data-onstyle'=>'danger','data-offstyle'=>'info', 'data-on' => 'Oui', 'data-off' => 'Non');
+         $data = array('name' => 'pro_bloque','id' => 'pro_bloque','class' => 'form-control','data-toggle' => 'toggle','data-onstyle'=>'danger','data-offstyle'=>'success', 'data-on' => 'Oui', 'data-off' => 'Non', 'value' => ''.set_value('pro_bloque',$produit->pro_bloque).'');
          echo form_checkbox($data,'',$checked).'
          </div>
           </div>

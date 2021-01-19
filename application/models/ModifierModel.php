@@ -32,11 +32,12 @@ class modifierModel extends CI_Model
         { // 2ème appel de la page: traitement du formulaire
 
            $data = $this->input->post();
-           if(empty($this->input->post('pro_bloque'))){$data["pro_bloque"]= "NULL";}else{$data["pro_bloque"]= "1";}
-           var_dump($data);
+        //    var_dump($data);
+           if($this->input->post('pro_bloque')==true){$data["pro_bloque"]= "1";}else{$data["pro_bloque"]= "0";}
+        //    var_dump($data);
            $pro_ref = $this->input->post('pro_ref');
            $data["pro_ref"] = strtoupper($pro_ref);
-           $data["pro_d_modif"] = date("Y-m-d");
+           $data["pro_d_modif"] = date("Y-m-d H:i:s");
            // Définition des filtres, ici une valeur doit avoir été saisie pour le champ 'pro_ref'
            $this->form_validation->set_rules('pro_ref', 'Référence', 'required|min_length[6]|max_length[10]', array("required" => "<div class=\"alert alert-danger\" role=\"alert\">La %s est obligatoire.</div>", "min_length" => "<div class=\"alert alert-danger\" role=\"alert\">Le %s doit avoir longueur minimum de 6 caractères.</div>", "max_length" => "<div class=\"alert alert-danger\" role=\"alert\">Le %s doit avoir longueur minimum de 10 caractères.</div>"));
 
@@ -54,7 +55,7 @@ class modifierModel extends CI_Model
            $this->form_validation->set_rules('pro_description', 'Description', 'required|min_length[10]', array("required" => "<div class=\"alert alert-danger\" role=\"alert\">La %s est obligatoire.</div>", "min_length" => "<div class=\"alert alert-danger\" role=\"alert\">La %s doit avoir une longueur minimum de 10 caractères.</div>", "max_length" => "<div class=\"alert alert-danger\" role=\"alert\">La %s doit avoir une longueur minimum de 1000 caractères.</div>"));
            if ($_FILES) 
            {
-               var_dump($_FILES);
+              // var_dump($_FILES);
             $ctrlfile=false;
               // On extrait l'extension du nom du fichier 
               // Dans $_FILES["pro_photo"], pro_photo est la valeur donnée à l'attribut name du champ de type 'file'  
@@ -108,7 +109,7 @@ class modifierModel extends CI_Model
              $this->db->where('pro_id', $id);
              $this->db->update('produits', $data);
     
-              redirect("produits/liste");
+             redirect("produits/liste");
           }
         } 
         else 

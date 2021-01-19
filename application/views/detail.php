@@ -24,7 +24,7 @@ $stock = $row->pro_stock - $row->pro_bloque;
       <p class="card-text">Référence : '.$row->pro_ref.'</p>
       <p class="card-text">catégorie : '.$row->cat_nom.'</p>
       <p class="card-text">Ajouté le : '.$row->pro_d_ajout.'</p>
-      <a href="'.site_url('produits/modifier/'.$row->pro_id).'" class="btn btn-primary">Modifier</a>   <a href="'.site_url('produits/detail/'.$row->pro_id.'/delete/').'"   class="btn btn-danger">Supprimer le produit</a>
+      <a href="'.site_url('produits/modifier/'.$row->pro_id).'" class="btn btn-primary">Modifier</a>   <a href="'.site_url('produits/delete/'.$row->pro_id.'').'"   class="btn btn-danger">Supprimer le produit</a>
   
   ';
       

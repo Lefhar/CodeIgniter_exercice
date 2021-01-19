@@ -45,6 +45,7 @@ class ajouterModel extends CI_Model
             $pro_ref = $this->input->post('pro_ref');
             $data["pro_ref"] = strtoupper($pro_ref);
             $data["pro_d_ajout"] = date("Y-m-d");
+            if($this->input->post('pro_bloque')==true){$data["pro_bloque"]= "1";}else{$data["pro_bloque"]= "0";}
             // Définition des filtres, ici une valeur doit avoir été saisie pour le champ 'pro_ref'
             $this->form_validation->set_rules('pro_ref', 'Référence', 'required|min_length[6]|max_length[10]', array("required" => "<div class=\"alert alert-danger\" role=\"alert\">La %s est obligatoire.</div>", "min_length" => "<div class=\"alert alert-danger\" role=\"alert\">Le %s doit avoir longueur minimum de 6 caractères.</div>", "max_length" => "<div class=\"alert alert-danger\" role=\"alert\">Le %s doit avoir longueur minimum de 10 caractères.</div>"));
 
