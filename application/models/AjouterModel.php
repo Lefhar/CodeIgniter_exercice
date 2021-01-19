@@ -42,6 +42,7 @@ class ajouterModel extends CI_Model
         // 2ème appel de la page: traitement du formulaire
     
             $data = $this->input->post();
+            $pro_ref = $this->input->post('pro_ref');
             $data["pro_ref"] = strtoupper($pro_ref);
             $data["pro_d_ajout"] = date("Y-m-d");
             // Définition des filtres, ici une valeur doit avoir été saisie pour le champ 'pro_ref'

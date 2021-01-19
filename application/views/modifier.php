@@ -55,15 +55,19 @@
 
 
         //label Image
+
         $data = array('class' => 'col-sm-2 col-form-label col-12');
 
          echo '<div class="form-group row">
          '.form_label('Image', 'pro_photo',$data).'
          <div class="col-sm-10 col-12"> ';
         //input pro Image
-         $data = array('name' => 'pro_photo','id' => 'pro_photo','class' => 'form-control-file','type' => 'file','value' => ''.set_value('pro_photo',$produit->pro_couleur).'');
-        echo form_upload($data).'
-        '.form_error('pro_photo').'';
+         $data = array('name' => 'pro_photo','id' => 'pro_photo','class' => 'form-control-file','type' => 'file','value' => ''.set_value('pro_photo',$produit->pro_id.'.'.$produit->pro_photo).'');
+        // echo form_upload($data).'';
+        echo '<img  class="img-fluid" width="100" src="'.base_url("assets/images/".$produit->pro_id.".".$produit->pro_photo).'"><br>
+        <a class="btn btn-info btn-lg" onclick="add_fields();" >Modifier</a>
+        <div id="img"  name="img"> </div>';
+        echo form_error('pro_photo').'';
         if(!empty($sUploadErrors)){echo $sUploadErrors;}
        echo ' </div>
         </div>  ';
@@ -83,17 +87,31 @@
         </div>  ';
 
 
-        //label Prix
+        //label stock
         $data = array('class' => 'col-sm-2 col-form-label col-12');
          echo '<div class="form-group row">
          '.form_label('Stock', 'pro_stock',$data).'
          <div class="col-sm-10 col-12"> ';
-        //input Prix
+        //input stock
          $data = array('name' => 'pro_stock','id' => 'pro_stock','class' => 'form-control','type' => 'number', 'value' => ''.set_value('pro_stock',$produit->pro_stock).'');
         echo form_input($data).'
         '.form_error('pro_stock').'
         </div>
         </div>  ';
+
+
+        //label bloqué
+        $data = array('class' => 'col-sm-2 col-form-label col-12');
+        if($produit->pro_bloque==1){$bloque = "disabled"; $checked = TRUE; }else{$bloque = "disabled";$checked = FALSE;}
+        echo '<div class="form-group row">'.form_label('Produit bloqué', 'pro_bloque',$data).'
+        <div class="col-sm-10 col-12">
+        <div class="checkbox '.$bloque.'">';
+        //input pro bloqué
+         $data = array('name' => 'pro_bloque','id' => 'pro_bloque','class' => 'form-control','data-toggle' => 'toggle','data-onstyle'=>'danger','data-offstyle'=>'info', 'data-on' => 'Oui', 'data-off' => 'Non');
+         echo form_checkbox($data,'',$checked).'
+         </div>
+          </div>
+              </div> ';
         
         //label catégorie
          $data = array('class' => 'col-sm-2 col-form-label col-12');
@@ -125,6 +143,7 @@
         '.form_error('pro_description').'
         </div>
         </div>
+
 
         <div class="form-group">';
         //bouton ajouter
