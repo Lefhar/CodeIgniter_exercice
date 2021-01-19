@@ -21,8 +21,12 @@
    
 
          <p>Vous n'avez pas de compte ? <a href="inscription.php">Vous inscrires</a></p>
+         <?php 
+if(!empty($error))
+{         echo $error;}?>
          <form action="" method="post"  id="connexion"  name="connexion"  autocomplete="off"> <!--balise form début du formulaire-->
          <fieldset><!--début fieldset pour les coordonnées-->
+
              <legend>Connexion</legend>
     <input type="hidden" id="connect"  name="connect" value="yes">
 

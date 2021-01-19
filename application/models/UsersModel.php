@@ -14,7 +14,11 @@ class usersModel extends CI_Model {
 
         $users = $this->db->query("SELECT u_mail, u_password, u_hash, u_essai_connect, u_d_test_connect, u_mail_confirm FROM users WHERE u_mail = ?",$email);
         $aView["users"] = $users->row(); // première ligne du résultat
+        if(!empty($aView["users"]->u_mail)){
         $passtest = "?@".$aView["users"]->u_hash."_@".$password."_@".$aView["users"]->u_hash;
+        }else{
+            $passtest = "";
+        }
     var_dump($aView["users"]);
 
         $aViewHeader = ["title" => "Connexion"];
@@ -22,7 +26,7 @@ class usersModel extends CI_Model {
         // Appel des différents morceaux de vues
         $this->load->view('header', $aViewHeader);
 
-        if (password_verify($passtest,$aView["users"]->u_password))   
+        if (!empty($aView["users"]->u_mail)&&password_verify($passtest,$aView["users"]->u_password))   
         {  
             //declaring session  
             $this->session->set_userdata(array('login'=>$email,'password'=>$password));  
@@ -30,7 +34,7 @@ class usersModel extends CI_Model {
             var_dump($this->session);
         }  
         else{  
-            $data['error'] = 'Email ou mot de passe faux';  
+            $data['error'] = '<div class="alert alert-danger" role="alert">Email ou mot de passe faux</div>';  
             $this->load->view('connexion', $data);  
         }  
         $this->load->view('footer');
