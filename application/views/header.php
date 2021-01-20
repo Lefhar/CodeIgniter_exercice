@@ -57,7 +57,26 @@
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo site_url("accueil.php");?>">A propos</a>
                 </li>
+                <?php 
               
+
+                if (empty($user['email'])) {
+                    echo '<li class="nav-item">
+                    <a class="nav-link" href="login.php">Mon compte</a>
+                    </li>';
+                    
+                }else{
+                    echo '<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    '.$user['nom'].' '.$user['prenom'].'
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="nav-link" href="account.php">Mon compte</a>
+                            <a class="nav-link" href="deconnexion.php">Déconnexion</a>
+                    </div>
+                  </li>';
+                }
+                    ?>
             </ul>
             <!--
                 barre de recherche dans la nav bar

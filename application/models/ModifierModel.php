@@ -25,8 +25,8 @@ class modifierModel extends CI_Model
         // Récupération des résultats    
         $aCat = $categorie->result(); 
         $aView["categorie"] = $aCat;
-
-        $aViewHeader = ["title" => "Modifier un produit"];
+        $aViewHeader = $this->usersModel->getUser();
+        $aViewHeader = ["title" => "Modifier un produit","user" => $aViewHeader];
         $this->load->view('header', $aViewHeader);
         if ($this->input->post()) 
         { // 2ème appel de la page: traitement du formulaire

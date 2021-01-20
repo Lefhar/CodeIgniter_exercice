@@ -8,6 +8,7 @@ class produitsModel extends CI_Model
 
     public function liste($champs,$order)
     {
+
             // Charge la librairie 'database'
     $this->load->database();
       // Exécute la requête 
@@ -35,11 +36,11 @@ class produitsModel extends CI_Model
 
     // Récupération des résultats    
     $aListe = $results->result(); 
-
+ 
         // Ajoute des résultats de la requête au tableau des variables à transmettre à la vue   
         $aView["liste_produits"] = $aListe;
-        $aViewHeader = ["title" => "Liste des produits"];
-
+        $aViewHeader = $this->usersModel->getUser();
+        $aViewHeader = ["title" => "Liste des produits","user" => $aViewHeader];
     // Appel des différents morceaux de vues
     $this->load->view('header', $aViewHeader);
     $this->load->view('liste', $aView);

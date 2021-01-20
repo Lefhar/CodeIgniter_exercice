@@ -17,7 +17,8 @@ class ajouterModel extends CI_Model
        // Récupération des résultats    
        $aCat = $results->result(); 
        $aView["categorie"] = $aCat;
-       $aViewHeader = ["title" => "Ajouter un produit"];
+       $aViewHeader = $this->usersModel->getUser();
+       $aViewHeader = ["title" => "Ajouter un produit","user" => $aViewHeader];
        // Chargement de la librairie form_validation
        $this->load->library('form_validation'); 
        $this->load->view('header', $aViewHeader);

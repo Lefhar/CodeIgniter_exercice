@@ -21,8 +21,8 @@ class deleteModel extends CI_Model
         $aView["produit"] = $produit->row(); // première ligne du résultat
 
         $config['fileproduit'] = $_SERVER['DOCUMENT_ROOT']. '/ci/assets/images/'.$id.'.'.$aView["produit"]->pro_photo; // chemin où sera stocké le fichier
-
-        $aViewHeader = ["title" => "Confirmation de suppréssion du produit"];
+        $aViewHeader = $this->usersModel->getUser();
+        $aViewHeader = ["title" => "Confirmation de suppréssion du produit","user" => $aViewHeader];
         $this->load->view('header', $aViewHeader);
         if ($this->input->post()) 
         { // 2ème appel de la page: traitement du formulaire

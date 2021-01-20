@@ -28,11 +28,14 @@ class detailsModel extends CI_Model
         $aView["infoprod"] = $aProduit;
         // Déclaration du tableau associatif à tranmettre à la vue
         // var_dump($aProduit);
+        $aViewHeader = $this->usersModel->getUser();
+
         foreach ($aProduit as $head)
 {
-        $aViewHeader = ["title" => "$head->cat_nom $head->pro_libelle","description" => "Modification de $head->cat_nom $head->pro_libelle"];
+        $aViewHeader = ["title" => "$head->cat_nom $head->pro_libelle","description" => "Modification de $head->cat_nom $head->pro_libelle","user" => $aViewHeader];
 }
     // Appel des différents morceaux de vues
+
     $this->load->view('header', $aViewHeader);
     $this->load->view('detail', $aView);
 

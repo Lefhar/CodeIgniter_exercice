@@ -10,7 +10,8 @@ class Produits extends CI_Controller
         $champs =$this->uri->segment(3);  
         $order =$this->uri->segment(4);  
         // NOUVEAU CODE 
-    
+        $this->load->model('usersModel');
+        
         // Chargement du modèle 'produitsModel'
         $this->load->model('produitsModel');
     
@@ -27,9 +28,9 @@ class Produits extends CI_Controller
     public function detail()
     {
     
+      $this->load->model('usersModel');
     
-        // NOUVEAU CODE 
-    
+      $this->usersModel->load->getUser();
         // Chargement du modèle 'produitsModel'
         $this->load->model('detailsModel');
     
@@ -43,9 +44,8 @@ class Produits extends CI_Controller
  
     public function ajouter()
     {
-
-      // On créé un tableau de configuration pour l'upload
-
+      $this->load->model('usersModel');
+      $aUser = $this->usersModel->getUser();
   
       // Chargement du modèle 'produitsModel'
       $this->load->model('ajouterModel');
@@ -61,6 +61,8 @@ class Produits extends CI_Controller
  
     public function modifier()
     {
+      $this->load->model('usersModel');
+      $aUser = $this->usersModel->getUser();
         $id =$this->uri->segment(3);  
       // Chargement du modèle 'produitsModel'
       $this->load->model('modifierModel');
@@ -75,6 +77,7 @@ class Produits extends CI_Controller
 
     public function delete()
     {
+      $this->load->model('usersModel');
         $id =$this->uri->segment(3);  
       // Chargement du modèle 'produitsModel'
       $this->load->model('deleteModel');

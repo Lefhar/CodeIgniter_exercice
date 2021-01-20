@@ -24,7 +24,13 @@
          <?php 
 if(!empty($error))
 {         echo $error;}?>
-         <form action="" method="post"  id="connexion"  name="connexion"  autocomplete="off"> <!--balise form début du formulaire-->
+     <?php 
+     
+     //  balise form début du formulaire
+     //<!--balise form début du formulaire-->
+     $array =array('name'=>'connexion','autocomplete'=>'off');
+        echo form_open('','connexion',$array); ?>
+
          <fieldset><!--début fieldset pour les coordonnées-->
 
              <legend>Connexion</legend>
@@ -33,7 +39,8 @@ if(!empty($error))
               <div class="form-group">
                  <label for="email">Email* :  </label>
                  <input type="email" id="email" name="email" class="form-control" placeholder="votre Email"  autocomplete="off" required>
-                <div id="demail"></div><br>
+                <div id="demail"></div>
+                <?php echo form_error('email');?>
              </div>
 
              <div class="form-group">
@@ -46,6 +53,7 @@ if(!empty($error))
       </div>
     </div>
     <div id="dpassword"></div>
+    <?php echo form_error('password');?>
     </div>
 
 
