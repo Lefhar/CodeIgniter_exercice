@@ -21,7 +21,7 @@ class Produits extends CI_Controller
         */
         $aListe = $this->produitsModel->liste($champs,$order);
     
-
+   
     
         // -- fin NOUVEAU CODE
     } // -- liste()  
@@ -88,6 +88,8 @@ class Produits extends CI_Controller
       */
       $aListe = $this->deleteModel->delete($id);
     } 
+
+    
 }     
 
 ?>

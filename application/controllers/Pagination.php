@@ -25,6 +25,6 @@ class Pagination extends CI_Controller {
 
         $data['pagination'] = $this->pagination_model->get_prod($config["per_page"], $page);
 
-        $this->load->view('paginations/index', $data);
+        $this->load->view('produits/liste', $data);
     }
 }

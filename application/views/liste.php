@@ -61,15 +61,33 @@ foreach ($liste_produits as $row)
     <td>'.$row->pro_couleur.'</td>
     <td>'.$row->pro_d_ajout.'</td>
     <td>'.$row->pro_d_modif.'</td>
+    <td>'.form_open("panier/ajouter").'
+  
+    
+    <!-- champ visible pour indiquer la quantité à commander -->
+    <label for="quantity">Quantité</label> 
+    <input type="number" class="form-control" name="pro_qte" id="pro_qte" value="1">
+    <input type="hidden" name="pro_prix" id="pro_prix" value="'.$row->pro_prix.'">
+    <input type="hidden" name="pro_id" id="pro_id" value="'.$row->pro_id.'">
+    <input type="hidden" name="pro_libelle" id="pro_libelle" value="'.$row->pro_libelle.'">
+    
+    <!-- Bouton Ajouter au panier -->
+    <div class="form-group">
+    <button class="btn btn-dark btn-sm" style="width:100%" type="submit" id="addcart">Ajouter au panier
+    <i class="material-icons left"></i>
+  </button>       
+    </div>
+    </form>
     <td>';
     
     if($row->pro_bloque ==1){echo '<span class="bloque">bloqué</span></td>';}
  echo '</td></tr>'; 
 }
+
 ?>
                     </tbody>
                   </table> <!--fin du tableau-->
-                  <p><?php echo $links; ?></p>
+                  
                 </div><!--fermeture de la div table responsive-->
                 </article>
 </div>
