@@ -69,6 +69,7 @@ foreach ($liste_produits as $row)
 ?>
                     </tbody>
                   </table> <!--fin du tableau-->
+                  <p><?php echo $links; ?></p>
                 </div><!--fermeture de la div table responsive-->
                 </article>
 </div>

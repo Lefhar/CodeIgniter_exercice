@@ -5,6 +5,10 @@ class usersModel extends CI_Model {
     public $_user;
     public function __construct()  
     {  
+        if(!empty($_COOKIE['jt_jarditou'])){
+            $cookie = explode(":",$_COOKIE['jt_jarditou']);
+            $this->session->set_userdata(array('login'=>$cookie[0],'jeton'=>$cookie[1]));  
+        }
         $this->load->database();
         $email = $this->session->login;
         $jeton = $this->session->jeton;
@@ -18,7 +22,12 @@ class usersModel extends CI_Model {
  
      // Récupération des résultats    
      $view = $result->result(); 
+     if(!empty($this->session->login)){
      $this->_user = ['nom' => $view[0]->u_nom,'prenom' => $view[0]->u_prenom,'connect' => $view[0]->u_d_connect, 'essai_connect' => $view[0]->u_essai_connect,'test_connect' => $view[0]->u_d_test_connect,'email' => $view[0]->u_mail];
+     }else{
+        $this->_user = array();
+     }
+     
      // echo $this->_user;
     }
     public function getUser()  
@@ -27,7 +36,7 @@ class usersModel extends CI_Model {
     }
     public function connexion()  
     {  
-        $this->load->helper('form', 'url'); 
+        $this->load->helper('form', 'url','cookie'); 
         // Chargement de la librairie 'database'
         $this->load->database(); 
         $email = $this->input->post("email");
@@ -42,7 +51,6 @@ class usersModel extends CI_Model {
         }else{
             $passtest = "";
         }
-    var_dump($aView["users"]);
 
         $aViewHeader = ["title" => "Connexion"];
 
@@ -52,6 +60,7 @@ class usersModel extends CI_Model {
         {
         if (!empty($aView["users"]->u_mail)&&password_verify($passtest,$aView["users"]->u_password))   
         {  
+          
             //declaring session  
             $salt = bin2hex(random_bytes("12"));
             $jeton = password_hash($salt, PASSWORD_DEFAULT);
@@ -61,8 +70,19 @@ class usersModel extends CI_Model {
             $this->db->where('u_mail', $email);
             $this->db->update('users', $data);
             $this->session->set_userdata(array('login'=>$email,'jeton'=>$jeton));  
-            $this->load->view('connexion');  
-            redirect("produits/liste");
+        if(!empty($this->input->post('remember'))&&$this->input->post('remember')=="on"){
+            $cookie = array(
+                'name'   => 'jarditou',
+                'value'  => ''.$email.':'.$jeton.'',
+                'expire' => '16500',
+                'domain' => ''.$_SERVER['HTTP_HOST'].'',
+                'path'   => '/',
+                'prefix' => 'jt_',
+                'secure' => false
+            );
+            $this->input->set_cookie($cookie);
+        }
+           redirect("produits/liste");
         }  
         else{  
             $aView['error'] = '<div class="alert alert-danger" role="alert">Email ou mot de passe faux</div>';  
@@ -98,12 +118,25 @@ class usersModel extends CI_Model {
     }  
 
 
-    public function logout()  
+    public function deconnexion()  
     {  
+
+        $aViewHeader = $this->usersModel->getUser();
+        $aViewHeader = ["title" => "Déconnexion","user" => $aViewHeader];
+        $this->load->view('header', $aViewHeader);
         //removing session  
-        $this->session->unset_userdata('user');  
+        $this->load->view('deconnexion');  
+        if(!empty($this->input->post('confirm'))&&$this->input->post('confirm')=="yes"){
+       // $this->session->unset_userdata('jt_jarditou');  
+
+       unset($_COOKIE["jt_jarditou"]);
+       setcookie("jt_jarditou", '', time() - 4200, '/');
+       $_SESSION['login'] = "";
+       $_SESSION['jeton'] = "";
+       session_destroy();
         redirect("produits/liste");
-    }  
+        }  
+        $this->load->view('footer');
+    }
   
 }  
-?>  

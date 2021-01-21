@@ -62,7 +62,7 @@
 
                 if (empty($user['email'])) {
                     echo '<li class="nav-item">
-                    <a class="nav-link" href="login.php">Mon compte</a>
+                    <a class="nav-link" href="'.site_url('users/connexion').'">Mon compte</a>
                     </li>';
                     
                 }else{
@@ -72,7 +72,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="nav-link" href="account.php">Mon compte</a>
-                            <a class="nav-link" href="deconnexion.php">Déconnexion</a>
+                            <a class="nav-link" href="'.site_url("users/deconnexion").'">Déconnexion</a>
                     </div>
                   </li>';
                 }
