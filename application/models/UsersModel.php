@@ -3,25 +3,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   
 class usersModel extends CI_Model {  
     public $_user;
-    public function __construct()  
+
+
+    public function __construct()
     {  
         if(!empty($_COOKIE['jt_jarditou'])){
             $cookie = explode(":",$_COOKIE['jt_jarditou']);
             $this->session->set_userdata(array('login'=>$cookie[0],'jeton'=>$cookie[1]));  
         }
         $this->load->database();
-        $email = $this->session->login;
-        $jeton = $this->session->jeton;
-        $this->db->select("u_nom, u_prenom, u_d_connect, u_essai_connect, u_d_test_connect, u_mail");
-        $this->db->from('users');
-        $this->db->where('u_mail',$email);
-        $this->db->where('u_jeton_connect',$jeton);
- 
-       //$aProduit = $this->query();
-       $result = $this->db->get();
- 
-     // Récupération des résultats    
-     $view = $result->result(); 
+        if(!empty($this->session->login)&&!empty($this->session->jeton)) {
+            $email = $this->session->login;
+            $jeton = $this->session->jeton;
+            $this->db->select("u_nom, u_prenom, u_d_connect, u_essai_connect, u_d_test_connect, u_mail");
+            $this->db->from('users');
+            $this->db->where('u_mail', $email);
+            $this->db->where('u_jeton_connect', $jeton);
+
+            //$aProduit = $this->query();
+            $result = $this->db->get();
+
+            // Récupération des résultats
+            $view = $result->result();
+        }
      if(!empty($this->session->login)){
      $this->_user = ['nom' => $view[0]->u_nom,'prenom' => $view[0]->u_prenom,'connect' => $view[0]->u_d_connect, 'essai_connect' => $view[0]->u_essai_connect,'test_connect' => $view[0]->u_d_test_connect,'email' => $view[0]->u_mail];
      }else{

@@ -27,7 +27,7 @@ class Users extends CI_Controller {
         * qui retourne le tableau de résultat ici affecté dans la variable $aListe (un tableau) 
         * remarque la syntaxe $this->nomModele->methode()       
         */
-        $aListe = $this->usersModel->connexion();
+        $this->usersModel->connexion();
 	}
 
 	public function deconnexion()
@@ -39,6 +39,6 @@ class Users extends CI_Controller {
         * qui retourne le tableau de résultat ici affecté dans la variable $aListe (un tableau) 
         * remarque la syntaxe $this->nomModele->methode()       
         */
-        $aListe = $this->usersModel->deconnexion();
+       $this->usersModel->deconnexion();
 	}
 }

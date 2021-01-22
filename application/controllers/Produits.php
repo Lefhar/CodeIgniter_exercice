@@ -89,4 +89,3 @@ class Produits extends CI_Controller
     } 
 }     
 
-?>
