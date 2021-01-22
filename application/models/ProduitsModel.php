@@ -10,6 +10,7 @@ class produitsModel extends CI_Model
     {
 
             // Charge la librairie 'database'
+            $this->load->helper('form', 'url'); 
     $this->load->database();
       // Exécute la requête 
       if(!empty($champs)&&$champs =='cat'&&$order =='asc')

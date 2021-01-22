@@ -11,7 +11,7 @@ class Produits extends CI_Controller
         $order =$this->uri->segment(4);  
         // NOUVEAU CODE 
         $this->load->model('usersModel');
-        
+  
         // Chargement du modèle 'produitsModel'
         $this->load->model('produitsModel');
     
@@ -21,7 +21,7 @@ class Produits extends CI_Controller
         */
         $aListe = $this->produitsModel->liste($champs,$order);
     
-   
+
     
         // -- fin NOUVEAU CODE
     } // -- liste()  
@@ -30,7 +30,7 @@ class Produits extends CI_Controller
     
       $this->load->model('usersModel');
     
-      $this->usersModel->load->getUser();
+
         // Chargement du modèle 'produitsModel'
         $this->load->model('detailsModel');
     
@@ -45,8 +45,7 @@ class Produits extends CI_Controller
     public function ajouter()
     {
       $this->load->model('usersModel');
-      $aUser = $this->usersModel->getUser();
-  
+
       // Chargement du modèle 'produitsModel'
       $this->load->model('ajouterModel');
     
@@ -62,7 +61,7 @@ class Produits extends CI_Controller
     public function modifier()
     {
       $this->load->model('usersModel');
-      $aUser = $this->usersModel->getUser();
+
         $id =$this->uri->segment(3);  
       // Chargement du modèle 'produitsModel'
       $this->load->model('modifierModel');
@@ -88,8 +87,6 @@ class Produits extends CI_Controller
       */
       $aListe = $this->deleteModel->delete($id);
     } 
-
-    
 }     
 
 ?>

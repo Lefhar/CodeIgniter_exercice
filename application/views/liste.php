@@ -43,11 +43,24 @@
               <th scope="col">Ajout</th><!--titre colonne 8-->
               <th scope="col">Modif</th><!--titre colonne 9-->
               <th scope="col">Bloqué</th><!--titre colonne 9-->
+              <th scope="col">Panier <?php if(!empty($this->session->panier)){ 
+                $iTotal =0;
+                        foreach($this->session->panier as $article){
+                          $iTotal += $article['pro_qte'] ;
+                        }
+                
+                
+                echo  '<span class="badge badge-info">'.$iTotal.' Produit(s)</span> ';
+                
+                //sizeof($this->session->panier);
+                
+                
+                      
+                }?><a href="<?php echo site_url('panier/afficherPanier');?>">Voir</a></th><!--titre colonne 9-->
             </tr>
             </thead>
             <tbody> 
 <?php 
-
 foreach ($liste_produits as $row) 
 {
 
@@ -61,27 +74,43 @@ foreach ($liste_produits as $row)
     <td>'.$row->pro_couleur.'</td>
     <td>'.$row->pro_d_ajout.'</td>
     <td>'.$row->pro_d_modif.'</td>
-    <td>'.form_open("panier/ajouter").'
+';
+    
+    if($row->pro_bloque ==1){echo '<td><span class="bloque">bloqué</span></td>';}else{echo '<td></td>';}
+    if($row->pro_bloque !=1){
+  echo '  <td>'.form_open('panier/ajouter','class="form-inline"').'
   
-    
+  
     <!-- champ visible pour indiquer la quantité à commander -->
-    <label for="quantity">Quantité</label> 
-    <input type="number" class="form-control" name="pro_qte" id="pro_qte" value="1">
-    <input type="hidden" name="pro_prix" id="pro_prix" value="'.$row->pro_prix.'">
-    <input type="hidden" name="pro_id" id="pro_id" value="'.$row->pro_id.'">
-    <input type="hidden" name="pro_libelle" id="pro_libelle" value="'.$row->pro_libelle.'">
-    
+ 
+ <!--<input type="number" class="form-control" id="pro_qte['.$row->pro_id.']" name="pro_qte" value="1">-->
+ <div class="col-sm-8">
+    <div class="input-group">
+          <span class="input-group-btn">
+              <button type="button" class="btn btn-danger btn-number d-none d-md-block" data-type="minus" data-field="pro_qte['.$row->pro_id.']">
+                <span class="fa fa-minus"></span>
+              </button>
+          </span>
+          <input type="text" id="pro_qte['.$row->pro_id.']" name="pro_qte" class="form-control input-number sm" value="'.set_value('pro_qte','1').'" min="1" max="100">
+          <span class="input-group-btn">
+              <button type="button" class="btn btn-success btn-number d-none d-md-block" data-type="plus" data-field="pro_qte['.$row->pro_id.']">
+                  <span class="fa fa-plus"></span>
+              </button>
+          </span>
+          <span class="input-group-btn input-group-btn d-md-ml-1">
+          <button class="btn btn-dark " type="submit">  <span class="fa fa-shopping-cart"></span> </button>
+        </span>
+      </div>
+
+      <input type="hidden" name="pro_prix" id="pro_prix" value="'.$row->pro_prix.'">
+      <input type="hidden" name="pro_id" id="pro_id" value="'.$row->pro_id.'">
+      <input type="hidden" name="pro_libelle" id="pro_libelle" value="'.$row->cat_nom.' '.$row->pro_libelle.'">
     <!-- Bouton Ajouter au panier -->
-    <div class="form-group">
-    <button class="btn btn-dark btn-sm" style="width:100%" type="submit" id="addcart">Ajouter au panier
-    <i class="material-icons left"></i>
-  </button>       
     </div>
     </form>
-    <td>';
-    
-    if($row->pro_bloque ==1){echo '<span class="bloque">bloqué</span></td>';}
- echo '</td></tr>'; 
+    </td>';
+    }else{ echo '<td> </td>';}
+ echo '</tr>'; 
 }
 
 ?>

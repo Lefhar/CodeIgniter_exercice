@@ -1,32 +1,36 @@
-<h1>Mon panier</h1>
-
 <!-- application/views/detail.php -->
 <div class="container">
     <div class="row">
 <div class="col-12">   
 <article>
+<h2>Mon panier</h2>
 <?php 
 // Si le panier n'existe pas encore  
 if ($this->session->panier != null) 
 { 
 ?>
-    <div class="row">
-    <div class="col-12"> 
-    <table>
+    
+
+                <table class="table table-sm table-striped table-bordered"><!--début du tableau-->
         <thead>
             <tr>
-                <th>Produit</th>
-                <th>Prix</th>
                 <th>Quantité</th>
-                <th>Prix total</th>
-                <th>&nbsp;</th> 
+                <th>Libéllé produit</th>
+                <th>Prix unitaire</th>
+                <th>Sous-total</th>
+                <th>Modifier</th>
+                <th>Retirer</th> 
             </tr>   
         </thead>
         <tbody>
         <?php 
+        
         $iTotal = 0;
         foreach($panier as $article){
-  
+            $iTotal += $article['pro_qte'] * $article['pro_prix'];
+            
+            
+         
 
 
 //    var_dump($article);   
@@ -34,32 +38,27 @@ if ($this->session->panier != null)
 // echo 'aaa'.$article[$key].'';
 // echo 'aaa'.$article["pro_qte"].'';
 
-
-echo '
-'.form_open("panier/ajouter").'
+$soustotal = $article['pro_qte'] * $article['pro_prix'];
+echo '<tr>
+'.form_open("panier/modifierQuantite").'
   
-    
-    <!-- champ visible pour indiquer la quantité à commander -->
-    <label for="quantity">Quantité</label> 
-    <input type="number" class="form-control" name="pro_qte" id="pro_qte" value="'.$article['pro_qte'].'">
-    <input type="text" name="pro_prix" id="pro_prix" value="'.$article['pro_prix'].'">
-    <input type="text" name="pro_id" id="pro_id" value="'.$article['pro_id'].'">
-    <input type="text" name="pro_libelle" id="pro_libelle" value="'.$article['pro_libelle'].'">
-    
-    <!-- Bouton Ajouter au panier -->
-    <div class="form-group">
-    <button class="btn btn-dark btn-sm" style="width:100%" type="submit" id="addcart">Ajouter au panier
-    <i class="material-icons left"></i>
-  </button>       
-    </div>
+    <td><input type="number" class="form-control" name="pro_qte" id="pro_qte" value="'.$article['pro_qte'].'"></td>
+    <td>'.$article['pro_libelle'].'</td>
+    <td>'.$article['pro_prix'].'</td>
+    <td>'.$soustotal.'€</td>
+    <input type="hidden" name="pro_prix" id="pro_prix" value="'.$article['pro_prix'].'">
+    <input type="hidden" name="pro_id" id="pro_id" value="'.$article['pro_id'].'">
+    <input type="hidden" name="pro_libelle" id="pro_libelle" value="'.$article['pro_libelle'].'">
+    <td><button type="submit" class="btn btn-dark">Modifier</button></td>
     </form>
-
+    <td><a href="'.site_url('panier/supprimerProduit/'.$article['pro_id'].'').'">Retirer du panier</a></td>
+</tr>
 
 ';
 }
 
         
-var_dump($panier);
+
         /* ici, écrire le code pour afficher les produits mis dans le panier...
         * ... oh oh oh! ça sent la boucle...  
         * n'oubliez pas de calculer le total,
@@ -68,13 +67,13 @@ var_dump($panier);
         ?>
         </tbody>
     </table>
-    </div>
-    <div>
+
+
         <div>
             <h3>Récapitulatif</h3>
             <div>
                 <p>TOTAL : <?= str_replace('.', ',' , $iTotal); ?> &euro;</p>
-                <p href="<?= site_url("panier/supprimerPanier"); ?>" >Supprimer le panier</a></p> 
+                <p> <a href="<?= site_url("panier/supprimerPanier"); ?>" >Supprimer le panier</a></p> 
                 <p><a href="<?= site_url("produits/liste"); ?>">Retour liste des produits</a></p>
             </div>
         </div>
