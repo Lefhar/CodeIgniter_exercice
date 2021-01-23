@@ -1,4 +1,4 @@
-<!-- application/views/detail.php -->
+<!-- application/views/ajouter.php -->
 <div class="container">
     <div class="row">
 <div class="col-12">   
@@ -114,7 +114,7 @@
         '.form_label('Catégorie', 'cat_id',$data).'
          <div class="col-sm-10 col-12"> ';
         $option = array();//on déclare le tableau
-            foreach ($categorie as $key => $row) 
+          foreach ($categorie as $key => $row)
             {
                 
             $option[$row->cat_id] = $row->cat_nom;// donné du tableaux
