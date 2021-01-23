@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo base_url("assets/css/style.css"); ?>"> 
+    <link rel="stylesheet" href="<?php echo base_url("assets/css/style.css?id=2"); ?>">
     <link rel="stylesheet" href="<?php echo base_url("assets/css/font-awesome.css"); ?>"> 
     <link rel="stylesheet" href="<?php echo base_url("assets/css/font-awesome.min.css"); ?>"> 
 </head>
@@ -36,9 +36,9 @@
     <!--
         barre du menu
     -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-jarditou bg-jarditou">
             <!--bouton sur mobile-->
-            <a class="nav-brand navbar-text" href="index.php">Jarditou</a>
+            <a class="nav-brand navbar-text" href="">Jarditou</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -61,16 +61,16 @@
               
 
                 if (empty($user['email'])) {
-                    echo '<li class="nav-item">
+                    echo '<li class="nav-item ">
                     <a class="nav-link" href="'.site_url('users/connexion').'">Mon compte</a>
                     </li>';
                     
                 }else{
-                    echo '<li class="nav-item dropdown">
+                    echo '<li class="nav-item dropdown  bg-jarditou">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     '.$user['nom'].' '.$user['prenom'].'
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu bg-jarditou" aria-labelledby="navbarDropdown">
                     <a class="nav-link" href="account.php">Mon compte</a>
                             <a class="nav-link" href="'.site_url("users/deconnexion").'">Déconnexion</a>
                     </div>
@@ -87,7 +87,7 @@
                   <div class="md-form my-0">
                     <input class="form-control" id="search"  name="search" type="text" placeholder="Votre promotion" aria-label="Search">
                   </div>
-                  <button class="btn btn-outline-success btn-md my-0 ml-sm-2" type="submit">Rechercher</button>
+                  <button class="btn btn-outline-light btn-md my-0 ml-sm-2" type="submit">Rechercher</button>
                 </form>
             
               </div>

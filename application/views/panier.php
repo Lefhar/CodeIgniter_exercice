@@ -23,14 +23,14 @@ if ($this->session->panier != null)
             </tr>   
         </thead>
         <tbody>
-        <?php 
-        
+        <?php
+
         $iTotal = 0;
         foreach($panier as $article){
             $iTotal += $article['pro_qte'] * $article['pro_prix'];
-            
-            
-         
+
+
+
 
 
 //    var_dump($article);   
@@ -49,18 +49,18 @@ echo '<tr>
     <input type="hidden" name="pro_prix" id="pro_prix" value="'.$article['pro_prix'].'">
     <input type="hidden" name="pro_id" id="pro_id" value="'.$article['pro_id'].'">
     <input type="hidden" name="pro_libelle" id="pro_libelle" value="'.$article['pro_libelle'].'">
-    <td><button type="submit" class="btn btn-dark">Modifier</button></td>
+    <td><button type="submit" class="btn btn-jarditou">Modifier</button></td>
     </form>
-    <td><a href="'.site_url('panier/supprimerProduit/'.$article['pro_id'].'').'">Retirer du panier</a></td>
+    <td><a class="btn btn-danger" href="'.site_url('panier/supprimerProduit/'.$article['pro_id'].'').'"><li class="fa fa-trash"></li></a></td>
 </tr>
 
 ';
 }
 
-        
+
 
         /* ici, écrire le code pour afficher les produits mis dans le panier...
-        * ... oh oh oh! ça sent la boucle...  
+        * ... oh oh oh! ça sent la boucle...
         * n'oubliez pas de calculer le total,
         * ni d'ajouter de mettre un champ de type number pour augmenter/diminuer la quantité d'un produit
         */

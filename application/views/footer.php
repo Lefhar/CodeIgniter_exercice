@@ -1,5 +1,5 @@
 <footer>
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+<nav class="navbar navbar-expand-sm bg-jarditou navbar-jarditou">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="">mention légales</a></li>

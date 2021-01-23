@@ -5,7 +5,7 @@
 <article>
 <h2>Nos produits</h2>
                 <div class="dropdown m-2">
-          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="btn btn-jarditou dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Trier par
           </button>
           <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
@@ -26,7 +26,7 @@
               </ul>
             </li>
          </ul>
-         <a class="btn btn-success float-right" href="<?php echo site_url('produits/ajouter');?>">Ajouter un produit</a>
+         <a class="btn btn-jarditou float-right" href="<?php echo site_url('produits/ajouter');?>">Ajouter un produit</a>
         </div>
 <div class="table-responsive">
                 <table class="table table-sm table-striped table-striped-warning table-bordered"><!--début du tableau-->

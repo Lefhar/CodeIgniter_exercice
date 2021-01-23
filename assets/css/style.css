@@ -7,7 +7,19 @@
 .dropdown-submenu {
     position: relative;
 }
+.bg-jarditou {
+    background-color: #5da75d;
+    color : #f0f0f0;
+}
 
+.btn-jarditou {
+    background-color: #5da75d;
+    color : #f0f0f0;
+}
+.navbar-jarditou a{
+    color : #f0f0f0;
+
+}
 .dropdown-submenu>.dropdown-menu {
     top: 0;
     left: 100%;
