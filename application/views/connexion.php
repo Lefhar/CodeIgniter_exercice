@@ -20,7 +20,7 @@
  -->
    
 
-         <p>Vous n'avez pas de compte ? <a href="inscription.php">Vous inscrires</a></p>
+         <p>Vous n'avez pas de compte ? <a href="<?php echo base_url('users/inscription');?>">Vous inscrires</a></p>
          <?php 
 if(!empty($error))
 {         echo $error;}?>
@@ -47,7 +47,7 @@ if(!empty($error))
                  <label for="password">Mot de passe* :  </label>
                
                  <div class="input-group">
-             <input type="password" id="password" name="password" class="form-control" placeholder="Votre mot de passe"  minlength="12"  autocomplete="off" required="" aria-describedby="viewpassword" required>
+             <input type="password" id="password" name="password" class="form-control" placeholder="Votre mot de passe"  minlength="12"  autocomplete="off" aria-describedby="viewpassword" required>
       <div class="input-group-append" > <span class="input-group-text" id="viewpassword">
     <i class="fa fa-eye-slash" aria-hidden="true" id="eyepassword"></i></span>
       </div>
@@ -69,16 +69,16 @@ if(!empty($error))
   
             
         <div class="form-group">
-              <button type="submit"  class="btn btn-dark btn-lg">Connexion</button>    <button type="reset" class="btn btn-dark btn-lg">Annuler</button>
+              <button type="submit"  class="btn btn-jarditou btn-lg">Connexion</button>    <button type="reset" class="btn btn-dark btn-lg">Annuler</button>
          </div>
-         </fieldset><!--fin fieldset pour les coordonnées-->
+
      </form> <!--balise form fin du formulaire-->
 
 
 
 
      
-      </div>
+
     </article>
 
    

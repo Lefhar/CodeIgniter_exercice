@@ -21,7 +21,7 @@
 
         echo '<div class="form-group">';
         //bouton Confirmation
-         echo form_submit('', 'Confirmer', 'class="btn btn-dark btn-lg"');
+         echo form_submit('', 'Confirmer', 'class="btn btn-jarditou btn-lg"');
          //bouton pour réinitialiser 
          echo form_reset('', 'Annuler', 'class="btn btn-danger btn-lg"','onclick="location.href = \''.site_url("produits/liste").'\';"' );
         echo ' </div>

@@ -39,7 +39,7 @@
     <nav class="navbar navbar-expand-lg navbar-jarditou bg-jarditou">
             <!--bouton sur mobile-->
             <a class="nav-brand navbar-text" href="">Jarditou</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
