@@ -14,6 +14,7 @@ if ($this->session->panier != null)
                 <table class="table table-sm table-striped table-bordered"><!--début du tableau-->
         <thead>
             <tr>
+                 <th>Photo</th>
                 <th>Quantité</th>
                 <th>Libéllé produit</th>
                 <th>Prix unitaire</th>
@@ -41,8 +42,8 @@ if ($this->session->panier != null)
 $soustotal = $article['pro_qte'] * $article['pro_prix'];
 echo '<tr>
 '.form_open("panier/modifierQuantite").'
-  
-    <td><input type="number" class="form-control" name="pro_qte" id="pro_qte" value="'.$article['pro_qte'].'"></td>
+<td><img width="100" src="'.base_url('assets/images/'.$article['pro_id'].'.'.$article['pro_photo'].'').'" alt="'.$article['pro_libelle'].'"  title="'.$article['pro_libelle'].'" class="img-fluid" /></td>
+    <td><input type="number" class="form-control" name="pro_qte" id="pro_qte" value="'.$article['pro_qte'].'" max="'.$article['pro_stock'].'"></td>
     <td>'.$article['pro_libelle'].'</td>
     <td>'.$article['pro_prix'].'</td>
     <td>'.$soustotal.'€</td>

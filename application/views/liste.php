@@ -77,7 +77,7 @@ foreach ($liste_produits as $row)
 ';
     
     if($row->pro_bloque ==1){echo '<td><span class="bloque">bloqué</span></td>';}else{echo '<td></td>';}
-    if($row->pro_bloque !=1){
+    if($row->pro_bloque !=1&&$row->pro_stock>0){
   echo '  <td>'.form_open('panier/ajouter','class="form-inline"').'
   
   
@@ -91,7 +91,7 @@ foreach ($liste_produits as $row)
                 <span class="fa fa-minus"></span>
               </button>
           </span>
-          <input type="text" id="pro_qte['.$row->pro_id.']" name="pro_qte" class="form-control input-number sm" value="'.set_value('pro_qte','1').'" min="1" max="100">
+          <input type="text" id="pro_qte['.$row->pro_id.']" name="pro_qte" class="form-control input-number sm" value="'.set_value('pro_qte','1').'" min="1" max="'.$row->pro_stock.'">
           <span class="input-group-btn">
               <button type="button" class="btn btn-success btn-number d-none d-md-block" data-type="plus" data-field="pro_qte['.$row->pro_id.']">
                   <span class="fa fa-plus"></span>
@@ -103,6 +103,8 @@ foreach ($liste_produits as $row)
       </div>
 
       <input type="hidden" name="pro_prix" id="pro_prix" value="'.$row->pro_prix.'">
+      <input type="hidden" name="pro_stock" id="pro_stock" value="'.$row->pro_stock.'">
+      <input type="hidden" name="pro_photo" id="pro_photo" value="'.$row->pro_photo.'">
       <input type="hidden" name="pro_id" id="pro_id" value="'.$row->pro_id.'">
       <input type="hidden" name="pro_libelle" id="pro_libelle" value="'.$row->cat_nom.' '.$row->pro_libelle.'">
     <!-- Bouton Ajouter au panier -->
