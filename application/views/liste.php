@@ -4,25 +4,25 @@
 <div class="col-12">   
 <article>
 <h2>Nos produits</h2>
-                <div class="dropdown m-2">
+                <div class="dropdown m-2 ">
           <button class="btn btn-jarditou dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Trier par
           </button>
-          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+          <ul class="dropdown-menu bg-jarditou" role="menu" aria-labelledby="dropdownMenu">
             <li class="dropdown-submenu">
               <a class="dropdown-item" tabindex="-1" href="#">Catégorie</a>
-              <ul class="dropdown-menu">
-                <li class="dropdown-item"><a tabindex="-1" href="<?php echo site_url('produits/liste/cat/asc');?>">Croissant</a></li>
-                <li class="dropdown-item"><a tabindex="-1" href="<?php echo site_url('produits/liste/cat/desc');?>">Décroissant</a></li>
+              <ul class="dropdown-menu bg-jarditou" >
+                <li class="dropdown-item dropdown-item-jarditou"><a tabindex="-1" href="<?php echo site_url('produits/liste/cat/asc');?>">Croissant</a></li>
+                <li class="dropdown-item dropdown-item-jarditou"><a tabindex="-1" href="<?php echo site_url('produits/liste/cat/desc');?>">Décroissant</a></li>
               </ul>
             </li>
         
 		
-            <li class="dropdown-submenu">
+            <li class="dropdown-submenu ">
               <a class="dropdown-item" tabindex="-1" href="#">Prix</a>
-              <ul class="dropdown-menu">
-                <li class="dropdown-item"><a tabindex="-1" href="<?php echo site_url('produits/liste/prix/asc');?>">Croissant</a></li>
-                <li class="dropdown-item"><a tabindex="-1" href="<?php echo site_url('produits/liste/prix/desc');?>">Décroissant</a></li>
+              <ul class="dropdown-menu bg-jarditou">
+                <li class="dropdown-item dropdown-item-jarditou"><a tabindex="-1" href="<?php echo site_url('produits/liste/prix/asc');?>">Croissant</a></li>
+                <li class="dropdown-item dropdown-item-jarditou"><a tabindex="-1" href="<?php echo site_url('produits/liste/prix/desc');?>">Décroissant</a></li>
               </ul>
             </li>
          </ul>
