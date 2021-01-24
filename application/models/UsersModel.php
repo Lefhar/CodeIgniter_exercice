@@ -50,11 +50,7 @@ class usersModel extends CI_Model {
  
         $users = $this->db->query("SELECT u_mail, u_password, u_hash, u_essai_connect, u_d_test_connect, u_mail_confirm FROM users WHERE u_mail = ?",$email);
         $aView["users"] = $users->row(); // première ligne du résultat
-        if(!empty($aView["users"]->u_mail)){
-        $passtest = "?@".$aView["users"]->u_hash."_@".$password."_@".$aView["users"]->u_hash;
-        }else{
-            $passtest = "";
-        }
+
 
         $aViewHeader = ["title" => "Connexion"];
 
@@ -62,12 +58,11 @@ class usersModel extends CI_Model {
         $this->load->view('header', $aViewHeader);
         if ($this->form_validation->run() == TRUE)
         {
-        if (!empty($aView["users"]->u_mail)&&password_verify($passtest,$aView["users"]->u_password))   
+        if (!empty($aView["users"]->u_mail)&&password_verify($this->functionModel->password($password,$aView["users"]->u_hash),$aView["users"]->u_password))
         {  
           
-            //declaring session  
-            $salt = bin2hex(random_bytes("12"));
-            $jeton = password_hash($salt, PASSWORD_DEFAULT);
+            //declaring session
+            $jeton = password_hash($this->functionModel->salt(12), PASSWORD_DEFAULT);
             $data["u_d_connect"] = date("Y-m-d H:i:s");
             $data["u_jeton_connect"] = $jeton;
             $data["u_essai_connect"] = 0;
