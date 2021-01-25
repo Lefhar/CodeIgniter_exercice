@@ -93,27 +93,94 @@ class usersModel extends CI_Model {
         $this->load->view('footer');
     }
     public function inscription()  
-    {  
-        $this->load->helper('form', 'url'); 
-        // Chargement de la librairie 'database'
-        $this->load->database(); 
-        $user = $this->input->post('user');  
-        $pass = $this->input->post('pass');  
-        $aViewHeader = ["title" => "inscription"];
+    {
 
-        // Appel des différents morceaux de vues
-        $this->load->view('header', $aViewHeader);
-        if ($user=='juhi' && $pass=='123')   
-        {  
-            //declaring session  
-            $this->session->set_userdata(array('user'=>$user));  
-            $this->load->view('inscription');  
-        }  
-        else{  
-            $aView['error'] = 'Email ou mot de passe faux';  
-            $this->load->view('inscription', $aView);  
-        }  
-        $this->load->view('footer');
+        $this->load->helper('form', 'url');
+
+        //recupération des données post
+        $data = $this->input->post();
+
+        // Chargement de la librairie 'database'
+        $this->load->database();
+        $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email', array("required" => "<div class=\"alert alert-danger\" role=\"alert\">%s est obligatoire.</div>", "valid_email" => "<div class=\"alert alert-danger\" role=\"alert\">ce n'est pas une adresse %s valide.</div>"));
+        $this->form_validation->set_rules('password','Mot de passe','required|regex_match[`^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[-+!*$@%_])([-+!*$@%_\w]{12,})$`]', array("required" => "<div class=\"alert alert-danger\" role=\"alert\">%s est obligatoire.</div>", "regex_match" => "<div class=\"alert alert-danger\" role=\"alert\">%s doit contenir au minimum 12 caractéres dont une majuscule un symbole.</div>"));
+        $this->form_validation->set_rules('confirpassword','Confirmation mot de passe','required|regex_match[`^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[-+!*$@%_])([-+!*$@%_\w]{12,})$`]', array("regex_match" => "<div class=\"alert alert-danger\" role=\"alert\">ce n'est pas un %s correct.</div>"));
+        $this->form_validation->set_rules('prenom','Prenom','required|regex_match[`^[a-zA-Z]{2,}$`]', array("regex_match" => "<div class=\"alert alert-danger\" role=\"alert\">ce n'est pas un %s correct.</div>"));
+        $this->form_validation->set_rules('nom','Nom','required|regex_match[`^[a-zA-Z]{2,}$`]', array("regex_match" => "<div class=\"alert alert-danger\" role=\"alert\">ce n'est pas un %s correct.</div>"));
+
+        //si Adresse est posté on contrôle alors si cela est correct
+        if(!empty($this->input->post('adresse'))){
+            $this->form_validation->set_rules('adresse','Adresse','regex_match[/[0-9]{1,}\s+[a-z]{2,}\s+[a-z]{2,}/]', array("regex_match" => "<div class=\"alert alert-danger\" role=\"alert\">ce n'est pas une %s correct.</div>"));
+        }
+
+        //si ville est posté on contrôle alors si cela est correct
+        if(!empty($this->input->post('ville'))){
+            $this->form_validation->set_rules('ville','Ville','regex_match[`^[a-zA-Z]{1,}$`]', array("regex_match" => "<div class=\"alert alert-danger\" role=\"alert\">ce n'est pas une %s correct.</div>"));
+        }
+
+        //si Code postal est posté on contrôle alors si cela est correct
+        if(!empty($this->input->post('cp'))){
+            $this->form_validation->set_rules('cp','Code postal','regex_match[`^[0-9]{4,5}$`]', array("regex_match" => "<div class=\"alert alert-danger\" role=\"alert\">ce n'est pas un %s correct.</div>"));
+        }
+
+        //si téléphone est posté on contrôle alors si cela est correct
+        if(!empty($this->input->post('tel'))){
+            $this->form_validation->set_rules('tel','Téléphone','regex_match[`^[0-9]{10}$`]', array("regex_match" => "<div class=\"alert alert-danger\" role=\"alert\">ce n'est pas un %s correct.</div>"));
+        }
+
+        $salt = $this->functionModel->salt(12);
+
+
+
+
+
+
+
+        if(!empty($this->session->login)&&!empty($this->session->jeton)){
+            redirect('produits/liste');
+            exit();
+        }
+        if ($this->form_validation->run() == TRUE) {
+
+
+            if(!empty($this->input->post('password'))&&!empty($this->input->post('confirpassword'))&&$this->input->post('confirpassword')==$this->input->post('password')){
+                $data['u_password'] = password_hash($this->functionModel->password($this->input->post('password'),$salt), PASSWORD_DEFAULT);// on appel la fonction password comme sa on reprend la même méthode d'assemblage du sel et du mot de passe
+                $data['u_d_create'] = date('Y-m-d H:i:s');
+                $data['u_mail_hash']  = password_hash($this->functionModel->password($salt,$salt), PASSWORD_DEFAULT);
+
+
+                $this->db->insert('users', $data);
+            }else{
+
+                $this->load->view('header');
+                $this->load->view('inscription');
+                $this->load->view('footer');
+
+            }
+
+
+
+
+
+
+
+            $this->load->view('header');
+            if ($user == 'juhi' && $pass == '123') {
+                //declaring session
+                $this->session->set_userdata(array('user' => $user));
+                $this->load->view('inscription');
+            } else {
+                $aView['error'] = 'Email ou mot de passe faux';
+                $this->load->view('inscription', $aView);
+            }
+            $this->load->view('footer');
+
+        }else{
+
+            $this->load->view('header');
+            $this->load->view('inscription');
+            $this->load->view('footer');
+        }
     }  
 
 

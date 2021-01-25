@@ -29,7 +29,17 @@ class Users extends CI_Controller {
         */
         $this->usersModel->connexion();
 	}
+    public function inscription()
+    {
+        // Chargement du modèle 'produitsModel'
+        $this->load->model('usersModel');
 
+        /* On appelle la méthode liste() du modèle,
+        * qui retourne le tableau de résultat ici affecté dans la variable $aListe (un tableau)
+        * remarque la syntaxe $this->nomModele->methode()
+        */
+        $this->usersModel->inscription();
+    }
 	public function deconnexion()
 	{
         // Chargement du modèle 'produitsModel'
