@@ -61,7 +61,7 @@ class usersModel extends CI_Model {
         if (!empty($aView["users"]->u_mail)&&password_verify($this->functionModel->password($password,$aView["users"]->u_hash),$aView["users"]->u_password))
         {  
           
-            //declaring session
+
             $jeton = password_hash($this->functionModel->salt(12), PASSWORD_DEFAULT);
             $data["u_d_connect"] = date("Y-m-d H:i:s");
             $data["u_jeton_connect"] = $jeton;
@@ -92,6 +92,7 @@ class usersModel extends CI_Model {
         }  
         $this->load->view('footer');
     }
+
     public function inscription()  
     {
 
@@ -164,16 +165,7 @@ class usersModel extends CI_Model {
 
 
 
-            $this->load->view('header');
-            if ($user == 'juhi' && $pass == '123') {
-                //declaring session
-                $this->session->set_userdata(array('user' => $user));
-                $this->load->view('inscription');
-            } else {
-                $aView['error'] = 'Email ou mot de passe faux';
-                $this->load->view('inscription', $aView);
-            }
-            $this->load->view('footer');
+
 
         }else{
 
@@ -181,8 +173,48 @@ class usersModel extends CI_Model {
             $this->load->view('inscription');
             $this->load->view('footer');
         }
-    }  
+    }
 
+    public function validationemail($jeton)
+    {
+
+        if(!empty($jeton)){
+//            $this->db->select("u_mail_hash,u_id,u_mail");
+//            $this->db->from('users');
+//            $this->db->where('u_mail_hash',$jeton);
+//            $result = $this->db->get();
+
+            // récupération des résultats
+//            $ausers = $result->result();
+
+            $users = $this->db->query("SELECT u_mail_hash,u_id,u_mail FROM users WHERE u_mail_hash = ?",$jeton);
+            $aView["jeton"] = $users->row(); // première ligne du résultat
+
+
+
+
+            if(!empty($aUsers)){
+                $id = $aView["jeton"]->u_id;
+                $data['u_mail_confirm'] = "1";
+                $data['u_mail_hash'] = NULL;
+                $this->db->where('u_id', $id);
+                $this->db->update('users', $data);
+            }else{
+                $data['error']= '<div class="alert alert-danger" role="alert">Désolé une erreur c\'est produite</div>';
+                $this->load->view('header');
+                $this->load->view('validationemail',$data);
+                $this->load->view('footer');
+            }
+        }else {
+
+        $data['error']= '<div class="alert alert-danger" role="alert">Désolé une erreur c\'est produite</div>';
+            $this->load->view('header');
+            $this->load->view('validationemail',$data);
+            $this->load->view('footer');
+        }
+
+
+    }
 
     public function deconnexion()  
     {  
@@ -192,8 +224,12 @@ class usersModel extends CI_Model {
         $this->load->view('header', $aViewHeader);
         //removing session  
         $this->load->view('deconnexion');  
-        if(!empty($this->input->post('confirm'))&&$this->input->post('confirm')=="yes"){
-       // $this->session->unset_userdata('jt_jarditou');  
+        if(
+        !empty($this->input->post('confirm'))
+        &&
+        $this->input->post('confirm')== 'yes'
+        )
+        {
 
        unset($_COOKIE["jt_jarditou"]);
        setcookie("jt_jarditou", '', time() - 4200, '/');
@@ -205,4 +241,4 @@ class usersModel extends CI_Model {
         $this->load->view('footer');
     }
   
-}  
+}
