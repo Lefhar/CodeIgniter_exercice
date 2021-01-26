@@ -581,6 +581,137 @@ let confirpassword = false
       }
     });
 
+$("#resetpassword").keyup(function(event)
+    {
+//déclaration des variables et leur valeur par defaut pour le contrôle final
+
+let password = false
+let confirpassword = false
+
+
+
+
+
+               // contrôle de password
+        if ($( "#password" ).val().match(/(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!&#*?$%@/+($_)!])/)&&$( "#password" ).val().length>=12)
+        {
+                $('#password').removeClass( "is-invalid");
+                $('#password').addClass( "is-valid");
+                $('#dpassword').html("<div class=\"alert alert-success\" role=\"alert\">Mot de passe fort</div>");
+                $('#divconfirmmdp').css("display", "block");
+                $('#confirpassword').attr('type', 'password');
+                event.preventDefault();
+                password = true
+        }
+        else if($( "#password" ).val().length>=1&&(!$( "#password" ).val().match(/(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!&#*?$%@/+($_)!])/)))
+        {
+                $('#password').removeClass( "is-valid");
+                $('#password').addClass( "is-invalid");
+                $('#dpassword').html("<div class=\"alert alert-danger\" role=\"alert\">Mot de passe faible votre mot de passe doit contenir au minimum 12 caractéres dont une majuscule un chiffre et un symbole exemple ! & # * ? $ % @ / +</div>")
+                $('#confirpassword').attr('type', 'hidden');
+                $('#divconfirmmdp').css("display", "none");
+                password = false
+                event.preventDefault();
+        }
+        else
+        {
+
+                $('#password').removeClass( "is-valid");
+                $('#password').removeClass( "is-invalid");
+                $('#dpassword').html("");
+                $('#dconfirpassword').html("");
+                $('#divconfirmmdp').css("display", "none");
+                event.preventDefault();
+                password = false
+        } // fin contrôle de password
+
+
+        // contrôle de confirpassword
+        if ($( "#confirpassword" ).val()==$( "#password" ).val()&&$( "#password" ).val().length>=12&&$( "#confirpassword" ).val().length>=12)
+        {
+                $('#confirpassword').removeClass( "is-invalid");
+                $('#confirpassword').addClass( "is-valid");
+                $('#dconfirpassword').html("<div class=\"alert alert-success\" role=\"alert\">Le mot de passe correspond</div>")
+                confirpassword = true
+
+        }
+        else if($( "#confirpassword" ).val().length>=1)
+        {
+               $('#confirpassword').removeClass( "is-valid");
+               $('#confirpassword').addClass( "is-invalid");
+                $('#dconfirpassword').html("<div class=\"alert alert-danger\" role=\"alert\">Le mot de passe ne correspond pas</div>")
+                event.preventDefault();
+                confirpassword = false
+
+        }
+         else
+        {
+
+                   $('#dconfirpassword').removeClass( "is-valid");
+                   $('#dconfirpassword').removeClass( "is-invalid");
+                   event.preventDefault();
+                   confirpassword = false
+        }
+         // fin contrôle de confirpassword
+
+         if(password&&confirpassword)
+       {
+                $('#resetpassword').attr('onsubmit', 'return true');
+       }
+        else
+       {
+                $('#resetpassword').attr('onsubmit', 'return false');
+      }
+    });
+
+
+
+$("#lostpassword").keyup(function(event)
+    {
+//déclaration des variables et leur valeur par defaut pour le contrôle final
+
+let password = false
+let confirpassword = false
+
+
+    //debut contrôle email
+    if ($( "#email" ).val().match( /^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,4}$/))
+    {
+        $('#email').removeClass( "is-invalid");
+        $('#email').addClass( "is-valid");
+        $('#demail').html("<div class=\"alert alert-success\" role=\"alert\">Adresse email correcte</div>");
+        event.preventDefault();
+        email = true
+    }
+    else if($( "#email" ).val().length>=1&&(!$( "#email" ).val().match(/^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,4}$/)))
+    {
+        $('#email').removeClass( "is-valid");
+        $('#email').addClass( "is-invalid");
+        $('#demail').html("<div class=\"alert alert-danger\" role=\"alert\">Adresse email incorrect</div>")
+        event.preventDefault();
+        email = false
+    }
+    else
+    {
+
+        $('#email').removeClass( "is-valid");
+        $('#email').removeClass( "is-invalid");
+        $('#demail').html("");
+        event.preventDefault();
+        email = false
+
+    }//contrôle email
+
+         if(email)
+       {
+                $('#email').attr('onsubmit', 'return true');
+       }
+        else
+       {
+                $('#email').attr('onsubmit', 'return false');
+      }
+    });
+
 
  //empêche le copié coller de l'input email password et confirpassword
 

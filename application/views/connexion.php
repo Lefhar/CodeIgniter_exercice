@@ -21,6 +21,7 @@
    
 
          <p>Vous n'avez pas de compte ? <a href="<?php echo base_url('users/inscription');?>">Vous inscrires</a></p>
+         <p>Vous n'avez oublié votre mot de passe ? <a href="<?php echo base_url('users/lostpassword');?>">Réinitialiser votre mot de passe</a></p>
          <?php 
 if(!empty($error))
 {         echo $error;}?>
@@ -28,8 +29,9 @@ if(!empty($error))
      
      //  balise form début du formulaire
      //<!--balise form début du formulaire-->
-     $array =array('name'=>'connexion','autocomplete'=>'off');
-        echo form_open('','connexion',$array); ?>
+     $array =array('name'=>'connexion','id'=>'connexion','autocomplete'=>'off');
+     echo form_open('',$array);
+        ?>
 
          <fieldset><!--début fieldset pour les coordonnées-->
 
