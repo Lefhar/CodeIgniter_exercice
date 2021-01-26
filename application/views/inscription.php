@@ -36,6 +36,7 @@
                 <fieldset><!--début fieldset pour les coordonnées-->
 
                     <legend>Inscription</legend>
+                    <?php if(!empty($error)){echo $error;}?>
                     <div class="form-group">
                         <label for="nom">Votre nom* :  </label>
                         <input type="text" id="nom" name="nom" class="form-control" placeholder="Votre nom"  required value="<?php echo set_value('nom');?>">

@@ -99,8 +99,20 @@ class usersModel extends CI_Model {
         $this->load->helper('form', 'url');
 
         //recupération des données post
-        $data = $this->input->post();
-
+        $salt = $this->functionModel->salt(12);
+        //$data = $this->input->post();
+        $data['u_password'] = password_hash($this->functionModel->password($this->input->post('password'),$salt), PASSWORD_DEFAULT);// on appel la fonction password comme sa on reprend la même méthode d'assemblage du sel et du mot de passe
+        $data['u_d_create'] = date('Y-m-d H:i:s');
+        $data['u_mail_hash']  = md5($this->functionModel->password($salt,$salt));
+        $data['u_nom'] = $this->input->post('nom');
+        $data['u_prenom'] = $this->input->post('prenom');
+        $data['u_sexe'] = $this->input->post('sexe');
+        $data['u_adresse'] = $this->input->post('adresse');
+        $data['u_cp'] = $this->input->post('cp');
+        $data['u_city'] = $this->input->post('ville');
+        $data['u_tel'] = $this->input->post('tel');
+        $data['u_mail'] = $this->input->post('email');
+        $data['u_hash'] = $salt;
         // Chargement de la librairie 'database'
         $this->load->database();
         $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email', array("required" => "<div class=\"alert alert-danger\" role=\"alert\">%s est obligatoire.</div>", "valid_email" => "<div class=\"alert alert-danger\" role=\"alert\">ce n'est pas une adresse %s valide.</div>"));
@@ -129,7 +141,7 @@ class usersModel extends CI_Model {
             $this->form_validation->set_rules('tel','Téléphone','regex_match[`^[0-9]{10}$`]', array("regex_match" => "<div class=\"alert alert-danger\" role=\"alert\">ce n'est pas un %s correct.</div>"));
         }
 
-        $salt = $this->functionModel->salt(12);
+
 
 
 
@@ -143,29 +155,80 @@ class usersModel extends CI_Model {
         }
         if ($this->form_validation->run() == TRUE) {
 
-
-            if(!empty($this->input->post('password'))&&!empty($this->input->post('confirpassword'))&&$this->input->post('confirpassword')==$this->input->post('password')){
-                $data['u_password'] = password_hash($this->functionModel->password($this->input->post('password'),$salt), PASSWORD_DEFAULT);// on appel la fonction password comme sa on reprend la même méthode d'assemblage du sel et du mot de passe
-                $data['u_d_create'] = date('Y-m-d H:i:s');
-                $data['u_mail_hash']  = password_hash($this->functionModel->password($salt,$salt), PASSWORD_DEFAULT);
+            $users = $this->db->query("SELECT u_mail FROM users WHERE u_mail = ?",$this->input->post('email'));
+            $aView["users"] = $users->row();
+            if(!empty($this->input->post('password'))&&!empty($this->input->post('confirpassword'))&&$this->input->post('confirpassword')==$this->input->post('password')&&empty($aView["users"]->u_mail)){
 
 
+                var_dump($data);
                 $this->db->insert('users', $data);
-            }else{
 
+
+                $this->load->library('email');
+                $config = array();
+                $config['protocol'] = 'smtp';
+                $config['smtp_host'] = 'smtp.laposte.net';
+                $config['smtp_user'] = 'igor.popoviche@laposte.net';
+                $config['smtp_pass'] = '4vefg7kK';
+                $config['smtp_port'] = 587;
+                $config['mailtype'] = 'html';
+                $this->email->initialize($config);
+                $this->email->set_newline("\r\n");
+                $this->email->from('igor.popoviche@laposte.net', 'Identification');
+                $this->email->to($this->input->post('email'));
+                $this->email->subject('Confirmation email');
+                $this->email->message("<!DOCTYPE html>
+                        <html lang='fr'>
+                        <head>
+                        <meta charset='utf-8'>
+                        <title>Confirmer votre adresse email</title>   
+                        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+                        <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
+                        <link rel='stylesheet' href='".base_url("assets/css/style.css")."'>
+                            <title>Confirmer votre adresse email</title>
+                        </head>
+                        <body>
+                        <div class='container'>
+                            <div class='row'>
+                                <div class='col-12'>
+                                  <h1>Confirmez votre adresse email</h1>
+                              </div>    
+                            </div>   
+                            <div class='row'>
+                                <div class='col-12'>
+                                 <p><a href='".site_url('/users/validationemail/')."".($data['u_mail_hash'])."' > Confirmez votre adresse email</a></p>
+                                 si vous ne pouvez pas lire cette email suivez copiez ce lien et coller le dans la barre d'adresse Lien ".site_url('/users/validationemail/')."".($data['u_mail_hash'])."
+                              </div>    
+                            </div>   
+                            <div class='row'>
+                                <div class='col-12'>
+                                  <img src='".base_url("assets/images/jarditou_logo.jpg")."' title='Logo' alt='Logo' class='img-fluid'>
+                                </div>    
+                            </div>   
+                        </div> 
+                          
+                        <script src='https://code.jquery.com/jquery-3.4.1.slim.min.js' integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n' crossorigin='anonymous'></script>
+                        <script src='".base_url("assets/css/script.js")."'></script>
+                        <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous'></script>
+                        <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous'></script>
+                        </body>
+                        </html>");
+                $this->email->send();
+                redirect('users/inscriptionvalide');
+            }else{
+                if($this->input->post('confirpassword')!=$this->input->post('password')){
+                    $aView['error'] = '<div class="alert alert-danger" role="alert">les deux champs mot de passe ne correspondre pas</div>';
+                }else
+                if(!empty($aView["users"]->u_mail)) {
+                    $aView['error'] = '<div class="alert alert-danger" role="alert">Vous êtes déjà inscrit <a href="' . site_url('users/connexion') . '">Connexion</a>?</div>';
+                }else{
+                    $aView['error'] = '<div class="alert alert-danger" role="alert">Une erreur c\'est produite</div>';
+                }
                 $this->load->view('header');
-                $this->load->view('inscription');
+                $this->load->view('inscription',$aView);
                 $this->load->view('footer');
 
             }
-
-
-
-
-
-
-
-
 
         }else{
 
@@ -193,12 +256,17 @@ class usersModel extends CI_Model {
 
 
 
-            if(!empty($aUsers)){
+            if(!empty($aView["jeton"]->u_mail)){
                 $id = $aView["jeton"]->u_id;
                 $data['u_mail_confirm'] = "1";
                 $data['u_mail_hash'] = NULL;
                 $this->db->where('u_id', $id);
                 $this->db->update('users', $data);
+                $data['error']= '<div class="alert alert-success" role="alert">Merci votre email est validé vous pouvez vous  <a href="' . site_url('users/connexion') . '">connecter</a></div>';
+                $this->load->view('header');
+                $this->load->view('validationemail',$data);
+                $this->load->view('footer');
+                //redirect('users/connexion');
             }else{
                 $data['error']= '<div class="alert alert-danger" role="alert">Désolé une erreur c\'est produite</div>';
                 $this->load->view('header');
@@ -240,5 +308,11 @@ class usersModel extends CI_Model {
         }  
         $this->load->view('footer');
     }
-  
-}
+    public function inscriptionvalide()
+    {
+
+        $this->load->view('header');
+        $this->load->view('inscriptionvalide');
+        $this->load->view('footer');
+    }
+    }
