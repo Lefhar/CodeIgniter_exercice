@@ -325,7 +325,7 @@ class usersModel extends CI_Model
             $data['u_d_reset'] = date("Y-m-d H:i:s");
             $data['u_password'] = password_hash($this->functionModel->password($this->input->post('password'), $salt), PASSWORD_DEFAULT);// on appel la fonction password comme sa on reprend la même méthode d'assemblage du sel et du mot de passe
             $data['u_hash'] = $salt;
-                $this->form_validation->set_rules('password', 'Mot de passe', 'required|regex_match[`^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[-+!*$@%_])([-+!*$@%_\w]{12,})$`]', array("required" => "<div class=\"alert alert-danger\" role=\"alert\">%s est obligatoire.</div>", "regex_match" => "<div class=\"alert alert-danger\" role=\"alert\">%s doit contenir au minimum 12 caractéres dont une majuscule un symbole.</div>"));
+            $this->form_validation->set_rules('password', 'Mot de passe', 'required|regex_match[`^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[-+!*$@%_])([-+!*$@%_\w]{12,})$`]', array("required" => "<div class=\"alert alert-danger\" role=\"alert\">%s est obligatoire.</div>", "regex_match" => "<div class=\"alert alert-danger\" role=\"alert\">%s doit contenir au minimum 12 caractéres dont une majuscule un symbole.</div>"));
             $this->form_validation->set_rules('confirpassword', 'Confirmation mot de passe', 'required|matches[password]', array("required" => "<div class=\"alert alert-danger\" role=\"alert\">%s est obligatoire.</div>", "matches" => "<div class=\"alert alert-danger\" role=\"alert\">%s ne correspond pas au mot de passe.</div>"));
             $this->load->helper('form', 'url');
             if ($this->form_validation->run() == FALSE) {

@@ -26,7 +26,9 @@
               </ul>
             </li>
          </ul>
+                    <?php if(!empty($this->session->login)){?>
          <a class="btn btn-jarditou float-right" href="<?php echo site_url('produits/ajouter');?>">Ajouter un produit</a>
+                    <?php } ?>
         </div>
 <div class="table-responsive">
                 <table class="table table-sm table-striped table-striped-warning table-bordered"><!--début du tableau-->
