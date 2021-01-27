@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title><?php echo $title;?></title>
+    <title><?php if(!empty($title)){echo $title;}?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
@@ -52,10 +52,10 @@
                     <a class="nav-link" href="<?php echo site_url("produits/liste");?>">Nos produits</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo site_url("contact.php");?>">Contact</a>
+                    <a class="nav-link" href="<?php echo site_url("contact");?>">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo site_url("accueil.php");?>">A propos</a>
+                    <a class="nav-link" href="<?php echo site_url("about");?>">A propos</a>
                 </li>
                 <?php 
               

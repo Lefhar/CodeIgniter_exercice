@@ -9,7 +9,7 @@
 
 
 
- <legend> Formulaire de modification de <?php echo $produit->pro_libelle;?> </legend>
+ <legend> Formulaire de modification de <?php if(!empty($produit)){echo $produit->pro_libelle;?> </legend>
      <?php 
      
     //  balise form début du formulaire
@@ -64,9 +64,9 @@
         //input pro Image
          $data = array('name' => 'pro_photo','id' => 'pro_photo','class' => 'form-control-file','type' => 'file','value' => ''.set_value('pro_photo',$produit->pro_id.'.'.$produit->pro_photo).'');
         // echo form_upload($data).'';
-        echo '<img  class="img-fluid" width="100" src="'.base_url("assets/images/".$produit->pro_id.".".$produit->pro_photo).'"><br>
+        echo '<img  class="img-fluid" width="100" src="'.base_url("assets/images/".$produit->pro_id.".".$produit->pro_photo).'" alt="'.$produit->pro_libelle.'"><br>
         <a class="btn btn-info btn-lg" onclick="add_fields();" >Modifier</a>
-        <div id="img"  name="img"> </div>';
+        <div id="img" > </div>';
         echo form_error('pro_photo').'';
         if(!empty($sUploadErrors)){echo $sUploadErrors;}
        echo ' </div>
@@ -119,12 +119,12 @@
         '.form_label('Catégorie', 'cat_id',$data).'
          <div class="col-sm-10 col-12"> ';
         $option = array();//on déclare le tableau
-            foreach ($categorie as $key => $row) 
-            {
-                
-            $option[$row->cat_id] = $row->cat_nom;// donné du tableaux
-            }
+          if(!empty($categorie)) {
+              foreach ($categorie as $key => $row) {
 
+                  $option[$row->cat_id] = $row->cat_nom;// donné du tableaux
+              }
+          }
         $variable = array('id' => 'cat_id','class' => 'form-control');
         // liste déroulante des catégories
         echo form_dropdown('pro_cat_id',$option,$produit->pro_cat_id,$variable).'
@@ -154,6 +154,7 @@
         </fieldset>
         <!--balise form fin du formulaire-->';
         echo  form_fieldset_close();
+          }
  ?>
  </article>
         </div>

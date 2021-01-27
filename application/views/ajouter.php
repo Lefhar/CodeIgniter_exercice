@@ -10,6 +10,7 @@
 
 
  <legend> Formulaire d'ajout d'un produit </legend>
+
      <?php 
      
     //  balise form début du formulaire
@@ -114,12 +115,12 @@
         '.form_label('Catégorie', 'cat_id',$data).'
          <div class="col-sm-10 col-12"> ';
         $option = array();//on déclare le tableau
-          foreach ($categorie as $key => $row)
-            {
-                
-            $option[$row->cat_id] = $row->cat_nom;// donné du tableaux
-            }
+         if(!empty($categorie)) {
+             foreach ($categorie as $key => $row) {
 
+                 $option[$row->cat_id] = $row->cat_nom;// donné du tableaux
+             }
+         }
         $variable = array('id' => 'cat_id','class' => 'form-control');
         // liste déroulante des catégories
         echo form_dropdown('pro_cat_id',$option,'',$variable).'

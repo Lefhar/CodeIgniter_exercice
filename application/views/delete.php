@@ -6,7 +6,7 @@
 
 
             <div class="card m-4 p-4" >
-            <?php
+            <?php    if(!empty($produit)) {
             echo '<img  class="img-fluid" width="160" src="'.base_url('assets/images/'.$produit->pro_id.'.'.$produit->pro_photo.'').'" alt="'.$produit->cat_nom.' '.$produit->pro_libelle.' '.$produit->pro_couleur.'" 
                 title="'.$produit->cat_nom.' '.$produit->pro_libelle.' '.$produit->pro_couleur.'">';?>
                  <div class="card-body">
@@ -30,7 +30,7 @@
                     echo ' </div>
                     <!--balise form fin du formulaire-->';
                     echo  form_fieldset_close();
-             ?>
+                      }  ?>
                     </div>
              </div>
              </article>

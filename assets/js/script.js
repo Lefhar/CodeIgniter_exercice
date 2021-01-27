@@ -1,5 +1,7 @@
-function verif()
-{
+
+
+    $("#formulaire_contact").keyup(function(event)
+    {
 //début de recupération des données du formulaire
         var nom = document.formulaire_contact.nom.value;
         var prenom = document.formulaire_contact.prenom.value;
@@ -18,8 +20,8 @@ function verif()
         var ctrprenom = /^[a-zA-Z]{2,}$/
         var ctrcp = /^[0-9]{4,5}$/ 
         var ctrdate = /^[0-9]{4,4}-[0-9]{2,2}-[0-9]{2,2}$/
-        var ctrquestion = /^[a-zA-Z0-9_.-]{4,}$/
-        var ctradresse = /^[a-zA-Z0-9_.-]{2,}$/
+        var ctrquestion = /[a-zA-Z\d]{5}/
+        var ctradresse = /^[0-9]{1,}\s+[a-z]{2,}\s+[a-z]{2,}/
         //au minimum 1 caractére car il existe la ville Y nom le plus court code postal 80190
         var ctrville= /^[a-zA-Z]{1,}$/
         var testedate = date.split('-');
@@ -176,9 +178,11 @@ function verif()
         var controlquestion= true;//on retourne true pour cette variable
     }
 
+        var input = document.getElementById('cgu');
 
-    if (cgu == null)//si cgu n'a pas était cocher alors on refuse
-    {
+        if (input.checked==false)//si cgu n'a pas était cocher alors on refuse
+        {
+
   
         document.getElementById("dcgu").innerHTML="<div class=\"alert alert-danger\" role=\"alert\">Vous devez accepter nos conditionns</div>";//si c'est null on affiche box alerte
         document.getElementById("cgu").className = "custom-control-input is-invalid";//on change la couleur de l'input en rouge
@@ -201,7 +205,7 @@ function verif()
             //sinon on renvoi bien un false
             return false;
         }
-}
+    })
 
 function limitingData(oEvent) {
   if(isNaN(this.dataset.maxlength) == false)
