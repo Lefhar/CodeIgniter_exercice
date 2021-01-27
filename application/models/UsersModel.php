@@ -60,7 +60,7 @@ class usersModel extends CI_Model
         // Appel des différents morceaux de vues
         $this->load->view('header', $aViewHeader);
         if ($this->form_validation->run() == TRUE) {
-            if (!empty($aView["users"]->u_mail) && password_verify($this->functionModel->password($password, $aView["users"]->u_hash), $aView["users"]->u_password)) {
+            if (!empty($aView["users"]->u_mail) && password_verify($this->functionModel->password($password, $aView["users"]->u_hash), $aView["users"]->u_password)&&$aView["users"]->u_mail_confirm==1) {
 
 
                 $jeton = password_hash($this->functionModel->salt(12), PASSWORD_DEFAULT);
@@ -83,6 +83,10 @@ class usersModel extends CI_Model
                     $this->input->set_cookie($cookie);
                 }
                 redirect("produits/liste");
+
+            }elseif ($aView["users"]->u_mail_confirm==0){
+                $aView['error'] = '<div class="alert alert-danger" role="alert">Vous devez valider votre adresse email <a href="' . site_url('users/resendemail') . '">renvoyer</a></div>';
+                $this->load->view('connexion', $aView);
             } else {
                 $aView['error'] = '<div class="alert alert-danger" role="alert">Email ou mot de passe faux</div>';
                 $this->load->view('connexion', $aView);
@@ -177,7 +181,6 @@ class usersModel extends CI_Model
                         <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
                         <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
                         <link rel='stylesheet' href='" . base_url("assets/css/style.css") . "'>
-                            <title>Confirmer votre adresse email</title>
                         </head>
                         <body>
                         <div class='container'>
@@ -389,7 +392,6 @@ class usersModel extends CI_Model
                         <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
                         <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
                         <link rel='stylesheet' href='" . base_url("assets/css/style.css") . "'>
-                            <title>Confirmer votre adresse email</title>
                         </head>
                         <body>
                         <div class='container'>
@@ -431,5 +433,91 @@ class usersModel extends CI_Model
 
 
         }
+    }
+
+
+    public  function resendemail()
+    {
+        $aViewHeader = ["title" => "Renvoyer le lien de confirmation"];
+        $salt = $this->functionModel->salt(12);
+
+        $data['u_mail'] = $this->input->post('email');
+
+        $users = $this->db->query("SELECT u_id, u_mail_hash, u_mail FROM users WHERE u_mail = ?", $data['u_mail']);
+        $aView["jeton"] = $users->row(); // première ligne du résultat
+        $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email', array("required" => "<div class=\"alert alert-danger\" role=\"alert\">%s est obligatoire.</div>", "valid_email" => "<div class=\"alert alert-danger\" role=\"alert\">ce n'est pas une adresse %s valide.</div>"));
+
+
+
+        if ($this->form_validation->run() == FALSE) {
+
+            $this->load->view('header', $aViewHeader);
+            $this->load->view('lostpassword');
+            $this->load->view('footer');
+        }else{
+            if(!empty($aView["jeton"]->u_mail)&&!empty($aView["jeton"]->u_mail_hash)) {
+
+                $this->load->library('email');
+                $config = array();
+                $config['protocol'] = 'smtp';
+                $config['smtp_host'] = 'smtp.laposte.net';
+                $config['smtp_user'] = 'igor.popoviche@laposte.net';
+                $config['smtp_pass'] = '4vefg7kK';
+                $config['smtp_port'] = 587;
+                $config['mailtype'] = 'html';
+                $this->email->initialize($config);
+                $this->email->set_newline("\r\n");
+                $this->email->from('igor.popoviche@laposte.net', 'Jarditou');
+                $this->email->to($aView["jeton"]->u_mail);
+                $this->email->subject('Confirmation email');
+                $this->email->message("<!DOCTYPE html>
+                        <html lang='fr'>
+                        <head>
+                        <meta charset='utf-8'>
+                        <title>Confirmer votre adresse email</title>   
+                        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+                        <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
+                        <link rel='stylesheet' href='" . base_url("assets/css/style.css") . "'>
+                        </head>
+                        <body>
+                        <div class='container'>
+                            <div class='row'>
+                                <div class='col-12'>
+                                  <h1>Confirmez votre adresse email</h1>
+                              </div>    
+                            </div>   
+                            <div class='row'>
+                                <div class='col-12'>
+                                 <p><a href='" . site_url('/users/validationemail/') . "" . $aView["jeton"]->u_mail_hash . "' > Confirmez votre adresse email</a></p>
+                                 si vous ne pouvez pas lire cette email suivez copiez ce lien et coller le dans la barre d'adresse Lien " . site_url('/users/validationemail/') . "" .$aView["jeton"]->u_mail_hash . "
+                              </div>    
+                            </div>   
+                            <div class='row'>
+                                <div class='col-12'>
+                                  <img src='" . base_url("assets/images/jarditou_logo.jpg") . "' title='Logo' alt='Logo' class='img-fluid'>
+                                </div>    
+                            </div>   
+                        </div> 
+                          
+                        <script src='https://code.jquery.com/jquery-3.4.1.slim.min.js' integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n' crossorigin='anonymous'></script>
+                        <script src='" . base_url("assets/css/script.js") . "'></script>
+                        <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous'></script>
+                        <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous'></script>
+                        </body>
+                        </html>");
+                $this->email->send();
+                $data['error'] = '<div class="alert alert-success" role="alert">Merci un email vous a été envoyé vérifier votre boite de reception ou courrier indésirable</div>';
+                $this->load->view('header', $aViewHeader);
+                $this->load->view('resendmail',$data);
+                $this->load->view('footer');
+            }else{
+                $data['error'] = '<div class="alert alert-danger" role="alert">Veuillez vérifier votre adresse email</div>';
+                $this->load->view('header', $aViewHeader);
+                $this->load->view('resendmail',$data);
+                $this->load->view('footer');
+            }
+
+        }
+
     }
 }

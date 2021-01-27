@@ -21,7 +21,7 @@
    
 
          <p>Vous n'avez pas de compte ? <a href="<?php echo base_url('users/inscription');?>">Vous inscrires</a></p>
-         <p>Vous n'avez oublié votre mot de passe ? <a href="<?php echo base_url('users/lostpassword');?>">Réinitialiser votre mot de passe</a></p>
+         <p>Vous avez oublié votre mot de passe ? <a href="<?php echo base_url('users/lostpassword');?>">Réinitialiser votre mot de passe</a></p>
          <?php 
 if(!empty($error))
 {         echo $error;}?>

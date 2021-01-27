@@ -142,7 +142,7 @@
 
 
         <div class="form-group">
-            <button type="submit"  class="btn btn-dark btn-lg">Envoyer</button>    <button type="reset" class="btn btn-dark btn-lg">Annuler</button>
+            <button type="submit"  class="btn btn-dark btn-lg">Inscription</button>    <button type="reset" class="btn btn-dark btn-lg">Annuler</button>
         </div>
              </fieldset><!--fin fieldset pour les coordonnées-->
         </form> <!--balise form fin du formulaire-->

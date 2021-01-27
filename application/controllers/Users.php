@@ -98,4 +98,16 @@ class Users extends CI_Controller {
         */
         $this->usersModel->lostpassword();
     }
+
+    public function resendemail()
+    {
+        // Chargement du modèle 'produitsModel'
+        $this->load->model('usersModel');
+
+        /* On appelle la méthode liste() du modèle,
+        * qui retourne le tableau de résultat ici affecté dans la variable $aListe (un tableau)
+        * remarque la syntaxe $this->nomModele->methode()
+        */
+        $this->usersModel->resendemail();
+    }
 }
