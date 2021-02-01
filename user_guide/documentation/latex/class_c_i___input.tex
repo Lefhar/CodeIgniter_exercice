@@ -1,0 +1,493 @@
+\hypertarget{class_c_i___input}{}\section{C\+I\+\_\+\+Input Class Reference}
+\label{class_c_i___input}\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___input_a09ed00d5d4156941537b2bc5de39f6a8}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_c_i___input_a797c8c03c755b8c8e0e1a22cdb2ef180}{get}} (\$index=N\+U\+LL, \$xss\+\_\+clean=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___input_ae3472c7693aa86ca1591005bb7c59a00}{post}} (\$index=N\+U\+LL, \$xss\+\_\+clean=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___input_a732347d6dd58fddfeb2a69cc80b14dbf}{post\+\_\+get}} (\$index, \$xss\+\_\+clean=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___input_a4348808b6718f4d18545f3877a90959c}{get\+\_\+post}} (\$index, \$xss\+\_\+clean=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___input_a29310ccab79cedb2698ed2899e613ef7}{cookie}} (\$index=N\+U\+LL, \$xss\+\_\+clean=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___input_ad773b845762ebc2b44dc5e652376cf20}{server}} (\$index, \$xss\+\_\+clean=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___input_a4fc99e97be1f2eba0d9c7f915f9e6883}{input\+\_\+stream}} (\$index=N\+U\+LL, \$xss\+\_\+clean=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___input_a08e51fa067d4c79313706b0efaac5f80}{set\+\_\+cookie}} (\$name, \$value=\textquotesingle{}\textquotesingle{}, \$expire=\textquotesingle{}\textquotesingle{}, \$domain=\textquotesingle{}\textquotesingle{}, \$path=\textquotesingle{}/\textquotesingle{}, \$prefix=\textquotesingle{}\textquotesingle{}, \$secure=N\+U\+LL, \$httponly=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___input_a68157e630838fcfe411dcb008cc770c0}{ip\+\_\+address}} ()
+\item 
+\mbox{\hyperlink{class_c_i___input_a9adfe10bffecb48334f3727746b54aef}{valid\+\_\+ip}} (\$ip, \$which=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___input_a1ebccdad21d23b85966d2f5313135d10}{user\+\_\+agent}} (\$xss\+\_\+clean=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___input_a563e60708689cd1508df5ac1d2565d98}{request\+\_\+headers}} (\$xss\+\_\+clean=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___input_a9e8f9c632cbf93fdb4d40d61575aa6e5}{get\+\_\+request\+\_\+header}} (\$index, \$xss\+\_\+clean=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___input_a4c2e808b93a8ed814782278a24a1da38}{is\+\_\+ajax\+\_\+request}} ()
+\item 
+\mbox{\hyperlink{class_c_i___input_ac062ed0f4198fb4dd0946be2d2e3bb88}{is\+\_\+cli\+\_\+request}} ()
+\item 
+\mbox{\hyperlink{class_c_i___input_abcb24e05b69096ac7b7b6e00a5c0d713}{method}} (\$upper=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___input_a17440316cc4bfe2790979c6f5c87f97e}{\+\_\+\+\_\+get}} (\$name)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___input_af6912411408e751fe9b9436b1d3e1958}{\+\_\+fetch\+\_\+from\+\_\+array}} (\&\$array, \$index=N\+U\+LL, \$xss\+\_\+clean=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___input_a4e3a3f9db60f04d2576be4018f18b366}{\+\_\+sanitize\+\_\+globals}} ()
+\item 
+\mbox{\hyperlink{class_c_i___input_afe5d3f26bbdb3239c38a00577ff435c1}{\+\_\+clean\+\_\+input\+\_\+data}} (\$str)
+\item 
+\mbox{\hyperlink{class_c_i___input_a845149c18f59609a4b338ec6700c3b0d}{\+\_\+clean\+\_\+input\+\_\+keys}} (\$str, \$fatal=T\+R\+UE)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___input_a9c10b56cd84ea00846350b9629189e49}\label{class_c_i___input_a9c10b56cd84ea00846350b9629189e49}} 
+{\bfseries \$ip\+\_\+address} = F\+A\+L\+SE
+\item 
+\mbox{\Hypertarget{class_c_i___input_aac5369bbd3452334df19501b8cb02af5}\label{class_c_i___input_aac5369bbd3452334df19501b8cb02af5}} 
+{\bfseries \$\+\_\+allow\+\_\+get\+\_\+array} = T\+R\+UE
+\item 
+\mbox{\Hypertarget{class_c_i___input_a134fd9ea9f1479a3456c679e1e71b198}\label{class_c_i___input_a134fd9ea9f1479a3456c679e1e71b198}} 
+{\bfseries \$\+\_\+standardize\+\_\+newlines}
+\item 
+\mbox{\Hypertarget{class_c_i___input_ae3747da3ff385212ddde28794107b5a0}\label{class_c_i___input_ae3747da3ff385212ddde28794107b5a0}} 
+{\bfseries \$\+\_\+enable\+\_\+xss} = F\+A\+L\+SE
+\item 
+\mbox{\Hypertarget{class_c_i___input_a8f57c8d48983e59af3d9232dd88836e5}\label{class_c_i___input_a8f57c8d48983e59af3d9232dd88836e5}} 
+{\bfseries \$\+\_\+enable\+\_\+csrf} = F\+A\+L\+SE
+\item 
+\mbox{\Hypertarget{class_c_i___input_a0acb57baa2bf4044b9dbcf9802087069}\label{class_c_i___input_a0acb57baa2bf4044b9dbcf9802087069}} 
+{\bfseries \$headers} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___input_aee70f4f95d46b17c0fa8da35bbf87ef8}\label{class_c_i___input_aee70f4f95d46b17c0fa8da35bbf87ef8}} 
+{\bfseries \$\+\_\+raw\+\_\+input\+\_\+stream}
+\item 
+\mbox{\Hypertarget{class_c_i___input_ae6912ed96715dc3ec8f10f1aecb1db39}\label{class_c_i___input_ae6912ed96715dc3ec8f10f1aecb1db39}} 
+{\bfseries \$\+\_\+input\+\_\+stream}
+\item 
+\mbox{\Hypertarget{class_c_i___input_a331dbe409a3bc56cbf5fe5a7b582a5ff}\label{class_c_i___input_a331dbe409a3bc56cbf5fe5a7b582a5ff}} 
+{\bfseries \$security}
+\item 
+\mbox{\Hypertarget{class_c_i___input_a4205d7ac270ae50ca29b1255c8dfeb2e}\label{class_c_i___input_a4205d7ac270ae50ca29b1255c8dfeb2e}} 
+{\bfseries \$uni}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_i___input_a09ed00d5d4156941537b2bc5de39f6a8}\label{class_c_i___input_a09ed00d5d4156941537b2bc5de39f6a8}} 
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Input\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Class constructor
+
+Determines whether to globally enable the X\+SS processing and whether to allow the \$\+\_\+\+G\+ET array.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___input_a17440316cc4bfe2790979c6f5c87f97e}\label{class_c_i___input_a17440316cc4bfe2790979c6f5c87f97e}} 
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!\+\_\+\+\_\+get@{\+\_\+\+\_\+get}}
+\index{\+\_\+\+\_\+get@{\+\_\+\+\_\+get}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+get()}{\_\_get()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Input\+::\+\_\+\+\_\+get (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})}
+
+Magic \mbox{\hyperlink{class_c_i___input_a17440316cc4bfe2790979c6f5c87f97e}{\+\_\+\+\_\+get()}}
+
+Allows read access to protected properties
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___input_afe5d3f26bbdb3239c38a00577ff435c1}\label{class_c_i___input_afe5d3f26bbdb3239c38a00577ff435c1}} 
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!\+\_\+clean\+\_\+input\+\_\+data@{\+\_\+clean\+\_\+input\+\_\+data}}
+\index{\+\_\+clean\+\_\+input\+\_\+data@{\+\_\+clean\+\_\+input\+\_\+data}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection{\texorpdfstring{\+\_\+clean\+\_\+input\+\_\+data()}{\_clean\_input\_data()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Input\+::\+\_\+clean\+\_\+input\+\_\+data (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Clean Input Data
+
+Internal method that aids in escaping data and standardizing newline characters to P\+H\+P\+\_\+\+E\+OL.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string$\vert$string\mbox{[}$\,$\mbox{]}} & \$str Input string(s) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___input_a845149c18f59609a4b338ec6700c3b0d}\label{class_c_i___input_a845149c18f59609a4b338ec6700c3b0d}} 
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!\+\_\+clean\+\_\+input\+\_\+keys@{\+\_\+clean\+\_\+input\+\_\+keys}}
+\index{\+\_\+clean\+\_\+input\+\_\+keys@{\+\_\+clean\+\_\+input\+\_\+keys}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection{\texorpdfstring{\+\_\+clean\+\_\+input\+\_\+keys()}{\_clean\_input\_keys()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Input\+::\+\_\+clean\+\_\+input\+\_\+keys (\begin{DoxyParamCaption}\item[{}]{\$str,  }\item[{}]{\$fatal = {\ttfamily TRUE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Clean Keys
+
+Internal method that helps to prevent malicious users from trying to exploit keys we make sure that keys are only named with alpha-\/numeric text and a few other items.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & Input string \\
+\hline
+bool & {\em \$fatal} & Whether to terminate script exection or to return F\+A\+L\+SE if an invalid key is encountered \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___input_af6912411408e751fe9b9436b1d3e1958}\label{class_c_i___input_af6912411408e751fe9b9436b1d3e1958}} 
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!\+\_\+fetch\+\_\+from\+\_\+array@{\+\_\+fetch\+\_\+from\+\_\+array}}
+\index{\+\_\+fetch\+\_\+from\+\_\+array@{\+\_\+fetch\+\_\+from\+\_\+array}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection{\texorpdfstring{\+\_\+fetch\+\_\+from\+\_\+array()}{\_fetch\_from\_array()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Input\+::\+\_\+fetch\+\_\+from\+\_\+array (\begin{DoxyParamCaption}\item[{\&}]{\$array,  }\item[{}]{\$index = {\ttfamily NULL},  }\item[{}]{\$xss\+\_\+clean = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Fetch from array
+
+Internal method used to retrieve values from global arrays.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \&\$array} & \$\+\_\+\+G\+ET, \$\+\_\+\+P\+O\+ST, \$\+\_\+\+C\+O\+O\+K\+IE, \$\+\_\+\+S\+E\+R\+V\+ER, etc. \\
+\hline
+mixed & {\em \$index} & Index for item to be fetched from \$array \\
+\hline
+bool & {\em \$xss\+\_\+clean} & Whether to apply X\+SS filtering \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___input_a4e3a3f9db60f04d2576be4018f18b366}\label{class_c_i___input_a4e3a3f9db60f04d2576be4018f18b366}} 
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!\+\_\+sanitize\+\_\+globals@{\+\_\+sanitize\+\_\+globals}}
+\index{\+\_\+sanitize\+\_\+globals@{\+\_\+sanitize\+\_\+globals}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection{\texorpdfstring{\+\_\+sanitize\+\_\+globals()}{\_sanitize\_globals()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Input\+::\+\_\+sanitize\+\_\+globals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sanitize Globals
+
+Internal method serving for the following purposes\+:
+
+
+\begin{DoxyItemize}
+\item Unsets \$\+\_\+\+G\+ET data, if query strings are not enabled
+\item Cleans P\+O\+ST, C\+O\+O\+K\+IE and S\+E\+R\+V\+ER data
+\begin{DoxyItemize}
+\item Standardizes newline characters to P\+H\+P\+\_\+\+E\+OL
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___input_a29310ccab79cedb2698ed2899e613ef7}\label{class_c_i___input_a29310ccab79cedb2698ed2899e613ef7}} 
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!cookie@{cookie}}
+\index{cookie@{cookie}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection{\texorpdfstring{cookie()}{cookie()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Input\+::cookie (\begin{DoxyParamCaption}\item[{}]{\$index = {\ttfamily NULL},  }\item[{}]{\$xss\+\_\+clean = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Fetch an item from the C\+O\+O\+K\+IE array
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$index} & Index for item to be fetched from \$\+\_\+\+C\+O\+O\+K\+IE \\
+\hline
+bool & {\em \$xss\+\_\+clean} & Whether to apply X\+SS filtering \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___input_a797c8c03c755b8c8e0e1a22cdb2ef180}\label{class_c_i___input_a797c8c03c755b8c8e0e1a22cdb2ef180}} 
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!get@{get}}
+\index{get@{get}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Input\+::get (\begin{DoxyParamCaption}\item[{}]{\$index = {\ttfamily NULL},  }\item[{}]{\$xss\+\_\+clean = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Fetch an item from the G\+ET array
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$index} & Index for item to be fetched from \$\+\_\+\+G\+ET \\
+\hline
+bool & {\em \$xss\+\_\+clean} & Whether to apply X\+SS filtering \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___input_a4348808b6718f4d18545f3877a90959c}\label{class_c_i___input_a4348808b6718f4d18545f3877a90959c}} 
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!get\+\_\+post@{get\+\_\+post}}
+\index{get\+\_\+post@{get\+\_\+post}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection{\texorpdfstring{get\+\_\+post()}{get\_post()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Input\+::get\+\_\+post (\begin{DoxyParamCaption}\item[{}]{\$index,  }\item[{}]{\$xss\+\_\+clean = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Fetch an item from G\+ET data with fallback to P\+O\+ST
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$index} & Index for item to be fetched from \$\+\_\+\+G\+ET or \$\+\_\+\+P\+O\+ST \\
+\hline
+bool & {\em \$xss\+\_\+clean} & Whether to apply X\+SS filtering \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___input_a9e8f9c632cbf93fdb4d40d61575aa6e5}\label{class_c_i___input_a9e8f9c632cbf93fdb4d40d61575aa6e5}} 
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!get\+\_\+request\+\_\+header@{get\+\_\+request\+\_\+header}}
+\index{get\+\_\+request\+\_\+header@{get\+\_\+request\+\_\+header}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection{\texorpdfstring{get\+\_\+request\+\_\+header()}{get\_request\_header()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Input\+::get\+\_\+request\+\_\+header (\begin{DoxyParamCaption}\item[{}]{\$index,  }\item[{}]{\$xss\+\_\+clean = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Get Request Header
+
+Returns the value of a single member of the headers class member
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$index} & Header name \\
+\hline
+bool & {\em \$xss\+\_\+clean} & Whether to apply X\+SS filtering \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$null The requested header on success or N\+U\+LL on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___input_a4fc99e97be1f2eba0d9c7f915f9e6883}\label{class_c_i___input_a4fc99e97be1f2eba0d9c7f915f9e6883}} 
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!input\+\_\+stream@{input\+\_\+stream}}
+\index{input\+\_\+stream@{input\+\_\+stream}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection{\texorpdfstring{input\+\_\+stream()}{input\_stream()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Input\+::input\+\_\+stream (\begin{DoxyParamCaption}\item[{}]{\$index = {\ttfamily NULL},  }\item[{}]{\$xss\+\_\+clean = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Fetch an item from the php\+://input stream
+
+Useful when you need to access P\+UT, D\+E\+L\+E\+TE or P\+A\+T\+CH request data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$index} & Index for item to be fetched \\
+\hline
+bool & {\em \$xss\+\_\+clean} & Whether to apply X\+SS filtering \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___input_a68157e630838fcfe411dcb008cc770c0}\label{class_c_i___input_a68157e630838fcfe411dcb008cc770c0}} 
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!ip\+\_\+address@{ip\+\_\+address}}
+\index{ip\+\_\+address@{ip\+\_\+address}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection{\texorpdfstring{ip\+\_\+address()}{ip\_address()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Input\+::ip\+\_\+address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Fetch the IP Address
+
+Determines and validates the visitor\textquotesingle{}s IP address.
+
+\begin{DoxyReturn}{Returns}
+string IP address 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___input_a4c2e808b93a8ed814782278a24a1da38}\label{class_c_i___input_a4c2e808b93a8ed814782278a24a1da38}} 
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!is\+\_\+ajax\+\_\+request@{is\+\_\+ajax\+\_\+request}}
+\index{is\+\_\+ajax\+\_\+request@{is\+\_\+ajax\+\_\+request}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection{\texorpdfstring{is\+\_\+ajax\+\_\+request()}{is\_ajax\_request()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Input\+::is\+\_\+ajax\+\_\+request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is A\+J\+AX request?
+
+Test to see if a request contains the H\+T\+T\+P\+\_\+\+X\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+E\+D\+\_\+\+W\+I\+TH header.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___input_ac062ed0f4198fb4dd0946be2d2e3bb88}\label{class_c_i___input_ac062ed0f4198fb4dd0946be2d2e3bb88}} 
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!is\+\_\+cli\+\_\+request@{is\+\_\+cli\+\_\+request}}
+\index{is\+\_\+cli\+\_\+request@{is\+\_\+cli\+\_\+request}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection{\texorpdfstring{is\+\_\+cli\+\_\+request()}{is\_cli\_request()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Input\+::is\+\_\+cli\+\_\+request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is C\+LI request?
+
+Test to see if a request was made from the command line.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000002}{Deprecated}}]3.\+0.\+0 Use is\+\_\+cli() instead \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___input_abcb24e05b69096ac7b7b6e00a5c0d713}\label{class_c_i___input_abcb24e05b69096ac7b7b6e00a5c0d713}} 
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!method@{method}}
+\index{method@{method}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection{\texorpdfstring{method()}{method()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Input\+::method (\begin{DoxyParamCaption}\item[{}]{\$upper = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Get Request Method
+
+Return the request method
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$upper} & Whether to return in upper or lower case (default\+: F\+A\+L\+SE) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___input_ae3472c7693aa86ca1591005bb7c59a00}\label{class_c_i___input_ae3472c7693aa86ca1591005bb7c59a00}} 
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!post@{post}}
+\index{post@{post}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection{\texorpdfstring{post()}{post()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Input\+::post (\begin{DoxyParamCaption}\item[{}]{\$index = {\ttfamily NULL},  }\item[{}]{\$xss\+\_\+clean = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Fetch an item from the P\+O\+ST array
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$index} & Index for item to be fetched from \$\+\_\+\+P\+O\+ST \\
+\hline
+bool & {\em \$xss\+\_\+clean} & Whether to apply X\+SS filtering \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___input_a732347d6dd58fddfeb2a69cc80b14dbf}\label{class_c_i___input_a732347d6dd58fddfeb2a69cc80b14dbf}} 
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!post\+\_\+get@{post\+\_\+get}}
+\index{post\+\_\+get@{post\+\_\+get}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection{\texorpdfstring{post\+\_\+get()}{post\_get()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Input\+::post\+\_\+get (\begin{DoxyParamCaption}\item[{}]{\$index,  }\item[{}]{\$xss\+\_\+clean = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Fetch an item from P\+O\+ST data with fallback to G\+ET
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$index} & Index for item to be fetched from \$\+\_\+\+P\+O\+ST or \$\+\_\+\+G\+ET \\
+\hline
+bool & {\em \$xss\+\_\+clean} & Whether to apply X\+SS filtering \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___input_a563e60708689cd1508df5ac1d2565d98}\label{class_c_i___input_a563e60708689cd1508df5ac1d2565d98}} 
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!request\+\_\+headers@{request\+\_\+headers}}
+\index{request\+\_\+headers@{request\+\_\+headers}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection{\texorpdfstring{request\+\_\+headers()}{request\_headers()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Input\+::request\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{\$xss\+\_\+clean = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Request Headers
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$xss\+\_\+clean} & Whether to apply X\+SS filtering \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___input_ad773b845762ebc2b44dc5e652376cf20}\label{class_c_i___input_ad773b845762ebc2b44dc5e652376cf20}} 
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!server@{server}}
+\index{server@{server}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection{\texorpdfstring{server()}{server()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Input\+::server (\begin{DoxyParamCaption}\item[{}]{\$index,  }\item[{}]{\$xss\+\_\+clean = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Fetch an item from the S\+E\+R\+V\+ER array
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$index} & Index for item to be fetched from \$\+\_\+\+S\+E\+R\+V\+ER \\
+\hline
+bool & {\em \$xss\+\_\+clean} & Whether to apply X\+SS filtering \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___input_a08e51fa067d4c79313706b0efaac5f80}\label{class_c_i___input_a08e51fa067d4c79313706b0efaac5f80}} 
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!set\+\_\+cookie@{set\+\_\+cookie}}
+\index{set\+\_\+cookie@{set\+\_\+cookie}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection{\texorpdfstring{set\+\_\+cookie()}{set\_cookie()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Input\+::set\+\_\+cookie (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{}]{\$value = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$expire = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$domain = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$path = {\ttfamily \textquotesingle{}/\textquotesingle{}},  }\item[{}]{\$prefix = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$secure = {\ttfamily NULL},  }\item[{}]{\$httponly = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Set cookie
+
+Accepts an arbitrary number of parameters (up to 7) or an associative array in the first parameter containing all the values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em string$\vert$mixed\mbox{[}$\,$\mbox{]}} & \$name Cookie name or an array containing parameters \\
+\hline
+string & {\em \$value} & Cookie value \\
+\hline
+int & {\em \$expire} & Cookie expiration time in seconds \\
+\hline
+string & {\em \$domain} & Cookie domain (e.\+g.\+: \textquotesingle{}.yourdomain.\+com\textquotesingle{}) \\
+\hline
+string & {\em \$path} & Cookie path (default\+: \textquotesingle{}/\textquotesingle{}) \\
+\hline
+string & {\em \$prefix} & Cookie name prefix \\
+\hline
+bool & {\em \$secure} & Whether to only transfer cookies via S\+SL \\
+\hline
+bool & {\em \$httponly} & Whether to only makes the cookie accessible via H\+T\+TP (no javascript) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___input_a1ebccdad21d23b85966d2f5313135d10}\label{class_c_i___input_a1ebccdad21d23b85966d2f5313135d10}} 
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!user\+\_\+agent@{user\+\_\+agent}}
+\index{user\+\_\+agent@{user\+\_\+agent}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection{\texorpdfstring{user\+\_\+agent()}{user\_agent()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Input\+::user\+\_\+agent (\begin{DoxyParamCaption}\item[{}]{\$xss\+\_\+clean = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Fetch User Agent string
+
+\begin{DoxyReturn}{Returns}
+string$\vert$null User Agent string or N\+U\+LL if it doesn\textquotesingle{}t exist 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___input_a9adfe10bffecb48334f3727746b54aef}\label{class_c_i___input_a9adfe10bffecb48334f3727746b54aef}} 
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!valid\+\_\+ip@{valid\+\_\+ip}}
+\index{valid\+\_\+ip@{valid\+\_\+ip}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection{\texorpdfstring{valid\+\_\+ip()}{valid\_ip()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Input\+::valid\+\_\+ip (\begin{DoxyParamCaption}\item[{}]{\$ip,  }\item[{}]{\$which = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Validate IP Address
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ip} & IP address \\
+\hline
+string & {\em \$which} & IP protocol\+: \textquotesingle{}ipv4\textquotesingle{} or \textquotesingle{}ipv6\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/core/Input.\+php\end{DoxyCompactItemize}

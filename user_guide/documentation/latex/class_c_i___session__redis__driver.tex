@@ -1,0 +1,266 @@
+\hypertarget{class_c_i___session__redis__driver}{}\section{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver Class Reference}
+\label{class_c_i___session__redis__driver}\index{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver}}
+Inheritance diagram for C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_i___session__redis__driver}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___session__redis__driver_aa37861b0b1953ec1958bcafb7ecdbca6}{\+\_\+\+\_\+construct}} (\&\$params)
+\item 
+\mbox{\hyperlink{class_c_i___session__redis__driver_a3ed178ce66f815fee5bca28b0673260e}{open}} (\$save\+\_\+path, \$name)
+\item 
+\mbox{\hyperlink{class_c_i___session__redis__driver_a8bc2c57310723fefb13205d211156d52}{read}} (\$session\+\_\+id)
+\item 
+\mbox{\hyperlink{class_c_i___session__redis__driver_a08f684e434d6eeed20d446dfbeb7c3c8}{write}} (\$session\+\_\+id, \$session\+\_\+data)
+\item 
+\mbox{\hyperlink{class_c_i___session__redis__driver_a80a607cb3ba4058bca739f4c736e52bd}{close}} ()
+\item 
+\mbox{\hyperlink{class_c_i___session__redis__driver_a8a1ac68fa77b2f654ffadc365d125fe5}{destroy}} (\$session\+\_\+id)
+\item 
+\mbox{\hyperlink{class_c_i___session__redis__driver_ae65e8f9d43d2c4ca690202c9d56d1d01}{gc}} (\$maxlifetime)
+\item 
+\mbox{\hyperlink{class_c_i___session__redis__driver_ada12678b34075dd6553b72bfad91a761}{validate\+Session\+Id}} (\$id)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___session__redis__driver_a889facb2bb5293b10071ae09c64ef27a}{\+\_\+get\+\_\+lock}} (\$session\+\_\+id)
+\item 
+\mbox{\hyperlink{class_c_i___session__redis__driver_adf871335e5536b19b146185a92aff310}{\+\_\+release\+\_\+lock}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___session__redis__driver_a287fc596cde9d48a9039ffc913a3ec4a}\label{class_c_i___session__redis__driver_a287fc596cde9d48a9039ffc913a3ec4a}} 
+{\bfseries \$\+\_\+redis}
+\item 
+\mbox{\Hypertarget{class_c_i___session__redis__driver_acb855d57edc6becdd1bc384885ddfdfb}\label{class_c_i___session__redis__driver_acb855d57edc6becdd1bc384885ddfdfb}} 
+{\bfseries \$\+\_\+key\+\_\+prefix} = \textquotesingle{}ci\+\_\+session\+:\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___session__redis__driver_aae014d8bd9a9866994c6c0d587e869a3}\label{class_c_i___session__redis__driver_aae014d8bd9a9866994c6c0d587e869a3}} 
+{\bfseries \$\+\_\+lock\+\_\+key}
+\item 
+\mbox{\Hypertarget{class_c_i___session__redis__driver_a300f7c19ff77ba3a96d14b68060ecaef}\label{class_c_i___session__redis__driver_a300f7c19ff77ba3a96d14b68060ecaef}} 
+{\bfseries \$\+\_\+key\+\_\+exists} = F\+A\+L\+SE
+\item 
+\mbox{\Hypertarget{class_c_i___session__redis__driver_a9dc50b0541ff442ca804d94c4feb301b}\label{class_c_i___session__redis__driver_a9dc50b0541ff442ca804d94c4feb301b}} 
+{\bfseries \$\+\_\+set\+Timeout\+\_\+name}
+\item 
+\mbox{\Hypertarget{class_c_i___session__redis__driver_a80a6b56e3f5b98a67b8ec202f9baacb9}\label{class_c_i___session__redis__driver_a80a6b56e3f5b98a67b8ec202f9baacb9}} 
+{\bfseries \$\+\_\+delete\+\_\+name}
+\item 
+\mbox{\Hypertarget{class_c_i___session__redis__driver_a3de1c600218f1228d02ad7a8e3744b0c}\label{class_c_i___session__redis__driver_a3de1c600218f1228d02ad7a8e3744b0c}} 
+{\bfseries \$\+\_\+ping\+\_\+success}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_i___session__redis__driver_aa37861b0b1953ec1958bcafb7ecdbca6}\label{class_c_i___session__redis__driver_aa37861b0b1953ec1958bcafb7ecdbca6}} 
+\index{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\&}]{\$params }\end{DoxyParamCaption})}
+
+Class constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & Configuration parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___session__redis__driver_a889facb2bb5293b10071ae09c64ef27a}\label{class_c_i___session__redis__driver_a889facb2bb5293b10071ae09c64ef27a}} 
+\index{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver}!\+\_\+get\+\_\+lock@{\+\_\+get\+\_\+lock}}
+\index{\+\_\+get\+\_\+lock@{\+\_\+get\+\_\+lock}!C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+get\+\_\+lock()}{\_get\_lock()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver\+::\+\_\+get\+\_\+lock (\begin{DoxyParamCaption}\item[{}]{\$session\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get lock
+
+Acquires an (emulated) lock.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$session\+\_\+id} & Session ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___session__redis__driver_adf871335e5536b19b146185a92aff310}\label{class_c_i___session__redis__driver_adf871335e5536b19b146185a92aff310}} 
+\index{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver}!\+\_\+release\+\_\+lock@{\+\_\+release\+\_\+lock}}
+\index{\+\_\+release\+\_\+lock@{\+\_\+release\+\_\+lock}!C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+release\+\_\+lock()}{\_release\_lock()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver\+::\+\_\+release\+\_\+lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Release lock
+
+Releases a previously acquired lock
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___session__redis__driver_a80a607cb3ba4058bca739f4c736e52bd}\label{class_c_i___session__redis__driver_a80a607cb3ba4058bca739f4c736e52bd}} 
+\index{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver}!close@{close}}
+\index{close@{close}!C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Close
+
+Releases locks and closes connection.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_session_handler_interface}{Session\+Handler\+Interface}}.
+
+\mbox{\Hypertarget{class_c_i___session__redis__driver_a8a1ac68fa77b2f654ffadc365d125fe5}\label{class_c_i___session__redis__driver_a8a1ac68fa77b2f654ffadc365d125fe5}} 
+\index{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver}!destroy@{destroy}}
+\index{destroy@{destroy}!C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver\+::destroy (\begin{DoxyParamCaption}\item[{}]{\$session\+\_\+id }\end{DoxyParamCaption})}
+
+Destroy
+
+Destroys the current session.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$session\+\_\+id} & Session ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_session_handler_interface}{Session\+Handler\+Interface}}.
+
+\mbox{\Hypertarget{class_c_i___session__redis__driver_ae65e8f9d43d2c4ca690202c9d56d1d01}\label{class_c_i___session__redis__driver_ae65e8f9d43d2c4ca690202c9d56d1d01}} 
+\index{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver}!gc@{gc}}
+\index{gc@{gc}!C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver}}
+\subsubsection{\texorpdfstring{gc()}{gc()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver\+::gc (\begin{DoxyParamCaption}\item[{}]{\$maxlifetime }\end{DoxyParamCaption})}
+
+Garbage Collector
+
+Deletes expired sessions
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$maxlifetime} & Maximum lifetime of sessions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_session_handler_interface}{Session\+Handler\+Interface}}.
+
+\mbox{\Hypertarget{class_c_i___session__redis__driver_a3ed178ce66f815fee5bca28b0673260e}\label{class_c_i___session__redis__driver_a3ed178ce66f815fee5bca28b0673260e}} 
+\index{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver}!open@{open}}
+\index{open@{open}!C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver}}
+\subsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver\+::open (\begin{DoxyParamCaption}\item[{}]{\$save\+\_\+path,  }\item[{}]{\$name }\end{DoxyParamCaption})}
+
+Open
+
+Sanitizes save\+\_\+path and initializes connection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$save\+\_\+path} & Server path \\
+\hline
+string & {\em \$name} & Session cookie name, unused \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_session_handler_interface}{Session\+Handler\+Interface}}.
+
+\mbox{\Hypertarget{class_c_i___session__redis__driver_a8bc2c57310723fefb13205d211156d52}\label{class_c_i___session__redis__driver_a8bc2c57310723fefb13205d211156d52}} 
+\index{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver}!read@{read}}
+\index{read@{read}!C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver\+::read (\begin{DoxyParamCaption}\item[{}]{\$session\+\_\+id }\end{DoxyParamCaption})}
+
+Read
+
+Reads session data and acquires a lock
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$session\+\_\+id} & Session ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Serialized session data 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_session_handler_interface}{Session\+Handler\+Interface}}.
+
+\mbox{\Hypertarget{class_c_i___session__redis__driver_ada12678b34075dd6553b72bfad91a761}\label{class_c_i___session__redis__driver_ada12678b34075dd6553b72bfad91a761}} 
+\index{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver}!validate\+Session\+Id@{validate\+Session\+Id}}
+\index{validate\+Session\+Id@{validate\+Session\+Id}!C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver}}
+\subsubsection{\texorpdfstring{validate\+Session\+Id()}{validateSessionId()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver\+::validate\+Session\+Id (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Validate ID
+
+Checks whether a session ID record exists server-\/side, to enforce session.\+use\+\_\+strict\+\_\+mode.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___session__redis__driver_a08f684e434d6eeed20d446dfbeb7c3c8}\label{class_c_i___session__redis__driver_a08f684e434d6eeed20d446dfbeb7c3c8}} 
+\index{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver}!write@{write}}
+\index{write@{write}!C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Session\+\_\+redis\+\_\+driver\+::write (\begin{DoxyParamCaption}\item[{}]{\$session\+\_\+id,  }\item[{}]{\$session\+\_\+data }\end{DoxyParamCaption})}
+
+Write
+
+Writes (create / update) session data
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$session\+\_\+id} & Session ID \\
+\hline
+string & {\em \$session\+\_\+data} & Serialized session data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_session_handler_interface}{Session\+Handler\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/libraries/\+Session/drivers/Session\+\_\+redis\+\_\+driver.\+php\end{DoxyCompactItemize}

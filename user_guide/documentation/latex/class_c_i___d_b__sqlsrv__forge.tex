@@ -1,0 +1,111 @@
+\hypertarget{class_c_i___d_b__sqlsrv__forge}{}\section{C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge Class Reference}
+\label{class_c_i___d_b__sqlsrv__forge}\index{C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge}}
+Inheritance diagram for C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_i___d_b__sqlsrv__forge}
+\end{center}
+\end{figure}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___d_b__sqlsrv__forge_a594ef0636887a69ee577025692279ccb}{\+\_\+alter\+\_\+table}} (\$alter\+\_\+type, \$table, \$field)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__sqlsrv__forge_a9685c6d54caafe293603dc9b10317e7c}{\+\_\+attr\+\_\+type}} (\&\$attributes)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__sqlsrv__forge_a6a90c2930cbd40ed755fe95ea483a109}{\+\_\+attr\+\_\+auto\+\_\+increment}} (\&\$attributes, \&\$field)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__sqlsrv__forge_a13b02d77b52ef993f8e1ac830e2805c9}\label{class_c_i___d_b__sqlsrv__forge_a13b02d77b52ef993f8e1ac830e2805c9}} 
+{\bfseries \$\+\_\+create\+\_\+table\+\_\+if} = \char`\"{}IF N\+OT E\+X\+I\+S\+TS (S\+E\+L\+E\+CT $\ast$ F\+R\+OM sysobjects W\+H\+E\+RE ID = object\+\_\+id(N\textquotesingle{}\%s\textquotesingle{}) A\+ND O\+B\+J\+E\+C\+T\+P\+R\+O\+P\+E\+R\+TY(id, N\textquotesingle{}Is\+User\+Table\textquotesingle{}) = 1)\textbackslash{}n\+C\+R\+E\+A\+TE T\+A\+B\+LE\char`\"{}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__sqlsrv__forge_a9edeeac1ca300c8b9897225624946bed}\label{class_c_i___d_b__sqlsrv__forge_a9edeeac1ca300c8b9897225624946bed}} 
+{\bfseries \$\+\_\+drop\+\_\+table\+\_\+if} = \char`\"{}IF E\+X\+I\+S\+TS (S\+E\+L\+E\+CT $\ast$ F\+R\+OM sysobjects W\+H\+E\+RE ID = object\+\_\+id(N\textquotesingle{}\%s\textquotesingle{}) A\+ND O\+B\+J\+E\+C\+T\+P\+R\+O\+P\+E\+R\+TY(id, N\textquotesingle{}Is\+User\+Table\textquotesingle{}) = 1)\textbackslash{}n\+D\+R\+OP T\+A\+B\+LE\char`\"{}
+\item 
+{\bfseries \$\+\_\+unsigned}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___d_b__sqlsrv__forge_a594ef0636887a69ee577025692279ccb}\label{class_c_i___d_b__sqlsrv__forge_a594ef0636887a69ee577025692279ccb}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge}!\+\_\+alter\+\_\+table@{\+\_\+alter\+\_\+table}}
+\index{\+\_\+alter\+\_\+table@{\+\_\+alter\+\_\+table}!C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge}}
+\subsubsection{\texorpdfstring{\+\_\+alter\+\_\+table()}{\_alter\_table()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge\+::\+\_\+alter\+\_\+table (\begin{DoxyParamCaption}\item[{}]{\$alter\+\_\+type,  }\item[{}]{\$table,  }\item[{}]{\$field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+A\+L\+T\+ER T\+A\+B\+LE
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$alter\+\_\+type} & A\+L\+T\+ER type \\
+\hline
+string & {\em \$table} & Table name \\
+\hline
+mixed & {\em \$field} & Column definition \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__sqlsrv__forge_a6a90c2930cbd40ed755fe95ea483a109}\label{class_c_i___d_b__sqlsrv__forge_a6a90c2930cbd40ed755fe95ea483a109}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge}!\+\_\+attr\+\_\+auto\+\_\+increment@{\+\_\+attr\+\_\+auto\+\_\+increment}}
+\index{\+\_\+attr\+\_\+auto\+\_\+increment@{\+\_\+attr\+\_\+auto\+\_\+increment}!C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge}}
+\subsubsection{\texorpdfstring{\+\_\+attr\+\_\+auto\+\_\+increment()}{\_attr\_auto\_increment()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge\+::\+\_\+attr\+\_\+auto\+\_\+increment (\begin{DoxyParamCaption}\item[{\&}]{\$attributes,  }\item[{\&}]{\$field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Field attribute A\+U\+T\+O\+\_\+\+I\+N\+C\+R\+E\+M\+E\+NT
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \&\$attributes} & \\
+\hline
+array & {\em \&\$field} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__sqlsrv__forge_a9685c6d54caafe293603dc9b10317e7c}\label{class_c_i___d_b__sqlsrv__forge_a9685c6d54caafe293603dc9b10317e7c}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge}!\+\_\+attr\+\_\+type@{\+\_\+attr\+\_\+type}}
+\index{\+\_\+attr\+\_\+type@{\+\_\+attr\+\_\+type}!C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge}}
+\subsubsection{\texorpdfstring{\+\_\+attr\+\_\+type()}{\_attr\_type()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge\+::\+\_\+attr\+\_\+type (\begin{DoxyParamCaption}\item[{\&}]{\$attributes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Field attribute T\+Y\+PE
+
+Performs a data type mapping between different databases.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \&\$attributes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_i___d_b__sqlsrv__forge_aab04e35d1cfaa3682e437768c4106329}\label{class_c_i___d_b__sqlsrv__forge_aab04e35d1cfaa3682e437768c4106329}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge}!\$\+\_\+unsigned@{\$\+\_\+unsigned}}
+\index{\$\+\_\+unsigned@{\$\+\_\+unsigned}!C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge}}
+\subsubsection{\texorpdfstring{\$\+\_\+unsigned}{$\_unsigned}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+sqlsrv\+\_\+forge\+::\$\+\_\+unsigned\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= array(
+        \textcolor{stringliteral}{'TINYINT'}   => \textcolor{stringliteral}{'SMALLINT'},
+        \textcolor{stringliteral}{'SMALLINT'}  => \textcolor{stringliteral}{'INT'},
+        \textcolor{stringliteral}{'INT'}       => \textcolor{stringliteral}{'BIGINT'},
+        \textcolor{stringliteral}{'REAL'}      => \textcolor{stringliteral}{'FLOAT'}
+    )
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/database/drivers/sqlsrv/sqlsrv\+\_\+forge.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,167 @@
+\hypertarget{class_c_i___d_b__pdo__firebird__forge}{}\section{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge Class Reference}
+\label{class_c_i___d_b__pdo__firebird__forge}\index{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge}}
+Inheritance diagram for C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_i___d_b__pdo__firebird__forge}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___d_b__pdo__firebird__forge_a7784effa315a33db5c765af29445c531}{create\+\_\+database}} (\$db\+\_\+name)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__pdo__firebird__forge_a6481e8231789cb2d81f24b6599c8181f}{drop\+\_\+database}} (\$db\+\_\+name)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___d_b__pdo__firebird__forge_acb065cea86fac1f4f09192ed90aecfad}{\+\_\+alter\+\_\+table}} (\$alter\+\_\+type, \$table, \$field)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__pdo__firebird__forge_a951c875d7157f9d8934a79640439f87a}{\+\_\+process\+\_\+column}} (\$field)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__pdo__firebird__forge_a3503b37bd661dfd14ae2715eae1f73c5}{\+\_\+attr\+\_\+type}} (\&\$attributes)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__pdo__firebird__forge_a230f245caa7fbfc8d78ccdcc3bafd478}{\+\_\+attr\+\_\+auto\+\_\+increment}} (\&\$attributes, \&\$field)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__pdo__firebird__forge_a729b24dd004e6832810379d91ce27404}\label{class_c_i___d_b__pdo__firebird__forge_a729b24dd004e6832810379d91ce27404}} 
+{\bfseries \$\+\_\+rename\+\_\+table} = F\+A\+L\+SE
+\item 
+{\bfseries \$\+\_\+unsigned}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__pdo__firebird__forge_a7e3adfdf76e98bb85fd63a18c99df58f}\label{class_c_i___d_b__pdo__firebird__forge_a7e3adfdf76e98bb85fd63a18c99df58f}} 
+{\bfseries \$\+\_\+null} = \textquotesingle{}N\+U\+LL\textquotesingle{}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___d_b__pdo__firebird__forge_acb065cea86fac1f4f09192ed90aecfad}\label{class_c_i___d_b__pdo__firebird__forge_acb065cea86fac1f4f09192ed90aecfad}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge}!\+\_\+alter\+\_\+table@{\+\_\+alter\+\_\+table}}
+\index{\+\_\+alter\+\_\+table@{\+\_\+alter\+\_\+table}!C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge}}
+\subsubsection{\texorpdfstring{\+\_\+alter\+\_\+table()}{\_alter\_table()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge\+::\+\_\+alter\+\_\+table (\begin{DoxyParamCaption}\item[{}]{\$alter\+\_\+type,  }\item[{}]{\$table,  }\item[{}]{\$field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+A\+L\+T\+ER T\+A\+B\+LE
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$alter\+\_\+type} & A\+L\+T\+ER type \\
+\hline
+string & {\em \$table} & Table name \\
+\hline
+mixed & {\em \$field} & Column definition \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__pdo__firebird__forge_a230f245caa7fbfc8d78ccdcc3bafd478}\label{class_c_i___d_b__pdo__firebird__forge_a230f245caa7fbfc8d78ccdcc3bafd478}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge}!\+\_\+attr\+\_\+auto\+\_\+increment@{\+\_\+attr\+\_\+auto\+\_\+increment}}
+\index{\+\_\+attr\+\_\+auto\+\_\+increment@{\+\_\+attr\+\_\+auto\+\_\+increment}!C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge}}
+\subsubsection{\texorpdfstring{\+\_\+attr\+\_\+auto\+\_\+increment()}{\_attr\_auto\_increment()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge\+::\+\_\+attr\+\_\+auto\+\_\+increment (\begin{DoxyParamCaption}\item[{\&}]{\$attributes,  }\item[{\&}]{\$field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Field attribute A\+U\+T\+O\+\_\+\+I\+N\+C\+R\+E\+M\+E\+NT
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \&\$attributes} & \\
+\hline
+array & {\em \&\$field} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__pdo__firebird__forge_a3503b37bd661dfd14ae2715eae1f73c5}\label{class_c_i___d_b__pdo__firebird__forge_a3503b37bd661dfd14ae2715eae1f73c5}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge}!\+\_\+attr\+\_\+type@{\+\_\+attr\+\_\+type}}
+\index{\+\_\+attr\+\_\+type@{\+\_\+attr\+\_\+type}!C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge}}
+\subsubsection{\texorpdfstring{\+\_\+attr\+\_\+type()}{\_attr\_type()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge\+::\+\_\+attr\+\_\+type (\begin{DoxyParamCaption}\item[{\&}]{\$attributes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Field attribute T\+Y\+PE
+
+Performs a data type mapping between different databases.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \&\$attributes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__pdo__firebird__forge_a951c875d7157f9d8934a79640439f87a}\label{class_c_i___d_b__pdo__firebird__forge_a951c875d7157f9d8934a79640439f87a}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge}!\+\_\+process\+\_\+column@{\+\_\+process\+\_\+column}}
+\index{\+\_\+process\+\_\+column@{\+\_\+process\+\_\+column}!C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge}}
+\subsubsection{\texorpdfstring{\+\_\+process\+\_\+column()}{\_process\_column()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge\+::\+\_\+process\+\_\+column (\begin{DoxyParamCaption}\item[{}]{\$field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Process column
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$field} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__pdo__firebird__forge_a7784effa315a33db5c765af29445c531}\label{class_c_i___d_b__pdo__firebird__forge_a7784effa315a33db5c765af29445c531}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge}!create\+\_\+database@{create\+\_\+database}}
+\index{create\+\_\+database@{create\+\_\+database}!C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge}}
+\subsubsection{\texorpdfstring{create\+\_\+database()}{create\_database()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge\+::create\+\_\+database (\begin{DoxyParamCaption}\item[{}]{\$db\+\_\+name }\end{DoxyParamCaption})}
+
+Create database
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$db\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__pdo__firebird__forge_a6481e8231789cb2d81f24b6599c8181f}\label{class_c_i___d_b__pdo__firebird__forge_a6481e8231789cb2d81f24b6599c8181f}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge}!drop\+\_\+database@{drop\+\_\+database}}
+\index{drop\+\_\+database@{drop\+\_\+database}!C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge}}
+\subsubsection{\texorpdfstring{drop\+\_\+database()}{drop\_database()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge\+::drop\+\_\+database (\begin{DoxyParamCaption}\item[{}]{\$db\+\_\+name }\end{DoxyParamCaption})}
+
+Drop database
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$db\+\_\+name} & (ignored) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_i___d_b__pdo__firebird__forge_a849f63d5b234603655b6d34bc45fcc04}\label{class_c_i___d_b__pdo__firebird__forge_a849f63d5b234603655b6d34bc45fcc04}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge}!\$\+\_\+unsigned@{\$\+\_\+unsigned}}
+\index{\$\+\_\+unsigned@{\$\+\_\+unsigned}!C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge}}
+\subsubsection{\texorpdfstring{\$\+\_\+unsigned}{$\_unsigned}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+firebird\+\_\+forge\+::\$\+\_\+unsigned\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= array(
+        \textcolor{stringliteral}{'SMALLINT'}  => \textcolor{stringliteral}{'INTEGER'},
+        \textcolor{stringliteral}{'INTEGER'}   => \textcolor{stringliteral}{'INT64'},
+        \textcolor{stringliteral}{'FLOAT'}     => \textcolor{stringliteral}{'DOUBLE PRECISION'}
+    )
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/database/drivers/pdo/subdrivers/pdo\+\_\+firebird\+\_\+forge.\+php\end{DoxyCompactItemize}

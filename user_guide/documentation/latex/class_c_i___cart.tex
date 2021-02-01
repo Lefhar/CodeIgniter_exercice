@@ -1,0 +1,312 @@
+\hypertarget{class_c_i___cart}{}\section{C\+I\+\_\+\+Cart Class Reference}
+\label{class_c_i___cart}\index{C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___cart_a714238bb292818961e0055d626aeec6e}{\+\_\+\+\_\+construct}} (\$params=array())
+\item 
+\mbox{\hyperlink{class_c_i___cart_aa7dd4b1bdf5f75195d6c6d9525513057}{insert}} (\$items=array())
+\item 
+\mbox{\hyperlink{class_c_i___cart_a8839ef38bd59aa82545048a59b12dd51}{update}} (\$items=array())
+\item 
+\mbox{\hyperlink{class_c_i___cart_a56223f02085af765015279b8c644c20a}{total}} ()
+\item 
+\mbox{\hyperlink{class_c_i___cart_a6dff875ea45702dc16faaa6ce76d2dec}{remove}} (\$rowid)
+\item 
+\mbox{\hyperlink{class_c_i___cart_a580f84b961eed3024e6a9566e4a17874}{total\+\_\+items}} ()
+\item 
+\mbox{\hyperlink{class_c_i___cart_a7e15dcb9b66da6fbaf7298d47b2cd579}{contents}} (\$newest\+\_\+first=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___cart_a26c1e78928a44090df549fdf86c82ec8}{get\+\_\+item}} (\$row\+\_\+id)
+\item 
+\mbox{\hyperlink{class_c_i___cart_a4b13905bb2ac799b2572eb06bd106e11}{has\+\_\+options}} (\$row\+\_\+id=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___cart_ac15deabee56211701de5d6ae53ea4155}{product\+\_\+options}} (\$row\+\_\+id=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___cart_a7a83e8d522696e8fd780a4b884f2c1ba}{format\+\_\+number}} (\$n=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___cart_ae5c9fc32a2251e50bb6a3cb0529c411d}{destroy}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___cart_a7f1862ef4e360c8a0b9d0c690e319c0b}\label{class_c_i___cart_a7f1862ef4e360c8a0b9d0c690e319c0b}} 
+{\bfseries \$product\+\_\+id\+\_\+rules} = \textquotesingle{}\textbackslash{}.a-\/z0-\/9\+\_\+-\/\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___cart_a69785e82d01638ea5b66f8a43795be31}\label{class_c_i___cart_a69785e82d01638ea5b66f8a43795be31}} 
+{\bfseries \$product\+\_\+name\+\_\+rules} = \textquotesingle{}\textbackslash{}w \textbackslash{}-\/\textbackslash{}.\textbackslash{}\+:\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___cart_ac50c877b5f84615cca770345bdd45c64}\label{class_c_i___cart_ac50c877b5f84615cca770345bdd45c64}} 
+{\bfseries \$product\+\_\+name\+\_\+safe} = T\+R\+UE
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___cart_aef4c24fed660b4f1e088cc5dd6dce6b4}{\+\_\+insert}} (\$items=array())
+\item 
+\mbox{\hyperlink{class_c_i___cart_ad32aea31bd1348ef53d495d63f72569a}{\+\_\+update}} (\$items=array())
+\item 
+\mbox{\hyperlink{class_c_i___cart_a75d067fee3c0af4a956eb80f3224a4e4}{\+\_\+save\+\_\+cart}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___cart_a858abd3a8c1e1cf9fef92c84751c5434}\label{class_c_i___cart_a858abd3a8c1e1cf9fef92c84751c5434}} 
+{\bfseries \$\+CI}
+\item 
+\mbox{\Hypertarget{class_c_i___cart_a3cdc1924ea99edf61cfe8c9e06782f41}\label{class_c_i___cart_a3cdc1924ea99edf61cfe8c9e06782f41}} 
+{\bfseries \$\+\_\+cart\+\_\+contents} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_i___cart_a714238bb292818961e0055d626aeec6e}\label{class_c_i___cart_a714238bb292818961e0055d626aeec6e}} 
+\index{C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cart\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$params = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Shopping Class Constructor
+
+The constructor loads the Session class, used to store the shopping cart contents.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___cart_aef4c24fed660b4f1e088cc5dd6dce6b4}\label{class_c_i___cart_aef4c24fed660b4f1e088cc5dd6dce6b4}} 
+\index{C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}!\+\_\+insert@{\+\_\+insert}}
+\index{\+\_\+insert@{\+\_\+insert}!C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}}
+\subsubsection{\texorpdfstring{\+\_\+insert()}{\_insert()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cart\+::\+\_\+insert (\begin{DoxyParamCaption}\item[{}]{\$items = {\ttfamily array()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Insert
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cart_a75d067fee3c0af4a956eb80f3224a4e4}\label{class_c_i___cart_a75d067fee3c0af4a956eb80f3224a4e4}} 
+\index{C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}!\+\_\+save\+\_\+cart@{\+\_\+save\+\_\+cart}}
+\index{\+\_\+save\+\_\+cart@{\+\_\+save\+\_\+cart}!C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}}
+\subsubsection{\texorpdfstring{\+\_\+save\+\_\+cart()}{\_save\_cart()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cart\+::\+\_\+save\+\_\+cart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Save the cart array to the session DB
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cart_ad32aea31bd1348ef53d495d63f72569a}\label{class_c_i___cart_ad32aea31bd1348ef53d495d63f72569a}} 
+\index{C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}!\+\_\+update@{\+\_\+update}}
+\index{\+\_\+update@{\+\_\+update}!C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}}
+\subsubsection{\texorpdfstring{\+\_\+update()}{\_update()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cart\+::\+\_\+update (\begin{DoxyParamCaption}\item[{}]{\$items = {\ttfamily array()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Update the cart
+
+This function permits changing item properties. Typically it is called from the \char`\"{}view cart\char`\"{} page if a user makes changes to the quantity before checkout. That array must contain the rowid and quantity for each item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cart_a7e15dcb9b66da6fbaf7298d47b2cd579}\label{class_c_i___cart_a7e15dcb9b66da6fbaf7298d47b2cd579}} 
+\index{C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}!contents@{contents}}
+\index{contents@{contents}!C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}}
+\subsubsection{\texorpdfstring{contents()}{contents()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cart\+::contents (\begin{DoxyParamCaption}\item[{}]{\$newest\+\_\+first = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Cart Contents
+
+Returns the entire cart array
+
+
+\begin{DoxyParams}{Parameters}
+{\em bool} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cart_ae5c9fc32a2251e50bb6a3cb0529c411d}\label{class_c_i___cart_ae5c9fc32a2251e50bb6a3cb0529c411d}} 
+\index{C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}!destroy@{destroy}}
+\index{destroy@{destroy}!C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cart\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destroy the cart
+
+Empties the cart and kills the session
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cart_a7a83e8d522696e8fd780a4b884f2c1ba}\label{class_c_i___cart_a7a83e8d522696e8fd780a4b884f2c1ba}} 
+\index{C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}!format\+\_\+number@{format\+\_\+number}}
+\index{format\+\_\+number@{format\+\_\+number}!C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}}
+\subsubsection{\texorpdfstring{format\+\_\+number()}{format\_number()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cart\+::format\+\_\+number (\begin{DoxyParamCaption}\item[{}]{\$n = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Format Number
+
+Returns the supplied number with commas and a decimal point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em float} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cart_a26c1e78928a44090df549fdf86c82ec8}\label{class_c_i___cart_a26c1e78928a44090df549fdf86c82ec8}} 
+\index{C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}!get\+\_\+item@{get\+\_\+item}}
+\index{get\+\_\+item@{get\+\_\+item}!C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}}
+\subsubsection{\texorpdfstring{get\+\_\+item()}{get\_item()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cart\+::get\+\_\+item (\begin{DoxyParamCaption}\item[{}]{\$row\+\_\+id }\end{DoxyParamCaption})}
+
+Get cart item
+
+Returns the details of a specific item in the cart
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$row\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cart_a4b13905bb2ac799b2572eb06bd106e11}\label{class_c_i___cart_a4b13905bb2ac799b2572eb06bd106e11}} 
+\index{C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}!has\+\_\+options@{has\+\_\+options}}
+\index{has\+\_\+options@{has\+\_\+options}!C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}}
+\subsubsection{\texorpdfstring{has\+\_\+options()}{has\_options()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cart\+::has\+\_\+options (\begin{DoxyParamCaption}\item[{}]{\$row\+\_\+id = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Has options
+
+Returns T\+R\+UE if the rowid passed to this function correlates to an item that has options associated with it.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$row\+\_\+id} & = \textquotesingle{}\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cart_aa7dd4b1bdf5f75195d6c6d9525513057}\label{class_c_i___cart_aa7dd4b1bdf5f75195d6c6d9525513057}} 
+\index{C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}!insert@{insert}}
+\index{insert@{insert}!C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cart\+::insert (\begin{DoxyParamCaption}\item[{}]{\$items = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Insert items into the cart and save it to the session table
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cart_ac15deabee56211701de5d6ae53ea4155}\label{class_c_i___cart_ac15deabee56211701de5d6ae53ea4155}} 
+\index{C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}!product\+\_\+options@{product\+\_\+options}}
+\index{product\+\_\+options@{product\+\_\+options}!C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}}
+\subsubsection{\texorpdfstring{product\+\_\+options()}{product\_options()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cart\+::product\+\_\+options (\begin{DoxyParamCaption}\item[{}]{\$row\+\_\+id = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Product options
+
+Returns the an array of options, for a particular product row ID
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$row\+\_\+id} & = \textquotesingle{}\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cart_a6dff875ea45702dc16faaa6ce76d2dec}\label{class_c_i___cart_a6dff875ea45702dc16faaa6ce76d2dec}} 
+\index{C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}!remove@{remove}}
+\index{remove@{remove}!C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cart\+::remove (\begin{DoxyParamCaption}\item[{}]{\$rowid }\end{DoxyParamCaption})}
+
+Remove Item
+
+Removes an item from the cart
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cart_a56223f02085af765015279b8c644c20a}\label{class_c_i___cart_a56223f02085af765015279b8c644c20a}} 
+\index{C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}!total@{total}}
+\index{total@{total}!C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}}
+\subsubsection{\texorpdfstring{total()}{total()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cart\+::total (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Cart Total
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cart_a580f84b961eed3024e6a9566e4a17874}\label{class_c_i___cart_a580f84b961eed3024e6a9566e4a17874}} 
+\index{C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}!total\+\_\+items@{total\+\_\+items}}
+\index{total\+\_\+items@{total\+\_\+items}!C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}}
+\subsubsection{\texorpdfstring{total\+\_\+items()}{total\_items()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cart\+::total\+\_\+items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Total Items
+
+Returns the total item count
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cart_a8839ef38bd59aa82545048a59b12dd51}\label{class_c_i___cart_a8839ef38bd59aa82545048a59b12dd51}} 
+\index{C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}!update@{update}}
+\index{update@{update}!C\+I\+\_\+\+Cart@{C\+I\+\_\+\+Cart}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cart\+::update (\begin{DoxyParamCaption}\item[{}]{\$items = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Update the cart
+
+This function permits the quantity of a given item to be changed. Typically it is called from the \char`\"{}view cart\char`\"{} page if a user makes changes to the quantity before checkout. That array must contain the product ID and quantity for each item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/libraries/Cart.\+php\end{DoxyCompactItemize}

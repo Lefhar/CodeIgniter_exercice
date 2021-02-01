@@ -1,0 +1,242 @@
+\hypertarget{class_c_i___profiler}{}\section{C\+I\+\_\+\+Profiler Class Reference}
+\label{class_c_i___profiler}\index{C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___profiler_ae0ad0e7bdef4430becc2fdbac1a4951e}{\+\_\+\+\_\+construct}} (\$config=array())
+\item 
+\mbox{\hyperlink{class_c_i___profiler_afce81059c9f8e319e88d199666e15c14}{set\+\_\+sections}} (\$config)
+\item 
+\mbox{\hyperlink{class_c_i___profiler_a3eff5c3886017189aa6a42a6c0de851f}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___profiler_a43f5ecdbab2eb8a10a75fdf80b98f471}{\+\_\+compile\+\_\+benchmarks}} ()
+\item 
+\mbox{\hyperlink{class_c_i___profiler_a8db671eea751d5cb808e87c4d293501c}{\+\_\+compile\+\_\+queries}} ()
+\item 
+\mbox{\hyperlink{class_c_i___profiler_a4f477c68d391a5b43bbf769d9d7844b3}{\+\_\+compile\+\_\+get}} ()
+\item 
+\mbox{\hyperlink{class_c_i___profiler_a0a20230a4bb12d807c48dd2425840c72}{\+\_\+compile\+\_\+post}} ()
+\item 
+\mbox{\hyperlink{class_c_i___profiler_ad44a165ff25148b77345c81149b636b5}{\+\_\+compile\+\_\+uri\+\_\+string}} ()
+\item 
+\mbox{\hyperlink{class_c_i___profiler_a039a27f27a6ec3e43eee49ff3d93fa28}{\+\_\+compile\+\_\+controller\+\_\+info}} ()
+\item 
+\mbox{\hyperlink{class_c_i___profiler_a8f2b2b6dcdb21c3099e080c761cace27}{\+\_\+compile\+\_\+memory\+\_\+usage}} ()
+\item 
+\mbox{\hyperlink{class_c_i___profiler_a60609a2ac7c2e4cd73aaf0970663b25f}{\+\_\+compile\+\_\+http\+\_\+headers}} ()
+\item 
+\mbox{\hyperlink{class_c_i___profiler_ace753d141bc10001e04a49db24525b5a}{\+\_\+compile\+\_\+config}} ()
+\item 
+\mbox{\hyperlink{class_c_i___profiler_a4b7fc4d0c796ae249071ff818abd559b}{\+\_\+compile\+\_\+session\+\_\+data}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$\+\_\+available\+\_\+sections}
+\item 
+\mbox{\Hypertarget{class_c_i___profiler_a20df25c5b24e093794cd26fcc8fab8af}\label{class_c_i___profiler_a20df25c5b24e093794cd26fcc8fab8af}} 
+{\bfseries \$\+\_\+query\+\_\+toggle\+\_\+count} = 25
+\item 
+\mbox{\Hypertarget{class_c_i___profiler_a9731fd08f10058d88d09cac5de5ca22f}\label{class_c_i___profiler_a9731fd08f10058d88d09cac5de5ca22f}} 
+{\bfseries \$\+CI}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_i___profiler_ae0ad0e7bdef4430becc2fdbac1a4951e}\label{class_c_i___profiler_ae0ad0e7bdef4430becc2fdbac1a4951e}} 
+\index{C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Profiler\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$config = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Class constructor
+
+Initialize Profiler
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & Parameters \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___profiler_a43f5ecdbab2eb8a10a75fdf80b98f471}\label{class_c_i___profiler_a43f5ecdbab2eb8a10a75fdf80b98f471}} 
+\index{C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}!\+\_\+compile\+\_\+benchmarks@{\+\_\+compile\+\_\+benchmarks}}
+\index{\+\_\+compile\+\_\+benchmarks@{\+\_\+compile\+\_\+benchmarks}!C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}}
+\subsubsection{\texorpdfstring{\+\_\+compile\+\_\+benchmarks()}{\_compile\_benchmarks()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Profiler\+::\+\_\+compile\+\_\+benchmarks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Auto Profiler
+
+This function cycles through the entire array of mark points and matches any two points that are named identically (ending in \char`\"{}\+\_\+start\char`\"{} and \char`\"{}\+\_\+end\char`\"{} respectively). It then compiles the execution times for all points and returns it as an array
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___profiler_ace753d141bc10001e04a49db24525b5a}\label{class_c_i___profiler_ace753d141bc10001e04a49db24525b5a}} 
+\index{C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}!\+\_\+compile\+\_\+config@{\+\_\+compile\+\_\+config}}
+\index{\+\_\+compile\+\_\+config@{\+\_\+compile\+\_\+config}!C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}}
+\subsubsection{\texorpdfstring{\+\_\+compile\+\_\+config()}{\_compile\_config()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Profiler\+::\+\_\+compile\+\_\+config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Compile config information
+
+Lists developer config variables
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___profiler_a039a27f27a6ec3e43eee49ff3d93fa28}\label{class_c_i___profiler_a039a27f27a6ec3e43eee49ff3d93fa28}} 
+\index{C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}!\+\_\+compile\+\_\+controller\+\_\+info@{\+\_\+compile\+\_\+controller\+\_\+info}}
+\index{\+\_\+compile\+\_\+controller\+\_\+info@{\+\_\+compile\+\_\+controller\+\_\+info}!C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}}
+\subsubsection{\texorpdfstring{\+\_\+compile\+\_\+controller\+\_\+info()}{\_compile\_controller\_info()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Profiler\+::\+\_\+compile\+\_\+controller\+\_\+info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Show the controller and function that were called
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___profiler_a4f477c68d391a5b43bbf769d9d7844b3}\label{class_c_i___profiler_a4f477c68d391a5b43bbf769d9d7844b3}} 
+\index{C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}!\+\_\+compile\+\_\+get@{\+\_\+compile\+\_\+get}}
+\index{\+\_\+compile\+\_\+get@{\+\_\+compile\+\_\+get}!C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}}
+\subsubsection{\texorpdfstring{\+\_\+compile\+\_\+get()}{\_compile\_get()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Profiler\+::\+\_\+compile\+\_\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Compile \$\+\_\+\+G\+ET Data
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___profiler_a60609a2ac7c2e4cd73aaf0970663b25f}\label{class_c_i___profiler_a60609a2ac7c2e4cd73aaf0970663b25f}} 
+\index{C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}!\+\_\+compile\+\_\+http\+\_\+headers@{\+\_\+compile\+\_\+http\+\_\+headers}}
+\index{\+\_\+compile\+\_\+http\+\_\+headers@{\+\_\+compile\+\_\+http\+\_\+headers}!C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}}
+\subsubsection{\texorpdfstring{\+\_\+compile\+\_\+http\+\_\+headers()}{\_compile\_http\_headers()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Profiler\+::\+\_\+compile\+\_\+http\+\_\+headers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Compile header information
+
+Lists H\+T\+TP headers
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___profiler_a8f2b2b6dcdb21c3099e080c761cace27}\label{class_c_i___profiler_a8f2b2b6dcdb21c3099e080c761cace27}} 
+\index{C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}!\+\_\+compile\+\_\+memory\+\_\+usage@{\+\_\+compile\+\_\+memory\+\_\+usage}}
+\index{\+\_\+compile\+\_\+memory\+\_\+usage@{\+\_\+compile\+\_\+memory\+\_\+usage}!C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}}
+\subsubsection{\texorpdfstring{\+\_\+compile\+\_\+memory\+\_\+usage()}{\_compile\_memory\_usage()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Profiler\+::\+\_\+compile\+\_\+memory\+\_\+usage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Compile memory usage
+
+Display total used memory
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___profiler_a0a20230a4bb12d807c48dd2425840c72}\label{class_c_i___profiler_a0a20230a4bb12d807c48dd2425840c72}} 
+\index{C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}!\+\_\+compile\+\_\+post@{\+\_\+compile\+\_\+post}}
+\index{\+\_\+compile\+\_\+post@{\+\_\+compile\+\_\+post}!C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}}
+\subsubsection{\texorpdfstring{\+\_\+compile\+\_\+post()}{\_compile\_post()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Profiler\+::\+\_\+compile\+\_\+post (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Compile \$\+\_\+\+P\+O\+ST Data
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___profiler_a8db671eea751d5cb808e87c4d293501c}\label{class_c_i___profiler_a8db671eea751d5cb808e87c4d293501c}} 
+\index{C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}!\+\_\+compile\+\_\+queries@{\+\_\+compile\+\_\+queries}}
+\index{\+\_\+compile\+\_\+queries@{\+\_\+compile\+\_\+queries}!C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}}
+\subsubsection{\texorpdfstring{\+\_\+compile\+\_\+queries()}{\_compile\_queries()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Profiler\+::\+\_\+compile\+\_\+queries (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Compile Queries
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___profiler_a4b7fc4d0c796ae249071ff818abd559b}\label{class_c_i___profiler_a4b7fc4d0c796ae249071ff818abd559b}} 
+\index{C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}!\+\_\+compile\+\_\+session\+\_\+data@{\+\_\+compile\+\_\+session\+\_\+data}}
+\index{\+\_\+compile\+\_\+session\+\_\+data@{\+\_\+compile\+\_\+session\+\_\+data}!C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}}
+\subsubsection{\texorpdfstring{\+\_\+compile\+\_\+session\+\_\+data()}{\_compile\_session\_data()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Profiler\+::\+\_\+compile\+\_\+session\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Compile session userdata
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___profiler_ad44a165ff25148b77345c81149b636b5}\label{class_c_i___profiler_ad44a165ff25148b77345c81149b636b5}} 
+\index{C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}!\+\_\+compile\+\_\+uri\+\_\+string@{\+\_\+compile\+\_\+uri\+\_\+string}}
+\index{\+\_\+compile\+\_\+uri\+\_\+string@{\+\_\+compile\+\_\+uri\+\_\+string}!C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}}
+\subsubsection{\texorpdfstring{\+\_\+compile\+\_\+uri\+\_\+string()}{\_compile\_uri\_string()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Profiler\+::\+\_\+compile\+\_\+uri\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Show query string
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___profiler_a3eff5c3886017189aa6a42a6c0de851f}\label{class_c_i___profiler_a3eff5c3886017189aa6a42a6c0de851f}} 
+\index{C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}!run@{run}}
+\index{run@{run}!C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Profiler\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Run the Profiler
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___profiler_afce81059c9f8e319e88d199666e15c14}\label{class_c_i___profiler_afce81059c9f8e319e88d199666e15c14}} 
+\index{C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}!set\+\_\+sections@{set\+\_\+sections}}
+\index{set\+\_\+sections@{set\+\_\+sections}!C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}}
+\subsubsection{\texorpdfstring{set\+\_\+sections()}{set\_sections()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Profiler\+::set\+\_\+sections (\begin{DoxyParamCaption}\item[{}]{\$config }\end{DoxyParamCaption})}
+
+Set Sections
+
+Sets the private {\itshape compile}$\ast$ properties to enable/disable Profiler sections
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_i___profiler_a7493e9e62be8ec5f6ce3dbef68cf6594}\label{class_c_i___profiler_a7493e9e62be8ec5f6ce3dbef68cf6594}} 
+\index{C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}!\$\+\_\+available\+\_\+sections@{\$\+\_\+available\+\_\+sections}}
+\index{\$\+\_\+available\+\_\+sections@{\$\+\_\+available\+\_\+sections}!C\+I\+\_\+\+Profiler@{C\+I\+\_\+\+Profiler}}
+\subsubsection{\texorpdfstring{\$\+\_\+available\+\_\+sections}{$\_available\_sections}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Profiler\+::\$\+\_\+available\+\_\+sections\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= array(
+        \textcolor{stringliteral}{'benchmarks'},
+        \textcolor{stringliteral}{'get'},
+        \textcolor{stringliteral}{'memory\_usage'},
+        \textcolor{stringliteral}{'post'},
+        \textcolor{stringliteral}{'uri\_string'},
+        \textcolor{stringliteral}{'controller\_info'},
+        \textcolor{stringliteral}{'queries'},
+        \textcolor{stringliteral}{'http\_headers'},
+        \textcolor{stringliteral}{'session\_data'},
+        \textcolor{stringliteral}{'config'}
+    )
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/libraries/Profiler.\+php\end{DoxyCompactItemize}

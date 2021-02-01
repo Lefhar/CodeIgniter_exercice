@@ -1,0 +1,149 @@
+\hypertarget{class_c_i___typography}{}\section{C\+I\+\_\+\+Typography Class Reference}
+\label{class_c_i___typography}\index{C\+I\+\_\+\+Typography@{C\+I\+\_\+\+Typography}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___typography_a26ee2b1a53890470e05e49df7f698d33}{auto\+\_\+typography}} (\$str, \$reduce\+\_\+linebreaks=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___typography_adda8d4b7710214f638ed761a6e035fbc}{format\+\_\+characters}} (\$str)
+\item 
+\mbox{\hyperlink{class_c_i___typography_a6c9560b1e1b7d2e290cb29c8df935f06}{nl2br\+\_\+except\+\_\+pre}} (\$str)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___typography_a78b9f1b8fd85603aab2f14638e381d94}\label{class_c_i___typography_a78b9f1b8fd85603aab2f14638e381d94}} 
+{\bfseries \$block\+\_\+elements} = \textquotesingle{}address$\vert$blockquote$\vert$div$\vert$dl$\vert$fieldset$\vert$form$\vert$h\textbackslash{}d$\vert$hr$\vert$noscript$\vert$object$\vert$ol$\vert$p$\vert$pre$\vert$script$\vert$table$\vert$ul\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___typography_aa0ee593d246615f0c0bab1c0fa2e03e8}\label{class_c_i___typography_aa0ee593d246615f0c0bab1c0fa2e03e8}} 
+{\bfseries \$skip\+\_\+elements} = \textquotesingle{}p$\vert$pre$\vert$ol$\vert$ul$\vert$dl$\vert$object$\vert$table$\vert$h\textbackslash{}d\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___typography_a2772dc4c22f30d52e96cc09a440e5080}\label{class_c_i___typography_a2772dc4c22f30d52e96cc09a440e5080}} 
+{\bfseries \$inline\+\_\+elements} = \textquotesingle{}a$\vert$abbr$\vert$acronym$\vert$b$\vert$bdo$\vert$big$\vert$br$\vert$button$\vert$cite$\vert$code$\vert$del$\vert$dfn$\vert$em$\vert$i$\vert$img$\vert$ins$\vert$input$\vert$label$\vert$map$\vert$kbd$\vert$q$\vert$samp$\vert$select$\vert$small$\vert$span$\vert$strong$\vert$sub$\vert$sup$\vert$textarea$\vert$tt$\vert$var\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___typography_ae246801dd320c8171c283e144682ba80}\label{class_c_i___typography_ae246801dd320c8171c283e144682ba80}} 
+{\bfseries \$inner\+\_\+block\+\_\+required} = array(\textquotesingle{}blockquote\textquotesingle{})
+\item 
+\mbox{\Hypertarget{class_c_i___typography_a846c63faf41361c9ecbfe781e9a198e6}\label{class_c_i___typography_a846c63faf41361c9ecbfe781e9a198e6}} 
+{\bfseries \$last\+\_\+block\+\_\+element} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___typography_a77b88545cea8a0fdd264b0c6f5b142e2}\label{class_c_i___typography_a77b88545cea8a0fdd264b0c6f5b142e2}} 
+{\bfseries \$protect\+\_\+braced\+\_\+quotes} = F\+A\+L\+SE
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___typography_aa3b84cf3b14fe86bad4365e482108814}{\+\_\+format\+\_\+newlines}} (\$str)
+\item 
+\mbox{\hyperlink{class_c_i___typography_a8ba7063a75c8d4c04e6067c98e32d44b}{\+\_\+protect\+\_\+characters}} (\$match)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___typography_aa3b84cf3b14fe86bad4365e482108814}\label{class_c_i___typography_aa3b84cf3b14fe86bad4365e482108814}} 
+\index{C\+I\+\_\+\+Typography@{C\+I\+\_\+\+Typography}!\+\_\+format\+\_\+newlines@{\+\_\+format\+\_\+newlines}}
+\index{\+\_\+format\+\_\+newlines@{\+\_\+format\+\_\+newlines}!C\+I\+\_\+\+Typography@{C\+I\+\_\+\+Typography}}
+\subsubsection{\texorpdfstring{\+\_\+format\+\_\+newlines()}{\_format\_newlines()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Typography\+::\+\_\+format\+\_\+newlines (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Format Newlines
+
+Converts newline characters into either 
+
+tags or ~\newline
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___typography_a8ba7063a75c8d4c04e6067c98e32d44b}\label{class_c_i___typography_a8ba7063a75c8d4c04e6067c98e32d44b}} 
+\index{C\+I\+\_\+\+Typography@{C\+I\+\_\+\+Typography}!\+\_\+protect\+\_\+characters@{\+\_\+protect\+\_\+characters}}
+\index{\+\_\+protect\+\_\+characters@{\+\_\+protect\+\_\+characters}!C\+I\+\_\+\+Typography@{C\+I\+\_\+\+Typography}}
+\subsubsection{\texorpdfstring{\+\_\+protect\+\_\+characters()}{\_protect\_characters()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Typography\+::\+\_\+protect\+\_\+characters (\begin{DoxyParamCaption}\item[{}]{\$match }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Protect Characters
+
+Protects special characters from being formatted later We don\textquotesingle{}t want quotes converted within tags so we\textquotesingle{}ll temporarily convert them to \{\} and \{\} and we don\textquotesingle{}t want double dashes converted to emdash entities, so they are marked with \{\} likewise double spaces are converted to \{\} to prevent entity conversion
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___typography_a26ee2b1a53890470e05e49df7f698d33}\label{class_c_i___typography_a26ee2b1a53890470e05e49df7f698d33}} 
+\index{C\+I\+\_\+\+Typography@{C\+I\+\_\+\+Typography}!auto\+\_\+typography@{auto\+\_\+typography}}
+\index{auto\+\_\+typography@{auto\+\_\+typography}!C\+I\+\_\+\+Typography@{C\+I\+\_\+\+Typography}}
+\subsubsection{\texorpdfstring{auto\+\_\+typography()}{auto\_typography()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Typography\+::auto\+\_\+typography (\begin{DoxyParamCaption}\item[{}]{\$str,  }\item[{}]{\$reduce\+\_\+linebreaks = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Auto Typography
+
+This function converts text, making it typographically correct\+:
+\begin{DoxyItemize}
+\item Converts double spaces into paragraphs.
+\item Converts single line breaks into ~\newline
+ tags
+\item Converts single and double quotes into correctly facing curly quote entities.
+\item Converts three dots into ellipsis.
+\item Converts double dashes into em-\/dashes.
+\item Converts two spaces into entities
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+{\em bool} & whether to reduce more then two consecutive newlines to two \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___typography_adda8d4b7710214f638ed761a6e035fbc}\label{class_c_i___typography_adda8d4b7710214f638ed761a6e035fbc}} 
+\index{C\+I\+\_\+\+Typography@{C\+I\+\_\+\+Typography}!format\+\_\+characters@{format\+\_\+characters}}
+\index{format\+\_\+characters@{format\+\_\+characters}!C\+I\+\_\+\+Typography@{C\+I\+\_\+\+Typography}}
+\subsubsection{\texorpdfstring{format\+\_\+characters()}{format\_characters()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Typography\+::format\+\_\+characters (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})}
+
+Format Characters
+
+This function mainly converts double and single quotes to curly entities, but it also converts em-\/dashes, double spaces, and ampersands
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___typography_a6c9560b1e1b7d2e290cb29c8df935f06}\label{class_c_i___typography_a6c9560b1e1b7d2e290cb29c8df935f06}} 
+\index{C\+I\+\_\+\+Typography@{C\+I\+\_\+\+Typography}!nl2br\+\_\+except\+\_\+pre@{nl2br\+\_\+except\+\_\+pre}}
+\index{nl2br\+\_\+except\+\_\+pre@{nl2br\+\_\+except\+\_\+pre}!C\+I\+\_\+\+Typography@{C\+I\+\_\+\+Typography}}
+\subsubsection{\texorpdfstring{nl2br\+\_\+except\+\_\+pre()}{nl2br\_except\_pre()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Typography\+::nl2br\+\_\+except\+\_\+pre (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})}
+
+Convert newlines to H\+T\+ML line breaks except within P\+RE tags
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/libraries/Typography.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,175 @@
+\hypertarget{class_c_i___d_b__pdo__sqlite__forge}{}\section{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge Class Reference}
+\label{class_c_i___d_b__pdo__sqlite__forge}\index{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge}}
+Inheritance diagram for C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_i___d_b__pdo__sqlite__forge}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___d_b__pdo__sqlite__forge_a32f804812e66a892ba61c22224423d04}{\+\_\+\+\_\+construct}} (\&\$db)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__pdo__sqlite__forge_a78d082ec6c0671949de9b489b6f5ad81}{create\+\_\+database}} (\$db\+\_\+name)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__pdo__sqlite__forge_af66ce05b125dbe42af29445e54ba77c8}{drop\+\_\+database}} (\$db\+\_\+name)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___d_b__pdo__sqlite__forge_aea330402dca6f4190ee3a023b2fca237}{\+\_\+alter\+\_\+table}} (\$alter\+\_\+type, \$table, \$field)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__pdo__sqlite__forge_a6a330b5cedd77fb4bbac101163e3fcbd}{\+\_\+process\+\_\+column}} (\$field)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__pdo__sqlite__forge_a956de01e531adcd715ce9edec5c4a6c0}{\+\_\+attr\+\_\+type}} (\&\$attributes)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__pdo__sqlite__forge_a87d0e152f3222319f453b5927c5e07b1}{\+\_\+attr\+\_\+auto\+\_\+increment}} (\&\$attributes, \&\$field)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__pdo__sqlite__forge_ab2fa01f9f3ed4f19c7358ebd417c5fc1}\label{class_c_i___d_b__pdo__sqlite__forge_ab2fa01f9f3ed4f19c7358ebd417c5fc1}} 
+{\bfseries \$\+\_\+create\+\_\+table\+\_\+if} = \textquotesingle{}C\+R\+E\+A\+TE T\+A\+B\+LE IF N\+OT E\+X\+I\+S\+TS\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__pdo__sqlite__forge_a86c22884c27bfec523b0929ea30cd381}\label{class_c_i___d_b__pdo__sqlite__forge_a86c22884c27bfec523b0929ea30cd381}} 
+{\bfseries \$\+\_\+drop\+\_\+table\+\_\+if} = \textquotesingle{}D\+R\+OP T\+A\+B\+LE IF E\+X\+I\+S\+TS\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__pdo__sqlite__forge_a86da507f8f4b370fb56607a8e6fcc586}\label{class_c_i___d_b__pdo__sqlite__forge_a86da507f8f4b370fb56607a8e6fcc586}} 
+{\bfseries \$\+\_\+unsigned} = F\+A\+L\+SE
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__pdo__sqlite__forge_a7184e33b8615e15c414fac2f997e6676}\label{class_c_i___d_b__pdo__sqlite__forge_a7184e33b8615e15c414fac2f997e6676}} 
+{\bfseries \$\+\_\+null} = \textquotesingle{}N\+U\+LL\textquotesingle{}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_i___d_b__pdo__sqlite__forge_a32f804812e66a892ba61c22224423d04}\label{class_c_i___d_b__pdo__sqlite__forge_a32f804812e66a892ba61c22224423d04}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\&}]{\$db }\end{DoxyParamCaption})}
+
+Class constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \&\$db} & Database object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___d_b__pdo__sqlite__forge_aea330402dca6f4190ee3a023b2fca237}\label{class_c_i___d_b__pdo__sqlite__forge_aea330402dca6f4190ee3a023b2fca237}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge}!\+\_\+alter\+\_\+table@{\+\_\+alter\+\_\+table}}
+\index{\+\_\+alter\+\_\+table@{\+\_\+alter\+\_\+table}!C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge}}
+\subsubsection{\texorpdfstring{\+\_\+alter\+\_\+table()}{\_alter\_table()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge\+::\+\_\+alter\+\_\+table (\begin{DoxyParamCaption}\item[{}]{\$alter\+\_\+type,  }\item[{}]{\$table,  }\item[{}]{\$field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+A\+L\+T\+ER T\+A\+B\+LE
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$alter\+\_\+type} & A\+L\+T\+ER type \\
+\hline
+string & {\em \$table} & Table name \\
+\hline
+mixed & {\em \$field} & Column definition \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__pdo__sqlite__forge_a87d0e152f3222319f453b5927c5e07b1}\label{class_c_i___d_b__pdo__sqlite__forge_a87d0e152f3222319f453b5927c5e07b1}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge}!\+\_\+attr\+\_\+auto\+\_\+increment@{\+\_\+attr\+\_\+auto\+\_\+increment}}
+\index{\+\_\+attr\+\_\+auto\+\_\+increment@{\+\_\+attr\+\_\+auto\+\_\+increment}!C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge}}
+\subsubsection{\texorpdfstring{\+\_\+attr\+\_\+auto\+\_\+increment()}{\_attr\_auto\_increment()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge\+::\+\_\+attr\+\_\+auto\+\_\+increment (\begin{DoxyParamCaption}\item[{\&}]{\$attributes,  }\item[{\&}]{\$field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Field attribute A\+U\+T\+O\+\_\+\+I\+N\+C\+R\+E\+M\+E\+NT
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \&\$attributes} & \\
+\hline
+array & {\em \&\$field} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__pdo__sqlite__forge_a956de01e531adcd715ce9edec5c4a6c0}\label{class_c_i___d_b__pdo__sqlite__forge_a956de01e531adcd715ce9edec5c4a6c0}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge}!\+\_\+attr\+\_\+type@{\+\_\+attr\+\_\+type}}
+\index{\+\_\+attr\+\_\+type@{\+\_\+attr\+\_\+type}!C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge}}
+\subsubsection{\texorpdfstring{\+\_\+attr\+\_\+type()}{\_attr\_type()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge\+::\+\_\+attr\+\_\+type (\begin{DoxyParamCaption}\item[{\&}]{\$attributes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Field attribute T\+Y\+PE
+
+Performs a data type mapping between different databases.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \&\$attributes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__pdo__sqlite__forge_a6a330b5cedd77fb4bbac101163e3fcbd}\label{class_c_i___d_b__pdo__sqlite__forge_a6a330b5cedd77fb4bbac101163e3fcbd}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge}!\+\_\+process\+\_\+column@{\+\_\+process\+\_\+column}}
+\index{\+\_\+process\+\_\+column@{\+\_\+process\+\_\+column}!C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge}}
+\subsubsection{\texorpdfstring{\+\_\+process\+\_\+column()}{\_process\_column()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge\+::\+\_\+process\+\_\+column (\begin{DoxyParamCaption}\item[{}]{\$field }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Process column
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$field} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__pdo__sqlite__forge_a78d082ec6c0671949de9b489b6f5ad81}\label{class_c_i___d_b__pdo__sqlite__forge_a78d082ec6c0671949de9b489b6f5ad81}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge}!create\+\_\+database@{create\+\_\+database}}
+\index{create\+\_\+database@{create\+\_\+database}!C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge}}
+\subsubsection{\texorpdfstring{create\+\_\+database()}{create\_database()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge\+::create\+\_\+database (\begin{DoxyParamCaption}\item[{}]{\$db\+\_\+name }\end{DoxyParamCaption})}
+
+Create database
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$db\+\_\+name} & (ignored) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__pdo__sqlite__forge_af66ce05b125dbe42af29445e54ba77c8}\label{class_c_i___d_b__pdo__sqlite__forge_af66ce05b125dbe42af29445e54ba77c8}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge}!drop\+\_\+database@{drop\+\_\+database}}
+\index{drop\+\_\+database@{drop\+\_\+database}!C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge}}
+\subsubsection{\texorpdfstring{drop\+\_\+database()}{drop\_database()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+sqlite\+\_\+forge\+::drop\+\_\+database (\begin{DoxyParamCaption}\item[{}]{\$db\+\_\+name }\end{DoxyParamCaption})}
+
+Drop database
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$db\+\_\+name} & (ignored) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/database/drivers/pdo/subdrivers/pdo\+\_\+sqlite\+\_\+forge.\+php\end{DoxyCompactItemize}

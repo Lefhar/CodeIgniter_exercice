@@ -1,0 +1,331 @@
+\hypertarget{class_c_i___trackback}{}\section{C\+I\+\_\+\+Trackback Class Reference}
+\label{class_c_i___trackback}\index{C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___trackback_a6a46599ac08641cbfc4f82156c47222a}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_c_i___trackback_a53a7142a0e7dd1ad08467f8320883cf9}{send}} (\$tb\+\_\+data)
+\item 
+\mbox{\hyperlink{class_c_i___trackback_a3959a94921442ab24dbe71696aceff16}{receive}} ()
+\item 
+\mbox{\hyperlink{class_c_i___trackback_af67e8ed261b4a2a3482a92ebaf67bb60}{send\+\_\+error}} (\$message=\textquotesingle{}Incomplete Information\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___trackback_ae594681a931f07c1946663aaaf97e3f1}{send\+\_\+success}} ()
+\item 
+\mbox{\hyperlink{class_c_i___trackback_a8a11fd864ef076bc397847d3f6652934}{data}} (\$item)
+\item 
+\mbox{\hyperlink{class_c_i___trackback_a805b857928b44e18188cb51710d8a76c}{process}} (\$url, \$\mbox{\hyperlink{class_c_i___trackback_a8a11fd864ef076bc397847d3f6652934}{data}})
+\item 
+\mbox{\hyperlink{class_c_i___trackback_aed6543a51e490c9c6dbb982692f22ef1}{extract\+\_\+urls}} (\$urls)
+\item 
+\mbox{\hyperlink{class_c_i___trackback_af4935dcba4a24dcf78a7cd91ca686bbc}{validate\+\_\+url}} (\&\$url)
+\item 
+\mbox{\hyperlink{class_c_i___trackback_a92abcd341c9d8e143540d3d76a8a5ced}{get\+\_\+id}} (\$url)
+\item 
+\mbox{\hyperlink{class_c_i___trackback_a9863b761ea56c39b4ab729cb092126d9}{convert\+\_\+xml}} (\$str)
+\item 
+\mbox{\hyperlink{class_c_i___trackback_a515f9cb8b2ad73e74a8b3e37cc38061b}{limit\+\_\+characters}} (\$str, \$n=500, \$end\+\_\+char=\textquotesingle{}\&\#8230;\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___trackback_a58749ae6b6bd5b00c22c15d2e5b2d8f9}{convert\+\_\+ascii}} (\$str)
+\item 
+\mbox{\hyperlink{class_c_i___trackback_a1d986be918a259c99a569d35f5a3d345}{set\+\_\+error}} (\$msg)
+\item 
+\mbox{\hyperlink{class_c_i___trackback_a88b31c54662c8de1bb9fd94357e0e557}{display\+\_\+errors}} (\$open=\textquotesingle{}$<$ p $>$\textquotesingle{}, \$close=\textquotesingle{}$<$/p $>$\textquotesingle{})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___trackback_a056a08aea71d24bd1840fc5f4fce0827}\label{class_c_i___trackback_a056a08aea71d24bd1840fc5f4fce0827}} 
+{\bfseries \$charset} = \textquotesingle{}U\+TF-\/8\textquotesingle{}
+\item 
+{\bfseries \$data}
+\item 
+\mbox{\Hypertarget{class_c_i___trackback_a6fa8daa842b37d657aecd3c478bd9e87}\label{class_c_i___trackback_a6fa8daa842b37d657aecd3c478bd9e87}} 
+{\bfseries \$convert\+\_\+ascii} = T\+R\+UE
+\item 
+\mbox{\Hypertarget{class_c_i___trackback_ac68c42f44bde6bf6b3da106da087181f}\label{class_c_i___trackback_ac68c42f44bde6bf6b3da106da087181f}} 
+{\bfseries \$response} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___trackback_a675f7599cfe153b7c7e746e85f1433ea}\label{class_c_i___trackback_a675f7599cfe153b7c7e746e85f1433ea}} 
+{\bfseries \$error\+\_\+msg} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_i___trackback_a6a46599ac08641cbfc4f82156c47222a}\label{class_c_i___trackback_a6a46599ac08641cbfc4f82156c47222a}} 
+\index{C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Trackback\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___trackback_a58749ae6b6bd5b00c22c15d2e5b2d8f9}\label{class_c_i___trackback_a58749ae6b6bd5b00c22c15d2e5b2d8f9}} 
+\index{C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}!convert\+\_\+ascii@{convert\+\_\+ascii}}
+\index{convert\+\_\+ascii@{convert\+\_\+ascii}!C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}}
+\subsubsection{\texorpdfstring{convert\+\_\+ascii()}{convert\_ascii()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Trackback\+::convert\+\_\+ascii (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})}
+
+High A\+S\+C\+II to Entities
+
+Converts Hight ascii text and MS Word special chars to character entities
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___trackback_a9863b761ea56c39b4ab729cb092126d9}\label{class_c_i___trackback_a9863b761ea56c39b4ab729cb092126d9}} 
+\index{C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}!convert\+\_\+xml@{convert\+\_\+xml}}
+\index{convert\+\_\+xml@{convert\+\_\+xml}!C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}}
+\subsubsection{\texorpdfstring{convert\+\_\+xml()}{convert\_xml()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Trackback\+::convert\+\_\+xml (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})}
+
+Convert Reserved X\+ML characters to Entities
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___trackback_a8a11fd864ef076bc397847d3f6652934}\label{class_c_i___trackback_a8a11fd864ef076bc397847d3f6652934}} 
+\index{C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}!data@{data}}
+\index{data@{data}!C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}}
+\subsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Trackback\+::data (\begin{DoxyParamCaption}\item[{}]{\$item }\end{DoxyParamCaption})}
+
+Fetch a particular item
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___trackback_a88b31c54662c8de1bb9fd94357e0e557}\label{class_c_i___trackback_a88b31c54662c8de1bb9fd94357e0e557}} 
+\index{C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}!display\+\_\+errors@{display\+\_\+errors}}
+\index{display\+\_\+errors@{display\+\_\+errors}!C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}}
+\subsubsection{\texorpdfstring{display\+\_\+errors()}{display\_errors()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Trackback\+::display\+\_\+errors (\begin{DoxyParamCaption}\item[{}]{\$open = {\ttfamily \textquotesingle{}$<$p$>$\textquotesingle{}},  }\item[{}]{\$close = {\ttfamily \textquotesingle{}$<$/p$>$\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Show error messages
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___trackback_aed6543a51e490c9c6dbb982692f22ef1}\label{class_c_i___trackback_aed6543a51e490c9c6dbb982692f22ef1}} 
+\index{C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}!extract\+\_\+urls@{extract\+\_\+urls}}
+\index{extract\+\_\+urls@{extract\+\_\+urls}!C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}}
+\subsubsection{\texorpdfstring{extract\+\_\+urls()}{extract\_urls()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Trackback\+::extract\+\_\+urls (\begin{DoxyParamCaption}\item[{}]{\$urls }\end{DoxyParamCaption})}
+
+Extract Trackback U\+R\+Ls
+
+This function lets multiple trackbacks be sent. It takes a string of U\+R\+Ls (separated by comma or space) and puts each U\+RL into an array
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___trackback_a92abcd341c9d8e143540d3d76a8a5ced}\label{class_c_i___trackback_a92abcd341c9d8e143540d3d76a8a5ced}} 
+\index{C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}!get\+\_\+id@{get\+\_\+id}}
+\index{get\+\_\+id@{get\+\_\+id}!C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}}
+\subsubsection{\texorpdfstring{get\+\_\+id()}{get\_id()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Trackback\+::get\+\_\+id (\begin{DoxyParamCaption}\item[{}]{\$url }\end{DoxyParamCaption})}
+
+Find the Trackback U\+RL\textquotesingle{}s ID
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___trackback_a515f9cb8b2ad73e74a8b3e37cc38061b}\label{class_c_i___trackback_a515f9cb8b2ad73e74a8b3e37cc38061b}} 
+\index{C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}!limit\+\_\+characters@{limit\+\_\+characters}}
+\index{limit\+\_\+characters@{limit\+\_\+characters}!C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}}
+\subsubsection{\texorpdfstring{limit\+\_\+characters()}{limit\_characters()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Trackback\+::limit\+\_\+characters (\begin{DoxyParamCaption}\item[{}]{\$str,  }\item[{}]{\$n = {\ttfamily 500},  }\item[{}]{\$end\+\_\+char = {\ttfamily \textquotesingle{}\&\#8230;\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Character limiter
+
+Limits the string based on the character count. Will preserve complete words.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+{\em int} & \\
+\hline
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___trackback_a805b857928b44e18188cb51710d8a76c}\label{class_c_i___trackback_a805b857928b44e18188cb51710d8a76c}} 
+\index{C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}!process@{process}}
+\index{process@{process}!C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}}
+\subsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Trackback\+::process (\begin{DoxyParamCaption}\item[{}]{\$url,  }\item[{}]{\$data }\end{DoxyParamCaption})}
+
+Process Trackback
+
+Opens a socket connection and passes the data to the server. Returns T\+R\+UE on success, F\+A\+L\+SE on failure
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___trackback_a3959a94921442ab24dbe71696aceff16}\label{class_c_i___trackback_a3959a94921442ab24dbe71696aceff16}} 
+\index{C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}!receive@{receive}}
+\index{receive@{receive}!C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}}
+\subsubsection{\texorpdfstring{receive()}{receive()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Trackback\+::receive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Receive Trackback Data
+
+This function simply validates the incoming TB data. It returns F\+A\+L\+SE on failure and T\+R\+UE on success. If the data is valid it is set to the \$this-\/$>$data array so that it can be inserted into a database.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___trackback_a53a7142a0e7dd1ad08467f8320883cf9}\label{class_c_i___trackback_a53a7142a0e7dd1ad08467f8320883cf9}} 
+\index{C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}!send@{send}}
+\index{send@{send}!C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}}
+\subsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Trackback\+::send (\begin{DoxyParamCaption}\item[{}]{\$tb\+\_\+data }\end{DoxyParamCaption})}
+
+Send Trackback
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___trackback_af67e8ed261b4a2a3482a92ebaf67bb60}\label{class_c_i___trackback_af67e8ed261b4a2a3482a92ebaf67bb60}} 
+\index{C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}!send\+\_\+error@{send\+\_\+error}}
+\index{send\+\_\+error@{send\+\_\+error}!C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}}
+\subsubsection{\texorpdfstring{send\+\_\+error()}{send\_error()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Trackback\+::send\+\_\+error (\begin{DoxyParamCaption}\item[{}]{\$message = {\ttfamily \textquotesingle{}Incomplete~Information\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Send Trackback Error Message
+
+Allows custom errors to be set. By default it sends the \char`\"{}incomplete information\char`\"{} error, as that\textquotesingle{}s the most common one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___trackback_ae594681a931f07c1946663aaaf97e3f1}\label{class_c_i___trackback_ae594681a931f07c1946663aaaf97e3f1}} 
+\index{C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}!send\+\_\+success@{send\+\_\+success}}
+\index{send\+\_\+success@{send\+\_\+success}!C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}}
+\subsubsection{\texorpdfstring{send\+\_\+success()}{send\_success()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Trackback\+::send\+\_\+success (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Send Trackback Success Message
+
+This should be called when a trackback has been successfully received and inserted.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___trackback_a1d986be918a259c99a569d35f5a3d345}\label{class_c_i___trackback_a1d986be918a259c99a569d35f5a3d345}} 
+\index{C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}!set\+\_\+error@{set\+\_\+error}}
+\index{set\+\_\+error@{set\+\_\+error}!C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}}
+\subsubsection{\texorpdfstring{set\+\_\+error()}{set\_error()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Trackback\+::set\+\_\+error (\begin{DoxyParamCaption}\item[{}]{\$msg }\end{DoxyParamCaption})}
+
+Set error message
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___trackback_af4935dcba4a24dcf78a7cd91ca686bbc}\label{class_c_i___trackback_af4935dcba4a24dcf78a7cd91ca686bbc}} 
+\index{C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}!validate\+\_\+url@{validate\+\_\+url}}
+\index{validate\+\_\+url@{validate\+\_\+url}!C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}}
+\subsubsection{\texorpdfstring{validate\+\_\+url()}{validate\_url()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Trackback\+::validate\+\_\+url (\begin{DoxyParamCaption}\item[{\&}]{\$url }\end{DoxyParamCaption})}
+
+Validate U\+RL
+
+Simply adds \char`\"{}http\+://\char`\"{} if missing
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_i___trackback_a6416976b399b350a4b25f1ce0a3abe44}\label{class_c_i___trackback_a6416976b399b350a4b25f1ce0a3abe44}} 
+\index{C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}!\$data@{\$data}}
+\index{\$data@{\$data}!C\+I\+\_\+\+Trackback@{C\+I\+\_\+\+Trackback}}
+\subsubsection{\texorpdfstring{\$data}{$data}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Trackback\+::\$data}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= array(
+        \textcolor{stringliteral}{'url'} => \textcolor{stringliteral}{''},
+        \textcolor{stringliteral}{'title'} => \textcolor{stringliteral}{''},
+        \textcolor{stringliteral}{'excerpt'} => \textcolor{stringliteral}{''},
+        \textcolor{stringliteral}{'blog\_name'} => \textcolor{stringliteral}{''},
+        \textcolor{stringliteral}{'charset'} => \textcolor{stringliteral}{''}
+    )
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/libraries/Trackback.\+php\end{DoxyCompactItemize}

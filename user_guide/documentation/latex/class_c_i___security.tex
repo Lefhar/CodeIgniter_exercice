@@ -1,0 +1,500 @@
+\hypertarget{class_c_i___security}{}\section{C\+I\+\_\+\+Security Class Reference}
+\label{class_c_i___security}\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___security_acd6d23d91f9d1694f2b452174453923a}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_c_i___security_a93ca29fd401c464a867f2a0080d569aa}{csrf\+\_\+verify}} ()
+\item 
+\mbox{\hyperlink{class_c_i___security_a44fca760f4554dde18ab460c7b730256}{csrf\+\_\+set\+\_\+cookie}} ()
+\item 
+\mbox{\hyperlink{class_c_i___security_a95912c6a96934b50e3e3f4b5c82a9b84}{csrf\+\_\+show\+\_\+error}} ()
+\item 
+\mbox{\hyperlink{class_c_i___security_a2477852d563549abd32f4b83b8f30034}{get\+\_\+csrf\+\_\+hash}} ()
+\item 
+\mbox{\hyperlink{class_c_i___security_a0b40fe053f68a41ed01fca61fc556c37}{get\+\_\+csrf\+\_\+token\+\_\+name}} ()
+\item 
+\mbox{\hyperlink{class_c_i___security_a2a5bb2a641bd37cbae73a96ee35dee30}{xss\+\_\+clean}} (\$str, \$is\+\_\+image=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___security_ab1eb7d9ec864e80628da033de0ecef22}{xss\+\_\+hash}} ()
+\item 
+\mbox{\hyperlink{class_c_i___security_ad651614f8414feb0fe424278b95474e5}{get\+\_\+random\+\_\+bytes}} (\$length)
+\item 
+\mbox{\hyperlink{class_c_i___security_af0bf4f5717d0834d9fecb00e37b78019}{entity\+\_\+decode}} (\$str, \$charset=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___security_a160037793948246cdbea61db427e0d11}{sanitize\+\_\+filename}} (\$str, \$relative\+\_\+path=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___security_a07f39db7ecd3e7a7a3e30e5d3b25158e}{strip\+\_\+image\+\_\+tags}} (\$str)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$filename\+\_\+bad\+\_\+chars}
+\item 
+\mbox{\Hypertarget{class_c_i___security_a05230a45ad39af17acc7e2d43b84884a}\label{class_c_i___security_a05230a45ad39af17acc7e2d43b84884a}} 
+{\bfseries \$charset} = \textquotesingle{}U\+TF-\/8\textquotesingle{}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___security_a560c9099c1f93c954eac4f4c6185b768}{\+\_\+urldecodespaces}} (\$matches)
+\item 
+\mbox{\hyperlink{class_c_i___security_ad2dfad96dd004a60c77771c1f0ad4194}{\+\_\+compact\+\_\+exploded\+\_\+words}} (\$matches)
+\item 
+\mbox{\hyperlink{class_c_i___security_aebc54709b88db288c4bf6f4903511c22}{\+\_\+sanitize\+\_\+naughty\+\_\+html}} (\$matches)
+\item 
+\mbox{\hyperlink{class_c_i___security_a3e09d1f7fdc47de100df6e40fdb44b72}{\+\_\+js\+\_\+link\+\_\+removal}} (\$match)
+\item 
+\mbox{\hyperlink{class_c_i___security_ad2795f9f809d310f0a0d2f5cad87a81d}{\+\_\+js\+\_\+img\+\_\+removal}} (\$match)
+\item 
+\mbox{\hyperlink{class_c_i___security_abe0a6444266cd826927ed138d55a088a}{\+\_\+convert\+\_\+attribute}} (\$match)
+\item 
+\mbox{\hyperlink{class_c_i___security_a5f41eab080092e9fcaabcb270cba98f3}{\+\_\+filter\+\_\+attributes}} (\$str)
+\item 
+\mbox{\hyperlink{class_c_i___security_a9e9024c0f3ed639e5095f2aa33698db5}{\+\_\+decode\+\_\+entity}} (\$match)
+\item 
+\mbox{\hyperlink{class_c_i___security_ad3471f31a4afa1d88b5a58705e951b88}{\+\_\+do\+\_\+never\+\_\+allowed}} (\$str)
+\item 
+\mbox{\hyperlink{class_c_i___security_a77327709ac2d3f176431a391bf27e2af}{\+\_\+csrf\+\_\+set\+\_\+hash}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___security_a3987b2ed5ea8df9f98eac07976c30ae8}\label{class_c_i___security_a3987b2ed5ea8df9f98eac07976c30ae8}} 
+{\bfseries \$\+\_\+xss\+\_\+hash}
+\item 
+\mbox{\Hypertarget{class_c_i___security_aec20ea912b1d7906a108056c1834e9ea}\label{class_c_i___security_aec20ea912b1d7906a108056c1834e9ea}} 
+{\bfseries \$\+\_\+csrf\+\_\+hash}
+\item 
+\mbox{\Hypertarget{class_c_i___security_a08c3d144a0697310423cd668bc256a10}\label{class_c_i___security_a08c3d144a0697310423cd668bc256a10}} 
+{\bfseries \$\+\_\+csrf\+\_\+expire} = 7200
+\item 
+\mbox{\Hypertarget{class_c_i___security_a7dcb10cc437d3ffd4fd42a1aef99b153}\label{class_c_i___security_a7dcb10cc437d3ffd4fd42a1aef99b153}} 
+{\bfseries \$\+\_\+csrf\+\_\+token\+\_\+name} = \textquotesingle{}ci\+\_\+csrf\+\_\+token\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___security_af436bcece233da6228a6b97376b0f8c7}\label{class_c_i___security_af436bcece233da6228a6b97376b0f8c7}} 
+{\bfseries \$\+\_\+csrf\+\_\+cookie\+\_\+name} = \textquotesingle{}ci\+\_\+csrf\+\_\+token\textquotesingle{}
+\item 
+{\bfseries \$\+\_\+never\+\_\+allowed\+\_\+str}
+\item 
+{\bfseries \$\+\_\+never\+\_\+allowed\+\_\+regex}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_i___security_acd6d23d91f9d1694f2b452174453923a}\label{class_c_i___security_acd6d23d91f9d1694f2b452174453923a}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Class constructor
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___security_ad2dfad96dd004a60c77771c1f0ad4194}\label{class_c_i___security_ad2dfad96dd004a60c77771c1f0ad4194}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!\+\_\+compact\+\_\+exploded\+\_\+words@{\+\_\+compact\+\_\+exploded\+\_\+words}}
+\index{\+\_\+compact\+\_\+exploded\+\_\+words@{\+\_\+compact\+\_\+exploded\+\_\+words}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{\+\_\+compact\+\_\+exploded\+\_\+words()}{\_compact\_exploded\_words()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::\+\_\+compact\+\_\+exploded\+\_\+words (\begin{DoxyParamCaption}\item[{}]{\$matches }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Compact Exploded Words
+
+Callback method for \mbox{\hyperlink{class_c_i___security_a2a5bb2a641bd37cbae73a96ee35dee30}{xss\+\_\+clean()}} to remove whitespace from things like \textquotesingle{}j a v a s c r i p t\textquotesingle{}.
+
+-\/by \mbox{\hyperlink{class_c_i___security_a2a5bb2a641bd37cbae73a96ee35dee30}{C\+I\+\_\+\+Security\+::xss\+\_\+clean()}} 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$matches} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___security_abe0a6444266cd826927ed138d55a088a}\label{class_c_i___security_abe0a6444266cd826927ed138d55a088a}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!\+\_\+convert\+\_\+attribute@{\+\_\+convert\+\_\+attribute}}
+\index{\+\_\+convert\+\_\+attribute@{\+\_\+convert\+\_\+attribute}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{\+\_\+convert\+\_\+attribute()}{\_convert\_attribute()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::\+\_\+convert\+\_\+attribute (\begin{DoxyParamCaption}\item[{}]{\$match }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Attribute Conversion
+
+-\/by \mbox{\hyperlink{class_c_i___security_a2a5bb2a641bd37cbae73a96ee35dee30}{C\+I\+\_\+\+Security\+::xss\+\_\+clean()}} 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$match} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___security_a77327709ac2d3f176431a391bf27e2af}\label{class_c_i___security_a77327709ac2d3f176431a391bf27e2af}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!\+\_\+csrf\+\_\+set\+\_\+hash@{\+\_\+csrf\+\_\+set\+\_\+hash}}
+\index{\+\_\+csrf\+\_\+set\+\_\+hash@{\+\_\+csrf\+\_\+set\+\_\+hash}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{\+\_\+csrf\+\_\+set\+\_\+hash()}{\_csrf\_set\_hash()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::\+\_\+csrf\+\_\+set\+\_\+hash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set C\+S\+RF Hash and Cookie
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___security_a9e9024c0f3ed639e5095f2aa33698db5}\label{class_c_i___security_a9e9024c0f3ed639e5095f2aa33698db5}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!\+\_\+decode\+\_\+entity@{\+\_\+decode\+\_\+entity}}
+\index{\+\_\+decode\+\_\+entity@{\+\_\+decode\+\_\+entity}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{\+\_\+decode\+\_\+entity()}{\_decode\_entity()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::\+\_\+decode\+\_\+entity (\begin{DoxyParamCaption}\item[{}]{\$match }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+H\+T\+ML Entity Decode Callback
+
+-\/by \mbox{\hyperlink{class_c_i___security_a2a5bb2a641bd37cbae73a96ee35dee30}{C\+I\+\_\+\+Security\+::xss\+\_\+clean()}} 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$match} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___security_ad3471f31a4afa1d88b5a58705e951b88}\label{class_c_i___security_ad3471f31a4afa1d88b5a58705e951b88}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!\+\_\+do\+\_\+never\+\_\+allowed@{\+\_\+do\+\_\+never\+\_\+allowed}}
+\index{\+\_\+do\+\_\+never\+\_\+allowed@{\+\_\+do\+\_\+never\+\_\+allowed}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{\+\_\+do\+\_\+never\+\_\+allowed()}{\_do\_never\_allowed()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::\+\_\+do\+\_\+never\+\_\+allowed (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Do Never Allowed
+
+-\/by \mbox{\hyperlink{class_c_i___security_a2a5bb2a641bd37cbae73a96ee35dee30}{C\+I\+\_\+\+Security\+::xss\+\_\+clean()}} 
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___security_a5f41eab080092e9fcaabcb270cba98f3}\label{class_c_i___security_a5f41eab080092e9fcaabcb270cba98f3}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!\+\_\+filter\+\_\+attributes@{\+\_\+filter\+\_\+attributes}}
+\index{\+\_\+filter\+\_\+attributes@{\+\_\+filter\+\_\+attributes}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{\+\_\+filter\+\_\+attributes()}{\_filter\_attributes()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::\+\_\+filter\+\_\+attributes (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Filter Attributes
+
+Filters tag attributes for consistency and safety.
+
+-\/by \mbox{\hyperlink{class_c_i___security_ad2795f9f809d310f0a0d2f5cad87a81d}{C\+I\+\_\+\+Security\+::\+\_\+js\+\_\+img\+\_\+removal()}} -\/by \mbox{\hyperlink{class_c_i___security_a3e09d1f7fdc47de100df6e40fdb44b72}{C\+I\+\_\+\+Security\+::\+\_\+js\+\_\+link\+\_\+removal()}} 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___security_ad2795f9f809d310f0a0d2f5cad87a81d}\label{class_c_i___security_ad2795f9f809d310f0a0d2f5cad87a81d}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!\+\_\+js\+\_\+img\+\_\+removal@{\+\_\+js\+\_\+img\+\_\+removal}}
+\index{\+\_\+js\+\_\+img\+\_\+removal@{\+\_\+js\+\_\+img\+\_\+removal}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{\+\_\+js\+\_\+img\+\_\+removal()}{\_js\_img\_removal()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::\+\_\+js\+\_\+img\+\_\+removal (\begin{DoxyParamCaption}\item[{}]{\$match }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+JS Image Removal
+
+Callback method for \mbox{\hyperlink{class_c_i___security_a2a5bb2a641bd37cbae73a96ee35dee30}{xss\+\_\+clean()}} to sanitize image tags.
+
+This limits the P\+C\+RE backtracks, making it more performance friendly and prevents P\+R\+E\+G\+\_\+\+B\+A\+C\+K\+T\+R\+A\+C\+K\+\_\+\+L\+I\+M\+I\+T\+\_\+\+E\+R\+R\+OR from being triggered in P\+HP 5.\+2+ on image tag heavy strings.
+
+-\/by \mbox{\hyperlink{class_c_i___security_a2a5bb2a641bd37cbae73a96ee35dee30}{C\+I\+\_\+\+Security\+::xss\+\_\+clean()}} 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$match} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___security_a3e09d1f7fdc47de100df6e40fdb44b72}\label{class_c_i___security_a3e09d1f7fdc47de100df6e40fdb44b72}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!\+\_\+js\+\_\+link\+\_\+removal@{\+\_\+js\+\_\+link\+\_\+removal}}
+\index{\+\_\+js\+\_\+link\+\_\+removal@{\+\_\+js\+\_\+link\+\_\+removal}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{\+\_\+js\+\_\+link\+\_\+removal()}{\_js\_link\_removal()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::\+\_\+js\+\_\+link\+\_\+removal (\begin{DoxyParamCaption}\item[{}]{\$match }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+JS Link Removal
+
+Callback method for \mbox{\hyperlink{class_c_i___security_a2a5bb2a641bd37cbae73a96ee35dee30}{xss\+\_\+clean()}} to sanitize links.
+
+This limits the P\+C\+RE backtracks, making it more performance friendly and prevents P\+R\+E\+G\+\_\+\+B\+A\+C\+K\+T\+R\+A\+C\+K\+\_\+\+L\+I\+M\+I\+T\+\_\+\+E\+R\+R\+OR from being triggered in P\+HP 5.\+2+ on link-\/heavy strings.
+
+-\/by \mbox{\hyperlink{class_c_i___security_a2a5bb2a641bd37cbae73a96ee35dee30}{C\+I\+\_\+\+Security\+::xss\+\_\+clean()}} 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$match} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___security_aebc54709b88db288c4bf6f4903511c22}\label{class_c_i___security_aebc54709b88db288c4bf6f4903511c22}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!\+\_\+sanitize\+\_\+naughty\+\_\+html@{\+\_\+sanitize\+\_\+naughty\+\_\+html}}
+\index{\+\_\+sanitize\+\_\+naughty\+\_\+html@{\+\_\+sanitize\+\_\+naughty\+\_\+html}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{\+\_\+sanitize\+\_\+naughty\+\_\+html()}{\_sanitize\_naughty\_html()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::\+\_\+sanitize\+\_\+naughty\+\_\+html (\begin{DoxyParamCaption}\item[{}]{\$matches }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sanitize Naughty H\+T\+ML
+
+Callback method for \mbox{\hyperlink{class_c_i___security_a2a5bb2a641bd37cbae73a96ee35dee30}{xss\+\_\+clean()}} to remove naughty H\+T\+ML elements.
+
+-\/by \mbox{\hyperlink{class_c_i___security_a2a5bb2a641bd37cbae73a96ee35dee30}{C\+I\+\_\+\+Security\+::xss\+\_\+clean()}} 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$matches} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___security_a560c9099c1f93c954eac4f4c6185b768}\label{class_c_i___security_a560c9099c1f93c954eac4f4c6185b768}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!\+\_\+urldecodespaces@{\+\_\+urldecodespaces}}
+\index{\+\_\+urldecodespaces@{\+\_\+urldecodespaces}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{\+\_\+urldecodespaces()}{\_urldecodespaces()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::\+\_\+urldecodespaces (\begin{DoxyParamCaption}\item[{}]{\$matches }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+U\+R\+L-\/decode taking spaces into account
+
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/bcit-ci/CodeIgniter/issues/4877}{\tt https\+://github.\+com/bcit-\/ci/\+Code\+Igniter/issues/4877} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$matches} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___security_a44fca760f4554dde18ab460c7b730256}\label{class_c_i___security_a44fca760f4554dde18ab460c7b730256}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!csrf\+\_\+set\+\_\+cookie@{csrf\+\_\+set\+\_\+cookie}}
+\index{csrf\+\_\+set\+\_\+cookie@{csrf\+\_\+set\+\_\+cookie}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{csrf\+\_\+set\+\_\+cookie()}{csrf\_set\_cookie()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::csrf\+\_\+set\+\_\+cookie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+C\+S\+RF Set Cookie
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___security}{C\+I\+\_\+\+Security}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___security_a95912c6a96934b50e3e3f4b5c82a9b84}\label{class_c_i___security_a95912c6a96934b50e3e3f4b5c82a9b84}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!csrf\+\_\+show\+\_\+error@{csrf\+\_\+show\+\_\+error}}
+\index{csrf\+\_\+show\+\_\+error@{csrf\+\_\+show\+\_\+error}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{csrf\+\_\+show\+\_\+error()}{csrf\_show\_error()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::csrf\+\_\+show\+\_\+error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Show C\+S\+RF Error
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___security_a93ca29fd401c464a867f2a0080d569aa}\label{class_c_i___security_a93ca29fd401c464a867f2a0080d569aa}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!csrf\+\_\+verify@{csrf\+\_\+verify}}
+\index{csrf\+\_\+verify@{csrf\+\_\+verify}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{csrf\+\_\+verify()}{csrf\_verify()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::csrf\+\_\+verify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+C\+S\+RF Verify
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___security}{C\+I\+\_\+\+Security}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___security_af0bf4f5717d0834d9fecb00e37b78019}\label{class_c_i___security_af0bf4f5717d0834d9fecb00e37b78019}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!entity\+\_\+decode@{entity\+\_\+decode}}
+\index{entity\+\_\+decode@{entity\+\_\+decode}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{entity\+\_\+decode()}{entity\_decode()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::entity\+\_\+decode (\begin{DoxyParamCaption}\item[{}]{\$str,  }\item[{}]{\$charset = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+H\+T\+ML Entities Decode
+
+A replacement for html\+\_\+entity\+\_\+decode()
+
+The reason we are not using html\+\_\+entity\+\_\+decode() by itself is because while it is not technically correct to leave out the semicolon at the end of an entity most browsers will still interpret the entity correctly. html\+\_\+entity\+\_\+decode() does not convert entities without semicolons, so we are left with our own little solution here. Bummer.
+
+\mbox{\hyperlink{}{string \$str Input  string \$charset Character set  string }}\mbox{\Hypertarget{class_c_i___security_a2477852d563549abd32f4b83b8f30034}\label{class_c_i___security_a2477852d563549abd32f4b83b8f30034}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!get\+\_\+csrf\+\_\+hash@{get\+\_\+csrf\+\_\+hash}}
+\index{get\+\_\+csrf\+\_\+hash@{get\+\_\+csrf\+\_\+hash}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{get\+\_\+csrf\+\_\+hash()}{get\_csrf\_hash()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::get\+\_\+csrf\+\_\+hash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get C\+S\+RF Hash
+
+\begin{DoxySeeAlso}{See also}
+C\+I\+\_\+\+Security\+::\$\+\_\+csrf\+\_\+hash 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+string C\+S\+RF hash 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___security_a0b40fe053f68a41ed01fca61fc556c37}\label{class_c_i___security_a0b40fe053f68a41ed01fca61fc556c37}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!get\+\_\+csrf\+\_\+token\+\_\+name@{get\+\_\+csrf\+\_\+token\+\_\+name}}
+\index{get\+\_\+csrf\+\_\+token\+\_\+name@{get\+\_\+csrf\+\_\+token\+\_\+name}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{get\+\_\+csrf\+\_\+token\+\_\+name()}{get\_csrf\_token\_name()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::get\+\_\+csrf\+\_\+token\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get C\+S\+RF Token Name
+
+\begin{DoxySeeAlso}{See also}
+C\+I\+\_\+\+Security\+::\$\+\_\+csrf\+\_\+token\+\_\+name 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+string C\+S\+RF token name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___security_ad651614f8414feb0fe424278b95474e5}\label{class_c_i___security_ad651614f8414feb0fe424278b95474e5}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!get\+\_\+random\+\_\+bytes@{get\+\_\+random\+\_\+bytes}}
+\index{get\+\_\+random\+\_\+bytes@{get\+\_\+random\+\_\+bytes}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{get\+\_\+random\+\_\+bytes()}{get\_random\_bytes()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::get\+\_\+random\+\_\+bytes (\begin{DoxyParamCaption}\item[{}]{\$length }\end{DoxyParamCaption})}
+
+Get random bytes
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & Output length \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___security_a160037793948246cdbea61db427e0d11}\label{class_c_i___security_a160037793948246cdbea61db427e0d11}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!sanitize\+\_\+filename@{sanitize\+\_\+filename}}
+\index{sanitize\+\_\+filename@{sanitize\+\_\+filename}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{sanitize\+\_\+filename()}{sanitize\_filename()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::sanitize\+\_\+filename (\begin{DoxyParamCaption}\item[{}]{\$str,  }\item[{}]{\$relative\+\_\+path = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Sanitize Filename
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & Input file name \\
+\hline
+bool & {\em \$relative\+\_\+path} & Whether to preserve paths \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___security_a07f39db7ecd3e7a7a3e30e5d3b25158e}\label{class_c_i___security_a07f39db7ecd3e7a7a3e30e5d3b25158e}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!strip\+\_\+image\+\_\+tags@{strip\+\_\+image\+\_\+tags}}
+\index{strip\+\_\+image\+\_\+tags@{strip\+\_\+image\+\_\+tags}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{strip\+\_\+image\+\_\+tags()}{strip\_image\_tags()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::strip\+\_\+image\+\_\+tags (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})}
+
+Strip Image Tags
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___security_a2a5bb2a641bd37cbae73a96ee35dee30}\label{class_c_i___security_a2a5bb2a641bd37cbae73a96ee35dee30}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!xss\+\_\+clean@{xss\+\_\+clean}}
+\index{xss\+\_\+clean@{xss\+\_\+clean}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{xss\+\_\+clean()}{xss\_clean()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::xss\+\_\+clean (\begin{DoxyParamCaption}\item[{}]{\$str,  }\item[{}]{\$is\+\_\+image = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+X\+SS Clean
+
+Sanitizes data so that Cross Site Scripting Hacks can be prevented. This method does a fair amount of work but it is extremely thorough, designed to prevent even the most obscure X\+SS attempts. Nothing is ever 100\% foolproof, of course, but I haven\textquotesingle{}t been able to get anything passed the filter.
+
+Note\+: Should only be used to deal with data upon submission. It\textquotesingle{}s not something that should be used for general runtime processing.
+
+\mbox{\hyperlink{}{Based in part on some code and ideas from Bitflux.  \href{http://ha.ckers.org/xss.html}{\tt http\+://ha.\+ckers.\+org/xss.\+html} To help develop this script I used this great list of vulnerabilities along with a few other hacks I\textquotesingle{}ve harvested from examining vulnerabilities in other programs.  string$\vert$string\mbox{[}\mbox{]} \$str Input data  bool \$is\+\_\+image Whether the input is an image  string }}\mbox{\Hypertarget{class_c_i___security_ab1eb7d9ec864e80628da033de0ecef22}\label{class_c_i___security_ab1eb7d9ec864e80628da033de0ecef22}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!xss\+\_\+hash@{xss\+\_\+hash}}
+\index{xss\+\_\+hash@{xss\+\_\+hash}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{xss\+\_\+hash()}{xss\_hash()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::xss\+\_\+hash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+X\+SS Hash
+
+Generates the X\+SS hash if needed and returns it.
+
+\begin{DoxySeeAlso}{See also}
+C\+I\+\_\+\+Security\+::\$\+\_\+xss\+\_\+hash 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+string X\+SS hash 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_i___security_a1e3af486fb0c41db4520eec11cdefe87}\label{class_c_i___security_a1e3af486fb0c41db4520eec11cdefe87}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!\$\+\_\+never\+\_\+allowed\+\_\+regex@{\$\+\_\+never\+\_\+allowed\+\_\+regex}}
+\index{\$\+\_\+never\+\_\+allowed\+\_\+regex@{\$\+\_\+never\+\_\+allowed\+\_\+regex}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{\$\+\_\+never\+\_\+allowed\+\_\+regex}{$\_never\_allowed\_regex}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::\$\+\_\+never\+\_\+allowed\+\_\+regex\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= array(
+        \textcolor{stringliteral}{'javascript\(\backslash\)s*:'},
+        \textcolor{stringliteral}{'(\(\backslash\)(?document\(\backslash\))?|\(\backslash\)(?window\(\backslash\))?(\(\backslash\).document)?)\(\backslash\).(location|on\(\backslash\)w*)'},
+        \textcolor{stringliteral}{'expression\(\backslash\)s*(\(\backslash\)(|&\(\backslash\)#40;)'}, 
+        \textcolor{stringliteral}{'vbscript\(\backslash\)s*:'}, 
+        \textcolor{stringliteral}{'wscript\(\backslash\)s*:'}, 
+        \textcolor{stringliteral}{'jscript\(\backslash\)s*:'}, 
+        \textcolor{stringliteral}{'vbs\(\backslash\)s*:'}, 
+        \textcolor{stringliteral}{'Redirect\(\backslash\)s+30\(\backslash\)d'},
+        \textcolor{stringliteral}{"([\(\backslash\)"'])?data\(\backslash\)s*:[^\(\backslash\)\(\backslash\)1]*?base64[^\(\backslash\)\(\backslash\)1]*?,[^\(\backslash\)\(\backslash\)1]*?\(\backslash\)\(\backslash\)1?"}
+    )
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_i___security_a32e97a740bfe2c299bebcde9fc72c2a9}\label{class_c_i___security_a32e97a740bfe2c299bebcde9fc72c2a9}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!\$\+\_\+never\+\_\+allowed\+\_\+str@{\$\+\_\+never\+\_\+allowed\+\_\+str}}
+\index{\$\+\_\+never\+\_\+allowed\+\_\+str@{\$\+\_\+never\+\_\+allowed\+\_\+str}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{\$\+\_\+never\+\_\+allowed\+\_\+str}{$\_never\_allowed\_str}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::\$\+\_\+never\+\_\+allowed\+\_\+str\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=   array(
+        \textcolor{stringliteral}{'document.cookie'} => \textcolor{stringliteral}{'[removed]'},
+        \textcolor{stringliteral}{'(document).cookie'} => \textcolor{stringliteral}{'[removed]'},
+        \textcolor{stringliteral}{'document.write'}  => \textcolor{stringliteral}{'[removed]'},
+        \textcolor{stringliteral}{'(document).write'}  => \textcolor{stringliteral}{'[removed]'},
+        \textcolor{stringliteral}{'.parentNode'}     => \textcolor{stringliteral}{'[removed]'},
+        \textcolor{stringliteral}{'.innerHTML'}      => \textcolor{stringliteral}{'[removed]'},
+        \textcolor{stringliteral}{'-moz-binding'}    => \textcolor{stringliteral}{'[removed]'},
+        \textcolor{stringliteral}{'<!--'}            => \textcolor{stringliteral}{'&lt;!--'},
+        \textcolor{stringliteral}{'-->'}             => \textcolor{stringliteral}{'--&gt;'},
+        \textcolor{stringliteral}{'<![CDATA['}       => \textcolor{stringliteral}{'&lt;![CDATA['},
+        \textcolor{stringliteral}{'<comment>'}   => \textcolor{stringliteral}{'&lt;comment&gt;'},
+        \textcolor{stringliteral}{'<%'}              => \textcolor{stringliteral}{'&lt;&#37;'}
+    )
+\end{DoxyCode}
+\mbox{\Hypertarget{class_c_i___security_a34e8421e76713d8f6362e2d7f42ee9e1}\label{class_c_i___security_a34e8421e76713d8f6362e2d7f42ee9e1}} 
+\index{C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}!\$filename\+\_\+bad\+\_\+chars@{\$filename\+\_\+bad\+\_\+chars}}
+\index{\$filename\+\_\+bad\+\_\+chars@{\$filename\+\_\+bad\+\_\+chars}!C\+I\+\_\+\+Security@{C\+I\+\_\+\+Security}}
+\subsubsection{\texorpdfstring{\$filename\+\_\+bad\+\_\+chars}{$filename\_bad\_chars}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Security\+::\$filename\+\_\+bad\+\_\+chars}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=   array(
+        \textcolor{stringliteral}{'../'}, \textcolor{stringliteral}{'<!--'}, \textcolor{stringliteral}{'-->'}, \textcolor{charliteral}{'<'}, \textcolor{charliteral}{'>'},
+        \textcolor{stringliteral}{"'"}, \textcolor{charliteral}{'"'}, \textcolor{charliteral}{'&'}, \textcolor{charliteral}{'$'}, \textcolor{charliteral}{'#'},
+        \textcolor{charliteral}{'\{'}, \textcolor{charliteral}{'\}'}, \textcolor{charliteral}{'['}, \textcolor{charliteral}{']'}, \textcolor{charliteral}{'='},
+        \textcolor{charliteral}{';'}, \textcolor{charliteral}{'?'}, \textcolor{stringliteral}{'%20'}, \textcolor{stringliteral}{'%22'},
+        \textcolor{stringliteral}{'%3c'},      
+        \textcolor{stringliteral}{'%253c'},    
+        \textcolor{stringliteral}{'%3e'},      
+        \textcolor{stringliteral}{'%0e'},      
+        \textcolor{stringliteral}{'%28'},      
+        \textcolor{stringliteral}{'%29'},      
+        \textcolor{stringliteral}{'%2528'},    
+        \textcolor{stringliteral}{'%26'},      
+        \textcolor{stringliteral}{'%24'},      
+        \textcolor{stringliteral}{'%3f'},      
+        \textcolor{stringliteral}{'%3b'},      
+        \textcolor{stringliteral}{'%3d'}       
+    )
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/core/Security.\+php\end{DoxyCompactItemize}

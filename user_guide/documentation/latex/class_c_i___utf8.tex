@@ -1,0 +1,113 @@
+\hypertarget{class_c_i___utf8}{}\section{C\+I\+\_\+\+Utf8 Class Reference}
+\label{class_c_i___utf8}\index{C\+I\+\_\+\+Utf8@{C\+I\+\_\+\+Utf8}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___utf8_abfc2d1509d9d8fa2c5ca5c6237977180}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_c_i___utf8_ad0cc040da9adb399f9ef89f339b691be}{clean\+\_\+string}} (\$str)
+\item 
+\mbox{\hyperlink{class_c_i___utf8_a190de9ab8c8b098c3dafaeb52a1936a5}{safe\+\_\+ascii\+\_\+for\+\_\+xml}} (\$str)
+\item 
+\mbox{\hyperlink{class_c_i___utf8_a9c2aa3162f7c478217fc3ed41f33f36a}{convert\+\_\+to\+\_\+utf8}} (\$str, \$encoding)
+\item 
+\mbox{\hyperlink{class_c_i___utf8_aa6ed383edc1860614d3a711b8aa7bc31}{is\+\_\+ascii}} (\$str)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_i___utf8_abfc2d1509d9d8fa2c5ca5c6237977180}\label{class_c_i___utf8_abfc2d1509d9d8fa2c5ca5c6237977180}} 
+\index{C\+I\+\_\+\+Utf8@{C\+I\+\_\+\+Utf8}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+Utf8@{C\+I\+\_\+\+Utf8}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Utf8\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Class constructor
+
+Determines if U\+T\+F-\/8 support is to be enabled.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___utf8_ad0cc040da9adb399f9ef89f339b691be}\label{class_c_i___utf8_ad0cc040da9adb399f9ef89f339b691be}} 
+\index{C\+I\+\_\+\+Utf8@{C\+I\+\_\+\+Utf8}!clean\+\_\+string@{clean\+\_\+string}}
+\index{clean\+\_\+string@{clean\+\_\+string}!C\+I\+\_\+\+Utf8@{C\+I\+\_\+\+Utf8}}
+\subsubsection{\texorpdfstring{clean\+\_\+string()}{clean\_string()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Utf8\+::clean\+\_\+string (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})}
+
+Clean U\+T\+F-\/8 strings
+
+Ensures strings contain only valid U\+T\+F-\/8 characters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & String to clean \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___utf8_a9c2aa3162f7c478217fc3ed41f33f36a}\label{class_c_i___utf8_a9c2aa3162f7c478217fc3ed41f33f36a}} 
+\index{C\+I\+\_\+\+Utf8@{C\+I\+\_\+\+Utf8}!convert\+\_\+to\+\_\+utf8@{convert\+\_\+to\+\_\+utf8}}
+\index{convert\+\_\+to\+\_\+utf8@{convert\+\_\+to\+\_\+utf8}!C\+I\+\_\+\+Utf8@{C\+I\+\_\+\+Utf8}}
+\subsubsection{\texorpdfstring{convert\+\_\+to\+\_\+utf8()}{convert\_to\_utf8()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Utf8\+::convert\+\_\+to\+\_\+utf8 (\begin{DoxyParamCaption}\item[{}]{\$str,  }\item[{}]{\$encoding }\end{DoxyParamCaption})}
+
+Convert to U\+T\+F-\/8
+
+Attempts to convert a string to U\+T\+F-\/8.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & Input string \\
+\hline
+string & {\em \$encoding} & Input encoding \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string \$str encoded in U\+T\+F-\/8 or F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___utf8_aa6ed383edc1860614d3a711b8aa7bc31}\label{class_c_i___utf8_aa6ed383edc1860614d3a711b8aa7bc31}} 
+\index{C\+I\+\_\+\+Utf8@{C\+I\+\_\+\+Utf8}!is\+\_\+ascii@{is\+\_\+ascii}}
+\index{is\+\_\+ascii@{is\+\_\+ascii}!C\+I\+\_\+\+Utf8@{C\+I\+\_\+\+Utf8}}
+\subsubsection{\texorpdfstring{is\+\_\+ascii()}{is\_ascii()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Utf8\+::is\+\_\+ascii (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})}
+
+Is A\+S\+C\+II?
+
+Tests if a string is standard 7-\/bit A\+S\+C\+II or not.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & String to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___utf8_a190de9ab8c8b098c3dafaeb52a1936a5}\label{class_c_i___utf8_a190de9ab8c8b098c3dafaeb52a1936a5}} 
+\index{C\+I\+\_\+\+Utf8@{C\+I\+\_\+\+Utf8}!safe\+\_\+ascii\+\_\+for\+\_\+xml@{safe\+\_\+ascii\+\_\+for\+\_\+xml}}
+\index{safe\+\_\+ascii\+\_\+for\+\_\+xml@{safe\+\_\+ascii\+\_\+for\+\_\+xml}!C\+I\+\_\+\+Utf8@{C\+I\+\_\+\+Utf8}}
+\subsubsection{\texorpdfstring{safe\+\_\+ascii\+\_\+for\+\_\+xml()}{safe\_ascii\_for\_xml()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Utf8\+::safe\+\_\+ascii\+\_\+for\+\_\+xml (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})}
+
+Remove A\+S\+C\+II control characters
+
+Removes all A\+S\+C\+II control characters except horizontal tabs, line feeds, and carriage returns, as all others can cause problems in X\+ML.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & String to clean \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/core/Utf8.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,225 @@
+\hypertarget{class_c_i___calendar}{}\section{C\+I\+\_\+\+Calendar Class Reference}
+\label{class_c_i___calendar}\index{C\+I\+\_\+\+Calendar@{C\+I\+\_\+\+Calendar}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___calendar_a897a199c844ce2d4459e7b60ce8c766a}{\+\_\+\+\_\+construct}} (\$config=array())
+\item 
+\mbox{\hyperlink{class_c_i___calendar_a8b91781c18d53697a832d46ecbfeee37}{initialize}} (\$config=array())
+\item 
+\mbox{\hyperlink{class_c_i___calendar_ad2ca24684eb6f022811d268a759422bb}{generate}} (\$year=\textquotesingle{}\textquotesingle{}, \$month=\textquotesingle{}\textquotesingle{}, \$data=array())
+\item 
+\mbox{\hyperlink{class_c_i___calendar_a04de91e34b7318654e785e5cc1cc2fd3}{get\+\_\+month\+\_\+name}} (\$month)
+\item 
+\mbox{\hyperlink{class_c_i___calendar_a258986238b3db4eb98234b5a420150de}{get\+\_\+day\+\_\+names}} (\$day\+\_\+type=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___calendar_aa059f059813fe8953253c64bad337cb0}{adjust\+\_\+date}} (\$month, \$year)
+\item 
+\mbox{\hyperlink{class_c_i___calendar_abcb093cef5b21da2b0e1bb63ef8d2ad0}{get\+\_\+total\+\_\+days}} (\$month, \$year)
+\item 
+\mbox{\hyperlink{class_c_i___calendar_acb35a5cb73ab69beb3bcaa3e28dfdb04}{default\+\_\+template}} ()
+\item 
+\mbox{\hyperlink{class_c_i___calendar_a8235db008796ae1a36c214575137fd79}{parse\+\_\+template}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___calendar_a7121101cc88b0259092d34db08743787}\label{class_c_i___calendar_a7121101cc88b0259092d34db08743787}} 
+{\bfseries \$template} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___calendar_a9f7ec1a4b8ac75dd1c074b032b9e4b8f}\label{class_c_i___calendar_a9f7ec1a4b8ac75dd1c074b032b9e4b8f}} 
+{\bfseries \$replacements} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___calendar_a8e219d6b83afbfc84e11d1be4323b3c3}\label{class_c_i___calendar_a8e219d6b83afbfc84e11d1be4323b3c3}} 
+{\bfseries \$start\+\_\+day} = \textquotesingle{}sunday\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___calendar_a81cad8588bf3f70efb546597e55024ac}\label{class_c_i___calendar_a81cad8588bf3f70efb546597e55024ac}} 
+{\bfseries \$month\+\_\+type} = \textquotesingle{}long\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___calendar_a27557cfd215775b9c41dae785680919b}\label{class_c_i___calendar_a27557cfd215775b9c41dae785680919b}} 
+{\bfseries \$day\+\_\+type} = \textquotesingle{}abr\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___calendar_ab680fce4a63c66e5efefebea5502c2b0}\label{class_c_i___calendar_ab680fce4a63c66e5efefebea5502c2b0}} 
+{\bfseries \$show\+\_\+next\+\_\+prev} = F\+A\+L\+SE
+\item 
+\mbox{\Hypertarget{class_c_i___calendar_af5ef1b222707555bd6162f9727707766}\label{class_c_i___calendar_af5ef1b222707555bd6162f9727707766}} 
+{\bfseries \$next\+\_\+prev\+\_\+url} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___calendar_a7fe5ce60d0125cc39763840df06b2563}\label{class_c_i___calendar_a7fe5ce60d0125cc39763840df06b2563}} 
+{\bfseries \$show\+\_\+other\+\_\+days} = F\+A\+L\+SE
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___calendar_a5ffc259e818058a3b91ecc754fc384b3}\label{class_c_i___calendar_a5ffc259e818058a3b91ecc754fc384b3}} 
+{\bfseries \$\+CI}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_i___calendar_a897a199c844ce2d4459e7b60ce8c766a}\label{class_c_i___calendar_a897a199c844ce2d4459e7b60ce8c766a}} 
+\index{C\+I\+\_\+\+Calendar@{C\+I\+\_\+\+Calendar}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+Calendar@{C\+I\+\_\+\+Calendar}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Calendar\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$config = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Class constructor
+
+Loads the calendar language file and sets the default time reference.
+
+C\+I\+\_\+\+Lang\+::\$is\+\_\+loaded
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & Calendar options \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___calendar_aa059f059813fe8953253c64bad337cb0}\label{class_c_i___calendar_aa059f059813fe8953253c64bad337cb0}} 
+\index{C\+I\+\_\+\+Calendar@{C\+I\+\_\+\+Calendar}!adjust\+\_\+date@{adjust\+\_\+date}}
+\index{adjust\+\_\+date@{adjust\+\_\+date}!C\+I\+\_\+\+Calendar@{C\+I\+\_\+\+Calendar}}
+\subsubsection{\texorpdfstring{adjust\+\_\+date()}{adjust\_date()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Calendar\+::adjust\+\_\+date (\begin{DoxyParamCaption}\item[{}]{\$month,  }\item[{}]{\$year }\end{DoxyParamCaption})}
+
+Adjust Date
+
+This function makes sure that we have a valid month/year. For example, if you submit 13 as the month, the year will increment and the month will become January.
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & the month \\
+\hline
+{\em int} & the year \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___calendar_acb35a5cb73ab69beb3bcaa3e28dfdb04}\label{class_c_i___calendar_acb35a5cb73ab69beb3bcaa3e28dfdb04}} 
+\index{C\+I\+\_\+\+Calendar@{C\+I\+\_\+\+Calendar}!default\+\_\+template@{default\+\_\+template}}
+\index{default\+\_\+template@{default\+\_\+template}!C\+I\+\_\+\+Calendar@{C\+I\+\_\+\+Calendar}}
+\subsubsection{\texorpdfstring{default\+\_\+template()}{default\_template()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Calendar\+::default\+\_\+template (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Set Default Template Data
+
+This is used in the event that the user has not created their own template
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___calendar_ad2ca24684eb6f022811d268a759422bb}\label{class_c_i___calendar_ad2ca24684eb6f022811d268a759422bb}} 
+\index{C\+I\+\_\+\+Calendar@{C\+I\+\_\+\+Calendar}!generate@{generate}}
+\index{generate@{generate}!C\+I\+\_\+\+Calendar@{C\+I\+\_\+\+Calendar}}
+\subsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Calendar\+::generate (\begin{DoxyParamCaption}\item[{}]{\$year = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$month = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$data = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Generate the calendar
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & the year \\
+\hline
+{\em int} & the month \\
+\hline
+{\em array} & the data to be shown in the calendar cells \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___calendar_a258986238b3db4eb98234b5a420150de}\label{class_c_i___calendar_a258986238b3db4eb98234b5a420150de}} 
+\index{C\+I\+\_\+\+Calendar@{C\+I\+\_\+\+Calendar}!get\+\_\+day\+\_\+names@{get\+\_\+day\+\_\+names}}
+\index{get\+\_\+day\+\_\+names@{get\+\_\+day\+\_\+names}!C\+I\+\_\+\+Calendar@{C\+I\+\_\+\+Calendar}}
+\subsubsection{\texorpdfstring{get\+\_\+day\+\_\+names()}{get\_day\_names()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Calendar\+::get\+\_\+day\+\_\+names (\begin{DoxyParamCaption}\item[{}]{\$day\+\_\+type = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Get Day Names
+
+Returns an array of day names (Sunday, Monday, etc.) based on the type. Options\+: long, short, abr
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___calendar_a04de91e34b7318654e785e5cc1cc2fd3}\label{class_c_i___calendar_a04de91e34b7318654e785e5cc1cc2fd3}} 
+\index{C\+I\+\_\+\+Calendar@{C\+I\+\_\+\+Calendar}!get\+\_\+month\+\_\+name@{get\+\_\+month\+\_\+name}}
+\index{get\+\_\+month\+\_\+name@{get\+\_\+month\+\_\+name}!C\+I\+\_\+\+Calendar@{C\+I\+\_\+\+Calendar}}
+\subsubsection{\texorpdfstring{get\+\_\+month\+\_\+name()}{get\_month\_name()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Calendar\+::get\+\_\+month\+\_\+name (\begin{DoxyParamCaption}\item[{}]{\$month }\end{DoxyParamCaption})}
+
+Get Month Name
+
+Generates a textual month name based on the numeric month provided.
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & the month \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___calendar_abcb093cef5b21da2b0e1bb63ef8d2ad0}\label{class_c_i___calendar_abcb093cef5b21da2b0e1bb63ef8d2ad0}} 
+\index{C\+I\+\_\+\+Calendar@{C\+I\+\_\+\+Calendar}!get\+\_\+total\+\_\+days@{get\+\_\+total\+\_\+days}}
+\index{get\+\_\+total\+\_\+days@{get\+\_\+total\+\_\+days}!C\+I\+\_\+\+Calendar@{C\+I\+\_\+\+Calendar}}
+\subsubsection{\texorpdfstring{get\+\_\+total\+\_\+days()}{get\_total\_days()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Calendar\+::get\+\_\+total\+\_\+days (\begin{DoxyParamCaption}\item[{}]{\$month,  }\item[{}]{\$year }\end{DoxyParamCaption})}
+
+Total days in a given month
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & the month \\
+\hline
+{\em int} & the year \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___calendar_a8b91781c18d53697a832d46ecbfeee37}\label{class_c_i___calendar_a8b91781c18d53697a832d46ecbfeee37}} 
+\index{C\+I\+\_\+\+Calendar@{C\+I\+\_\+\+Calendar}!initialize@{initialize}}
+\index{initialize@{initialize}!C\+I\+\_\+\+Calendar@{C\+I\+\_\+\+Calendar}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Calendar\+::initialize (\begin{DoxyParamCaption}\item[{}]{\$config = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Initialize the user preferences
+
+Accepts an associative array as input, containing display preferences
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & config preferences \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___calendar}{C\+I\+\_\+\+Calendar}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___calendar_a8235db008796ae1a36c214575137fd79}\label{class_c_i___calendar_a8235db008796ae1a36c214575137fd79}} 
+\index{C\+I\+\_\+\+Calendar@{C\+I\+\_\+\+Calendar}!parse\+\_\+template@{parse\+\_\+template}}
+\index{parse\+\_\+template@{parse\+\_\+template}!C\+I\+\_\+\+Calendar@{C\+I\+\_\+\+Calendar}}
+\subsubsection{\texorpdfstring{parse\+\_\+template()}{parse\_template()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Calendar\+::parse\+\_\+template (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Parse Template
+
+Harvests the data within the template \{pseudo-\/variables\} used to display the calendar
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___calendar}{C\+I\+\_\+\+Calendar}} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/libraries/Calendar.\+php\end{DoxyCompactItemize}

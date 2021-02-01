@@ -1,0 +1,450 @@
+\hypertarget{class_c_i___d_b__oci8__driver}{}\section{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver Class Reference}
+\label{class_c_i___d_b__oci8__driver}\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+Inheritance diagram for C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_i___d_b__oci8__driver}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___d_b__oci8__driver_a2b3f9729c63ae392c0f6b43f6adc14a5}{\+\_\+\+\_\+construct}} (\$params)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__oci8__driver_a9e509db34aa9a73203e62ba3bcd10ba2}{db\+\_\+connect}} (\$persistent=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__oci8__driver_ad6da17628cb50593e66b28bbe9a46fce}{version}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__oci8__driver_a78dcbceb7d8a821bf223630ce27a72de}{get\+\_\+cursor}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__oci8__driver_a9fc7ddb9c8c0379dfe516d063c3059fe}{stored\+\_\+procedure}} (\$package, \$procedure, array \$params)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__oci8__driver_a1bdcd4a4f333b1ecd3ffcd808de137b3}{affected\+\_\+rows}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__oci8__driver_ad358e7c4bab8c55d9397b51112ec5ac3}{insert\+\_\+id}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__oci8__driver_a3c875d27a5c26a83e6d005a34bbfdf54}{field\+\_\+data}} (\$table)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__oci8__driver_aa0479e1c0c3ce65a16aa3f4abf583a73}{error}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_a753bc492edc8a56c4427624bd3667f7e}\label{class_c_i___d_b__oci8__driver_a753bc492edc8a56c4427624bd3667f7e}} 
+{\bfseries \$dbdriver} = \textquotesingle{}oci8\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_a36e8911939f22e9c0f0fb18b2364f446}\label{class_c_i___d_b__oci8__driver_a36e8911939f22e9c0f0fb18b2364f446}} 
+{\bfseries \$stmt\+\_\+id}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_af3d4fb40345148c3175116a78bb27508}\label{class_c_i___d_b__oci8__driver_af3d4fb40345148c3175116a78bb27508}} 
+{\bfseries \$curs\+\_\+id}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_a0763603a2f69b9e15c2635c3bc96d11b}\label{class_c_i___d_b__oci8__driver_a0763603a2f69b9e15c2635c3bc96d11b}} 
+{\bfseries \$commit\+\_\+mode} = O\+C\+I\+\_\+\+C\+O\+M\+M\+I\+T\+\_\+\+O\+N\+\_\+\+S\+U\+C\+C\+E\+SS
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_a9ab6a292a5f8c1f515c1f648ec26baeb}\label{class_c_i___d_b__oci8__driver_a9ab6a292a5f8c1f515c1f648ec26baeb}} 
+{\bfseries \$limit\+\_\+used} = F\+A\+L\+SE
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___d_b__oci8__driver_ab53da6f3156300112ccfe328f30102f7}{\+\_\+execute}} (\$sql)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__oci8__driver_adace0321549203c81958522ab1d88828}{\+\_\+bind\+\_\+params}} (\$params)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__oci8__driver_addfcc8f1875daf14816362e22c98704c}{\+\_\+trans\+\_\+begin}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__oci8__driver_af42d25b8861d9fdde97dc11359c48218}{\+\_\+trans\+\_\+commit}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__oci8__driver_a432342278202fd1809f42277f6fe903f}{\+\_\+trans\+\_\+rollback}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__oci8__driver_a8736321498ba731f7fe0624c927362ad}{\+\_\+list\+\_\+tables}} (\$prefix\+\_\+limit=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__oci8__driver_a52b8f333a8f3811ed2ed1011174160d0}{\+\_\+list\+\_\+columns}} (\$table=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___d_b__oci8__driver_ad069b5095cab115e34e0b3ca6fd7c443}{\+\_\+insert\+\_\+batch}} (\$table, \$keys, \$values)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__oci8__driver_acb8f6653fb55b7cf89a6ceb01aebdb6c}{\+\_\+truncate}} (\$table)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__oci8__driver_aed6e27750068eb2c38120fa503c310de}{\+\_\+delete}} (\$table)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__oci8__driver_a42e5c7f4e497a51123e7c2bceaef4e7f}{\+\_\+limit}} (\$sql)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__oci8__driver_adeb12409f05b79a4634151ec07eb61cf}{\+\_\+close}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__oci8__driver_a242b3f0766b9d4ad759c14c7cd43e72a}{\+\_\+reset\+\_\+select}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___d_b__oci8__driver_aea008510318d9e6d01c0476a4d88894b}{\$\+\_\+reset\+\_\+stmt\+\_\+id}} = T\+R\+UE
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_afd07dd4e2205a42fb64d6bb3b9abce16}\label{class_c_i___d_b__oci8__driver_afd07dd4e2205a42fb64d6bb3b9abce16}} 
+{\bfseries \$\+\_\+reserved\+\_\+identifiers} = array(\textquotesingle{}$\ast$\textquotesingle{}, \textquotesingle{}rownum\textquotesingle{})
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_afc629280617fc483a7e7791634e19949}\label{class_c_i___d_b__oci8__driver_afc629280617fc483a7e7791634e19949}} 
+{\bfseries \$\+\_\+random\+\_\+keyword} = array(\textquotesingle{}A\+SC\textquotesingle{}, \textquotesingle{}A\+SC\textquotesingle{})
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_a4ba6ce5fe4e74e467fb95f791d2ec7b9}\label{class_c_i___d_b__oci8__driver_a4ba6ce5fe4e74e467fb95f791d2ec7b9}} 
+{\bfseries \$\+\_\+count\+\_\+string} = \textquotesingle{}S\+E\+L\+E\+CT C\+O\+U\+NT(1) AS \textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+oci8 Database Adapter Class
+
+This is a modification of the D\+B\+\_\+driver class to permit access to oracle databases
+
+\begin{DoxyAuthor}{Author}
+Kelly Mc\+Ardle 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_a2b3f9729c63ae392c0f6b43f6adc14a5}\label{class_c_i___d_b__oci8__driver_a2b3f9729c63ae392c0f6b43f6adc14a5}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$params }\end{DoxyParamCaption})}
+
+Class constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_adace0321549203c81958522ab1d88828}\label{class_c_i___d_b__oci8__driver_adace0321549203c81958522ab1d88828}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}!\+\_\+bind\+\_\+params@{\+\_\+bind\+\_\+params}}
+\index{\+\_\+bind\+\_\+params@{\+\_\+bind\+\_\+params}!C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+bind\+\_\+params()}{\_bind\_params()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+::\+\_\+bind\+\_\+params (\begin{DoxyParamCaption}\item[{}]{\$params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Bind parameters
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_adeb12409f05b79a4634151ec07eb61cf}\label{class_c_i___d_b__oci8__driver_adeb12409f05b79a4634151ec07eb61cf}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}!\+\_\+close@{\+\_\+close}}
+\index{\+\_\+close@{\+\_\+close}!C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+close()}{\_close()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+::\+\_\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Close DB Connection
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_aed6e27750068eb2c38120fa503c310de}\label{class_c_i___d_b__oci8__driver_aed6e27750068eb2c38120fa503c310de}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}!\+\_\+delete@{\+\_\+delete}}
+\index{\+\_\+delete@{\+\_\+delete}!C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+delete()}{\_delete()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+::\+\_\+delete (\begin{DoxyParamCaption}\item[{}]{\$table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Delete statement
+
+Generates a platform-\/specific delete string from the supplied data
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_ab53da6f3156300112ccfe328f30102f7}\label{class_c_i___d_b__oci8__driver_ab53da6f3156300112ccfe328f30102f7}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}!\+\_\+execute@{\+\_\+execute}}
+\index{\+\_\+execute@{\+\_\+execute}!C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+execute()}{\_execute()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+::\+\_\+execute (\begin{DoxyParamCaption}\item[{}]{\$sql }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Execute the query
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sql} & an S\+QL query \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_ad069b5095cab115e34e0b3ca6fd7c443}\label{class_c_i___d_b__oci8__driver_ad069b5095cab115e34e0b3ca6fd7c443}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}!\+\_\+insert\+\_\+batch@{\+\_\+insert\+\_\+batch}}
+\index{\+\_\+insert\+\_\+batch@{\+\_\+insert\+\_\+batch}!C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+insert\+\_\+batch()}{\_insert\_batch()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+::\+\_\+insert\+\_\+batch (\begin{DoxyParamCaption}\item[{}]{\$table,  }\item[{}]{\$keys,  }\item[{}]{\$values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Insert batch statement
+
+Generates a platform-\/specific insert string from the supplied data
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & Table name \\
+\hline
+array & {\em \$keys} & I\+N\+S\+E\+RT keys \\
+\hline
+array & {\em \$values} & I\+N\+S\+E\+RT values \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_a42e5c7f4e497a51123e7c2bceaef4e7f}\label{class_c_i___d_b__oci8__driver_a42e5c7f4e497a51123e7c2bceaef4e7f}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}!\+\_\+limit@{\+\_\+limit}}
+\index{\+\_\+limit@{\+\_\+limit}!C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+limit()}{\_limit()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+::\+\_\+limit (\begin{DoxyParamCaption}\item[{}]{\$sql }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+L\+I\+M\+IT
+
+Generates a platform-\/specific L\+I\+M\+IT clause
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sql} & S\+QL Query \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_a52b8f333a8f3811ed2ed1011174160d0}\label{class_c_i___d_b__oci8__driver_a52b8f333a8f3811ed2ed1011174160d0}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}!\+\_\+list\+\_\+columns@{\+\_\+list\+\_\+columns}}
+\index{\+\_\+list\+\_\+columns@{\+\_\+list\+\_\+columns}!C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+list\+\_\+columns()}{\_list\_columns()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+::\+\_\+list\+\_\+columns (\begin{DoxyParamCaption}\item[{}]{\$table = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Show column query
+
+Generates a platform-\/specific query string so that the column names can be fetched
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_a8736321498ba731f7fe0624c927362ad}\label{class_c_i___d_b__oci8__driver_a8736321498ba731f7fe0624c927362ad}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}!\+\_\+list\+\_\+tables@{\+\_\+list\+\_\+tables}}
+\index{\+\_\+list\+\_\+tables@{\+\_\+list\+\_\+tables}!C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+list\+\_\+tables()}{\_list\_tables()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+::\+\_\+list\+\_\+tables (\begin{DoxyParamCaption}\item[{}]{\$prefix\+\_\+limit = {\ttfamily FALSE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Show table query
+
+Generates a platform-\/specific query string so that the table names can be fetched
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$prefix\+\_\+limit} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_a242b3f0766b9d4ad759c14c7cd43e72a}\label{class_c_i___d_b__oci8__driver_a242b3f0766b9d4ad759c14c7cd43e72a}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}!\+\_\+reset\+\_\+select@{\+\_\+reset\+\_\+select}}
+\index{\+\_\+reset\+\_\+select@{\+\_\+reset\+\_\+select}!C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+reset\+\_\+select()}{\_reset\_select()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+::\+\_\+reset\+\_\+select (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+We need to reset our \$limit\+\_\+used hack flag, so it doesn\textquotesingle{}t propagate to subsequent queries.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_addfcc8f1875daf14816362e22c98704c}\label{class_c_i___d_b__oci8__driver_addfcc8f1875daf14816362e22c98704c}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}!\+\_\+trans\+\_\+begin@{\+\_\+trans\+\_\+begin}}
+\index{\+\_\+trans\+\_\+begin@{\+\_\+trans\+\_\+begin}!C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+trans\+\_\+begin()}{\_trans\_begin()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+::\+\_\+trans\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Begin Transaction
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_af42d25b8861d9fdde97dc11359c48218}\label{class_c_i___d_b__oci8__driver_af42d25b8861d9fdde97dc11359c48218}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}!\+\_\+trans\+\_\+commit@{\+\_\+trans\+\_\+commit}}
+\index{\+\_\+trans\+\_\+commit@{\+\_\+trans\+\_\+commit}!C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+trans\+\_\+commit()}{\_trans\_commit()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+::\+\_\+trans\+\_\+commit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Commit Transaction
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_a432342278202fd1809f42277f6fe903f}\label{class_c_i___d_b__oci8__driver_a432342278202fd1809f42277f6fe903f}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}!\+\_\+trans\+\_\+rollback@{\+\_\+trans\+\_\+rollback}}
+\index{\+\_\+trans\+\_\+rollback@{\+\_\+trans\+\_\+rollback}!C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+trans\+\_\+rollback()}{\_trans\_rollback()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+::\+\_\+trans\+\_\+rollback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Rollback Transaction
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_acb8f6653fb55b7cf89a6ceb01aebdb6c}\label{class_c_i___d_b__oci8__driver_acb8f6653fb55b7cf89a6ceb01aebdb6c}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}!\+\_\+truncate@{\+\_\+truncate}}
+\index{\+\_\+truncate@{\+\_\+truncate}!C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+truncate()}{\_truncate()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+::\+\_\+truncate (\begin{DoxyParamCaption}\item[{}]{\$table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Truncate statement
+
+Generates a platform-\/specific truncate string from the supplied data
+
+If the database does not support the T\+R\+U\+N\+C\+A\+TE statement, then this method maps to \textquotesingle{}D\+E\+L\+E\+TE F\+R\+OM table\textquotesingle{}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_a1bdcd4a4f333b1ecd3ffcd808de137b3}\label{class_c_i___d_b__oci8__driver_a1bdcd4a4f333b1ecd3ffcd808de137b3}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}!affected\+\_\+rows@{affected\+\_\+rows}}
+\index{affected\+\_\+rows@{affected\+\_\+rows}!C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+\subsubsection{\texorpdfstring{affected\+\_\+rows()}{affected\_rows()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+::affected\+\_\+rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Affected Rows
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_a9e509db34aa9a73203e62ba3bcd10ba2}\label{class_c_i___d_b__oci8__driver_a9e509db34aa9a73203e62ba3bcd10ba2}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}!db\+\_\+connect@{db\+\_\+connect}}
+\index{db\+\_\+connect@{db\+\_\+connect}!C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+\subsubsection{\texorpdfstring{db\+\_\+connect()}{db\_connect()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+::db\+\_\+connect (\begin{DoxyParamCaption}\item[{}]{\$persistent = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Non-\/persistent database connection
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$persistent} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_aa0479e1c0c3ce65a16aa3f4abf583a73}\label{class_c_i___d_b__oci8__driver_aa0479e1c0c3ce65a16aa3f4abf583a73}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}!error@{error}}
+\index{error@{error}!C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+\subsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+::error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Error
+
+Returns an array containing code and message of the last database error that has occurred.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_a3c875d27a5c26a83e6d005a34bbfdf54}\label{class_c_i___d_b__oci8__driver_a3c875d27a5c26a83e6d005a34bbfdf54}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}!field\+\_\+data@{field\+\_\+data}}
+\index{field\+\_\+data@{field\+\_\+data}!C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+\subsubsection{\texorpdfstring{field\+\_\+data()}{field\_data()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+::field\+\_\+data (\begin{DoxyParamCaption}\item[{}]{\$table }\end{DoxyParamCaption})}
+
+Returns an object with field data
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_a78dcbceb7d8a821bf223630ce27a72de}\label{class_c_i___d_b__oci8__driver_a78dcbceb7d8a821bf223630ce27a72de}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}!get\+\_\+cursor@{get\+\_\+cursor}}
+\index{get\+\_\+cursor@{get\+\_\+cursor}!C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+\subsubsection{\texorpdfstring{get\+\_\+cursor()}{get\_cursor()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+::get\+\_\+cursor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get cursor. Returns a cursor from the database
+
+\begin{DoxyReturn}{Returns}
+resource 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_ad358e7c4bab8c55d9397b51112ec5ac3}\label{class_c_i___d_b__oci8__driver_ad358e7c4bab8c55d9397b51112ec5ac3}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}!insert\+\_\+id@{insert\+\_\+id}}
+\index{insert\+\_\+id@{insert\+\_\+id}!C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+\subsubsection{\texorpdfstring{insert\+\_\+id()}{insert\_id()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+::insert\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Insert ID
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_a9fc7ddb9c8c0379dfe516d063c3059fe}\label{class_c_i___d_b__oci8__driver_a9fc7ddb9c8c0379dfe516d063c3059fe}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}!stored\+\_\+procedure@{stored\+\_\+procedure}}
+\index{stored\+\_\+procedure@{stored\+\_\+procedure}!C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+\subsubsection{\texorpdfstring{stored\+\_\+procedure()}{stored\_procedure()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+::stored\+\_\+procedure (\begin{DoxyParamCaption}\item[{}]{\$package,  }\item[{}]{\$procedure,  }\item[{array}]{\$params }\end{DoxyParamCaption})}
+
+Stored Procedure. Executes a stored procedure
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & package name in which the stored procedure is in \\
+\hline
+{\em string} & stored procedure name to execute \\
+\hline
+{\em array} & parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+params array keys
+
+K\+EY O\+P\+T\+I\+O\+N\+AL N\+O\+T\+ES name no the name of the parameter should be in \+:$<$param\+\_\+name$>$ format value no the value of the parameter. If this is an O\+UT or IN O\+UT parameter, this should be a reference to a variable type yes the type of the parameter length yes the max size of the parameter \mbox{\Hypertarget{class_c_i___d_b__oci8__driver_ad6da17628cb50593e66b28bbe9a46fce}\label{class_c_i___d_b__oci8__driver_ad6da17628cb50593e66b28bbe9a46fce}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}!version@{version}}
+\index{version@{version}!C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+\subsubsection{\texorpdfstring{version()}{version()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+::version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Database version number
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_i___d_b__oci8__driver_aea008510318d9e6d01c0476a4d88894b}\label{class_c_i___d_b__oci8__driver_aea008510318d9e6d01c0476a4d88894b}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}!\$\+\_\+reset\+\_\+stmt\+\_\+id@{\$\+\_\+reset\+\_\+stmt\+\_\+id}}
+\index{\$\+\_\+reset\+\_\+stmt\+\_\+id@{\$\+\_\+reset\+\_\+stmt\+\_\+id}!C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver}}
+\subsubsection{\texorpdfstring{\$\+\_\+reset\+\_\+stmt\+\_\+id}{$\_reset\_stmt\_id}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+oci8\+\_\+driver\+::\$\+\_\+reset\+\_\+stmt\+\_\+id = T\+R\+UE\hspace{0.3cm}{\ttfamily [protected]}}
+
+Reset \$stmt\+\_\+id flag
+
+Used by \mbox{\hyperlink{class_c_i___d_b__oci8__driver_a9fc7ddb9c8c0379dfe516d063c3059fe}{stored\+\_\+procedure()}} to prevent \mbox{\hyperlink{class_c_i___d_b__oci8__driver_ab53da6f3156300112ccfe328f30102f7}{\+\_\+execute()}} from re-\/setting the statement ID. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/database/drivers/oci8/oci8\+\_\+driver.\+php\end{DoxyCompactItemize}

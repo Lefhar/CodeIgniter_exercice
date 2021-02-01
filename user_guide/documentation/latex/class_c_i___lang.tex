@@ -1,0 +1,92 @@
+\hypertarget{class_c_i___lang}{}\section{C\+I\+\_\+\+Lang Class Reference}
+\label{class_c_i___lang}\index{C\+I\+\_\+\+Lang@{C\+I\+\_\+\+Lang}}
+Inheritance diagram for C\+I\+\_\+\+Lang\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_i___lang}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___lang_ae5a0a2179e31917ecb0c374072e3c8d2}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_c_i___lang_a02e4ac5258af38b15e09b23fd2185e8f}{load}} (\$langfile, \$idiom=\textquotesingle{}\textquotesingle{}, \$return=F\+A\+L\+SE, \$add\+\_\+suffix=T\+R\+UE, \$alt\+\_\+path=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___lang_af891ebde0d6c16106e425736a1b8947d}{line}} (\$line, \$log\+\_\+errors=T\+R\+UE)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___lang_a9df8067ee90b52636e7896a33a351e4c}\label{class_c_i___lang_a9df8067ee90b52636e7896a33a351e4c}} 
+{\bfseries \$language} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___lang_a5e7e64d9e4c0b85ceff3a0ec70498947}\label{class_c_i___lang_a5e7e64d9e4c0b85ceff3a0ec70498947}} 
+{\bfseries \$is\+\_\+loaded} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_i___lang_ae5a0a2179e31917ecb0c374072e3c8d2}\label{class_c_i___lang_ae5a0a2179e31917ecb0c374072e3c8d2}} 
+\index{C\+I\+\_\+\+Lang@{C\+I\+\_\+\+Lang}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+Lang@{C\+I\+\_\+\+Lang}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Lang\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Class constructor
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___lang_af891ebde0d6c16106e425736a1b8947d}\label{class_c_i___lang_af891ebde0d6c16106e425736a1b8947d}} 
+\index{C\+I\+\_\+\+Lang@{C\+I\+\_\+\+Lang}!line@{line}}
+\index{line@{line}!C\+I\+\_\+\+Lang@{C\+I\+\_\+\+Lang}}
+\subsubsection{\texorpdfstring{line()}{line()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Lang\+::line (\begin{DoxyParamCaption}\item[{}]{\$line,  }\item[{}]{\$log\+\_\+errors = {\ttfamily TRUE} }\end{DoxyParamCaption})}
+
+Language line
+
+Fetches a single line of text from the language array
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$line} & Language line key \\
+\hline
+bool & {\em \$log\+\_\+errors} & Whether to log an error message if the line is not found \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Translation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___lang_a02e4ac5258af38b15e09b23fd2185e8f}\label{class_c_i___lang_a02e4ac5258af38b15e09b23fd2185e8f}} 
+\index{C\+I\+\_\+\+Lang@{C\+I\+\_\+\+Lang}!load@{load}}
+\index{load@{load}!C\+I\+\_\+\+Lang@{C\+I\+\_\+\+Lang}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Lang\+::load (\begin{DoxyParamCaption}\item[{}]{\$langfile,  }\item[{}]{\$idiom = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$return = {\ttfamily FALSE},  }\item[{}]{\$add\+\_\+suffix = {\ttfamily TRUE},  }\item[{}]{\$alt\+\_\+path = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Load a language file
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$langfile} & Language file name \\
+\hline
+string & {\em \$idiom} & Language name (english, etc.) \\
+\hline
+bool & {\em \$return} & Whether to return the loaded array of translations \\
+\hline
+bool & {\em \$add\+\_\+suffix} & Whether to add suffix to \$langfile \\
+\hline
+string & {\em \$alt\+\_\+path} & Alternative path to look for the language file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\vert$string\mbox{[}\mbox{]} Array containing translations, if \$return is set to T\+R\+UE 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/core/Lang.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,92 @@
+\hypertarget{class_c_i___hooks}{}\section{C\+I\+\_\+\+Hooks Class Reference}
+\label{class_c_i___hooks}\index{C\+I\+\_\+\+Hooks@{C\+I\+\_\+\+Hooks}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___hooks_a69efe7c0d75f0e0106d42ea401cf59ec}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_c_i___hooks_aa89ae13d8a7dc735064b70c42db7ef53}{call\+\_\+hook}} (\$which=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___hooks_ac3a3f9471b76e0f23ceebae78ad08175}\label{class_c_i___hooks_ac3a3f9471b76e0f23ceebae78ad08175}} 
+{\bfseries \$enabled} = F\+A\+L\+SE
+\item 
+\mbox{\Hypertarget{class_c_i___hooks_aab1285f502edb6fad3687db4cd8d7335}\label{class_c_i___hooks_aab1285f502edb6fad3687db4cd8d7335}} 
+{\bfseries \$hooks} = array()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___hooks_ac1ac99a9f45cc07eff8434763e066a5d}{\+\_\+run\+\_\+hook}} (\$data)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___hooks_a05c1c412a3e86bbfa6bf753859c2c956}\label{class_c_i___hooks_a05c1c412a3e86bbfa6bf753859c2c956}} 
+{\bfseries \$\+\_\+objects} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___hooks_afa707f453871b272317cd07d0307cf24}\label{class_c_i___hooks_afa707f453871b272317cd07d0307cf24}} 
+{\bfseries \$\+\_\+in\+\_\+progress} = F\+A\+L\+SE
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_i___hooks_a69efe7c0d75f0e0106d42ea401cf59ec}\label{class_c_i___hooks_a69efe7c0d75f0e0106d42ea401cf59ec}} 
+\index{C\+I\+\_\+\+Hooks@{C\+I\+\_\+\+Hooks}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+Hooks@{C\+I\+\_\+\+Hooks}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Hooks\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Class constructor
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___hooks_ac1ac99a9f45cc07eff8434763e066a5d}\label{class_c_i___hooks_ac1ac99a9f45cc07eff8434763e066a5d}} 
+\index{C\+I\+\_\+\+Hooks@{C\+I\+\_\+\+Hooks}!\+\_\+run\+\_\+hook@{\+\_\+run\+\_\+hook}}
+\index{\+\_\+run\+\_\+hook@{\+\_\+run\+\_\+hook}!C\+I\+\_\+\+Hooks@{C\+I\+\_\+\+Hooks}}
+\subsubsection{\texorpdfstring{\+\_\+run\+\_\+hook()}{\_run\_hook()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Hooks\+::\+\_\+run\+\_\+hook (\begin{DoxyParamCaption}\item[{}]{\$data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Run Hook
+
+Runs a particular hook
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & Hook details \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool T\+R\+UE on success or F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___hooks_aa89ae13d8a7dc735064b70c42db7ef53}\label{class_c_i___hooks_aa89ae13d8a7dc735064b70c42db7ef53}} 
+\index{C\+I\+\_\+\+Hooks@{C\+I\+\_\+\+Hooks}!call\+\_\+hook@{call\+\_\+hook}}
+\index{call\+\_\+hook@{call\+\_\+hook}!C\+I\+\_\+\+Hooks@{C\+I\+\_\+\+Hooks}}
+\subsubsection{\texorpdfstring{call\+\_\+hook()}{call\_hook()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Hooks\+::call\+\_\+hook (\begin{DoxyParamCaption}\item[{}]{\$which = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Call Hook
+
+Calls a particular hook. Called by Code\+Igniter.\+php.
+
+\mbox{\hyperlink{class_c_i___hooks_ac1ac99a9f45cc07eff8434763e066a5d}{C\+I\+\_\+\+Hooks\+::\+\_\+run\+\_\+hook()}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$which} & Hook name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool T\+R\+UE on success or F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/core/Hooks.\+php\end{DoxyCompactItemize}

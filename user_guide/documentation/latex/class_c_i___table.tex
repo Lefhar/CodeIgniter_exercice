@@ -1,0 +1,293 @@
+\hypertarget{class_c_i___table}{}\section{C\+I\+\_\+\+Table Class Reference}
+\label{class_c_i___table}\index{C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___table_aafb01706a8d4082ff7fbf35b3efae4d5}{\+\_\+\+\_\+construct}} (\$config=array())
+\item 
+\mbox{\hyperlink{class_c_i___table_a2dd144ee26a9abb20dbf71555716d2d4}{set\+\_\+template}} (\$template)
+\item 
+\mbox{\hyperlink{class_c_i___table_afdb7990fbfa5d83acfc1272829209ca7}{set\+\_\+heading}} (\$args=array())
+\item 
+\mbox{\hyperlink{class_c_i___table_a3d779b75cf9599b02372de83b68819ad}{make\+\_\+columns}} (\$array=array(), \$col\+\_\+limit=0)
+\item 
+\mbox{\hyperlink{class_c_i___table_a0cf2d8b62a5dc9f080690fb9655846f5}{set\+\_\+empty}} (\$value)
+\item 
+\mbox{\hyperlink{class_c_i___table_a955fc013a1e13834dea84b4cfdf6f2a5}{add\+\_\+row}} (\$args=array())
+\item 
+\mbox{\hyperlink{class_c_i___table_a392d4ca789546f2a09104895d9f8ca0b}{set\+\_\+caption}} (\$caption)
+\item 
+\mbox{\hyperlink{class_c_i___table_af165170829d4e6622bc2322c56d21e00}{generate}} (\$table\+\_\+data=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___table_af452779692cfae6de332f1f697170445}{clear}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___table_a4b5a384ac63790e95c9d324a812a81f8}\label{class_c_i___table_a4b5a384ac63790e95c9d324a812a81f8}} 
+{\bfseries \$rows} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___table_aadd5ddeff82c4a6d3c7bb807e482b580}\label{class_c_i___table_aadd5ddeff82c4a6d3c7bb807e482b580}} 
+{\bfseries \$heading} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___table_a26c795c8c50f935077f1c6eaf464d504}\label{class_c_i___table_a26c795c8c50f935077f1c6eaf464d504}} 
+{\bfseries \$auto\+\_\+heading} = T\+R\+UE
+\item 
+\mbox{\Hypertarget{class_c_i___table_afa1f37302cd9a49d239ee3b5e05f167f}\label{class_c_i___table_afa1f37302cd9a49d239ee3b5e05f167f}} 
+{\bfseries \$caption} = N\+U\+LL
+\item 
+\mbox{\Hypertarget{class_c_i___table_a8be5af2d026be8b01370692772a2a9a0}\label{class_c_i___table_a8be5af2d026be8b01370692772a2a9a0}} 
+{\bfseries \$template} = N\+U\+LL
+\item 
+\mbox{\Hypertarget{class_c_i___table_ace589c81317ea4d872d8a8ae3c29e675}\label{class_c_i___table_ace589c81317ea4d872d8a8ae3c29e675}} 
+{\bfseries \$newline} = \char`\"{}\textbackslash{}n\char`\"{}
+\item 
+\mbox{\Hypertarget{class_c_i___table_af0bfa8ea27b7199cb7b22cb3712e8c6b}\label{class_c_i___table_af0bfa8ea27b7199cb7b22cb3712e8c6b}} 
+{\bfseries \$empty\+\_\+cells} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___table_af1a73d24ef0525969c6b41c087c75e46}\label{class_c_i___table_af1a73d24ef0525969c6b41c087c75e46}} 
+{\bfseries \$function} = N\+U\+LL
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___table_a74e7e96f438364bdb9e20ae5f75fddeb}{\+\_\+prep\+\_\+args}} (\$args)
+\item 
+\mbox{\hyperlink{class_c_i___table_a9892d6dcd1875dd22ad3d206ce12134e}{\+\_\+set\+\_\+from\+\_\+db\+\_\+result}} (\$object)
+\item 
+\mbox{\hyperlink{class_c_i___table_af6649afb3ad3b8187d11aea588f82296}{\+\_\+set\+\_\+from\+\_\+array}} (\$data)
+\item 
+\mbox{\hyperlink{class_c_i___table_afc336bcb2396eddb9e45a1d9e481b418}{\+\_\+compile\+\_\+template}} ()
+\item 
+\mbox{\hyperlink{class_c_i___table_a1e130e424d32d8c1cd77af17f1343061}{\+\_\+default\+\_\+template}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_i___table_aafb01706a8d4082ff7fbf35b3efae4d5}\label{class_c_i___table_aafb01706a8d4082ff7fbf35b3efae4d5}} 
+\index{C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Table\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$config = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Set the template from the table config file if it exists
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & (default\+: array()) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___table_afc336bcb2396eddb9e45a1d9e481b418}\label{class_c_i___table_afc336bcb2396eddb9e45a1d9e481b418}} 
+\index{C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}!\+\_\+compile\+\_\+template@{\+\_\+compile\+\_\+template}}
+\index{\+\_\+compile\+\_\+template@{\+\_\+compile\+\_\+template}!C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}}
+\subsubsection{\texorpdfstring{\+\_\+compile\+\_\+template()}{\_compile\_template()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Table\+::\+\_\+compile\+\_\+template (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Compile Template
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_a1e130e424d32d8c1cd77af17f1343061}\label{class_c_i___table_a1e130e424d32d8c1cd77af17f1343061}} 
+\index{C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}!\+\_\+default\+\_\+template@{\+\_\+default\+\_\+template}}
+\index{\+\_\+default\+\_\+template@{\+\_\+default\+\_\+template}!C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}}
+\subsubsection{\texorpdfstring{\+\_\+default\+\_\+template()}{\_default\_template()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Table\+::\+\_\+default\+\_\+template (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Default Template
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_a74e7e96f438364bdb9e20ae5f75fddeb}\label{class_c_i___table_a74e7e96f438364bdb9e20ae5f75fddeb}} 
+\index{C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}!\+\_\+prep\+\_\+args@{\+\_\+prep\+\_\+args}}
+\index{\+\_\+prep\+\_\+args@{\+\_\+prep\+\_\+args}!C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}}
+\subsubsection{\texorpdfstring{\+\_\+prep\+\_\+args()}{\_prep\_args()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Table\+::\+\_\+prep\+\_\+args (\begin{DoxyParamCaption}\item[{}]{\$args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prep Args
+
+Ensures a standard associative array format for all cell data
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_af6649afb3ad3b8187d11aea588f82296}\label{class_c_i___table_af6649afb3ad3b8187d11aea588f82296}} 
+\index{C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}!\+\_\+set\+\_\+from\+\_\+array@{\+\_\+set\+\_\+from\+\_\+array}}
+\index{\+\_\+set\+\_\+from\+\_\+array@{\+\_\+set\+\_\+from\+\_\+array}!C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}}
+\subsubsection{\texorpdfstring{\+\_\+set\+\_\+from\+\_\+array()}{\_set\_from\_array()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Table\+::\+\_\+set\+\_\+from\+\_\+array (\begin{DoxyParamCaption}\item[{}]{\$data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set table data from an array
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_a9892d6dcd1875dd22ad3d206ce12134e}\label{class_c_i___table_a9892d6dcd1875dd22ad3d206ce12134e}} 
+\index{C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}!\+\_\+set\+\_\+from\+\_\+db\+\_\+result@{\+\_\+set\+\_\+from\+\_\+db\+\_\+result}}
+\index{\+\_\+set\+\_\+from\+\_\+db\+\_\+result@{\+\_\+set\+\_\+from\+\_\+db\+\_\+result}!C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}}
+\subsubsection{\texorpdfstring{\+\_\+set\+\_\+from\+\_\+db\+\_\+result()}{\_set\_from\_db\_result()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Table\+::\+\_\+set\+\_\+from\+\_\+db\+\_\+result (\begin{DoxyParamCaption}\item[{}]{\$object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set table data from a database result object
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_c_i___d_b__result}{C\+I\+\_\+\+D\+B\+\_\+result}} & {\em \$object} & Database result object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_a955fc013a1e13834dea84b4cfdf6f2a5}\label{class_c_i___table_a955fc013a1e13834dea84b4cfdf6f2a5}} 
+\index{C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}!add\+\_\+row@{add\+\_\+row}}
+\index{add\+\_\+row@{add\+\_\+row}!C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}}
+\subsubsection{\texorpdfstring{add\+\_\+row()}{add\_row()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Table\+::add\+\_\+row (\begin{DoxyParamCaption}\item[{}]{\$args = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Add a table row
+
+Can be passed as an array or discreet params
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___table}{C\+I\+\_\+\+Table}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_af452779692cfae6de332f1f697170445}\label{class_c_i___table_af452779692cfae6de332f1f697170445}} 
+\index{C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}!clear@{clear}}
+\index{clear@{clear}!C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Table\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clears the table arrays. Useful if multiple tables are being generated
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___table}{C\+I\+\_\+\+Table}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_af165170829d4e6622bc2322c56d21e00}\label{class_c_i___table_af165170829d4e6622bc2322c56d21e00}} 
+\index{C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}!generate@{generate}}
+\index{generate@{generate}!C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}}
+\subsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Table\+::generate (\begin{DoxyParamCaption}\item[{}]{\$table\+\_\+data = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Generate the table
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$table\+\_\+data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_a3d779b75cf9599b02372de83b68819ad}\label{class_c_i___table_a3d779b75cf9599b02372de83b68819ad}} 
+\index{C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}!make\+\_\+columns@{make\+\_\+columns}}
+\index{make\+\_\+columns@{make\+\_\+columns}!C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}}
+\subsubsection{\texorpdfstring{make\+\_\+columns()}{make\_columns()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Table\+::make\+\_\+columns (\begin{DoxyParamCaption}\item[{}]{\$array = {\ttfamily array()},  }\item[{}]{\$col\+\_\+limit = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Set columns. Takes a one-\/dimensional array as input and creates a multi-\/dimensional array with a depth equal to the number of columns. This allows a single array with many elements to be displayed in a table that has a fixed column count.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & \\
+\hline
+int & {\em \$col\+\_\+limit} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_a392d4ca789546f2a09104895d9f8ca0b}\label{class_c_i___table_a392d4ca789546f2a09104895d9f8ca0b}} 
+\index{C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}!set\+\_\+caption@{set\+\_\+caption}}
+\index{set\+\_\+caption@{set\+\_\+caption}!C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}}
+\subsubsection{\texorpdfstring{set\+\_\+caption()}{set\_caption()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Table\+::set\+\_\+caption (\begin{DoxyParamCaption}\item[{}]{\$caption }\end{DoxyParamCaption})}
+
+Add a table caption
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$caption} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___table}{C\+I\+\_\+\+Table}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_a0cf2d8b62a5dc9f080690fb9655846f5}\label{class_c_i___table_a0cf2d8b62a5dc9f080690fb9655846f5}} 
+\index{C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}!set\+\_\+empty@{set\+\_\+empty}}
+\index{set\+\_\+empty@{set\+\_\+empty}!C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}}
+\subsubsection{\texorpdfstring{set\+\_\+empty()}{set\_empty()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Table\+::set\+\_\+empty (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Set \char`\"{}empty\char`\"{} cells
+
+Can be passed as an array or discreet params
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___table}{C\+I\+\_\+\+Table}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_afdb7990fbfa5d83acfc1272829209ca7}\label{class_c_i___table_afdb7990fbfa5d83acfc1272829209ca7}} 
+\index{C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}!set\+\_\+heading@{set\+\_\+heading}}
+\index{set\+\_\+heading@{set\+\_\+heading}!C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}}
+\subsubsection{\texorpdfstring{set\+\_\+heading()}{set\_heading()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Table\+::set\+\_\+heading (\begin{DoxyParamCaption}\item[{}]{\$args = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Set the table heading
+
+Can be passed as an array or discreet params
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___table}{C\+I\+\_\+\+Table}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_a2dd144ee26a9abb20dbf71555716d2d4}\label{class_c_i___table_a2dd144ee26a9abb20dbf71555716d2d4}} 
+\index{C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}!set\+\_\+template@{set\+\_\+template}}
+\index{set\+\_\+template@{set\+\_\+template}!C\+I\+\_\+\+Table@{C\+I\+\_\+\+Table}}
+\subsubsection{\texorpdfstring{set\+\_\+template()}{set\_template()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Table\+::set\+\_\+template (\begin{DoxyParamCaption}\item[{}]{\$template }\end{DoxyParamCaption})}
+
+Set the template
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$template} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/libraries/Table.\+php\end{DoxyCompactItemize}

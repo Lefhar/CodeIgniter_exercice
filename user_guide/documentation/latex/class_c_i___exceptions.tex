@@ -1,0 +1,170 @@
+\hypertarget{class_c_i___exceptions}{}\section{C\+I\+\_\+\+Exceptions Class Reference}
+\label{class_c_i___exceptions}\index{C\+I\+\_\+\+Exceptions@{C\+I\+\_\+\+Exceptions}}
+Inheritance diagram for C\+I\+\_\+\+Exceptions\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_i___exceptions}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___exceptions_ac9cc7d0bb90a5e2ae6eef7753a771a91}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_c_i___exceptions_a49d733e9740d9d638829a1854d67fffe}{log\+\_\+exception}} (\$severity, \$message, \$filepath, \$line)
+\item 
+\mbox{\hyperlink{class_c_i___exceptions_a4f8e5eda67ea01e7260f1b566c2a76ef}{show\+\_\+404}} (\$page=\textquotesingle{}\textquotesingle{}, \$log\+\_\+error=T\+R\+UE)
+\item 
+\mbox{\hyperlink{class_c_i___exceptions_aef09cc9836c95b0b7bfa032aee4e02d4}{show\+\_\+error}} (\$heading, \$message, \$template=\textquotesingle{}error\+\_\+general\textquotesingle{}, \$status\+\_\+code=500)
+\item 
+\mbox{\Hypertarget{class_c_i___exceptions_a41ee5bbd57e37065891ae5de652e0bfb}\label{class_c_i___exceptions_a41ee5bbd57e37065891ae5de652e0bfb}} 
+{\bfseries show\+\_\+exception} (\$exception)
+\item 
+\mbox{\hyperlink{class_c_i___exceptions_abcd98d0e5e512608dfbd2b820d9f57f2}{show\+\_\+php\+\_\+error}} (\$severity, \$message, \$filepath, \$line)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___exceptions_ac4863d069eb6ab433cbb803a5f799f89}\label{class_c_i___exceptions_ac4863d069eb6ab433cbb803a5f799f89}} 
+{\bfseries \$ob\+\_\+level}
+\item 
+{\bfseries \$levels}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_i___exceptions_ac9cc7d0bb90a5e2ae6eef7753a771a91}\label{class_c_i___exceptions_ac9cc7d0bb90a5e2ae6eef7753a771a91}} 
+\index{C\+I\+\_\+\+Exceptions@{C\+I\+\_\+\+Exceptions}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+Exceptions@{C\+I\+\_\+\+Exceptions}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Exceptions\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Class constructor
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___exceptions_a49d733e9740d9d638829a1854d67fffe}\label{class_c_i___exceptions_a49d733e9740d9d638829a1854d67fffe}} 
+\index{C\+I\+\_\+\+Exceptions@{C\+I\+\_\+\+Exceptions}!log\+\_\+exception@{log\+\_\+exception}}
+\index{log\+\_\+exception@{log\+\_\+exception}!C\+I\+\_\+\+Exceptions@{C\+I\+\_\+\+Exceptions}}
+\subsubsection{\texorpdfstring{log\+\_\+exception()}{log\_exception()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Exceptions\+::log\+\_\+exception (\begin{DoxyParamCaption}\item[{}]{\$severity,  }\item[{}]{\$message,  }\item[{}]{\$filepath,  }\item[{}]{\$line }\end{DoxyParamCaption})}
+
+Exception Logger
+
+Logs P\+HP generated error messages
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$severity} & Log level \\
+\hline
+string & {\em \$message} & Error message \\
+\hline
+string & {\em \$filepath} & File path \\
+\hline
+int & {\em \$line} & Line number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___exceptions_a4f8e5eda67ea01e7260f1b566c2a76ef}\label{class_c_i___exceptions_a4f8e5eda67ea01e7260f1b566c2a76ef}} 
+\index{C\+I\+\_\+\+Exceptions@{C\+I\+\_\+\+Exceptions}!show\+\_\+404@{show\+\_\+404}}
+\index{show\+\_\+404@{show\+\_\+404}!C\+I\+\_\+\+Exceptions@{C\+I\+\_\+\+Exceptions}}
+\subsubsection{\texorpdfstring{show\+\_\+404()}{show\_404()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Exceptions\+::show\+\_\+404 (\begin{DoxyParamCaption}\item[{}]{\$page = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$log\+\_\+error = {\ttfamily TRUE} }\end{DoxyParamCaption})}
+
+404 Error Handler
+
+\mbox{\hyperlink{class_c_i___exceptions_aef09cc9836c95b0b7bfa032aee4e02d4}{C\+I\+\_\+\+Exceptions\+::show\+\_\+error()}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$page} & Page U\+RI \\
+\hline
+bool & {\em \$log\+\_\+error} & Whether to log the error \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___exceptions_aef09cc9836c95b0b7bfa032aee4e02d4}\label{class_c_i___exceptions_aef09cc9836c95b0b7bfa032aee4e02d4}} 
+\index{C\+I\+\_\+\+Exceptions@{C\+I\+\_\+\+Exceptions}!show\+\_\+error@{show\+\_\+error}}
+\index{show\+\_\+error@{show\+\_\+error}!C\+I\+\_\+\+Exceptions@{C\+I\+\_\+\+Exceptions}}
+\subsubsection{\texorpdfstring{show\+\_\+error()}{show\_error()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Exceptions\+::show\+\_\+error (\begin{DoxyParamCaption}\item[{}]{\$heading,  }\item[{}]{\$message,  }\item[{}]{\$template = {\ttfamily \textquotesingle{}error\+\_\+general\textquotesingle{}},  }\item[{}]{\$status\+\_\+code = {\ttfamily 500} }\end{DoxyParamCaption})}
+
+General Error Page
+
+Takes an error message as input (either as a string or an array) and displays it using the specified template.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$heading} & Page heading \\
+\hline
+ & {\em string$\vert$string\mbox{[}$\,$\mbox{]}} & \$message Error message \\
+\hline
+string & {\em \$template} & Template name \\
+\hline
+int & {\em \$status\+\_\+code} & (default\+: 500)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Error page output 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___exceptions_abcd98d0e5e512608dfbd2b820d9f57f2}\label{class_c_i___exceptions_abcd98d0e5e512608dfbd2b820d9f57f2}} 
+\index{C\+I\+\_\+\+Exceptions@{C\+I\+\_\+\+Exceptions}!show\+\_\+php\+\_\+error@{show\+\_\+php\+\_\+error}}
+\index{show\+\_\+php\+\_\+error@{show\+\_\+php\+\_\+error}!C\+I\+\_\+\+Exceptions@{C\+I\+\_\+\+Exceptions}}
+\subsubsection{\texorpdfstring{show\+\_\+php\+\_\+error()}{show\_php\_error()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Exceptions\+::show\+\_\+php\+\_\+error (\begin{DoxyParamCaption}\item[{}]{\$severity,  }\item[{}]{\$message,  }\item[{}]{\$filepath,  }\item[{}]{\$line }\end{DoxyParamCaption})}
+
+Native P\+HP error handler
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$severity} & Error level \\
+\hline
+string & {\em \$message} & Error message \\
+\hline
+string & {\em \$filepath} & File path \\
+\hline
+int & {\em \$line} & Line number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_i___exceptions_a835f86a1f2a6995b75a7cd5849f0fec5}\label{class_c_i___exceptions_a835f86a1f2a6995b75a7cd5849f0fec5}} 
+\index{C\+I\+\_\+\+Exceptions@{C\+I\+\_\+\+Exceptions}!\$levels@{\$levels}}
+\index{\$levels@{\$levels}!C\+I\+\_\+\+Exceptions@{C\+I\+\_\+\+Exceptions}}
+\subsubsection{\texorpdfstring{\$levels}{$levels}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Exceptions\+::\$levels}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= array(
+        E\_ERROR         =>  \textcolor{stringliteral}{'Error'},
+        E\_WARNING       =>  \textcolor{stringliteral}{'Warning'},
+        E\_PARSE         =>  \textcolor{stringliteral}{'Parsing Error'},
+        E\_NOTICE        =>  \textcolor{stringliteral}{'Notice'},
+        E\_CORE\_ERROR        =>  \textcolor{stringliteral}{'Core Error'},
+        E\_CORE\_WARNING      =>  \textcolor{stringliteral}{'Core Warning'},
+        E\_COMPILE\_ERROR     =>  \textcolor{stringliteral}{'Compile Error'},
+        E\_COMPILE\_WARNING   =>  \textcolor{stringliteral}{'Compile Warning'},
+        E\_USER\_ERROR        =>  \textcolor{stringliteral}{'User Error'},
+        E\_USER\_WARNING      =>  \textcolor{stringliteral}{'User Warning'},
+        E\_USER\_NOTICE       =>  \textcolor{stringliteral}{'User Notice'},
+        E\_STRICT        =>  \textcolor{stringliteral}{'Runtime Notice'}
+    )
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/core/Exceptions.\+php\end{DoxyCompactItemize}

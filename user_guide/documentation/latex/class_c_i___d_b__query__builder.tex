@@ -1,0 +1,1813 @@
+\hypertarget{class_c_i___d_b__query__builder}{}\section{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder Class Reference}
+\label{class_c_i___d_b__query__builder}\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+Inheritance diagram for C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_i___d_b__query__builder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a5e5a2d539fab07934c3e5c0699d46fef}{select}} (\$select=\textquotesingle{} $\ast$\textquotesingle{}, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a560a8240d4ac8c5343cc48370fa8b86a}{select\+\_\+max}} (\$\mbox{\hyperlink{class_c_i___d_b__query__builder_a5e5a2d539fab07934c3e5c0699d46fef}{select}}=\textquotesingle{}\textquotesingle{}, \$alias=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a0122c0b40921d1b7d465637db4c1c6dd}{select\+\_\+min}} (\$\mbox{\hyperlink{class_c_i___d_b__query__builder_a5e5a2d539fab07934c3e5c0699d46fef}{select}}=\textquotesingle{}\textquotesingle{}, \$alias=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_aef7b0cb3f2b2a8daa251cff5b28784d6}{select\+\_\+avg}} (\$\mbox{\hyperlink{class_c_i___d_b__query__builder_a5e5a2d539fab07934c3e5c0699d46fef}{select}}=\textquotesingle{}\textquotesingle{}, \$alias=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a498b5c912dbdd9e27cf0589fd8750afb}{select\+\_\+sum}} (\$\mbox{\hyperlink{class_c_i___d_b__query__builder_a5e5a2d539fab07934c3e5c0699d46fef}{select}}=\textquotesingle{}\textquotesingle{}, \$alias=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_aebf397d9995a29bcbdde844fafd81642}{distinct}} (\$val=T\+R\+UE)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a69d7cedff660dbe0dedbef5562eacefb}{from}} (\$from)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a9724fb9cda09e5318fd43fff95df455a}{join}} (\$table, \$cond, \$type=\textquotesingle{}\textquotesingle{}, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_ac72023dbd400394f3a2f46c5df578713}{where}} (\$key, \$value=N\+U\+LL, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a5f49ad7cee0a2d02752f40d6e2088985}{or\+\_\+where}} (\$key, \$value=N\+U\+LL, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_ac9ab7f835849f65667a48c3a6dab9feb}{where\+\_\+in}} (\$key=N\+U\+LL, \$values=N\+U\+LL, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_ad0c87e2d88224a329125e2ed95c048a8}{or\+\_\+where\+\_\+in}} (\$key=N\+U\+LL, \$values=N\+U\+LL, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_aa47530ec7d6fa4bbf9c3a0b8d9626c97}{where\+\_\+not\+\_\+in}} (\$key=N\+U\+LL, \$values=N\+U\+LL, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a979d56c3fcaab46c5598f816d8648888}{or\+\_\+where\+\_\+not\+\_\+in}} (\$key=N\+U\+LL, \$values=N\+U\+LL, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a05a74b3bb4c41d84144cacf5ad2f1da9}{like}} (\$field, \$match=\textquotesingle{}\textquotesingle{}, \$side=\textquotesingle{}both\textquotesingle{}, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_acc2cf1193bfb91ae2e19de8438b3889f}{not\+\_\+like}} (\$field, \$match=\textquotesingle{}\textquotesingle{}, \$side=\textquotesingle{}both\textquotesingle{}, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a339bbfa2c2e88b5b5ff248368294fa87}{or\+\_\+like}} (\$field, \$match=\textquotesingle{}\textquotesingle{}, \$side=\textquotesingle{}both\textquotesingle{}, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a9680fb43c820bd0a243e232b9347677e}{or\+\_\+not\+\_\+like}} (\$field, \$match=\textquotesingle{}\textquotesingle{}, \$side=\textquotesingle{}both\textquotesingle{}, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_aace0c009f52375adf5dffe6596330272}{group\+\_\+start}} (\$not=\textquotesingle{}\textquotesingle{}, \$type=\textquotesingle{}A\+ND \textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_aaecca382fc4c5d3030c063035c42ce59}{or\+\_\+group\+\_\+start}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a2d28f2d014179abbc70bce1502dfb73c}{not\+\_\+group\+\_\+start}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_afb77fa2848315cc7b1f1e8931612ec42}{or\+\_\+not\+\_\+group\+\_\+start}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_ad54860edb51a86b1d6e615f766057f3a}{group\+\_\+end}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_ad56fca465b77d095482c454d10700bf3}{group\+\_\+by}} (\$by, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_afabb171b46c879dfe91513d754e27a37}{having}} (\$key, \$value=N\+U\+LL, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_aa0f66cc593d2a018f961062d735c962b}{or\+\_\+having}} (\$key, \$value=N\+U\+LL, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a962f40c8b808afaaf118f4eb4c8b3d2b}{order\+\_\+by}} (\$orderby, \$direction=\textquotesingle{}\textquotesingle{}, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a1b72e2941924e573f5efb95f8dbc9815}{limit}} (\$value, \$\mbox{\hyperlink{class_c_i___d_b__query__builder_a20768a139b4c62547f6fb4b55d5c734f}{offset}}=0)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a20768a139b4c62547f6fb4b55d5c734f}{offset}} (\$offset)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_ac895a54db4870f128d0ef2426e4c282f}{set}} (\$key, \$value=\textquotesingle{}\textquotesingle{}, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a0c676ca7dd63a7c77741a154e9acf936}{get\+\_\+compiled\+\_\+select}} (\$table=\textquotesingle{}\textquotesingle{}, \$reset=T\+R\+UE)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a2e2e9087b1d03de3f39b4167f85e7721}{get}} (\$table=\textquotesingle{}\textquotesingle{}, \$\mbox{\hyperlink{class_c_i___d_b__query__builder_a1b72e2941924e573f5efb95f8dbc9815}{limit}}=N\+U\+LL, \$\mbox{\hyperlink{class_c_i___d_b__query__builder_a20768a139b4c62547f6fb4b55d5c734f}{offset}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_aa686896c05027f6c8fe09b2da750357f}{count\+\_\+all\+\_\+results}} (\$table=\textquotesingle{}\textquotesingle{}, \$reset=T\+R\+UE)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a95fc7bf89bf11f501b9cdba3c475e23c}{get\+\_\+where}} (\$table=\textquotesingle{}\textquotesingle{}, \$\mbox{\hyperlink{class_c_i___d_b__query__builder_ac72023dbd400394f3a2f46c5df578713}{where}}=N\+U\+LL, \$\mbox{\hyperlink{class_c_i___d_b__query__builder_a1b72e2941924e573f5efb95f8dbc9815}{limit}}=N\+U\+LL, \$\mbox{\hyperlink{class_c_i___d_b__query__builder_a20768a139b4c62547f6fb4b55d5c734f}{offset}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a71bae775c954d03c320de072bf5e3a65}{insert\+\_\+batch}} (\$table, \$\mbox{\hyperlink{class_c_i___d_b__query__builder_ac895a54db4870f128d0ef2426e4c282f}{set}}=N\+U\+LL, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL, \$batch\+\_\+size=100)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_ad79818e227912b140faa30c7ad6015aa}{set\+\_\+insert\+\_\+batch}} (\$key, \$value=\textquotesingle{}\textquotesingle{}, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_af6312c5cd6fc7434ccf0059281fcc490}{get\+\_\+compiled\+\_\+insert}} (\$table=\textquotesingle{}\textquotesingle{}, \$reset=T\+R\+UE)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a499da3fcfbfb23fda9e78c152f4fd3f4}{insert}} (\$table=\textquotesingle{}\textquotesingle{}, \$\mbox{\hyperlink{class_c_i___d_b__query__builder_ac895a54db4870f128d0ef2426e4c282f}{set}}=N\+U\+LL, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a68fb988ea9168f22669d3fba960f3555}{replace}} (\$table=\textquotesingle{}\textquotesingle{}, \$\mbox{\hyperlink{class_c_i___d_b__query__builder_ac895a54db4870f128d0ef2426e4c282f}{set}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a6fa661dc20fa2a32413aef4d38c198aa}{get\+\_\+compiled\+\_\+update}} (\$table=\textquotesingle{}\textquotesingle{}, \$reset=T\+R\+UE)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a396216c9f58d8b98ae09faf00f0203f1}{update}} (\$table=\textquotesingle{}\textquotesingle{}, \$\mbox{\hyperlink{class_c_i___d_b__query__builder_ac895a54db4870f128d0ef2426e4c282f}{set}}=N\+U\+LL, \$\mbox{\hyperlink{class_c_i___d_b__query__builder_ac72023dbd400394f3a2f46c5df578713}{where}}=N\+U\+LL, \$\mbox{\hyperlink{class_c_i___d_b__query__builder_a1b72e2941924e573f5efb95f8dbc9815}{limit}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_aeb16ba65c9f768f47f5a3f2864a6d293}{update\+\_\+batch}} (\$table, \$\mbox{\hyperlink{class_c_i___d_b__query__builder_ac895a54db4870f128d0ef2426e4c282f}{set}}=N\+U\+LL, \$index=N\+U\+LL, \$batch\+\_\+size=100)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a4bceb3a5210b3c9ede51132cacb1e47c}{set\+\_\+update\+\_\+batch}} (\$key, \$index=\textquotesingle{}\textquotesingle{}, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a6823e3af5bf02510ed025efb607a967c}{empty\+\_\+table}} (\$table=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a6fb8a3114ae1460cd9ecf4a328812d31}{truncate}} (\$table=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_af9c2c3c575153f5adcf76e16e172b448}{get\+\_\+compiled\+\_\+delete}} (\$table=\textquotesingle{}\textquotesingle{}, \$reset=T\+R\+UE)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a3e4caf438a69a05c96adedb2cb050d5f}{delete}} (\$table=\textquotesingle{}\textquotesingle{}, \$\mbox{\hyperlink{class_c_i___d_b__query__builder_ac72023dbd400394f3a2f46c5df578713}{where}}=\textquotesingle{}\textquotesingle{}, \$\mbox{\hyperlink{class_c_i___d_b__query__builder_a1b72e2941924e573f5efb95f8dbc9815}{limit}}=N\+U\+LL, \$reset\+\_\+data=T\+R\+UE)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a1aa759780db324df59e77a0a7ebbd821}{dbprefix}} (\$table=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_aeaa2c3e3e19e414831318f6d99ac7548}{set\+\_\+dbprefix}} (\$prefix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a34bf79cbfd4692d9d8992df270b0adc1}{start\+\_\+cache}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a525eb8e766a38561b309b119bd93529f}{stop\+\_\+cache}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_abe4a3c6eb41e9108caac0182239b1e6e}{flush\+\_\+cache}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a1a11e78dde602608558159c3d1c6d9ff}{reset\+\_\+query}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_af0451ac4594126ee27019582f64948a4}{\+\_\+max\+\_\+min\+\_\+avg\+\_\+sum}} (\$\mbox{\hyperlink{class_c_i___d_b__query__builder_a5e5a2d539fab07934c3e5c0699d46fef}{select}}=\textquotesingle{}\textquotesingle{}, \$alias=\textquotesingle{}\textquotesingle{}, \$type=\textquotesingle{}M\+AX\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a5f1e2dbc1f37ebe32b25158ffc9cf9b4}{\+\_\+create\+\_\+alias\+\_\+from\+\_\+table}} (\$item)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_ae7da7cfc4e206d9f962326ed3e0a55a5}{\+\_\+wh}} (\$qb\+\_\+key, \$key, \$value=N\+U\+LL, \$type=\textquotesingle{}A\+ND \textquotesingle{}, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_ac5d927ea77115642098054d4804e342c}{\+\_\+where\+\_\+in}} (\$key=N\+U\+LL, \$values=N\+U\+LL, \$not=F\+A\+L\+SE, \$type=\textquotesingle{}A\+ND \textquotesingle{}, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_aa084a245f6732555abd55b00ab73713a}{\+\_\+like}} (\$field, \$match=\textquotesingle{}\textquotesingle{}, \$type=\textquotesingle{}A\+ND \textquotesingle{}, \$side=\textquotesingle{}both\textquotesingle{}, \$not=\textquotesingle{}\textquotesingle{}, \$\mbox{\hyperlink{class_c_i___d_b__driver_a75beb60cdd3ee1875646d729963f5f5f}{escape}}=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_ab36c60f24fc92789c616e9f58ba3627f}{\+\_\+group\+\_\+get\+\_\+type}} (\$type)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a343e4b389bce28c075e5d0183a756af9}{\+\_\+limit}} (\$sql)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_ada6b5ff1e4cb0e6e8fbabc60ca4ef445}{\+\_\+insert\+\_\+batch}} (\$table, \$keys, \$values)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a2052d3f8bb72b3de359840d94e783044}{\+\_\+validate\+\_\+insert}} (\$table=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a985d47deea7ebc5ec34b41b71736cbb2}{\+\_\+replace}} (\$table, \$keys, \$values)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a87012ec307f0f3b7eb1b4bba68a20dd2}{\+\_\+from\+\_\+tables}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a25f878a242d0b34bd1ed1b83431714af}{\+\_\+validate\+\_\+update}} (\$table)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a861b73c482de70dbd12d0b6fe11a5d4c}{\+\_\+update\+\_\+batch}} (\$table, \$values, \$index)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a057560cdbf8c8e85ca668d81a2e8c81c}{\+\_\+truncate}} (\$table)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_afe8fd9a27e61e862c20116d365035b8c}{\+\_\+delete}} (\$table)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a12ff3d6972410ec9b170882f559e6fe9}{\+\_\+track\+\_\+aliases}} (\$table)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a006319db39d1e7547e5a90a2e67ac9f0}{\+\_\+compile\+\_\+select}} (\$select\+\_\+override=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a743ba2834429e8f7638562c0a590fc80}{\+\_\+compile\+\_\+wh}} (\$qb\+\_\+key)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_ae5bab30c9e567c01524e66ec3b20360c}{\+\_\+compile\+\_\+group\+\_\+by}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a93497f72c441881a767099ef74f2a2bf}{\+\_\+compile\+\_\+order\+\_\+by}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_af9ea4bd5669fa28727e491dc722fba63}{\+\_\+object\+\_\+to\+\_\+array}} (\$object)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_aaf29364a6055eec0b3c0486e1de63d2e}{\+\_\+object\+\_\+to\+\_\+array\+\_\+batch}} (\$object)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_aa43427c509a9babad4100e40b312f087}{\+\_\+merge\+\_\+cache}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a8a7a314f029ded37259e424949cf60c6}{\+\_\+is\+\_\+literal}} (\$str)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a72194f4a9eada89d106e9f0232111b0b}{\+\_\+reset\+\_\+run}} (\$qb\+\_\+reset\+\_\+items)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_af2eefd36a0aa741e8ff0b0ce150a1652}{\+\_\+reset\+\_\+select}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__query__builder_ae603144f9a3c6733964bb48bff3d7619}{\+\_\+reset\+\_\+write}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_afeb2df46e613205ad4a66780a9055cb4}\label{class_c_i___d_b__query__builder_afeb2df46e613205ad4a66780a9055cb4}} 
+{\bfseries \$return\+\_\+delete\+\_\+sql} = F\+A\+L\+SE
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a8bea1ebb1b4c0540582aab289fc6bad4}\label{class_c_i___d_b__query__builder_a8bea1ebb1b4c0540582aab289fc6bad4}} 
+{\bfseries \$reset\+\_\+delete\+\_\+data} = F\+A\+L\+SE
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a225c0113ce0fc94e6d06208af9e6d9f6}\label{class_c_i___d_b__query__builder_a225c0113ce0fc94e6d06208af9e6d9f6}} 
+{\bfseries \$qb\+\_\+select} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_abd3d6f17e2304afd06b9d11c705ed334}\label{class_c_i___d_b__query__builder_abd3d6f17e2304afd06b9d11c705ed334}} 
+{\bfseries \$qb\+\_\+distinct} = F\+A\+L\+SE
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a6e63d8c866072863ad0e41fa99901d75}\label{class_c_i___d_b__query__builder_a6e63d8c866072863ad0e41fa99901d75}} 
+{\bfseries \$qb\+\_\+from} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a35a07744ee8694bb2dd4ed4476dff779}\label{class_c_i___d_b__query__builder_a35a07744ee8694bb2dd4ed4476dff779}} 
+{\bfseries \$qb\+\_\+join} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_afdc99801afa64763881a4bc5e874b562}\label{class_c_i___d_b__query__builder_afdc99801afa64763881a4bc5e874b562}} 
+{\bfseries \$qb\+\_\+where} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_afa559f7dbb3ff3a40340133f201d92de}\label{class_c_i___d_b__query__builder_afa559f7dbb3ff3a40340133f201d92de}} 
+{\bfseries \$qb\+\_\+groupby} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a618f5324fa440c3fc479be4879afad1c}\label{class_c_i___d_b__query__builder_a618f5324fa440c3fc479be4879afad1c}} 
+{\bfseries \$qb\+\_\+having} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a6f0168c6084fab854ba263da2e2b0442}\label{class_c_i___d_b__query__builder_a6f0168c6084fab854ba263da2e2b0442}} 
+{\bfseries \$qb\+\_\+keys} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a308dcfd76eb933f54456cb55e7e46c41}\label{class_c_i___d_b__query__builder_a308dcfd76eb933f54456cb55e7e46c41}} 
+{\bfseries \$qb\+\_\+limit} = F\+A\+L\+SE
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_acc1e04e14b094ef24a8deec263b08ce9}\label{class_c_i___d_b__query__builder_acc1e04e14b094ef24a8deec263b08ce9}} 
+{\bfseries \$qb\+\_\+offset} = F\+A\+L\+SE
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a2e55f4c2dfc292e450c72afa2b4b4381}\label{class_c_i___d_b__query__builder_a2e55f4c2dfc292e450c72afa2b4b4381}} 
+{\bfseries \$qb\+\_\+orderby} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a8d5ac7a55567db02aeed544e0fe4d821}\label{class_c_i___d_b__query__builder_a8d5ac7a55567db02aeed544e0fe4d821}} 
+{\bfseries \$qb\+\_\+set} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_aaa8d3ba9f87b862df0e18cc8a02461a5}\label{class_c_i___d_b__query__builder_aaa8d3ba9f87b862df0e18cc8a02461a5}} 
+{\bfseries \$qb\+\_\+set\+\_\+ub} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_ab7c60460fc83e2532bb20d6f12b7cada}\label{class_c_i___d_b__query__builder_ab7c60460fc83e2532bb20d6f12b7cada}} 
+{\bfseries \$qb\+\_\+aliased\+\_\+tables} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a73ce4389ccb0a8259851ffb940b9ec0a}\label{class_c_i___d_b__query__builder_a73ce4389ccb0a8259851ffb940b9ec0a}} 
+{\bfseries \$qb\+\_\+where\+\_\+group\+\_\+started} = F\+A\+L\+SE
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a5d2d71778686641580cd37ff17d0e2c8}\label{class_c_i___d_b__query__builder_a5d2d71778686641580cd37ff17d0e2c8}} 
+{\bfseries \$qb\+\_\+where\+\_\+group\+\_\+count} = 0
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_ac9173a132044be359fbce9040031ab01}\label{class_c_i___d_b__query__builder_ac9173a132044be359fbce9040031ab01}} 
+{\bfseries \$qb\+\_\+caching} = F\+A\+L\+SE
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_aabcbe10104e9ac809576528a381991f7}\label{class_c_i___d_b__query__builder_aabcbe10104e9ac809576528a381991f7}} 
+{\bfseries \$qb\+\_\+cache\+\_\+exists} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_aa723da571cce52edafdc90d50706c97e}\label{class_c_i___d_b__query__builder_aa723da571cce52edafdc90d50706c97e}} 
+{\bfseries \$qb\+\_\+cache\+\_\+select} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a3d2f2de7444388624372534b5e069f1b}\label{class_c_i___d_b__query__builder_a3d2f2de7444388624372534b5e069f1b}} 
+{\bfseries \$qb\+\_\+cache\+\_\+from} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_aa8ee6191c48a7fccc7076966bad96d47}\label{class_c_i___d_b__query__builder_aa8ee6191c48a7fccc7076966bad96d47}} 
+{\bfseries \$qb\+\_\+cache\+\_\+join} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a49d8b8095b666ac5ddcd4f94bf581154}\label{class_c_i___d_b__query__builder_a49d8b8095b666ac5ddcd4f94bf581154}} 
+{\bfseries \$qb\+\_\+cache\+\_\+aliased\+\_\+tables} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a33256b6d3349c30d9f25fa35b9d72eb6}\label{class_c_i___d_b__query__builder_a33256b6d3349c30d9f25fa35b9d72eb6}} 
+{\bfseries \$qb\+\_\+cache\+\_\+where} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a480ea7820adf3d5c39180616d7532258}\label{class_c_i___d_b__query__builder_a480ea7820adf3d5c39180616d7532258}} 
+{\bfseries \$qb\+\_\+cache\+\_\+groupby} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a808269b08e3e0327d0d5e4149ae95c51}\label{class_c_i___d_b__query__builder_a808269b08e3e0327d0d5e4149ae95c51}} 
+{\bfseries \$qb\+\_\+cache\+\_\+having} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a0590aefaa19a7776822781f3b17883e4}\label{class_c_i___d_b__query__builder_a0590aefaa19a7776822781f3b17883e4}} 
+{\bfseries \$qb\+\_\+cache\+\_\+orderby} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a50bf51a103d856f1b39804e02ac87d57}\label{class_c_i___d_b__query__builder_a50bf51a103d856f1b39804e02ac87d57}} 
+{\bfseries \$qb\+\_\+cache\+\_\+set} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_abc0fbc25884b59112e238f4fcd2a79c3}\label{class_c_i___d_b__query__builder_abc0fbc25884b59112e238f4fcd2a79c3}} 
+{\bfseries \$qb\+\_\+no\+\_\+escape} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a112dd53c54e1128ad9d0a8a64d4411d3}\label{class_c_i___d_b__query__builder_a112dd53c54e1128ad9d0a8a64d4411d3}} 
+{\bfseries \$qb\+\_\+cache\+\_\+no\+\_\+escape} = array()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_ae5bab30c9e567c01524e66ec3b20360c}\label{class_c_i___d_b__query__builder_ae5bab30c9e567c01524e66ec3b20360c}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+compile\+\_\+group\+\_\+by@{\+\_\+compile\+\_\+group\+\_\+by}}
+\index{\+\_\+compile\+\_\+group\+\_\+by@{\+\_\+compile\+\_\+group\+\_\+by}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+compile\+\_\+group\+\_\+by()}{\_compile\_group\_by()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+compile\+\_\+group\+\_\+by (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Compile G\+R\+O\+UP BY
+
+Escapes identifiers in G\+R\+O\+UP BY statements at execution time.
+
+Required so that aliases are tracked properly, regardless of whether \mbox{\hyperlink{class_c_i___d_b__query__builder_ad56fca465b77d095482c454d10700bf3}{group\+\_\+by()}} is called prior to \mbox{\hyperlink{class_c_i___d_b__query__builder_a69d7cedff660dbe0dedbef5562eacefb}{from()}}, \mbox{\hyperlink{class_c_i___d_b__query__builder_a9724fb9cda09e5318fd43fff95df455a}{join()}} and dbprefix is added only if needed.
+
+\begin{DoxyReturn}{Returns}
+string S\+QL statement 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a93497f72c441881a767099ef74f2a2bf}\label{class_c_i___d_b__query__builder_a93497f72c441881a767099ef74f2a2bf}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+compile\+\_\+order\+\_\+by@{\+\_\+compile\+\_\+order\+\_\+by}}
+\index{\+\_\+compile\+\_\+order\+\_\+by@{\+\_\+compile\+\_\+order\+\_\+by}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+compile\+\_\+order\+\_\+by()}{\_compile\_order\_by()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+compile\+\_\+order\+\_\+by (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Compile O\+R\+D\+ER BY
+
+Escapes identifiers in O\+R\+D\+ER BY statements at execution time.
+
+Required so that aliases are tracked properly, regardless of whether \mbox{\hyperlink{class_c_i___d_b__query__builder_a962f40c8b808afaaf118f4eb4c8b3d2b}{order\+\_\+by()}} is called prior to \mbox{\hyperlink{class_c_i___d_b__query__builder_a69d7cedff660dbe0dedbef5562eacefb}{from()}}, \mbox{\hyperlink{class_c_i___d_b__query__builder_a9724fb9cda09e5318fd43fff95df455a}{join()}} and dbprefix is added only if needed.
+
+\begin{DoxyReturn}{Returns}
+string S\+QL statement 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a006319db39d1e7547e5a90a2e67ac9f0}\label{class_c_i___d_b__query__builder_a006319db39d1e7547e5a90a2e67ac9f0}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+compile\+\_\+select@{\+\_\+compile\+\_\+select}}
+\index{\+\_\+compile\+\_\+select@{\+\_\+compile\+\_\+select}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+compile\+\_\+select()}{\_compile\_select()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+compile\+\_\+select (\begin{DoxyParamCaption}\item[{}]{\$select\+\_\+override = {\ttfamily FALSE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Compile the S\+E\+L\+E\+CT statement
+
+Generates a query string based on which functions were used. Should not be called directly.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$select\+\_\+override} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a743ba2834429e8f7638562c0a590fc80}\label{class_c_i___d_b__query__builder_a743ba2834429e8f7638562c0a590fc80}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+compile\+\_\+wh@{\+\_\+compile\+\_\+wh}}
+\index{\+\_\+compile\+\_\+wh@{\+\_\+compile\+\_\+wh}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+compile\+\_\+wh()}{\_compile\_wh()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+compile\+\_\+wh (\begin{DoxyParamCaption}\item[{}]{\$qb\+\_\+key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Compile W\+H\+E\+RE, H\+A\+V\+I\+NG statements
+
+Escapes identifiers in W\+H\+E\+RE and H\+A\+V\+I\+NG statements at execution time.
+
+Required so that aliases are tracked properly, regardless of whether \mbox{\hyperlink{class_c_i___d_b__query__builder_ac72023dbd400394f3a2f46c5df578713}{where()}}, \mbox{\hyperlink{class_c_i___d_b__query__builder_a5f49ad7cee0a2d02752f40d6e2088985}{or\+\_\+where()}}, \mbox{\hyperlink{class_c_i___d_b__query__builder_afabb171b46c879dfe91513d754e27a37}{having()}}, or\+\_\+having are called prior to \mbox{\hyperlink{class_c_i___d_b__query__builder_a69d7cedff660dbe0dedbef5562eacefb}{from()}}, \mbox{\hyperlink{class_c_i___d_b__query__builder_a9724fb9cda09e5318fd43fff95df455a}{join()}} and dbprefix is added only if needed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$qb\+\_\+key} & \textquotesingle{}qb\+\_\+where\textquotesingle{} or \textquotesingle{}qb\+\_\+having\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string S\+QL statement 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a5f1e2dbc1f37ebe32b25158ffc9cf9b4}\label{class_c_i___d_b__query__builder_a5f1e2dbc1f37ebe32b25158ffc9cf9b4}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+create\+\_\+alias\+\_\+from\+\_\+table@{\+\_\+create\+\_\+alias\+\_\+from\+\_\+table}}
+\index{\+\_\+create\+\_\+alias\+\_\+from\+\_\+table@{\+\_\+create\+\_\+alias\+\_\+from\+\_\+table}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+create\+\_\+alias\+\_\+from\+\_\+table()}{\_create\_alias\_from\_table()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+create\+\_\+alias\+\_\+from\+\_\+table (\begin{DoxyParamCaption}\item[{}]{\$item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determines the alias name based on the table
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$item} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_afe8fd9a27e61e862c20116d365035b8c}\label{class_c_i___d_b__query__builder_afe8fd9a27e61e862c20116d365035b8c}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+delete@{\+\_\+delete}}
+\index{\+\_\+delete@{\+\_\+delete}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+delete()}{\_delete()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+delete (\begin{DoxyParamCaption}\item[{}]{\$table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Delete statement
+
+Generates a platform-\/specific delete string from the supplied data
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & the table name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a87012ec307f0f3b7eb1b4bba68a20dd2}\label{class_c_i___d_b__query__builder_a87012ec307f0f3b7eb1b4bba68a20dd2}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+from\+\_\+tables@{\+\_\+from\+\_\+tables}}
+\index{\+\_\+from\+\_\+tables@{\+\_\+from\+\_\+tables}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+from\+\_\+tables()}{\_from\_tables()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+from\+\_\+tables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+F\+R\+OM tables
+
+Groups tables in F\+R\+OM clauses if needed, so there is no confusion about operator precedence.
+
+Note\+: This is only used (and overridden) by My\+S\+QL and C\+U\+B\+R\+ID.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_ab36c60f24fc92789c616e9f58ba3627f}\label{class_c_i___d_b__query__builder_ab36c60f24fc92789c616e9f58ba3627f}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+group\+\_\+get\+\_\+type@{\+\_\+group\+\_\+get\+\_\+type}}
+\index{\+\_\+group\+\_\+get\+\_\+type@{\+\_\+group\+\_\+get\+\_\+type}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+group\+\_\+get\+\_\+type()}{\_group\_get\_type()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+group\+\_\+get\+\_\+type (\begin{DoxyParamCaption}\item[{}]{\$type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Group\+\_\+get\+\_\+type
+
+-\/by \mbox{\hyperlink{class_c_i___d_b__query__builder_aace0c009f52375adf5dffe6596330272}{group\+\_\+start()}} -\/by \mbox{\hyperlink{class_c_i___d_b__query__builder_aa084a245f6732555abd55b00ab73713a}{\+\_\+like()}} -\/by \mbox{\hyperlink{class_c_i___d_b__query__builder_ae7da7cfc4e206d9f962326ed3e0a55a5}{\+\_\+wh()}} -\/by \mbox{\hyperlink{class_c_i___d_b__query__builder_ac5d927ea77115642098054d4804e342c}{\+\_\+where\+\_\+in()}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_ada6b5ff1e4cb0e6e8fbabc60ca4ef445}\label{class_c_i___d_b__query__builder_ada6b5ff1e4cb0e6e8fbabc60ca4ef445}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+insert\+\_\+batch@{\+\_\+insert\+\_\+batch}}
+\index{\+\_\+insert\+\_\+batch@{\+\_\+insert\+\_\+batch}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+insert\+\_\+batch()}{\_insert\_batch()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+insert\+\_\+batch (\begin{DoxyParamCaption}\item[{}]{\$table,  }\item[{}]{\$keys,  }\item[{}]{\$values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Insert batch statement
+
+Generates a platform-\/specific insert string from the supplied data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & Table name \\
+\hline
+array & {\em \$keys} & I\+N\+S\+E\+RT keys \\
+\hline
+array & {\em \$values} & I\+N\+S\+E\+RT values \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a8a7a314f029ded37259e424949cf60c6}\label{class_c_i___d_b__query__builder_a8a7a314f029ded37259e424949cf60c6}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+is\+\_\+literal@{\+\_\+is\+\_\+literal}}
+\index{\+\_\+is\+\_\+literal@{\+\_\+is\+\_\+literal}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+is\+\_\+literal()}{\_is\_literal()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+is\+\_\+literal (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Is literal
+
+Determines if a string represents a literal value or a field name
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_aa084a245f6732555abd55b00ab73713a}\label{class_c_i___d_b__query__builder_aa084a245f6732555abd55b00ab73713a}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+like@{\+\_\+like}}
+\index{\+\_\+like@{\+\_\+like}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+like()}{\_like()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+like (\begin{DoxyParamCaption}\item[{}]{\$field,  }\item[{}]{\$match = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$type = {\ttfamily \textquotesingle{}AND~\textquotesingle{}},  }\item[{}]{\$side = {\ttfamily \textquotesingle{}both\textquotesingle{}},  }\item[{}]{\$not = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$escape = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Internal L\+I\+KE
+
+-\/by \mbox{\hyperlink{class_c_i___d_b__query__builder_a05a74b3bb4c41d84144cacf5ad2f1da9}{like()}} -\/by \mbox{\hyperlink{class_c_i___d_b__query__builder_a339bbfa2c2e88b5b5ff248368294fa87}{or\+\_\+like()}} -\/by \mbox{\hyperlink{class_c_i___d_b__query__builder_acc2cf1193bfb91ae2e19de8438b3889f}{not\+\_\+like()}} -\/by \mbox{\hyperlink{class_c_i___d_b__query__builder_a9680fb43c820bd0a243e232b9347677e}{or\+\_\+not\+\_\+like()}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$field} & \\
+\hline
+string & {\em \$match} & \\
+\hline
+string & {\em \$type} & \\
+\hline
+string & {\em \$side} & \\
+\hline
+string & {\em \$not} & \\
+\hline
+bool & {\em \$escape} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a343e4b389bce28c075e5d0183a756af9}\label{class_c_i___d_b__query__builder_a343e4b389bce28c075e5d0183a756af9}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+limit@{\+\_\+limit}}
+\index{\+\_\+limit@{\+\_\+limit}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+limit()}{\_limit()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+limit (\begin{DoxyParamCaption}\item[{}]{\$sql }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+L\+I\+M\+IT string
+
+Generates a platform-\/specific L\+I\+M\+IT clause.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sql} & S\+QL Query \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_af0451ac4594126ee27019582f64948a4}\label{class_c_i___d_b__query__builder_af0451ac4594126ee27019582f64948a4}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+max\+\_\+min\+\_\+avg\+\_\+sum@{\+\_\+max\+\_\+min\+\_\+avg\+\_\+sum}}
+\index{\+\_\+max\+\_\+min\+\_\+avg\+\_\+sum@{\+\_\+max\+\_\+min\+\_\+avg\+\_\+sum}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+max\+\_\+min\+\_\+avg\+\_\+sum()}{\_max\_min\_avg\_sum()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+max\+\_\+min\+\_\+avg\+\_\+sum (\begin{DoxyParamCaption}\item[{}]{\$select = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$alias = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$type = {\ttfamily \textquotesingle{}MAX\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+S\+E\+L\+E\+CT \mbox{[}M\+A\+X$\vert$\+M\+I\+N$\vert$\+A\+V\+G$\vert$\+S\+UM\mbox{]}()
+
+-\/by \mbox{\hyperlink{class_c_i___d_b__query__builder_a560a8240d4ac8c5343cc48370fa8b86a}{select\+\_\+max()}} -\/by \mbox{\hyperlink{class_c_i___d_b__query__builder_a0122c0b40921d1b7d465637db4c1c6dd}{select\+\_\+min()}} -\/by \mbox{\hyperlink{class_c_i___d_b__query__builder_aef7b0cb3f2b2a8daa251cff5b28784d6}{select\+\_\+avg()}} -\/by \mbox{\hyperlink{class_c_i___d_b__query__builder_a498b5c912dbdd9e27cf0589fd8750afb}{select\+\_\+sum()}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$select} & Field name \\
+\hline
+string & {\em \$alias} & \\
+\hline
+string & {\em \$type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_aa43427c509a9babad4100e40b312f087}\label{class_c_i___d_b__query__builder_aa43427c509a9babad4100e40b312f087}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+merge\+\_\+cache@{\+\_\+merge\+\_\+cache}}
+\index{\+\_\+merge\+\_\+cache@{\+\_\+merge\+\_\+cache}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+merge\+\_\+cache()}{\_merge\_cache()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+merge\+\_\+cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Merge Cache
+
+When called, this function merges any cached QB arrays with locally called ones.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_af9ea4bd5669fa28727e491dc722fba63}\label{class_c_i___d_b__query__builder_af9ea4bd5669fa28727e491dc722fba63}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+object\+\_\+to\+\_\+array@{\+\_\+object\+\_\+to\+\_\+array}}
+\index{\+\_\+object\+\_\+to\+\_\+array@{\+\_\+object\+\_\+to\+\_\+array}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+object\+\_\+to\+\_\+array()}{\_object\_to\_array()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+object\+\_\+to\+\_\+array (\begin{DoxyParamCaption}\item[{}]{\$object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Object to Array
+
+Takes an object as input and converts the class variables to array key/vals
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_aaf29364a6055eec0b3c0486e1de63d2e}\label{class_c_i___d_b__query__builder_aaf29364a6055eec0b3c0486e1de63d2e}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+object\+\_\+to\+\_\+array\+\_\+batch@{\+\_\+object\+\_\+to\+\_\+array\+\_\+batch}}
+\index{\+\_\+object\+\_\+to\+\_\+array\+\_\+batch@{\+\_\+object\+\_\+to\+\_\+array\+\_\+batch}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+object\+\_\+to\+\_\+array\+\_\+batch()}{\_object\_to\_array\_batch()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+object\+\_\+to\+\_\+array\+\_\+batch (\begin{DoxyParamCaption}\item[{}]{\$object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Object to Array
+
+Takes an object as input and converts the class variables to array key/vals
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a985d47deea7ebc5ec34b41b71736cbb2}\label{class_c_i___d_b__query__builder_a985d47deea7ebc5ec34b41b71736cbb2}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+replace@{\+\_\+replace}}
+\index{\+\_\+replace@{\+\_\+replace}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+replace()}{\_replace()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+replace (\begin{DoxyParamCaption}\item[{}]{\$table,  }\item[{}]{\$keys,  }\item[{}]{\$values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Replace statement
+
+Generates a platform-\/specific replace string from the supplied data
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & the table name \\
+\hline
+{\em array} & the insert keys \\
+\hline
+{\em array} & the insert values \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a72194f4a9eada89d106e9f0232111b0b}\label{class_c_i___d_b__query__builder_a72194f4a9eada89d106e9f0232111b0b}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+reset\+\_\+run@{\+\_\+reset\+\_\+run}}
+\index{\+\_\+reset\+\_\+run@{\+\_\+reset\+\_\+run}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+reset\+\_\+run()}{\_reset\_run()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+reset\+\_\+run (\begin{DoxyParamCaption}\item[{}]{\$qb\+\_\+reset\+\_\+items }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Resets the query builder values. Called by the \mbox{\hyperlink{class_c_i___d_b__query__builder_a2e2e9087b1d03de3f39b4167f85e7721}{get()}} function
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & An array of fields to reset \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_af2eefd36a0aa741e8ff0b0ce150a1652}\label{class_c_i___d_b__query__builder_af2eefd36a0aa741e8ff0b0ce150a1652}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+reset\+\_\+select@{\+\_\+reset\+\_\+select}}
+\index{\+\_\+reset\+\_\+select@{\+\_\+reset\+\_\+select}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+reset\+\_\+select()}{\_reset\_select()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+reset\+\_\+select (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Resets the query builder values. Called by the \mbox{\hyperlink{class_c_i___d_b__query__builder_a2e2e9087b1d03de3f39b4167f85e7721}{get()}} function
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_ae603144f9a3c6733964bb48bff3d7619}\label{class_c_i___d_b__query__builder_ae603144f9a3c6733964bb48bff3d7619}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+reset\+\_\+write@{\+\_\+reset\+\_\+write}}
+\index{\+\_\+reset\+\_\+write@{\+\_\+reset\+\_\+write}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+reset\+\_\+write()}{\_reset\_write()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+reset\+\_\+write (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Resets the query builder \char`\"{}write\char`\"{} values.
+
+Called by the \mbox{\hyperlink{class_c_i___d_b__query__builder_a499da3fcfbfb23fda9e78c152f4fd3f4}{insert()}} \mbox{\hyperlink{class_c_i___d_b__query__builder_a396216c9f58d8b98ae09faf00f0203f1}{update()}} \mbox{\hyperlink{class_c_i___d_b__query__builder_a71bae775c954d03c320de072bf5e3a65}{insert\+\_\+batch()}} \mbox{\hyperlink{class_c_i___d_b__query__builder_aeb16ba65c9f768f47f5a3f2864a6d293}{update\+\_\+batch()}} and \mbox{\hyperlink{class_c_i___d_b__query__builder_a3e4caf438a69a05c96adedb2cb050d5f}{delete()}} functions
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a12ff3d6972410ec9b170882f559e6fe9}\label{class_c_i___d_b__query__builder_a12ff3d6972410ec9b170882f559e6fe9}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+track\+\_\+aliases@{\+\_\+track\+\_\+aliases}}
+\index{\+\_\+track\+\_\+aliases@{\+\_\+track\+\_\+aliases}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+track\+\_\+aliases()}{\_track\_aliases()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+track\+\_\+aliases (\begin{DoxyParamCaption}\item[{}]{\$table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Track Aliases
+
+Used to track S\+QL statements written with aliased tables.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & The table to inspect \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a057560cdbf8c8e85ca668d81a2e8c81c}\label{class_c_i___d_b__query__builder_a057560cdbf8c8e85ca668d81a2e8c81c}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+truncate@{\+\_\+truncate}}
+\index{\+\_\+truncate@{\+\_\+truncate}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+truncate()}{\_truncate()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+truncate (\begin{DoxyParamCaption}\item[{}]{\$table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Truncate statement
+
+Generates a platform-\/specific truncate string from the supplied data
+
+If the database does not support the \mbox{\hyperlink{class_c_i___d_b__query__builder_a6fb8a3114ae1460cd9ecf4a328812d31}{truncate()}} command, then this method maps to \textquotesingle{}D\+E\+L\+E\+TE F\+R\+OM table\textquotesingle{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & the table name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a861b73c482de70dbd12d0b6fe11a5d4c}\label{class_c_i___d_b__query__builder_a861b73c482de70dbd12d0b6fe11a5d4c}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+update\+\_\+batch@{\+\_\+update\+\_\+batch}}
+\index{\+\_\+update\+\_\+batch@{\+\_\+update\+\_\+batch}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+update\+\_\+batch()}{\_update\_batch()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+update\+\_\+batch (\begin{DoxyParamCaption}\item[{}]{\$table,  }\item[{}]{\$values,  }\item[{}]{\$index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Update\+\_\+\+Batch statement
+
+Generates a platform-\/specific batch update string from the supplied data
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & Table name \\
+\hline
+array & {\em \$values} & Update data \\
+\hline
+string & {\em \$index} & W\+H\+E\+RE key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a2052d3f8bb72b3de359840d94e783044}\label{class_c_i___d_b__query__builder_a2052d3f8bb72b3de359840d94e783044}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+validate\+\_\+insert@{\+\_\+validate\+\_\+insert}}
+\index{\+\_\+validate\+\_\+insert@{\+\_\+validate\+\_\+insert}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+validate\+\_\+insert()}{\_validate\_insert()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+validate\+\_\+insert (\begin{DoxyParamCaption}\item[{}]{\$table = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Validate Insert
+
+This method is used by both \mbox{\hyperlink{class_c_i___d_b__query__builder_a499da3fcfbfb23fda9e78c152f4fd3f4}{insert()}} and \mbox{\hyperlink{class_c_i___d_b__query__builder_af6312c5cd6fc7434ccf0059281fcc490}{get\+\_\+compiled\+\_\+insert()}} to validate that the there data is actually being set and that table has been chosen to be inserted into.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & the table to insert data into \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a25f878a242d0b34bd1ed1b83431714af}\label{class_c_i___d_b__query__builder_a25f878a242d0b34bd1ed1b83431714af}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+validate\+\_\+update@{\+\_\+validate\+\_\+update}}
+\index{\+\_\+validate\+\_\+update@{\+\_\+validate\+\_\+update}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+validate\+\_\+update()}{\_validate\_update()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+validate\+\_\+update (\begin{DoxyParamCaption}\item[{}]{\$table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Validate Update
+
+This method is used by both \mbox{\hyperlink{class_c_i___d_b__query__builder_a396216c9f58d8b98ae09faf00f0203f1}{update()}} and \mbox{\hyperlink{class_c_i___d_b__query__builder_a6fa661dc20fa2a32413aef4d38c198aa}{get\+\_\+compiled\+\_\+update()}} to validate that data is actually being set and that a table has been chosen to be update.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & the table to update data on \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_ae7da7cfc4e206d9f962326ed3e0a55a5}\label{class_c_i___d_b__query__builder_ae7da7cfc4e206d9f962326ed3e0a55a5}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+wh@{\+\_\+wh}}
+\index{\+\_\+wh@{\+\_\+wh}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+wh()}{\_wh()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+wh (\begin{DoxyParamCaption}\item[{}]{\$qb\+\_\+key,  }\item[{}]{\$key,  }\item[{}]{\$value = {\ttfamily NULL},  }\item[{}]{\$type = {\ttfamily \textquotesingle{}AND~\textquotesingle{}},  }\item[{}]{\$escape = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+W\+H\+E\+RE, H\+A\+V\+I\+NG
+
+-\/by \mbox{\hyperlink{class_c_i___d_b__query__builder_ac72023dbd400394f3a2f46c5df578713}{where()}} -\/by \mbox{\hyperlink{class_c_i___d_b__query__builder_a5f49ad7cee0a2d02752f40d6e2088985}{or\+\_\+where()}} -\/by \mbox{\hyperlink{class_c_i___d_b__query__builder_afabb171b46c879dfe91513d754e27a37}{having()}} -\/by \mbox{\hyperlink{class_c_i___d_b__query__builder_aa0f66cc593d2a018f961062d735c962b}{or\+\_\+having()}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$qb\+\_\+key} & \textquotesingle{}qb\+\_\+where\textquotesingle{} or \textquotesingle{}qb\+\_\+having\textquotesingle{} \\
+\hline
+mixed & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+string & {\em \$type} & \\
+\hline
+bool & {\em \$escape} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_ac5d927ea77115642098054d4804e342c}\label{class_c_i___d_b__query__builder_ac5d927ea77115642098054d4804e342c}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!\+\_\+where\+\_\+in@{\+\_\+where\+\_\+in}}
+\index{\+\_\+where\+\_\+in@{\+\_\+where\+\_\+in}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{\+\_\+where\+\_\+in()}{\_where\_in()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::\+\_\+where\+\_\+in (\begin{DoxyParamCaption}\item[{}]{\$key = {\ttfamily NULL},  }\item[{}]{\$values = {\ttfamily NULL},  }\item[{}]{\$not = {\ttfamily FALSE},  }\item[{}]{\$type = {\ttfamily \textquotesingle{}AND~\textquotesingle{}},  }\item[{}]{\$escape = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Internal W\+H\+E\+RE IN
+
+-\/by \mbox{\hyperlink{class_c_i___d_b__query__builder_ac9ab7f835849f65667a48c3a6dab9feb}{where\+\_\+in()}} -\/by \mbox{\hyperlink{class_c_i___d_b__query__builder_ad0c87e2d88224a329125e2ed95c048a8}{or\+\_\+where\+\_\+in()}} -\/by \mbox{\hyperlink{class_c_i___d_b__query__builder_aa47530ec7d6fa4bbf9c3a0b8d9626c97}{where\+\_\+not\+\_\+in()}} -\/by \mbox{\hyperlink{class_c_i___d_b__query__builder_a979d56c3fcaab46c5598f816d8648888}{or\+\_\+where\+\_\+not\+\_\+in()}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & The field to search \\
+\hline
+array & {\em \$values} & The values searched on \\
+\hline
+bool & {\em \$not} & If the statement would be IN or N\+OT IN \\
+\hline
+string & {\em \$type} & \\
+\hline
+bool & {\em \$escape} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_aa686896c05027f6c8fe09b2da750357f}\label{class_c_i___d_b__query__builder_aa686896c05027f6c8fe09b2da750357f}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!count\+\_\+all\+\_\+results@{count\+\_\+all\+\_\+results}}
+\index{count\+\_\+all\+\_\+results@{count\+\_\+all\+\_\+results}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{count\+\_\+all\+\_\+results()}{count\_all\_results()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::count\+\_\+all\+\_\+results (\begin{DoxyParamCaption}\item[{}]{\$table = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$reset = {\ttfamily TRUE} }\end{DoxyParamCaption})}
+
+\char`\"{}\+Count All Results\char`\"{} query
+
+Generates a platform-\/specific query string that counts all records returned by an Query Builder query.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+{\em bool} & the reset clause \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a1aa759780db324df59e77a0a7ebbd821}\label{class_c_i___d_b__query__builder_a1aa759780db324df59e77a0a7ebbd821}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!dbprefix@{dbprefix}}
+\index{dbprefix@{dbprefix}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{dbprefix()}{dbprefix()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::dbprefix (\begin{DoxyParamCaption}\item[{}]{\$table = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+DB Prefix
+
+Prepends a database prefix if one exists in configuration
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & the table \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a3e4caf438a69a05c96adedb2cb050d5f}\label{class_c_i___d_b__query__builder_a3e4caf438a69a05c96adedb2cb050d5f}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!delete@{delete}}
+\index{delete@{delete}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::delete (\begin{DoxyParamCaption}\item[{}]{\$table = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$where = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$limit = {\ttfamily NULL},  }\item[{}]{\$reset\+\_\+data = {\ttfamily TRUE} }\end{DoxyParamCaption})}
+
+Delete
+
+Compiles a delete string and runs the query
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & the table(s) to delete from. String or array \\
+\hline
+{\em mixed} & the where clause \\
+\hline
+{\em mixed} & the limit clause \\
+\hline
+{\em bool} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_aebf397d9995a29bcbdde844fafd81642}\label{class_c_i___d_b__query__builder_aebf397d9995a29bcbdde844fafd81642}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!distinct@{distinct}}
+\index{distinct@{distinct}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{distinct()}{distinct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::distinct (\begin{DoxyParamCaption}\item[{}]{\$val = {\ttfamily TRUE} }\end{DoxyParamCaption})}
+
+D\+I\+S\+T\+I\+N\+CT
+
+Sets a flag which tells the query string compiler to add D\+I\+S\+T\+I\+N\+CT
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$val} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a6823e3af5bf02510ed025efb607a967c}\label{class_c_i___d_b__query__builder_a6823e3af5bf02510ed025efb607a967c}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!empty\+\_\+table@{empty\+\_\+table}}
+\index{empty\+\_\+table@{empty\+\_\+table}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{empty\+\_\+table()}{empty\_table()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::empty\+\_\+table (\begin{DoxyParamCaption}\item[{}]{\$table = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Empty Table
+
+Compiles a delete string and runs \char`\"{}\+D\+E\+L\+E\+T\+E F\+R\+O\+M table\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & the table to empty \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool T\+R\+UE on success, F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_abe4a3c6eb41e9108caac0182239b1e6e}\label{class_c_i___d_b__query__builder_abe4a3c6eb41e9108caac0182239b1e6e}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!flush\+\_\+cache@{flush\+\_\+cache}}
+\index{flush\+\_\+cache@{flush\+\_\+cache}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{flush\+\_\+cache()}{flush\_cache()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::flush\+\_\+cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Flush Cache
+
+Empties the QB cache
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a69d7cedff660dbe0dedbef5562eacefb}\label{class_c_i___d_b__query__builder_a69d7cedff660dbe0dedbef5562eacefb}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!from@{from}}
+\index{from@{from}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{from()}{from()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::from (\begin{DoxyParamCaption}\item[{}]{\$from }\end{DoxyParamCaption})}
+
+From
+
+Generates the F\+R\+OM portion of the query
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$from} & can be a string or array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a2e2e9087b1d03de3f39b4167f85e7721}\label{class_c_i___d_b__query__builder_a2e2e9087b1d03de3f39b4167f85e7721}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!get@{get}}
+\index{get@{get}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::get (\begin{DoxyParamCaption}\item[{}]{\$table = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$limit = {\ttfamily NULL},  }\item[{}]{\$offset = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Get
+
+Compiles the select statement based on the other functions called and runs the query
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & the table \\
+\hline
+{\em string} & the limit clause \\
+\hline
+{\em string} & the offset clause \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__result}{C\+I\+\_\+\+D\+B\+\_\+result}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_af9c2c3c575153f5adcf76e16e172b448}\label{class_c_i___d_b__query__builder_af9c2c3c575153f5adcf76e16e172b448}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!get\+\_\+compiled\+\_\+delete@{get\+\_\+compiled\+\_\+delete}}
+\index{get\+\_\+compiled\+\_\+delete@{get\+\_\+compiled\+\_\+delete}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{get\+\_\+compiled\+\_\+delete()}{get\_compiled\_delete()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::get\+\_\+compiled\+\_\+delete (\begin{DoxyParamCaption}\item[{}]{\$table = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$reset = {\ttfamily TRUE} }\end{DoxyParamCaption})}
+
+Get D\+E\+L\+E\+TE query string
+
+Compiles a delete query string and returns the sql
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & the table to delete from \\
+\hline
+{\em bool} & T\+R\+UE\+: reset QB values; F\+A\+L\+SE\+: leave QB values alone \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_af6312c5cd6fc7434ccf0059281fcc490}\label{class_c_i___d_b__query__builder_af6312c5cd6fc7434ccf0059281fcc490}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!get\+\_\+compiled\+\_\+insert@{get\+\_\+compiled\+\_\+insert}}
+\index{get\+\_\+compiled\+\_\+insert@{get\+\_\+compiled\+\_\+insert}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{get\+\_\+compiled\+\_\+insert()}{get\_compiled\_insert()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::get\+\_\+compiled\+\_\+insert (\begin{DoxyParamCaption}\item[{}]{\$table = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$reset = {\ttfamily TRUE} }\end{DoxyParamCaption})}
+
+Get I\+N\+S\+E\+RT query string
+
+Compiles an insert query and returns the sql
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & the table to insert into \\
+\hline
+{\em bool} & T\+R\+UE\+: reset QB values; F\+A\+L\+SE\+: leave QB values alone \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a0c676ca7dd63a7c77741a154e9acf936}\label{class_c_i___d_b__query__builder_a0c676ca7dd63a7c77741a154e9acf936}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!get\+\_\+compiled\+\_\+select@{get\+\_\+compiled\+\_\+select}}
+\index{get\+\_\+compiled\+\_\+select@{get\+\_\+compiled\+\_\+select}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{get\+\_\+compiled\+\_\+select()}{get\_compiled\_select()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::get\+\_\+compiled\+\_\+select (\begin{DoxyParamCaption}\item[{}]{\$table = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$reset = {\ttfamily TRUE} }\end{DoxyParamCaption})}
+
+Get S\+E\+L\+E\+CT query string
+
+Compiles a S\+E\+L\+E\+CT query string and returns the sql.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & the table name to select from (optional) \\
+\hline
+{\em bool} & T\+R\+UE\+: resets QB values; F\+A\+L\+SE\+: leave QB values alone \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a6fa661dc20fa2a32413aef4d38c198aa}\label{class_c_i___d_b__query__builder_a6fa661dc20fa2a32413aef4d38c198aa}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!get\+\_\+compiled\+\_\+update@{get\+\_\+compiled\+\_\+update}}
+\index{get\+\_\+compiled\+\_\+update@{get\+\_\+compiled\+\_\+update}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{get\+\_\+compiled\+\_\+update()}{get\_compiled\_update()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::get\+\_\+compiled\+\_\+update (\begin{DoxyParamCaption}\item[{}]{\$table = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$reset = {\ttfamily TRUE} }\end{DoxyParamCaption})}
+
+Get U\+P\+D\+A\+TE query string
+
+Compiles an update query and returns the sql
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & the table to update \\
+\hline
+{\em bool} & T\+R\+UE\+: reset QB values; F\+A\+L\+SE\+: leave QB values alone \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a95fc7bf89bf11f501b9cdba3c475e23c}\label{class_c_i___d_b__query__builder_a95fc7bf89bf11f501b9cdba3c475e23c}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!get\+\_\+where@{get\+\_\+where}}
+\index{get\+\_\+where@{get\+\_\+where}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{get\+\_\+where()}{get\_where()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::get\+\_\+where (\begin{DoxyParamCaption}\item[{}]{\$table = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$where = {\ttfamily NULL},  }\item[{}]{\$limit = {\ttfamily NULL},  }\item[{}]{\$offset = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_c_i___d_b__query__builder_a95fc7bf89bf11f501b9cdba3c475e23c}{get\+\_\+where()}}
+
+Allows the where clause, limit and offset to be added directly
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+string & {\em \$where} & \\
+\hline
+int & {\em \$limit} & \\
+\hline
+int & {\em \$offset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__result}{C\+I\+\_\+\+D\+B\+\_\+result}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_ad56fca465b77d095482c454d10700bf3}\label{class_c_i___d_b__query__builder_ad56fca465b77d095482c454d10700bf3}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!group\+\_\+by@{group\+\_\+by}}
+\index{group\+\_\+by@{group\+\_\+by}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{group\+\_\+by()}{group\_by()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::group\+\_\+by (\begin{DoxyParamCaption}\item[{}]{\$by,  }\item[{}]{\$escape = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+G\+R\+O\+UP BY
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$by} & \\
+\hline
+bool & {\em \$escape} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_ad54860edb51a86b1d6e615f766057f3a}\label{class_c_i___d_b__query__builder_ad54860edb51a86b1d6e615f766057f3a}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!group\+\_\+end@{group\+\_\+end}}
+\index{group\+\_\+end@{group\+\_\+end}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{group\+\_\+end()}{group\_end()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::group\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Ends a query group
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_aace0c009f52375adf5dffe6596330272}\label{class_c_i___d_b__query__builder_aace0c009f52375adf5dffe6596330272}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!group\+\_\+start@{group\+\_\+start}}
+\index{group\+\_\+start@{group\+\_\+start}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{group\+\_\+start()}{group\_start()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::group\+\_\+start (\begin{DoxyParamCaption}\item[{}]{\$not = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$type = {\ttfamily \textquotesingle{}AND~\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Starts a query group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$not} & (Internal use only) \\
+\hline
+string & {\em \$type} & (Internal use only) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_afabb171b46c879dfe91513d754e27a37}\label{class_c_i___d_b__query__builder_afabb171b46c879dfe91513d754e27a37}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!having@{having}}
+\index{having@{having}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{having()}{having()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::having (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$value = {\ttfamily NULL},  }\item[{}]{\$escape = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+H\+A\+V\+I\+NG
+
+Separates multiple calls with \textquotesingle{}A\+ND\textquotesingle{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+string & {\em \$value} & \\
+\hline
+bool & {\em \$escape} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a499da3fcfbfb23fda9e78c152f4fd3f4}\label{class_c_i___d_b__query__builder_a499da3fcfbfb23fda9e78c152f4fd3f4}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!insert@{insert}}
+\index{insert@{insert}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::insert (\begin{DoxyParamCaption}\item[{}]{\$table = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$set = {\ttfamily NULL},  }\item[{}]{\$escape = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Insert
+
+Compiles an insert string and runs the query
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em string} & the table to insert data into \\
+\hline
+ & {\em array} & an associative array of insert values \\
+\hline
+bool & {\em \$escape} & Whether to escape values and identifiers \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool T\+R\+UE on success, F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a71bae775c954d03c320de072bf5e3a65}\label{class_c_i___d_b__query__builder_a71bae775c954d03c320de072bf5e3a65}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!insert\+\_\+batch@{insert\+\_\+batch}}
+\index{insert\+\_\+batch@{insert\+\_\+batch}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{insert\+\_\+batch()}{insert\_batch()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::insert\+\_\+batch (\begin{DoxyParamCaption}\item[{}]{\$table,  }\item[{}]{\$set = {\ttfamily NULL},  }\item[{}]{\$escape = {\ttfamily NULL},  }\item[{}]{\$batch\+\_\+size = {\ttfamily 100} }\end{DoxyParamCaption})}
+
+Insert\+\_\+\+Batch
+
+Compiles batch insert strings and runs the queries
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & Table to insert into \\
+\hline
+array & {\em \$set} & An associative array of insert values \\
+\hline
+bool & {\em \$escape} & Whether to escape values and identifiers \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Number of rows inserted or F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a9724fb9cda09e5318fd43fff95df455a}\label{class_c_i___d_b__query__builder_a9724fb9cda09e5318fd43fff95df455a}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!join@{join}}
+\index{join@{join}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{join()}{join()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::join (\begin{DoxyParamCaption}\item[{}]{\$table,  }\item[{}]{\$cond,  }\item[{}]{\$type = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$escape = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+J\+O\+IN
+
+Generates the J\+O\+IN portion of the query
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+{\em string} & the join condition \\
+\hline
+{\em string} & the type of join \\
+\hline
+{\em string} & whether not to try to escape identifiers \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a05a74b3bb4c41d84144cacf5ad2f1da9}\label{class_c_i___d_b__query__builder_a05a74b3bb4c41d84144cacf5ad2f1da9}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!like@{like}}
+\index{like@{like}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{like()}{like()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::like (\begin{DoxyParamCaption}\item[{}]{\$field,  }\item[{}]{\$match = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$side = {\ttfamily \textquotesingle{}both\textquotesingle{}},  }\item[{}]{\$escape = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+L\+I\+KE
+
+Generates a L\+I\+KE\% portion of the query. Separates multiple calls with \textquotesingle{}A\+ND\textquotesingle{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$field} & \\
+\hline
+string & {\em \$match} & \\
+\hline
+string & {\em \$side} & \\
+\hline
+bool & {\em \$escape} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a1b72e2941924e573f5efb95f8dbc9815}\label{class_c_i___d_b__query__builder_a1b72e2941924e573f5efb95f8dbc9815}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!limit@{limit}}
+\index{limit@{limit}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{limit()}{limit()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::limit (\begin{DoxyParamCaption}\item[{}]{\$value,  }\item[{}]{\$offset = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+L\+I\+M\+IT
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$value} & L\+I\+M\+IT value \\
+\hline
+int & {\em \$offset} & O\+F\+F\+S\+ET value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a2d28f2d014179abbc70bce1502dfb73c}\label{class_c_i___d_b__query__builder_a2d28f2d014179abbc70bce1502dfb73c}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!not\+\_\+group\+\_\+start@{not\+\_\+group\+\_\+start}}
+\index{not\+\_\+group\+\_\+start@{not\+\_\+group\+\_\+start}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{not\+\_\+group\+\_\+start()}{not\_group\_start()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::not\+\_\+group\+\_\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Starts a query group, but N\+O\+Ts the group
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_acc2cf1193bfb91ae2e19de8438b3889f}\label{class_c_i___d_b__query__builder_acc2cf1193bfb91ae2e19de8438b3889f}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!not\+\_\+like@{not\+\_\+like}}
+\index{not\+\_\+like@{not\+\_\+like}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{not\+\_\+like()}{not\_like()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::not\+\_\+like (\begin{DoxyParamCaption}\item[{}]{\$field,  }\item[{}]{\$match = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$side = {\ttfamily \textquotesingle{}both\textquotesingle{}},  }\item[{}]{\$escape = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+N\+OT L\+I\+KE
+
+Generates a N\+OT L\+I\+KE portion of the query. Separates multiple calls with \textquotesingle{}A\+ND\textquotesingle{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$field} & \\
+\hline
+string & {\em \$match} & \\
+\hline
+string & {\em \$side} & \\
+\hline
+bool & {\em \$escape} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a20768a139b4c62547f6fb4b55d5c734f}\label{class_c_i___d_b__query__builder_a20768a139b4c62547f6fb4b55d5c734f}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!offset@{offset}}
+\index{offset@{offset}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{offset()}{offset()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::offset (\begin{DoxyParamCaption}\item[{}]{\$offset }\end{DoxyParamCaption})}
+
+Sets the O\+F\+F\+S\+ET value
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$offset} & O\+F\+F\+S\+ET value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_aaecca382fc4c5d3030c063035c42ce59}\label{class_c_i___d_b__query__builder_aaecca382fc4c5d3030c063035c42ce59}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!or\+\_\+group\+\_\+start@{or\+\_\+group\+\_\+start}}
+\index{or\+\_\+group\+\_\+start@{or\+\_\+group\+\_\+start}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{or\+\_\+group\+\_\+start()}{or\_group\_start()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::or\+\_\+group\+\_\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Starts a query group, but O\+Rs the group
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_aa0f66cc593d2a018f961062d735c962b}\label{class_c_i___d_b__query__builder_aa0f66cc593d2a018f961062d735c962b}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!or\+\_\+having@{or\+\_\+having}}
+\index{or\+\_\+having@{or\+\_\+having}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{or\+\_\+having()}{or\_having()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::or\+\_\+having (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$value = {\ttfamily NULL},  }\item[{}]{\$escape = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+OR H\+A\+V\+I\+NG
+
+Separates multiple calls with \textquotesingle{}OR\textquotesingle{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+string & {\em \$value} & \\
+\hline
+bool & {\em \$escape} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a339bbfa2c2e88b5b5ff248368294fa87}\label{class_c_i___d_b__query__builder_a339bbfa2c2e88b5b5ff248368294fa87}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!or\+\_\+like@{or\+\_\+like}}
+\index{or\+\_\+like@{or\+\_\+like}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{or\+\_\+like()}{or\_like()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::or\+\_\+like (\begin{DoxyParamCaption}\item[{}]{\$field,  }\item[{}]{\$match = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$side = {\ttfamily \textquotesingle{}both\textquotesingle{}},  }\item[{}]{\$escape = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+OR L\+I\+KE
+
+Generates a L\+I\+KE\% portion of the query. Separates multiple calls with \textquotesingle{}OR\textquotesingle{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$field} & \\
+\hline
+string & {\em \$match} & \\
+\hline
+string & {\em \$side} & \\
+\hline
+bool & {\em \$escape} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_afb77fa2848315cc7b1f1e8931612ec42}\label{class_c_i___d_b__query__builder_afb77fa2848315cc7b1f1e8931612ec42}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!or\+\_\+not\+\_\+group\+\_\+start@{or\+\_\+not\+\_\+group\+\_\+start}}
+\index{or\+\_\+not\+\_\+group\+\_\+start@{or\+\_\+not\+\_\+group\+\_\+start}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{or\+\_\+not\+\_\+group\+\_\+start()}{or\_not\_group\_start()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::or\+\_\+not\+\_\+group\+\_\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Starts a query group, but OR N\+O\+Ts the group
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a9680fb43c820bd0a243e232b9347677e}\label{class_c_i___d_b__query__builder_a9680fb43c820bd0a243e232b9347677e}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!or\+\_\+not\+\_\+like@{or\+\_\+not\+\_\+like}}
+\index{or\+\_\+not\+\_\+like@{or\+\_\+not\+\_\+like}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{or\+\_\+not\+\_\+like()}{or\_not\_like()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::or\+\_\+not\+\_\+like (\begin{DoxyParamCaption}\item[{}]{\$field,  }\item[{}]{\$match = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$side = {\ttfamily \textquotesingle{}both\textquotesingle{}},  }\item[{}]{\$escape = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+OR N\+OT L\+I\+KE
+
+Generates a N\+OT L\+I\+KE portion of the query. Separates multiple calls with \textquotesingle{}OR\textquotesingle{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$field} & \\
+\hline
+string & {\em \$match} & \\
+\hline
+string & {\em \$side} & \\
+\hline
+bool & {\em \$escape} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a5f49ad7cee0a2d02752f40d6e2088985}\label{class_c_i___d_b__query__builder_a5f49ad7cee0a2d02752f40d6e2088985}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!or\+\_\+where@{or\+\_\+where}}
+\index{or\+\_\+where@{or\+\_\+where}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{or\+\_\+where()}{or\_where()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::or\+\_\+where (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$value = {\ttfamily NULL},  }\item[{}]{\$escape = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+OR W\+H\+E\+RE
+
+Generates the W\+H\+E\+RE portion of the query. Separates multiple calls with \textquotesingle{}OR\textquotesingle{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & \\
+\hline
+{\em mixed} & \\
+\hline
+{\em bool} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_ad0c87e2d88224a329125e2ed95c048a8}\label{class_c_i___d_b__query__builder_ad0c87e2d88224a329125e2ed95c048a8}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!or\+\_\+where\+\_\+in@{or\+\_\+where\+\_\+in}}
+\index{or\+\_\+where\+\_\+in@{or\+\_\+where\+\_\+in}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{or\+\_\+where\+\_\+in()}{or\_where\_in()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::or\+\_\+where\+\_\+in (\begin{DoxyParamCaption}\item[{}]{\$key = {\ttfamily NULL},  }\item[{}]{\$values = {\ttfamily NULL},  }\item[{}]{\$escape = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+OR W\+H\+E\+RE IN
+
+Generates a W\+H\+E\+RE field IN(\textquotesingle{}item\textquotesingle{}, \textquotesingle{}item\textquotesingle{}) S\+QL query, joined with \textquotesingle{}OR\textquotesingle{} if appropriate.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & The field to search \\
+\hline
+array & {\em \$values} & The values searched on \\
+\hline
+bool & {\em \$escape} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a979d56c3fcaab46c5598f816d8648888}\label{class_c_i___d_b__query__builder_a979d56c3fcaab46c5598f816d8648888}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!or\+\_\+where\+\_\+not\+\_\+in@{or\+\_\+where\+\_\+not\+\_\+in}}
+\index{or\+\_\+where\+\_\+not\+\_\+in@{or\+\_\+where\+\_\+not\+\_\+in}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{or\+\_\+where\+\_\+not\+\_\+in()}{or\_where\_not\_in()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::or\+\_\+where\+\_\+not\+\_\+in (\begin{DoxyParamCaption}\item[{}]{\$key = {\ttfamily NULL},  }\item[{}]{\$values = {\ttfamily NULL},  }\item[{}]{\$escape = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+OR W\+H\+E\+RE N\+OT IN
+
+Generates a W\+H\+E\+RE field N\+OT IN(\textquotesingle{}item\textquotesingle{}, \textquotesingle{}item\textquotesingle{}) S\+QL query, joined with \textquotesingle{}OR\textquotesingle{} if appropriate.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & The field to search \\
+\hline
+array & {\em \$values} & The values searched on \\
+\hline
+bool & {\em \$escape} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a962f40c8b808afaaf118f4eb4c8b3d2b}\label{class_c_i___d_b__query__builder_a962f40c8b808afaaf118f4eb4c8b3d2b}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!order\+\_\+by@{order\+\_\+by}}
+\index{order\+\_\+by@{order\+\_\+by}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{order\+\_\+by()}{order\_by()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::order\+\_\+by (\begin{DoxyParamCaption}\item[{}]{\$orderby,  }\item[{}]{\$direction = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$escape = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+O\+R\+D\+ER BY
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$orderby} & \\
+\hline
+string & {\em \$direction} & A\+SC, D\+E\+SC or R\+A\+N\+D\+OM \\
+\hline
+bool & {\em \$escape} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a68fb988ea9168f22669d3fba960f3555}\label{class_c_i___d_b__query__builder_a68fb988ea9168f22669d3fba960f3555}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!replace@{replace}}
+\index{replace@{replace}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::replace (\begin{DoxyParamCaption}\item[{}]{\$table = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$set = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Replace
+
+Compiles an replace into string and runs the query
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & the table to replace data into \\
+\hline
+{\em array} & an associative array of insert values \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool T\+R\+UE on success, F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a1a11e78dde602608558159c3d1c6d9ff}\label{class_c_i___d_b__query__builder_a1a11e78dde602608558159c3d1c6d9ff}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!reset\+\_\+query@{reset\+\_\+query}}
+\index{reset\+\_\+query@{reset\+\_\+query}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{reset\+\_\+query()}{reset\_query()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::reset\+\_\+query (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reset Query Builder values.
+
+Publicly-\/visible method to reset the QB values.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a5e5a2d539fab07934c3e5c0699d46fef}\label{class_c_i___d_b__query__builder_a5e5a2d539fab07934c3e5c0699d46fef}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!select@{select}}
+\index{select@{select}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{select()}{select()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::select (\begin{DoxyParamCaption}\item[{}]{\$select = {\ttfamily \textquotesingle{}$\ast$\textquotesingle{}},  }\item[{}]{\$escape = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Select
+
+Generates the S\+E\+L\+E\+CT portion of the query
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+{\em mixed} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_aef7b0cb3f2b2a8daa251cff5b28784d6}\label{class_c_i___d_b__query__builder_aef7b0cb3f2b2a8daa251cff5b28784d6}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!select\+\_\+avg@{select\+\_\+avg}}
+\index{select\+\_\+avg@{select\+\_\+avg}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{select\+\_\+avg()}{select\_avg()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::select\+\_\+avg (\begin{DoxyParamCaption}\item[{}]{\$select = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$alias = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Select Average
+
+Generates a S\+E\+L\+E\+CT A\+V\+G(field) portion of a query
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & the field \\
+\hline
+{\em string} & an alias \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a560a8240d4ac8c5343cc48370fa8b86a}\label{class_c_i___d_b__query__builder_a560a8240d4ac8c5343cc48370fa8b86a}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!select\+\_\+max@{select\+\_\+max}}
+\index{select\+\_\+max@{select\+\_\+max}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{select\+\_\+max()}{select\_max()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::select\+\_\+max (\begin{DoxyParamCaption}\item[{}]{\$select = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$alias = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Select Max
+
+Generates a S\+E\+L\+E\+CT M\+A\+X(field) portion of a query
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & the field \\
+\hline
+{\em string} & an alias \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a0122c0b40921d1b7d465637db4c1c6dd}\label{class_c_i___d_b__query__builder_a0122c0b40921d1b7d465637db4c1c6dd}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!select\+\_\+min@{select\+\_\+min}}
+\index{select\+\_\+min@{select\+\_\+min}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{select\+\_\+min()}{select\_min()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::select\+\_\+min (\begin{DoxyParamCaption}\item[{}]{\$select = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$alias = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Select Min
+
+Generates a S\+E\+L\+E\+CT M\+I\+N(field) portion of a query
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & the field \\
+\hline
+{\em string} & an alias \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a498b5c912dbdd9e27cf0589fd8750afb}\label{class_c_i___d_b__query__builder_a498b5c912dbdd9e27cf0589fd8750afb}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!select\+\_\+sum@{select\+\_\+sum}}
+\index{select\+\_\+sum@{select\+\_\+sum}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{select\+\_\+sum()}{select\_sum()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::select\+\_\+sum (\begin{DoxyParamCaption}\item[{}]{\$select = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$alias = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Select Sum
+
+Generates a S\+E\+L\+E\+CT S\+U\+M(field) portion of a query
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & the field \\
+\hline
+{\em string} & an alias \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_ac895a54db4870f128d0ef2426e4c282f}\label{class_c_i___d_b__query__builder_ac895a54db4870f128d0ef2426e4c282f}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!set@{set}}
+\index{set@{set}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::set (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$value = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$escape = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+The \char`\"{}set\char`\"{} function.
+
+Allows key/value pairs to be set for inserting or updating
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & \\
+\hline
+{\em string} & \\
+\hline
+{\em bool} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_aeaa2c3e3e19e414831318f6d99ac7548}\label{class_c_i___d_b__query__builder_aeaa2c3e3e19e414831318f6d99ac7548}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!set\+\_\+dbprefix@{set\+\_\+dbprefix}}
+\index{set\+\_\+dbprefix@{set\+\_\+dbprefix}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{set\+\_\+dbprefix()}{set\_dbprefix()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::set\+\_\+dbprefix (\begin{DoxyParamCaption}\item[{}]{\$prefix = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Set DB Prefix
+
+Set\textquotesingle{}s the DB Prefix to something new without needing to reconnect
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & the prefix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_ad79818e227912b140faa30c7ad6015aa}\label{class_c_i___d_b__query__builder_ad79818e227912b140faa30c7ad6015aa}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!set\+\_\+insert\+\_\+batch@{set\+\_\+insert\+\_\+batch}}
+\index{set\+\_\+insert\+\_\+batch@{set\+\_\+insert\+\_\+batch}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{set\+\_\+insert\+\_\+batch()}{set\_insert\_batch()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::set\+\_\+insert\+\_\+batch (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$value = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$escape = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+The \char`\"{}set\+\_\+insert\+\_\+batch\char`\"{} function. Allows key/value pairs to be set for batch inserts
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & \\
+\hline
+{\em string} & \\
+\hline
+{\em bool} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a4bceb3a5210b3c9ede51132cacb1e47c}\label{class_c_i___d_b__query__builder_a4bceb3a5210b3c9ede51132cacb1e47c}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!set\+\_\+update\+\_\+batch@{set\+\_\+update\+\_\+batch}}
+\index{set\+\_\+update\+\_\+batch@{set\+\_\+update\+\_\+batch}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{set\+\_\+update\+\_\+batch()}{set\_update\_batch()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::set\+\_\+update\+\_\+batch (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$index = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$escape = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+The \char`\"{}set\+\_\+update\+\_\+batch\char`\"{} function. Allows key/value pairs to be set for batch updating
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \\
+\hline
+{\em string} & \\
+\hline
+{\em bool} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a34bf79cbfd4692d9d8992df270b0adc1}\label{class_c_i___d_b__query__builder_a34bf79cbfd4692d9d8992df270b0adc1}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!start\+\_\+cache@{start\+\_\+cache}}
+\index{start\+\_\+cache@{start\+\_\+cache}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{start\+\_\+cache()}{start\_cache()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::start\+\_\+cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Start Cache
+
+Starts QB caching
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a525eb8e766a38561b309b119bd93529f}\label{class_c_i___d_b__query__builder_a525eb8e766a38561b309b119bd93529f}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!stop\+\_\+cache@{stop\+\_\+cache}}
+\index{stop\+\_\+cache@{stop\+\_\+cache}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{stop\+\_\+cache()}{stop\_cache()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::stop\+\_\+cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Stop Cache
+
+Stops QB caching
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a6fb8a3114ae1460cd9ecf4a328812d31}\label{class_c_i___d_b__query__builder_a6fb8a3114ae1460cd9ecf4a328812d31}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!truncate@{truncate}}
+\index{truncate@{truncate}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{truncate()}{truncate()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::truncate (\begin{DoxyParamCaption}\item[{}]{\$table = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Truncate
+
+Compiles a truncate string and runs the query If the database does not support the \mbox{\hyperlink{class_c_i___d_b__query__builder_a6fb8a3114ae1460cd9ecf4a328812d31}{truncate()}} command This function maps to \char`\"{}\+D\+E\+L\+E\+T\+E F\+R\+O\+M table\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & the table to truncate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool T\+R\+UE on success, F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_a396216c9f58d8b98ae09faf00f0203f1}\label{class_c_i___d_b__query__builder_a396216c9f58d8b98ae09faf00f0203f1}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!update@{update}}
+\index{update@{update}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::update (\begin{DoxyParamCaption}\item[{}]{\$table = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$set = {\ttfamily NULL},  }\item[{}]{\$where = {\ttfamily NULL},  }\item[{}]{\$limit = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+U\+P\+D\+A\+TE
+
+Compiles an update string and runs the query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+array & {\em \$set} & An associative array of update values \\
+\hline
+mixed & {\em \$where} & \\
+\hline
+int & {\em \$limit} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool T\+R\+UE on success, F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_aeb16ba65c9f768f47f5a3f2864a6d293}\label{class_c_i___d_b__query__builder_aeb16ba65c9f768f47f5a3f2864a6d293}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!update\+\_\+batch@{update\+\_\+batch}}
+\index{update\+\_\+batch@{update\+\_\+batch}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{update\+\_\+batch()}{update\_batch()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::update\+\_\+batch (\begin{DoxyParamCaption}\item[{}]{\$table,  }\item[{}]{\$set = {\ttfamily NULL},  }\item[{}]{\$index = {\ttfamily NULL},  }\item[{}]{\$batch\+\_\+size = {\ttfamily 100} }\end{DoxyParamCaption})}
+
+Update\+\_\+\+Batch
+
+Compiles an update string and runs the query
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & the table to retrieve the results from \\
+\hline
+{\em array} & an associative array of update values \\
+\hline
+{\em string} & the where key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int number of rows affected or F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_ac72023dbd400394f3a2f46c5df578713}\label{class_c_i___d_b__query__builder_ac72023dbd400394f3a2f46c5df578713}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!where@{where}}
+\index{where@{where}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{where()}{where()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::where (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$value = {\ttfamily NULL},  }\item[{}]{\$escape = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+W\+H\+E\+RE
+
+Generates the W\+H\+E\+RE portion of the query. Separates multiple calls with \textquotesingle{}A\+ND\textquotesingle{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & \\
+\hline
+{\em mixed} & \\
+\hline
+{\em bool} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_ac9ab7f835849f65667a48c3a6dab9feb}\label{class_c_i___d_b__query__builder_ac9ab7f835849f65667a48c3a6dab9feb}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!where\+\_\+in@{where\+\_\+in}}
+\index{where\+\_\+in@{where\+\_\+in}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{where\+\_\+in()}{where\_in()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::where\+\_\+in (\begin{DoxyParamCaption}\item[{}]{\$key = {\ttfamily NULL},  }\item[{}]{\$values = {\ttfamily NULL},  }\item[{}]{\$escape = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+W\+H\+E\+RE IN
+
+Generates a W\+H\+E\+RE field IN(\textquotesingle{}item\textquotesingle{}, \textquotesingle{}item\textquotesingle{}) S\+QL query, joined with \textquotesingle{}A\+ND\textquotesingle{} if appropriate.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & The field to search \\
+\hline
+array & {\em \$values} & The values searched on \\
+\hline
+bool & {\em \$escape} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__query__builder_aa47530ec7d6fa4bbf9c3a0b8d9626c97}\label{class_c_i___d_b__query__builder_aa47530ec7d6fa4bbf9c3a0b8d9626c97}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}!where\+\_\+not\+\_\+in@{where\+\_\+not\+\_\+in}}
+\index{where\+\_\+not\+\_\+in@{where\+\_\+not\+\_\+in}!C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder@{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}}
+\subsubsection{\texorpdfstring{where\+\_\+not\+\_\+in()}{where\_not\_in()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder\+::where\+\_\+not\+\_\+in (\begin{DoxyParamCaption}\item[{}]{\$key = {\ttfamily NULL},  }\item[{}]{\$values = {\ttfamily NULL},  }\item[{}]{\$escape = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+W\+H\+E\+RE N\+OT IN
+
+Generates a W\+H\+E\+RE field N\+OT IN(\textquotesingle{}item\textquotesingle{}, \textquotesingle{}item\textquotesingle{}) S\+QL query, joined with \textquotesingle{}A\+ND\textquotesingle{} if appropriate.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & The field to search \\
+\hline
+array & {\em \$values} & The values searched on \\
+\hline
+bool & {\em \$escape} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___d_b__query__builder}{C\+I\+\_\+\+D\+B\+\_\+query\+\_\+builder}} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/database/D\+B\+\_\+query\+\_\+builder.\+php\end{DoxyCompactItemize}

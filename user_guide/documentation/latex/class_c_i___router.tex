@@ -1,0 +1,252 @@
+\hypertarget{class_c_i___router}{}\section{C\+I\+\_\+\+Router Class Reference}
+\label{class_c_i___router}\index{C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___router_af6992558cad4491d83f68403bf18cf71}{\+\_\+\+\_\+construct}} (\$routing=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___router_a4379dbff2fc2b00f520182b37b7fc24c}{set\+\_\+class}} (\$class)
+\item 
+\mbox{\hyperlink{class_c_i___router_a8aa125a391633531057aca68bf1eb81b}{fetch\+\_\+class}} ()
+\item 
+\mbox{\hyperlink{class_c_i___router_a46667ad877901441dd0cc33b9d25f454}{set\+\_\+method}} (\$method)
+\item 
+\mbox{\hyperlink{class_c_i___router_a23db4d137e36fa933f3d0e674bd057ad}{fetch\+\_\+method}} ()
+\item 
+\mbox{\hyperlink{class_c_i___router_a1123405950f5857a5f6b98d5c52290a4}{set\+\_\+directory}} (\$dir, \$append=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___router_a2a9a8224fcd4a7b035b590018179e7e6}{fetch\+\_\+directory}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___router_a24bbe3e58eee7f725936f25815f5dc2f}\label{class_c_i___router_a24bbe3e58eee7f725936f25815f5dc2f}} 
+{\bfseries \$config}
+\item 
+\mbox{\Hypertarget{class_c_i___router_a6d9e80de8462f33515b9ce4a71e6a768}\label{class_c_i___router_a6d9e80de8462f33515b9ce4a71e6a768}} 
+{\bfseries \$routes} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___router_afe7ef15a89a8dd6abb690620c7de2c5e}\label{class_c_i___router_afe7ef15a89a8dd6abb690620c7de2c5e}} 
+{\bfseries \$class} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___router_af84d2337b8b9d1b948946f60d860093a}\label{class_c_i___router_af84d2337b8b9d1b948946f60d860093a}} 
+{\bfseries \$method} = \textquotesingle{}index\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___router_ad131c1a4901e9a5ad3d43610d2fb8e29}\label{class_c_i___router_ad131c1a4901e9a5ad3d43610d2fb8e29}} 
+{\bfseries \$directory}
+\item 
+\mbox{\Hypertarget{class_c_i___router_a16c6a786b271918f31f2d66f8a34f998}\label{class_c_i___router_a16c6a786b271918f31f2d66f8a34f998}} 
+{\bfseries \$default\+\_\+controller}
+\item 
+\mbox{\Hypertarget{class_c_i___router_a2393962eab29bc31e3f42a0753c86f4c}\label{class_c_i___router_a2393962eab29bc31e3f42a0753c86f4c}} 
+{\bfseries \$translate\+\_\+uri\+\_\+dashes} = F\+A\+L\+SE
+\item 
+\mbox{\Hypertarget{class_c_i___router_a953fd51705a86bc6bdc87cabd1e8e925}\label{class_c_i___router_a953fd51705a86bc6bdc87cabd1e8e925}} 
+{\bfseries \$enable\+\_\+query\+\_\+strings} = F\+A\+L\+SE
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___router_aab7a56592f3121891fb6757fadc614e4}{\+\_\+set\+\_\+routing}} ()
+\item 
+\mbox{\hyperlink{class_c_i___router_a686a9ad1e27d85cec9bb4e11285c8906}{\+\_\+set\+\_\+request}} (\$segments=array())
+\item 
+\mbox{\hyperlink{class_c_i___router_a4e4e6149b6e0612f1c5c154139881ba1}{\+\_\+set\+\_\+default\+\_\+controller}} ()
+\item 
+\mbox{\hyperlink{class_c_i___router_a8c534474aa24287176ff26879543ed87}{\+\_\+validate\+\_\+request}} (\$segments)
+\item 
+\mbox{\hyperlink{class_c_i___router_a1b8a6b811df185009b34f3cf1c3a21e6}{\+\_\+parse\+\_\+routes}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_i___router_af6992558cad4491d83f68403bf18cf71}\label{class_c_i___router_af6992558cad4491d83f68403bf18cf71}} 
+\index{C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Router\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$routing = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Class constructor
+
+Runs the route mapping function.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$routing} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___router_a1b8a6b811df185009b34f3cf1c3a21e6}\label{class_c_i___router_a1b8a6b811df185009b34f3cf1c3a21e6}} 
+\index{C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}!\+\_\+parse\+\_\+routes@{\+\_\+parse\+\_\+routes}}
+\index{\+\_\+parse\+\_\+routes@{\+\_\+parse\+\_\+routes}!C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}}
+\subsubsection{\texorpdfstring{\+\_\+parse\+\_\+routes()}{\_parse\_routes()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Router\+::\+\_\+parse\+\_\+routes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse Routes
+
+Matches any routes that may exist in the config/routes.\+php file against the U\+RI to determine if the class/method need to be remapped.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___router_a4e4e6149b6e0612f1c5c154139881ba1}\label{class_c_i___router_a4e4e6149b6e0612f1c5c154139881ba1}} 
+\index{C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}!\+\_\+set\+\_\+default\+\_\+controller@{\+\_\+set\+\_\+default\+\_\+controller}}
+\index{\+\_\+set\+\_\+default\+\_\+controller@{\+\_\+set\+\_\+default\+\_\+controller}!C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}}
+\subsubsection{\texorpdfstring{\+\_\+set\+\_\+default\+\_\+controller()}{\_set\_default\_controller()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Router\+::\+\_\+set\+\_\+default\+\_\+controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set default controller
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___router_a686a9ad1e27d85cec9bb4e11285c8906}\label{class_c_i___router_a686a9ad1e27d85cec9bb4e11285c8906}} 
+\index{C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}!\+\_\+set\+\_\+request@{\+\_\+set\+\_\+request}}
+\index{\+\_\+set\+\_\+request@{\+\_\+set\+\_\+request}!C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}}
+\subsubsection{\texorpdfstring{\+\_\+set\+\_\+request()}{\_set\_request()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Router\+::\+\_\+set\+\_\+request (\begin{DoxyParamCaption}\item[{}]{\$segments = {\ttfamily array()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set request route
+
+Takes an array of U\+RI segments as input and sets the class/method to be called.
+
+-\/by \mbox{\hyperlink{class_c_i___router_a1b8a6b811df185009b34f3cf1c3a21e6}{C\+I\+\_\+\+Router\+::\+\_\+parse\+\_\+routes()}} 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$segments} & U\+RI segments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___router_aab7a56592f3121891fb6757fadc614e4}\label{class_c_i___router_aab7a56592f3121891fb6757fadc614e4}} 
+\index{C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}!\+\_\+set\+\_\+routing@{\+\_\+set\+\_\+routing}}
+\index{\+\_\+set\+\_\+routing@{\+\_\+set\+\_\+routing}!C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}}
+\subsubsection{\texorpdfstring{\+\_\+set\+\_\+routing()}{\_set\_routing()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Router\+::\+\_\+set\+\_\+routing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set route mapping
+
+Determines what should be served based on the U\+RI request, as well as any \char`\"{}routes\char`\"{} that have been set in the routing config file.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___router_a8c534474aa24287176ff26879543ed87}\label{class_c_i___router_a8c534474aa24287176ff26879543ed87}} 
+\index{C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}!\+\_\+validate\+\_\+request@{\+\_\+validate\+\_\+request}}
+\index{\+\_\+validate\+\_\+request@{\+\_\+validate\+\_\+request}!C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}}
+\subsubsection{\texorpdfstring{\+\_\+validate\+\_\+request()}{\_validate\_request()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Router\+::\+\_\+validate\+\_\+request (\begin{DoxyParamCaption}\item[{}]{\$segments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Validate request
+
+Attempts validate the U\+RI request and determine the controller path.
+
+-\/by \mbox{\hyperlink{class_c_i___router_a686a9ad1e27d85cec9bb4e11285c8906}{C\+I\+\_\+\+Router\+::\+\_\+set\+\_\+request()}} 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$segments} & U\+RI segments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed U\+RI segments 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___router_a8aa125a391633531057aca68bf1eb81b}\label{class_c_i___router_a8aa125a391633531057aca68bf1eb81b}} 
+\index{C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}!fetch\+\_\+class@{fetch\+\_\+class}}
+\index{fetch\+\_\+class@{fetch\+\_\+class}!C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}}
+\subsubsection{\texorpdfstring{fetch\+\_\+class()}{fetch\_class()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Router\+::fetch\+\_\+class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Fetch the current class
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000003}{Deprecated}}]3.\+0.\+0 Read the \textquotesingle{}class\textquotesingle{} property instead \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___router_a2a9a8224fcd4a7b035b590018179e7e6}\label{class_c_i___router_a2a9a8224fcd4a7b035b590018179e7e6}} 
+\index{C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}!fetch\+\_\+directory@{fetch\+\_\+directory}}
+\index{fetch\+\_\+directory@{fetch\+\_\+directory}!C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}}
+\subsubsection{\texorpdfstring{fetch\+\_\+directory()}{fetch\_directory()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Router\+::fetch\+\_\+directory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Fetch directory
+
+Feches the sub-\/directory (if any) that contains the requested controller class.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000005}{Deprecated}}]3.\+0.\+0 Read the \textquotesingle{}directory\textquotesingle{} property instead \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___router_a23db4d137e36fa933f3d0e674bd057ad}\label{class_c_i___router_a23db4d137e36fa933f3d0e674bd057ad}} 
+\index{C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}!fetch\+\_\+method@{fetch\+\_\+method}}
+\index{fetch\+\_\+method@{fetch\+\_\+method}!C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}}
+\subsubsection{\texorpdfstring{fetch\+\_\+method()}{fetch\_method()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Router\+::fetch\+\_\+method (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Fetch the current method
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000004}{Deprecated}}]3.\+0.\+0 Read the \textquotesingle{}method\textquotesingle{} property instead \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___router_a4379dbff2fc2b00f520182b37b7fc24c}\label{class_c_i___router_a4379dbff2fc2b00f520182b37b7fc24c}} 
+\index{C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}!set\+\_\+class@{set\+\_\+class}}
+\index{set\+\_\+class@{set\+\_\+class}!C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}}
+\subsubsection{\texorpdfstring{set\+\_\+class()}{set\_class()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Router\+::set\+\_\+class (\begin{DoxyParamCaption}\item[{}]{\$class }\end{DoxyParamCaption})}
+
+Set class name
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & Class name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___router_a1123405950f5857a5f6b98d5c52290a4}\label{class_c_i___router_a1123405950f5857a5f6b98d5c52290a4}} 
+\index{C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}!set\+\_\+directory@{set\+\_\+directory}}
+\index{set\+\_\+directory@{set\+\_\+directory}!C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}}
+\subsubsection{\texorpdfstring{set\+\_\+directory()}{set\_directory()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Router\+::set\+\_\+directory (\begin{DoxyParamCaption}\item[{}]{\$dir,  }\item[{}]{\$append = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Set directory name
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dir} & Directory name \\
+\hline
+bool & {\em \$append} & Whether we\textquotesingle{}re appending rather than setting the full value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___router_a46667ad877901441dd0cc33b9d25f454}\label{class_c_i___router_a46667ad877901441dd0cc33b9d25f454}} 
+\index{C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}!set\+\_\+method@{set\+\_\+method}}
+\index{set\+\_\+method@{set\+\_\+method}!C\+I\+\_\+\+Router@{C\+I\+\_\+\+Router}}
+\subsubsection{\texorpdfstring{set\+\_\+method()}{set\_method()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Router\+::set\+\_\+method (\begin{DoxyParamCaption}\item[{}]{\$method }\end{DoxyParamCaption})}
+
+Set method name
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & Method name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/core/Router.\+php\end{DoxyCompactItemize}

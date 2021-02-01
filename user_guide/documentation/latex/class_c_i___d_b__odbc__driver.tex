@@ -1,0 +1,309 @@
+\hypertarget{class_c_i___d_b__odbc__driver}{}\section{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver Class Reference}
+\label{class_c_i___d_b__odbc__driver}\index{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}}
+Inheritance diagram for C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_i___d_b__odbc__driver}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___d_b__odbc__driver_a1a5710dfc68a455b9e5c39980e8c5daa}{\+\_\+\+\_\+construct}} (\$params)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__odbc__driver_aa14bb594952a5e7869ee61633dc27e69}{db\+\_\+connect}} (\$persistent=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__odbc__driver_ab835fef7e59fe57a52ce68670421d7aa}{compile\+\_\+binds}} (\$sql, \$binds)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__odbc__driver_a34015edad08eb1922dec8269f4bf87f1}{is\+\_\+write\+\_\+type}} (\$sql)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__odbc__driver_a7b25b423b57b22ce7715e805e36aa334}{affected\+\_\+rows}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__odbc__driver_aff1a96e2d3908fc691f202d52fa7e324}{insert\+\_\+id}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__odbc__driver_a80b31b6166f5a41763f30c377453a656}{error}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__odbc__driver_a8fd71bed0d3540020eabb9a4cb341241}\label{class_c_i___d_b__odbc__driver_a8fd71bed0d3540020eabb9a4cb341241}} 
+{\bfseries \$dbdriver} = \textquotesingle{}odbc\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__odbc__driver_aa607465547992244b58cc628179f47e8}\label{class_c_i___d_b__odbc__driver_aa607465547992244b58cc628179f47e8}} 
+{\bfseries \$schema} = \textquotesingle{}public\textquotesingle{}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___d_b__odbc__driver_a16be72853726c6da73cb9fce8031cd5a}{\+\_\+execute}} (\$sql)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__odbc__driver_a69523257786e9806d061ffaa161b6d86}{\+\_\+trans\+\_\+begin}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__odbc__driver_afff8139de398ed9760487762768a7633}{\+\_\+trans\+\_\+commit}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__odbc__driver_acddb1326f204dc4e4f44515c757e892c}{\+\_\+trans\+\_\+rollback}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__odbc__driver_a82845dc079a13038e5cac8261f367ccd}{\+\_\+escape\+\_\+str}} (\$str)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__odbc__driver_a2cb15dc00978503e666b85443352e7b9}{\+\_\+list\+\_\+tables}} (\$prefix\+\_\+limit=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__odbc__driver_aaad9fcfe553decb249097b9c2e06401a}{\+\_\+list\+\_\+columns}} (\$table=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___d_b__odbc__driver_a11cf239b1f5eec67182813400bc3fcc1}{\+\_\+field\+\_\+data}} (\$table)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__odbc__driver_acc26fae36c67ad8489dcafa939ed287e}{\+\_\+close}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__odbc__driver_aa7d2f9f4ee2b285dd95c8e139ab39478}\label{class_c_i___d_b__odbc__driver_aa7d2f9f4ee2b285dd95c8e139ab39478}} 
+{\bfseries \$\+\_\+escape\+\_\+char} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__odbc__driver_adaf861cd41627ec858efce7166d81083}\label{class_c_i___d_b__odbc__driver_adaf861cd41627ec858efce7166d81083}} 
+{\bfseries \$\+\_\+like\+\_\+escape\+\_\+str} = \char`\"{} \{escape \textquotesingle{}\%s\textquotesingle{}\} \char`\"{}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__odbc__driver_a741a86bac398254a82486629ca889628}\label{class_c_i___d_b__odbc__driver_a741a86bac398254a82486629ca889628}} 
+{\bfseries \$\+\_\+random\+\_\+keyword} = array(\textquotesingle{}R\+ND()\textquotesingle{}, \textquotesingle{}R\+ND(\%d)\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_i___d_b__odbc__driver_a1a5710dfc68a455b9e5c39980e8c5daa}\label{class_c_i___d_b__odbc__driver_a1a5710dfc68a455b9e5c39980e8c5daa}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$params }\end{DoxyParamCaption})}
+
+Class constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___d_b__odbc__driver_acc26fae36c67ad8489dcafa939ed287e}\label{class_c_i___d_b__odbc__driver_acc26fae36c67ad8489dcafa939ed287e}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}!\+\_\+close@{\+\_\+close}}
+\index{\+\_\+close@{\+\_\+close}!C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+close()}{\_close()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver\+::\+\_\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Close DB Connection
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__odbc__driver_a82845dc079a13038e5cac8261f367ccd}\label{class_c_i___d_b__odbc__driver_a82845dc079a13038e5cac8261f367ccd}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}!\+\_\+escape\+\_\+str@{\+\_\+escape\+\_\+str}}
+\index{\+\_\+escape\+\_\+str@{\+\_\+escape\+\_\+str}!C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+escape\+\_\+str()}{\_escape\_str()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver\+::\+\_\+escape\+\_\+str (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Platform-\/dependent string escape
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__odbc__driver_a16be72853726c6da73cb9fce8031cd5a}\label{class_c_i___d_b__odbc__driver_a16be72853726c6da73cb9fce8031cd5a}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}!\+\_\+execute@{\+\_\+execute}}
+\index{\+\_\+execute@{\+\_\+execute}!C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+execute()}{\_execute()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver\+::\+\_\+execute (\begin{DoxyParamCaption}\item[{}]{\$sql }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Execute the query
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sql} & an S\+QL query \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__odbc__driver_a11cf239b1f5eec67182813400bc3fcc1}\label{class_c_i___d_b__odbc__driver_a11cf239b1f5eec67182813400bc3fcc1}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}!\+\_\+field\+\_\+data@{\+\_\+field\+\_\+data}}
+\index{\+\_\+field\+\_\+data@{\+\_\+field\+\_\+data}!C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+field\+\_\+data()}{\_field\_data()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver\+::\+\_\+field\+\_\+data (\begin{DoxyParamCaption}\item[{}]{\$table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Field data query
+
+Generates a platform-\/specific query so that the column data can be retrieved
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__odbc__driver_aaad9fcfe553decb249097b9c2e06401a}\label{class_c_i___d_b__odbc__driver_aaad9fcfe553decb249097b9c2e06401a}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}!\+\_\+list\+\_\+columns@{\+\_\+list\+\_\+columns}}
+\index{\+\_\+list\+\_\+columns@{\+\_\+list\+\_\+columns}!C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+list\+\_\+columns()}{\_list\_columns()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver\+::\+\_\+list\+\_\+columns (\begin{DoxyParamCaption}\item[{}]{\$table = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Show column query
+
+Generates a platform-\/specific query string so that the column names can be fetched
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__odbc__driver_a2cb15dc00978503e666b85443352e7b9}\label{class_c_i___d_b__odbc__driver_a2cb15dc00978503e666b85443352e7b9}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}!\+\_\+list\+\_\+tables@{\+\_\+list\+\_\+tables}}
+\index{\+\_\+list\+\_\+tables@{\+\_\+list\+\_\+tables}!C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+list\+\_\+tables()}{\_list\_tables()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver\+::\+\_\+list\+\_\+tables (\begin{DoxyParamCaption}\item[{}]{\$prefix\+\_\+limit = {\ttfamily FALSE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Show table query
+
+Generates a platform-\/specific query string so that the table names can be fetched
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$prefix\+\_\+limit} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__odbc__driver_a69523257786e9806d061ffaa161b6d86}\label{class_c_i___d_b__odbc__driver_a69523257786e9806d061ffaa161b6d86}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}!\+\_\+trans\+\_\+begin@{\+\_\+trans\+\_\+begin}}
+\index{\+\_\+trans\+\_\+begin@{\+\_\+trans\+\_\+begin}!C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+trans\+\_\+begin()}{\_trans\_begin()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver\+::\+\_\+trans\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Begin Transaction
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__odbc__driver_afff8139de398ed9760487762768a7633}\label{class_c_i___d_b__odbc__driver_afff8139de398ed9760487762768a7633}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}!\+\_\+trans\+\_\+commit@{\+\_\+trans\+\_\+commit}}
+\index{\+\_\+trans\+\_\+commit@{\+\_\+trans\+\_\+commit}!C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+trans\+\_\+commit()}{\_trans\_commit()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver\+::\+\_\+trans\+\_\+commit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Commit Transaction
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__odbc__driver_acddb1326f204dc4e4f44515c757e892c}\label{class_c_i___d_b__odbc__driver_acddb1326f204dc4e4f44515c757e892c}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}!\+\_\+trans\+\_\+rollback@{\+\_\+trans\+\_\+rollback}}
+\index{\+\_\+trans\+\_\+rollback@{\+\_\+trans\+\_\+rollback}!C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+trans\+\_\+rollback()}{\_trans\_rollback()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver\+::\+\_\+trans\+\_\+rollback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Rollback Transaction
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__odbc__driver_a7b25b423b57b22ce7715e805e36aa334}\label{class_c_i___d_b__odbc__driver_a7b25b423b57b22ce7715e805e36aa334}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}!affected\+\_\+rows@{affected\+\_\+rows}}
+\index{affected\+\_\+rows@{affected\+\_\+rows}!C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}}
+\subsubsection{\texorpdfstring{affected\+\_\+rows()}{affected\_rows()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver\+::affected\+\_\+rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Affected Rows
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__odbc__driver_ab835fef7e59fe57a52ce68670421d7aa}\label{class_c_i___d_b__odbc__driver_ab835fef7e59fe57a52ce68670421d7aa}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}!compile\+\_\+binds@{compile\+\_\+binds}}
+\index{compile\+\_\+binds@{compile\+\_\+binds}!C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}}
+\subsubsection{\texorpdfstring{compile\+\_\+binds()}{compile\_binds()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver\+::compile\+\_\+binds (\begin{DoxyParamCaption}\item[{}]{\$sql,  }\item[{}]{\$binds }\end{DoxyParamCaption})}
+
+Compile Bindings
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sql} & S\+QL statement \\
+\hline
+array & {\em \$binds} & An array of values to bind \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__odbc__driver_aa14bb594952a5e7869ee61633dc27e69}\label{class_c_i___d_b__odbc__driver_aa14bb594952a5e7869ee61633dc27e69}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}!db\+\_\+connect@{db\+\_\+connect}}
+\index{db\+\_\+connect@{db\+\_\+connect}!C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}}
+\subsubsection{\texorpdfstring{db\+\_\+connect()}{db\_connect()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver\+::db\+\_\+connect (\begin{DoxyParamCaption}\item[{}]{\$persistent = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Non-\/persistent database connection
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$persistent} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__odbc__driver_a80b31b6166f5a41763f30c377453a656}\label{class_c_i___d_b__odbc__driver_a80b31b6166f5a41763f30c377453a656}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}!error@{error}}
+\index{error@{error}!C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}}
+\subsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver\+::error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Error
+
+Returns an array containing code and message of the last database error that has occurred.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__odbc__driver_aff1a96e2d3908fc691f202d52fa7e324}\label{class_c_i___d_b__odbc__driver_aff1a96e2d3908fc691f202d52fa7e324}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}!insert\+\_\+id@{insert\+\_\+id}}
+\index{insert\+\_\+id@{insert\+\_\+id}!C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}}
+\subsubsection{\texorpdfstring{insert\+\_\+id()}{insert\_id()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver\+::insert\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Insert ID
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__odbc__driver_a34015edad08eb1922dec8269f4bf87f1}\label{class_c_i___d_b__odbc__driver_a34015edad08eb1922dec8269f4bf87f1}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}!is\+\_\+write\+\_\+type@{is\+\_\+write\+\_\+type}}
+\index{is\+\_\+write\+\_\+type@{is\+\_\+write\+\_\+type}!C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver}}
+\subsubsection{\texorpdfstring{is\+\_\+write\+\_\+type()}{is\_write\_type()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+odbc\+\_\+driver\+::is\+\_\+write\+\_\+type (\begin{DoxyParamCaption}\item[{}]{\$sql }\end{DoxyParamCaption})}
+
+Determines if a query is a \char`\"{}write\char`\"{} type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & An S\+QL query string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/database/drivers/odbc/odbc\+\_\+driver.\+php\end{DoxyCompactItemize}

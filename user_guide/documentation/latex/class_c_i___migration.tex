@@ -1,0 +1,221 @@
+\hypertarget{class_c_i___migration}{}\section{C\+I\+\_\+\+Migration Class Reference}
+\label{class_c_i___migration}\index{C\+I\+\_\+\+Migration@{C\+I\+\_\+\+Migration}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___migration_ad6c4930b6bb3a657adde8f8b8f0746d6}{\+\_\+\+\_\+construct}} (\$config=array())
+\item 
+\mbox{\hyperlink{class_c_i___migration_a6d6f818633387d1a42bd5ae7e1f74a9a}{version}} (\$target\+\_\+version)
+\item 
+\mbox{\hyperlink{class_c_i___migration_aef344b95c0ed720a63f2ae364e0f605d}{latest}} ()
+\item 
+\mbox{\hyperlink{class_c_i___migration_ad901ca17e76bb5273bac143321c01201}{current}} ()
+\item 
+\mbox{\hyperlink{class_c_i___migration_a7193a5ae6e8b8bca3c650a0d303048ae}{error\+\_\+string}} ()
+\item 
+\mbox{\hyperlink{class_c_i___migration_a6b8d3ea8c75abaf3e604f89c144004ac}{find\+\_\+migrations}} ()
+\item 
+\mbox{\hyperlink{class_c_i___migration_a30536b98b054d7f54ca762040483c999}{\+\_\+\+\_\+get}} (\$var)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___migration_afe3f332b9713a56b56b8c7ff3d920b1a}{\+\_\+get\+\_\+migration\+\_\+number}} (\$migration)
+\item 
+\mbox{\hyperlink{class_c_i___migration_aea1f69e00121f071ed5991fdb63e1eb4}{\+\_\+get\+\_\+migration\+\_\+name}} (\$migration)
+\item 
+\mbox{\hyperlink{class_c_i___migration_a976baf03036c7dbd5cf135e6de82eeda}{\+\_\+get\+\_\+version}} ()
+\item 
+\mbox{\hyperlink{class_c_i___migration_a3ebdc31b25f9ad46c1fcee70a8e15afe}{\+\_\+update\+\_\+version}} (\$migration)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___migration_a12ce2b043f04ec9412e07dd7955a91be}\label{class_c_i___migration_a12ce2b043f04ec9412e07dd7955a91be}} 
+{\bfseries \$\+\_\+migration\+\_\+enabled} = F\+A\+L\+SE
+\item 
+\mbox{\Hypertarget{class_c_i___migration_a39a6822a7b085dda969bcc4c3900e206}\label{class_c_i___migration_a39a6822a7b085dda969bcc4c3900e206}} 
+{\bfseries \$\+\_\+migration\+\_\+type} = \textquotesingle{}sequential\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___migration_ae967c0ff974808b60d0511f21dc09138}\label{class_c_i___migration_ae967c0ff974808b60d0511f21dc09138}} 
+{\bfseries \$\+\_\+migration\+\_\+path} = N\+U\+LL
+\item 
+\mbox{\Hypertarget{class_c_i___migration_a91ad5b3a5b1b31b3ac6af0f96da631b7}\label{class_c_i___migration_a91ad5b3a5b1b31b3ac6af0f96da631b7}} 
+{\bfseries \$\+\_\+migration\+\_\+version} = 0
+\item 
+\mbox{\Hypertarget{class_c_i___migration_a4190025540b466653db53e42ed50a4d0}\label{class_c_i___migration_a4190025540b466653db53e42ed50a4d0}} 
+{\bfseries \$\+\_\+migration\+\_\+table} = \textquotesingle{}migrations\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___migration_a6ab20374a0d46bb6592d91e2330ca09a}\label{class_c_i___migration_a6ab20374a0d46bb6592d91e2330ca09a}} 
+{\bfseries \$\+\_\+migration\+\_\+auto\+\_\+latest} = F\+A\+L\+SE
+\item 
+\mbox{\Hypertarget{class_c_i___migration_a578168db74b6f2964cba31635b75b038}\label{class_c_i___migration_a578168db74b6f2964cba31635b75b038}} 
+{\bfseries \$\+\_\+migration\+\_\+regex}
+\item 
+\mbox{\Hypertarget{class_c_i___migration_ad4fc6df7b4edda9b2f51925a87e78f11}\label{class_c_i___migration_ad4fc6df7b4edda9b2f51925a87e78f11}} 
+{\bfseries \$\+\_\+error\+\_\+string} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_i___migration_ad6c4930b6bb3a657adde8f8b8f0746d6}\label{class_c_i___migration_ad6c4930b6bb3a657adde8f8b8f0746d6}} 
+\index{C\+I\+\_\+\+Migration@{C\+I\+\_\+\+Migration}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+Migration@{C\+I\+\_\+\+Migration}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Migration\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$config = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Initialize Migration Class
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___migration_a30536b98b054d7f54ca762040483c999}\label{class_c_i___migration_a30536b98b054d7f54ca762040483c999}} 
+\index{C\+I\+\_\+\+Migration@{C\+I\+\_\+\+Migration}!\+\_\+\+\_\+get@{\+\_\+\+\_\+get}}
+\index{\+\_\+\+\_\+get@{\+\_\+\+\_\+get}!C\+I\+\_\+\+Migration@{C\+I\+\_\+\+Migration}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+get()}{\_\_get()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Migration\+::\+\_\+\+\_\+get (\begin{DoxyParamCaption}\item[{}]{\$var }\end{DoxyParamCaption})}
+
+Enable the use of CI super-\/global
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$var} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___migration_aea1f69e00121f071ed5991fdb63e1eb4}\label{class_c_i___migration_aea1f69e00121f071ed5991fdb63e1eb4}} 
+\index{C\+I\+\_\+\+Migration@{C\+I\+\_\+\+Migration}!\+\_\+get\+\_\+migration\+\_\+name@{\+\_\+get\+\_\+migration\+\_\+name}}
+\index{\+\_\+get\+\_\+migration\+\_\+name@{\+\_\+get\+\_\+migration\+\_\+name}!C\+I\+\_\+\+Migration@{C\+I\+\_\+\+Migration}}
+\subsubsection{\texorpdfstring{\+\_\+get\+\_\+migration\+\_\+name()}{\_get\_migration\_name()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Migration\+::\+\_\+get\+\_\+migration\+\_\+name (\begin{DoxyParamCaption}\item[{}]{\$migration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Extracts the migration class name from a filename
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$migration} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string text portion of a migration filename 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___migration_afe3f332b9713a56b56b8c7ff3d920b1a}\label{class_c_i___migration_afe3f332b9713a56b56b8c7ff3d920b1a}} 
+\index{C\+I\+\_\+\+Migration@{C\+I\+\_\+\+Migration}!\+\_\+get\+\_\+migration\+\_\+number@{\+\_\+get\+\_\+migration\+\_\+number}}
+\index{\+\_\+get\+\_\+migration\+\_\+number@{\+\_\+get\+\_\+migration\+\_\+number}!C\+I\+\_\+\+Migration@{C\+I\+\_\+\+Migration}}
+\subsubsection{\texorpdfstring{\+\_\+get\+\_\+migration\+\_\+number()}{\_get\_migration\_number()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Migration\+::\+\_\+get\+\_\+migration\+\_\+number (\begin{DoxyParamCaption}\item[{}]{\$migration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Extracts the migration number from a filename
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$migration} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Numeric portion of a migration filename 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___migration_a976baf03036c7dbd5cf135e6de82eeda}\label{class_c_i___migration_a976baf03036c7dbd5cf135e6de82eeda}} 
+\index{C\+I\+\_\+\+Migration@{C\+I\+\_\+\+Migration}!\+\_\+get\+\_\+version@{\+\_\+get\+\_\+version}}
+\index{\+\_\+get\+\_\+version@{\+\_\+get\+\_\+version}!C\+I\+\_\+\+Migration@{C\+I\+\_\+\+Migration}}
+\subsubsection{\texorpdfstring{\+\_\+get\+\_\+version()}{\_get\_version()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Migration\+::\+\_\+get\+\_\+version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Retrieves current schema version
+
+\begin{DoxyReturn}{Returns}
+string Current migration version 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___migration_a3ebdc31b25f9ad46c1fcee70a8e15afe}\label{class_c_i___migration_a3ebdc31b25f9ad46c1fcee70a8e15afe}} 
+\index{C\+I\+\_\+\+Migration@{C\+I\+\_\+\+Migration}!\+\_\+update\+\_\+version@{\+\_\+update\+\_\+version}}
+\index{\+\_\+update\+\_\+version@{\+\_\+update\+\_\+version}!C\+I\+\_\+\+Migration@{C\+I\+\_\+\+Migration}}
+\subsubsection{\texorpdfstring{\+\_\+update\+\_\+version()}{\_update\_version()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Migration\+::\+\_\+update\+\_\+version (\begin{DoxyParamCaption}\item[{}]{\$migration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Stores the current schema version
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$migration} & Migration reached \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___migration_ad901ca17e76bb5273bac143321c01201}\label{class_c_i___migration_ad901ca17e76bb5273bac143321c01201}} 
+\index{C\+I\+\_\+\+Migration@{C\+I\+\_\+\+Migration}!current@{current}}
+\index{current@{current}!C\+I\+\_\+\+Migration@{C\+I\+\_\+\+Migration}}
+\subsubsection{\texorpdfstring{current()}{current()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Migration\+::current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets the schema to the migration version set in config
+
+\begin{DoxyReturn}{Returns}
+mixed T\+R\+UE if no migrations are found, current version string on success, F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___migration_a7193a5ae6e8b8bca3c650a0d303048ae}\label{class_c_i___migration_a7193a5ae6e8b8bca3c650a0d303048ae}} 
+\index{C\+I\+\_\+\+Migration@{C\+I\+\_\+\+Migration}!error\+\_\+string@{error\+\_\+string}}
+\index{error\+\_\+string@{error\+\_\+string}!C\+I\+\_\+\+Migration@{C\+I\+\_\+\+Migration}}
+\subsubsection{\texorpdfstring{error\+\_\+string()}{error\_string()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Migration\+::error\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Error string
+
+\begin{DoxyReturn}{Returns}
+string Error message returned as a string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___migration_a6b8d3ea8c75abaf3e604f89c144004ac}\label{class_c_i___migration_a6b8d3ea8c75abaf3e604f89c144004ac}} 
+\index{C\+I\+\_\+\+Migration@{C\+I\+\_\+\+Migration}!find\+\_\+migrations@{find\+\_\+migrations}}
+\index{find\+\_\+migrations@{find\+\_\+migrations}!C\+I\+\_\+\+Migration@{C\+I\+\_\+\+Migration}}
+\subsubsection{\texorpdfstring{find\+\_\+migrations()}{find\_migrations()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Migration\+::find\+\_\+migrations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Retrieves list of available migration scripts
+
+\begin{DoxyReturn}{Returns}
+array list of migration file paths sorted by version 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___migration_aef344b95c0ed720a63f2ae364e0f605d}\label{class_c_i___migration_aef344b95c0ed720a63f2ae364e0f605d}} 
+\index{C\+I\+\_\+\+Migration@{C\+I\+\_\+\+Migration}!latest@{latest}}
+\index{latest@{latest}!C\+I\+\_\+\+Migration@{C\+I\+\_\+\+Migration}}
+\subsubsection{\texorpdfstring{latest()}{latest()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Migration\+::latest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets the schema to the latest migration
+
+\begin{DoxyReturn}{Returns}
+mixed Current version string on success, F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___migration_a6d6f818633387d1a42bd5ae7e1f74a9a}\label{class_c_i___migration_a6d6f818633387d1a42bd5ae7e1f74a9a}} 
+\index{C\+I\+\_\+\+Migration@{C\+I\+\_\+\+Migration}!version@{version}}
+\index{version@{version}!C\+I\+\_\+\+Migration@{C\+I\+\_\+\+Migration}}
+\subsubsection{\texorpdfstring{version()}{version()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Migration\+::version (\begin{DoxyParamCaption}\item[{}]{\$target\+\_\+version }\end{DoxyParamCaption})}
+
+Migrate to a schema version
+
+Calls each migration step required to get to the schema version of choice
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$target\+\_\+version} & Target schema version \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed T\+R\+UE if no migrations are found, current version string on success, F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/libraries/Migration.\+php\end{DoxyCompactItemize}

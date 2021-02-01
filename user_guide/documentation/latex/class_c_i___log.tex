@@ -1,0 +1,154 @@
+\hypertarget{class_c_i___log}{}\section{C\+I\+\_\+\+Log Class Reference}
+\label{class_c_i___log}\index{C\+I\+\_\+\+Log@{C\+I\+\_\+\+Log}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___log_af5605c4ff273176a36b6e4dc4876201f}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_c_i___log_a7fabf953748da6685e54430e7f200ac8}{write\+\_\+log}} (\$level, \$msg)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___log_ab5bf7e6663af7019bd38f9540a344459}{\+\_\+format\+\_\+line}} (\$level, \$date, \$message)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_c_i___log_ac0f92584d5cc1950011d586914893e22}{strlen}} (\$str)
+\item 
+static \mbox{\hyperlink{class_c_i___log_ae16a11c82c09f1b2bb5d8ecba7468acb}{substr}} (\$str, \$start, \$length=N\+U\+LL)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___log_ad8a8ef9a05316719565ea9efd5d11db0}\label{class_c_i___log_ad8a8ef9a05316719565ea9efd5d11db0}} 
+{\bfseries \$\+\_\+log\+\_\+path}
+\item 
+\mbox{\Hypertarget{class_c_i___log_a5aba90f8cd11fefb4a34f98ee2f92e88}\label{class_c_i___log_a5aba90f8cd11fefb4a34f98ee2f92e88}} 
+{\bfseries \$\+\_\+file\+\_\+permissions} = 0644
+\item 
+\mbox{\Hypertarget{class_c_i___log_aa0bfdb11c81b1d496cab288533f5cedf}\label{class_c_i___log_aa0bfdb11c81b1d496cab288533f5cedf}} 
+{\bfseries \$\+\_\+threshold} = 1
+\item 
+\mbox{\Hypertarget{class_c_i___log_a3eb60547e6a2017f8366845eea20031c}\label{class_c_i___log_a3eb60547e6a2017f8366845eea20031c}} 
+{\bfseries \$\+\_\+threshold\+\_\+array} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___log_a11a2b3fb706079ee22333ebcf4bdc44b}\label{class_c_i___log_a11a2b3fb706079ee22333ebcf4bdc44b}} 
+{\bfseries \$\+\_\+date\+\_\+fmt} = \textquotesingle{}Y-\/m-\/d H\+:i\+:s\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___log_ae8e714753edca4fbfeda22c22b0f5513}\label{class_c_i___log_ae8e714753edca4fbfeda22c22b0f5513}} 
+{\bfseries \$\+\_\+file\+\_\+ext}
+\item 
+\mbox{\Hypertarget{class_c_i___log_a1a6e6b5b0c06f3a75ae024e031c01755}\label{class_c_i___log_a1a6e6b5b0c06f3a75ae024e031c01755}} 
+{\bfseries \$\+\_\+enabled} = T\+R\+UE
+\item 
+\mbox{\Hypertarget{class_c_i___log_ac94e6284685df120e874041016a4d4a9}\label{class_c_i___log_ac94e6284685df120e874041016a4d4a9}} 
+{\bfseries \$\+\_\+levels} = array(\textquotesingle{}E\+R\+R\+OR\textquotesingle{} =$>$ 1, \textquotesingle{}D\+E\+B\+UG\textquotesingle{} =$>$ 2, \textquotesingle{}I\+N\+FO\textquotesingle{} =$>$ 3, \textquotesingle{}A\+LL\textquotesingle{} =$>$ 4)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___log_a470fb95f4eaca2b913f60a5cb6b414d2}\label{class_c_i___log_a470fb95f4eaca2b913f60a5cb6b414d2}} 
+static {\bfseries \$func\+\_\+overload}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_i___log_af5605c4ff273176a36b6e4dc4876201f}\label{class_c_i___log_af5605c4ff273176a36b6e4dc4876201f}} 
+\index{C\+I\+\_\+\+Log@{C\+I\+\_\+\+Log}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+Log@{C\+I\+\_\+\+Log}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Log\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Class constructor
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___log_ab5bf7e6663af7019bd38f9540a344459}\label{class_c_i___log_ab5bf7e6663af7019bd38f9540a344459}} 
+\index{C\+I\+\_\+\+Log@{C\+I\+\_\+\+Log}!\+\_\+format\+\_\+line@{\+\_\+format\+\_\+line}}
+\index{\+\_\+format\+\_\+line@{\+\_\+format\+\_\+line}!C\+I\+\_\+\+Log@{C\+I\+\_\+\+Log}}
+\subsubsection{\texorpdfstring{\+\_\+format\+\_\+line()}{\_format\_line()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Log\+::\+\_\+format\+\_\+line (\begin{DoxyParamCaption}\item[{}]{\$level,  }\item[{}]{\$date,  }\item[{}]{\$message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Format the log line.
+
+This is for extensibility of log formatting If you want to change the log format, extend the \mbox{\hyperlink{class_c_i___log}{C\+I\+\_\+\+Log}} class and override this method
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$level} & The error level \\
+\hline
+string & {\em \$date} & Formatted date string \\
+\hline
+string & {\em \$message} & The log message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Formatted log line with a new line character at the end 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___log_ac0f92584d5cc1950011d586914893e22}\label{class_c_i___log_ac0f92584d5cc1950011d586914893e22}} 
+\index{C\+I\+\_\+\+Log@{C\+I\+\_\+\+Log}!strlen@{strlen}}
+\index{strlen@{strlen}!C\+I\+\_\+\+Log@{C\+I\+\_\+\+Log}}
+\subsubsection{\texorpdfstring{strlen()}{strlen()}}
+{\footnotesize\ttfamily static C\+I\+\_\+\+Log\+::strlen (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Byte-\/safe \mbox{\hyperlink{class_c_i___log_ac0f92584d5cc1950011d586914893e22}{strlen()}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___log_ae16a11c82c09f1b2bb5d8ecba7468acb}\label{class_c_i___log_ae16a11c82c09f1b2bb5d8ecba7468acb}} 
+\index{C\+I\+\_\+\+Log@{C\+I\+\_\+\+Log}!substr@{substr}}
+\index{substr@{substr}!C\+I\+\_\+\+Log@{C\+I\+\_\+\+Log}}
+\subsubsection{\texorpdfstring{substr()}{substr()}}
+{\footnotesize\ttfamily static C\+I\+\_\+\+Log\+::substr (\begin{DoxyParamCaption}\item[{}]{\$str,  }\item[{}]{\$start,  }\item[{}]{\$length = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Byte-\/safe \mbox{\hyperlink{class_c_i___log_ae16a11c82c09f1b2bb5d8ecba7468acb}{substr()}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+int & {\em \$start} & \\
+\hline
+int & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___log_a7fabf953748da6685e54430e7f200ac8}\label{class_c_i___log_a7fabf953748da6685e54430e7f200ac8}} 
+\index{C\+I\+\_\+\+Log@{C\+I\+\_\+\+Log}!write\+\_\+log@{write\+\_\+log}}
+\index{write\+\_\+log@{write\+\_\+log}!C\+I\+\_\+\+Log@{C\+I\+\_\+\+Log}}
+\subsubsection{\texorpdfstring{write\+\_\+log()}{write\_log()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Log\+::write\+\_\+log (\begin{DoxyParamCaption}\item[{}]{\$level,  }\item[{}]{\$msg }\end{DoxyParamCaption})}
+
+Write Log File
+
+Generally this function will be called using the global log\+\_\+message() function
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$level} & The error level\+: \textquotesingle{}error\textquotesingle{}, \textquotesingle{}debug\textquotesingle{} or \textquotesingle{}info\textquotesingle{} \\
+\hline
+string & {\em \$msg} & The error message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/core/Log.\+php\end{DoxyCompactItemize}

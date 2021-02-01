@@ -1,0 +1,677 @@
+\hypertarget{class_c_i___loader}{}\section{C\+I\+\_\+\+Loader Class Reference}
+\label{class_c_i___loader}\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___loader_a56d6528e81d45b264b76394c89f062ce}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_c_i___loader_a91836c1d132ac63ef37003d6e02cf4ee}{initialize}} ()
+\item 
+\mbox{\hyperlink{class_c_i___loader_acd71bb8962f4ac5cb330488c10aff7c2}{is\+\_\+loaded}} (\$class)
+\item 
+\mbox{\hyperlink{class_c_i___loader_a83b0240592edae85ace9467989c33688}{library}} (\$library, \$params=N\+U\+LL, \$object\+\_\+name=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___loader_a09e93ffd92b6ec19c0a7913a5a45d098}{model}} (\$model, \$name=\textquotesingle{}\textquotesingle{}, \$db\+\_\+conn=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___loader_a01eca3757c2231e7c3cb1062a04514bf}{database}} (\$params=\textquotesingle{}\textquotesingle{}, \$return=F\+A\+L\+SE, \$query\+\_\+builder=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___loader_a776df69394e362393153e1b9a566baaf}{dbutil}} (\$db=N\+U\+LL, \$return=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___loader_af53dd30c83b65f25ed8edeeddfc25251}{dbforge}} (\$db=N\+U\+LL, \$return=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___loader_a25fa5a0e0ff940b7859bbf89ce77f719}{view}} (\$view, \$\mbox{\hyperlink{class_c_i___loader_a25d97e2518910ee0790d3dbbac1c013f}{vars}}=array(), \$return=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___loader_a7b2a676fae23b6a49a8eef9ff7f18e13}{file}} (\$path, \$return=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___loader_a25d97e2518910ee0790d3dbbac1c013f}{vars}} (\$vars, \$val=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___loader_a2237b1de2f66e6062bc9eba5b236f01f}{clear\+\_\+vars}} ()
+\item 
+\mbox{\hyperlink{class_c_i___loader_a0a078042b509f58c535a1664e90476e5}{get\+\_\+var}} (\$key)
+\item 
+\mbox{\hyperlink{class_c_i___loader_a81b647ad4f0ef893712facd67cb07d4f}{get\+\_\+vars}} ()
+\item 
+\mbox{\hyperlink{class_c_i___loader_a8f3936d69b6c7297131594642bb7037d}{helper}} (\$\mbox{\hyperlink{class_c_i___loader_a995cb4340d1b9c5879ce11eb64ec116e}{helpers}}=array())
+\item 
+\mbox{\hyperlink{class_c_i___loader_a995cb4340d1b9c5879ce11eb64ec116e}{helpers}} (\$helpers=array())
+\item 
+\mbox{\hyperlink{class_c_i___loader_a113081423f92eee712704dca59e0bba1}{language}} (\$files, \$lang=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___loader_ab9f1da83fcb2e2177ab64bbf3587da0b}{config}} (\$\mbox{\hyperlink{class_c_i___loader_a7b2a676fae23b6a49a8eef9ff7f18e13}{file}}, \$use\+\_\+sections=F\+A\+L\+SE, \$fail\+\_\+gracefully=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___loader_a4158ef7ff48f072315ffda808aeb666f}{driver}} (\$\mbox{\hyperlink{class_c_i___loader_a83b0240592edae85ace9467989c33688}{library}}, \$params=N\+U\+LL, \$object\+\_\+name=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___loader_aac0a4517f5d7723a1d2e968e8da4e468}{add\+\_\+package\+\_\+path}} (\$path, \$view\+\_\+cascade=T\+R\+UE)
+\item 
+\mbox{\hyperlink{class_c_i___loader_ab0cb9343d5bac0a9baaf859bbbbb3a84}{get\+\_\+package\+\_\+paths}} (\$include\+\_\+base=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___loader_a44ebb8da6ab6cb3b07fcb5f0f48d11e5}{remove\+\_\+package\+\_\+path}} (\$path=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___loader_aa87f8d7f9cf1d3dd4e5201d2a2df20ef}{\+\_\+ci\+\_\+load}} (\$\+\_\+ci\+\_\+data)
+\item 
+\mbox{\hyperlink{class_c_i___loader_a2982eba200c547294aefe2f63f0b9890}{\+\_\+ci\+\_\+load\+\_\+library}} (\$class, \$params=N\+U\+LL, \$object\+\_\+name=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___loader_a9c95d03c399fcee01973e176ac98e285}{\+\_\+ci\+\_\+load\+\_\+stock\+\_\+library}} (\$library\+\_\+name, \$file\+\_\+path, \$params, \$object\+\_\+name)
+\item 
+\mbox{\hyperlink{class_c_i___loader_af4df75f7462fb73ba602a45f466a690d}{\+\_\+ci\+\_\+init\+\_\+library}} (\$class, \$prefix, \$\mbox{\hyperlink{class_c_i___loader_ab9f1da83fcb2e2177ab64bbf3587da0b}{config}}=F\+A\+L\+SE, \$object\+\_\+name=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___loader_affd5b69b8d0f2883d89255967eba7129}{\+\_\+ci\+\_\+autoloader}} ()
+\item 
+\mbox{\hyperlink{class_c_i___loader_a62ca3e2ed3ac45c9fb807f369e0c458c}{\+\_\+ci\+\_\+prepare\+\_\+view\+\_\+vars}} (\$\mbox{\hyperlink{class_c_i___loader_a25d97e2518910ee0790d3dbbac1c013f}{vars}})
+\item 
+\& \mbox{\hyperlink{class_c_i___loader_a492c1af2096e19bb4d1d5af28130a729}{\+\_\+ci\+\_\+get\+\_\+component}} (\$component)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___loader_a6108da89310125a35cb1054ebbb867e2}\label{class_c_i___loader_a6108da89310125a35cb1054ebbb867e2}} 
+{\bfseries \$\+\_\+ci\+\_\+ob\+\_\+level}
+\item 
+\mbox{\Hypertarget{class_c_i___loader_a978816535be1594ab371b3b5d82f7439}\label{class_c_i___loader_a978816535be1594ab371b3b5d82f7439}} 
+{\bfseries \$\+\_\+ci\+\_\+view\+\_\+paths} = array(V\+I\+E\+W\+P\+A\+TH =$>$ T\+R\+UE)
+\item 
+\mbox{\Hypertarget{class_c_i___loader_a504cc3adce8f3e6f914e0dcaba26d061}\label{class_c_i___loader_a504cc3adce8f3e6f914e0dcaba26d061}} 
+{\bfseries \$\+\_\+ci\+\_\+library\+\_\+paths} = array(A\+P\+P\+P\+A\+TH, B\+A\+S\+E\+P\+A\+TH)
+\item 
+\mbox{\Hypertarget{class_c_i___loader_aa07f3254f87e4300c2b5674dbc408aae}\label{class_c_i___loader_aa07f3254f87e4300c2b5674dbc408aae}} 
+{\bfseries \$\+\_\+ci\+\_\+model\+\_\+paths} = array(A\+P\+P\+P\+A\+TH)
+\item 
+\mbox{\Hypertarget{class_c_i___loader_a197755942d483baa59972d60847012fa}\label{class_c_i___loader_a197755942d483baa59972d60847012fa}} 
+{\bfseries \$\+\_\+ci\+\_\+helper\+\_\+paths} = array(A\+P\+P\+P\+A\+TH, B\+A\+S\+E\+P\+A\+TH)
+\item 
+\mbox{\Hypertarget{class_c_i___loader_a206eecf62ddf4dabc4f0ebb23a9e36b3}\label{class_c_i___loader_a206eecf62ddf4dabc4f0ebb23a9e36b3}} 
+{\bfseries \$\+\_\+ci\+\_\+cached\+\_\+vars} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___loader_a9130099fe80be5a766bcaca1576cb1ab}\label{class_c_i___loader_a9130099fe80be5a766bcaca1576cb1ab}} 
+{\bfseries \$\+\_\+ci\+\_\+classes} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___loader_a9cf408036675e0e5f5fe6093c468582a}\label{class_c_i___loader_a9cf408036675e0e5f5fe6093c468582a}} 
+{\bfseries \$\+\_\+ci\+\_\+models} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___loader_a7d90cfd7cbecfc93258077751b0dbf3c}\label{class_c_i___loader_a7d90cfd7cbecfc93258077751b0dbf3c}} 
+{\bfseries \$\+\_\+ci\+\_\+helpers} = array()
+\item 
+{\bfseries \$\+\_\+ci\+\_\+varmap}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_i___loader_a56d6528e81d45b264b76394c89f062ce}\label{class_c_i___loader_a56d6528e81d45b264b76394c89f062ce}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Class constructor
+
+Sets component load paths, gets the initial output buffering level.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___loader_affd5b69b8d0f2883d89255967eba7129}\label{class_c_i___loader_affd5b69b8d0f2883d89255967eba7129}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!\+\_\+ci\+\_\+autoloader@{\+\_\+ci\+\_\+autoloader}}
+\index{\+\_\+ci\+\_\+autoloader@{\+\_\+ci\+\_\+autoloader}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{\+\_\+ci\+\_\+autoloader()}{\_ci\_autoloader()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::\+\_\+ci\+\_\+autoloader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+CI Autoloader
+
+Loads component listed in the config/autoload.\+php file.
+
+-\/by \mbox{\hyperlink{class_c_i___loader_a91836c1d132ac63ef37003d6e02cf4ee}{C\+I\+\_\+\+Loader\+::initialize()}} \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_a492c1af2096e19bb4d1d5af28130a729}\label{class_c_i___loader_a492c1af2096e19bb4d1d5af28130a729}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!\+\_\+ci\+\_\+get\+\_\+component@{\+\_\+ci\+\_\+get\+\_\+component}}
+\index{\+\_\+ci\+\_\+get\+\_\+component@{\+\_\+ci\+\_\+get\+\_\+component}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{\+\_\+ci\+\_\+get\+\_\+component()}{\_ci\_get\_component()}}
+{\footnotesize\ttfamily \& C\+I\+\_\+\+Loader\+::\+\_\+ci\+\_\+get\+\_\+component (\begin{DoxyParamCaption}\item[{}]{\$component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+CI Component getter
+
+Get a reference to a specific library or model.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$component} & Component name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_af4df75f7462fb73ba602a45f466a690d}\label{class_c_i___loader_af4df75f7462fb73ba602a45f466a690d}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!\+\_\+ci\+\_\+init\+\_\+library@{\+\_\+ci\+\_\+init\+\_\+library}}
+\index{\+\_\+ci\+\_\+init\+\_\+library@{\+\_\+ci\+\_\+init\+\_\+library}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{\+\_\+ci\+\_\+init\+\_\+library()}{\_ci\_init\_library()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::\+\_\+ci\+\_\+init\+\_\+library (\begin{DoxyParamCaption}\item[{}]{\$class,  }\item[{}]{\$prefix,  }\item[{}]{\$config = {\ttfamily FALSE},  }\item[{}]{\$object\+\_\+name = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Internal CI Library Instantiator
+
+-\/by \mbox{\hyperlink{class_c_i___loader_a9c95d03c399fcee01973e176ac98e285}{C\+I\+\_\+\+Loader\+::\+\_\+ci\+\_\+load\+\_\+stock\+\_\+library()}} -\/by \mbox{\hyperlink{class_c_i___loader_a2982eba200c547294aefe2f63f0b9890}{C\+I\+\_\+\+Loader\+::\+\_\+ci\+\_\+load\+\_\+library()}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & Class name \\
+\hline
+string & {\em \$prefix} & Class name prefix \\
+\hline
+array | null | bool & {\em \$config} & Optional configuration to pass to the class constructor\+: F\+A\+L\+SE to skip; N\+U\+LL to search in config paths; array containing configuration data \\
+\hline
+string & {\em \$object\+\_\+name} & Optional object name to assign to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_aa87f8d7f9cf1d3dd4e5201d2a2df20ef}\label{class_c_i___loader_aa87f8d7f9cf1d3dd4e5201d2a2df20ef}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!\+\_\+ci\+\_\+load@{\+\_\+ci\+\_\+load}}
+\index{\+\_\+ci\+\_\+load@{\+\_\+ci\+\_\+load}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{\+\_\+ci\+\_\+load()}{\_ci\_load()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::\+\_\+ci\+\_\+load (\begin{DoxyParamCaption}\item[{}]{\$\+\_\+ci\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Internal CI Data Loader
+
+Used to load views and files.
+
+Variables are prefixed with {\itshape ci} to avoid symbol collision with variables made available to view files.
+
+-\/by \mbox{\hyperlink{class_c_i___loader_a25fa5a0e0ff940b7859bbf89ce77f719}{C\+I\+\_\+\+Loader\+::view()}} -\/by \mbox{\hyperlink{class_c_i___loader_a7b2a676fae23b6a49a8eef9ff7f18e13}{C\+I\+\_\+\+Loader\+::file()}} 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$\+\_\+ci\+\_\+data} & Data to load \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_a2982eba200c547294aefe2f63f0b9890}\label{class_c_i___loader_a2982eba200c547294aefe2f63f0b9890}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!\+\_\+ci\+\_\+load\+\_\+library@{\+\_\+ci\+\_\+load\+\_\+library}}
+\index{\+\_\+ci\+\_\+load\+\_\+library@{\+\_\+ci\+\_\+load\+\_\+library}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{\+\_\+ci\+\_\+load\+\_\+library()}{\_ci\_load\_library()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::\+\_\+ci\+\_\+load\+\_\+library (\begin{DoxyParamCaption}\item[{}]{\$class,  }\item[{}]{\$params = {\ttfamily NULL},  }\item[{}]{\$object\+\_\+name = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Internal CI Library Loader
+
+-\/by \mbox{\hyperlink{class_c_i___loader_a83b0240592edae85ace9467989c33688}{C\+I\+\_\+\+Loader\+::library()}}  \mbox{\hyperlink{class_c_i___loader_af4df75f7462fb73ba602a45f466a690d}{C\+I\+\_\+\+Loader\+::\+\_\+ci\+\_\+init\+\_\+library()}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & Class name to load \\
+\hline
+mixed & {\em \$params} & Optional parameters to pass to the class constructor \\
+\hline
+string & {\em \$object\+\_\+name} & Optional object name to assign to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_a9c95d03c399fcee01973e176ac98e285}\label{class_c_i___loader_a9c95d03c399fcee01973e176ac98e285}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!\+\_\+ci\+\_\+load\+\_\+stock\+\_\+library@{\+\_\+ci\+\_\+load\+\_\+stock\+\_\+library}}
+\index{\+\_\+ci\+\_\+load\+\_\+stock\+\_\+library@{\+\_\+ci\+\_\+load\+\_\+stock\+\_\+library}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{\+\_\+ci\+\_\+load\+\_\+stock\+\_\+library()}{\_ci\_load\_stock\_library()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::\+\_\+ci\+\_\+load\+\_\+stock\+\_\+library (\begin{DoxyParamCaption}\item[{}]{\$library\+\_\+name,  }\item[{}]{\$file\+\_\+path,  }\item[{}]{\$params,  }\item[{}]{\$object\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Internal CI Stock Library Loader
+
+-\/by \mbox{\hyperlink{class_c_i___loader_a2982eba200c547294aefe2f63f0b9890}{C\+I\+\_\+\+Loader\+::\+\_\+ci\+\_\+load\+\_\+library()}}  \mbox{\hyperlink{class_c_i___loader_af4df75f7462fb73ba602a45f466a690d}{C\+I\+\_\+\+Loader\+::\+\_\+ci\+\_\+init\+\_\+library()}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$library\+\_\+name} & Library name to load \\
+\hline
+string & {\em \$file\+\_\+path} & Path to the library filename, relative to libraries/ \\
+\hline
+mixed & {\em \$params} & Optional parameters to pass to the class constructor \\
+\hline
+string & {\em \$object\+\_\+name} & Optional object name to assign to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_a62ca3e2ed3ac45c9fb807f369e0c458c}\label{class_c_i___loader_a62ca3e2ed3ac45c9fb807f369e0c458c}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!\+\_\+ci\+\_\+prepare\+\_\+view\+\_\+vars@{\+\_\+ci\+\_\+prepare\+\_\+view\+\_\+vars}}
+\index{\+\_\+ci\+\_\+prepare\+\_\+view\+\_\+vars@{\+\_\+ci\+\_\+prepare\+\_\+view\+\_\+vars}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{\+\_\+ci\+\_\+prepare\+\_\+view\+\_\+vars()}{\_ci\_prepare\_view\_vars()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::\+\_\+ci\+\_\+prepare\+\_\+view\+\_\+vars (\begin{DoxyParamCaption}\item[{}]{\$vars }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prepare variables for \+\_\+ci\+\_\+vars, to be later extract()-\/ed inside views
+
+Converts objects to associative arrays and filters-\/out internal variable names (i.\+e. keys prefixed with \textquotesingle{}{\itshape ci}\textquotesingle{}).
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$vars} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_aac0a4517f5d7723a1d2e968e8da4e468}\label{class_c_i___loader_aac0a4517f5d7723a1d2e968e8da4e468}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!add\+\_\+package\+\_\+path@{add\+\_\+package\+\_\+path}}
+\index{add\+\_\+package\+\_\+path@{add\+\_\+package\+\_\+path}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{add\+\_\+package\+\_\+path()}{add\_package\_path()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::add\+\_\+package\+\_\+path (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$view\+\_\+cascade = {\ttfamily TRUE} }\end{DoxyParamCaption})}
+
+Add Package Path
+
+Prepends a parent path to the library, model, helper and config path arrays.
+
+\begin{DoxySeeAlso}{See also}
+C\+I\+\_\+\+Loader\+::\$\+\_\+ci\+\_\+library\+\_\+paths 
+
+C\+I\+\_\+\+Loader\+::\$\+\_\+ci\+\_\+model\+\_\+paths 
+
+C\+I\+\_\+\+Loader\+::\$\+\_\+ci\+\_\+helper\+\_\+paths 
+
+C\+I\+\_\+\+Config\+::\$\+\_\+config\+\_\+paths
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & Path to add \\
+\hline
+bool & {\em \$view\+\_\+cascade} & (default\+: T\+R\+UE) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_a2237b1de2f66e6062bc9eba5b236f01f}\label{class_c_i___loader_a2237b1de2f66e6062bc9eba5b236f01f}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!clear\+\_\+vars@{clear\+\_\+vars}}
+\index{clear\+\_\+vars@{clear\+\_\+vars}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{clear\+\_\+vars()}{clear\_vars()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::clear\+\_\+vars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clear Cached Variables
+
+Clears the cached variables.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___loader}{C\+I\+\_\+\+Loader}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_ab9f1da83fcb2e2177ab64bbf3587da0b}\label{class_c_i___loader_ab9f1da83fcb2e2177ab64bbf3587da0b}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!config@{config}}
+\index{config@{config}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{config()}{config()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::config (\begin{DoxyParamCaption}\item[{}]{\$file,  }\item[{}]{\$use\+\_\+sections = {\ttfamily FALSE},  }\item[{}]{\$fail\+\_\+gracefully = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Config Loader
+
+Loads a config file (an alias for \mbox{\hyperlink{class_c_i___config_af0cad6d5fc3690431745fe231267a0df}{C\+I\+\_\+\+Config\+::load()}}).
+
+\mbox{\hyperlink{class_c_i___config_af0cad6d5fc3690431745fe231267a0df}{C\+I\+\_\+\+Config\+::load()}} 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & Configuration file name \\
+\hline
+bool & {\em \$use\+\_\+sections} & Whether configuration values should be loaded into their own section \\
+\hline
+bool & {\em \$fail\+\_\+gracefully} & Whether to just return F\+A\+L\+SE or display an error message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool T\+R\+UE if the file was loaded correctly or F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_a01eca3757c2231e7c3cb1062a04514bf}\label{class_c_i___loader_a01eca3757c2231e7c3cb1062a04514bf}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!database@{database}}
+\index{database@{database}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{database()}{database()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::database (\begin{DoxyParamCaption}\item[{}]{\$params = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$return = {\ttfamily FALSE},  }\item[{}]{\$query\+\_\+builder = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Database Loader
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$params} & Database configuration options \\
+\hline
+bool & {\em \$return} & Whether to return the database object \\
+\hline
+bool & {\em \$query\+\_\+builder} & Whether to enable Query Builder (overrides the configuration setting)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object$\vert$bool Database object if \$return is set to T\+R\+UE, F\+A\+L\+SE on failure, \mbox{\hyperlink{class_c_i___loader}{C\+I\+\_\+\+Loader}} instance in any other case 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_af53dd30c83b65f25ed8edeeddfc25251}\label{class_c_i___loader_af53dd30c83b65f25ed8edeeddfc25251}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!dbforge@{dbforge}}
+\index{dbforge@{dbforge}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{dbforge()}{dbforge()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::dbforge (\begin{DoxyParamCaption}\item[{}]{\$db = {\ttfamily NULL},  }\item[{}]{\$return = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Load the Database Forge Class
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$db} & Database object \\
+\hline
+bool & {\em \$return} & Whether to return the DB Forge class object or not \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_a776df69394e362393153e1b9a566baaf}\label{class_c_i___loader_a776df69394e362393153e1b9a566baaf}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!dbutil@{dbutil}}
+\index{dbutil@{dbutil}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{dbutil()}{dbutil()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::dbutil (\begin{DoxyParamCaption}\item[{}]{\$db = {\ttfamily NULL},  }\item[{}]{\$return = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Load the Database Utilities Class
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$db} & Database object \\
+\hline
+bool & {\em \$return} & Whether to return the DB Utilities class object or not \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_a4158ef7ff48f072315ffda808aeb666f}\label{class_c_i___loader_a4158ef7ff48f072315ffda808aeb666f}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!driver@{driver}}
+\index{driver@{driver}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{driver()}{driver()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::driver (\begin{DoxyParamCaption}\item[{}]{\$library,  }\item[{}]{\$params = {\ttfamily NULL},  }\item[{}]{\$object\+\_\+name = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Driver Loader
+
+Loads a driver library.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em string$\vert$string\mbox{[}$\,$\mbox{]}} & \$library Driver name(s) \\
+\hline
+array & {\em \$params} & Optional parameters to pass to the driver \\
+\hline
+string & {\em \$object\+\_\+name} & An optional object name to assign to\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object$\vert$bool Object or F\+A\+L\+SE on failure if \$library is a string and \$object\+\_\+name is set. \mbox{\hyperlink{class_c_i___loader}{C\+I\+\_\+\+Loader}} instance otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_a7b2a676fae23b6a49a8eef9ff7f18e13}\label{class_c_i___loader_a7b2a676fae23b6a49a8eef9ff7f18e13}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!file@{file}}
+\index{file@{file}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{file()}{file()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::file (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$return = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Generic File Loader
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & File path \\
+\hline
+bool & {\em \$return} & Whether to return the file output \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object$\vert$string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_ab0cb9343d5bac0a9baaf859bbbbb3a84}\label{class_c_i___loader_ab0cb9343d5bac0a9baaf859bbbbb3a84}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!get\+\_\+package\+\_\+paths@{get\+\_\+package\+\_\+paths}}
+\index{get\+\_\+package\+\_\+paths@{get\+\_\+package\+\_\+paths}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{get\+\_\+package\+\_\+paths()}{get\_package\_paths()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::get\+\_\+package\+\_\+paths (\begin{DoxyParamCaption}\item[{}]{\$include\+\_\+base = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Get Package Paths
+
+Return a list of all package paths.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$include\+\_\+base} & Whether to include B\+A\+S\+E\+P\+A\+TH (default\+: F\+A\+L\+SE) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_a0a078042b509f58c535a1664e90476e5}\label{class_c_i___loader_a0a078042b509f58c535a1664e90476e5}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!get\+\_\+var@{get\+\_\+var}}
+\index{get\+\_\+var@{get\+\_\+var}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{get\+\_\+var()}{get\_var()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::get\+\_\+var (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+Get Variable
+
+Check if a variable is set and retrieve it.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Variable name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The variable or N\+U\+LL if not found 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_a81b647ad4f0ef893712facd67cb07d4f}\label{class_c_i___loader_a81b647ad4f0ef893712facd67cb07d4f}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!get\+\_\+vars@{get\+\_\+vars}}
+\index{get\+\_\+vars@{get\+\_\+vars}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{get\+\_\+vars()}{get\_vars()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::get\+\_\+vars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get Variables
+
+Retrieves all loaded variables.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_a8f3936d69b6c7297131594642bb7037d}\label{class_c_i___loader_a8f3936d69b6c7297131594642bb7037d}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!helper@{helper}}
+\index{helper@{helper}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{helper()}{helper()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::helper (\begin{DoxyParamCaption}\item[{}]{\$helpers = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Helper Loader
+
+
+\begin{DoxyParams}{Parameters}
+{\em string$\vert$string\mbox{[}$\,$\mbox{]}} & \$helpers Helper name(s) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_a995cb4340d1b9c5879ce11eb64ec116e}\label{class_c_i___loader_a995cb4340d1b9c5879ce11eb64ec116e}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!helpers@{helpers}}
+\index{helpers@{helpers}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{helpers()}{helpers()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::helpers (\begin{DoxyParamCaption}\item[{}]{\$helpers = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Load Helpers
+
+An alias for the \mbox{\hyperlink{class_c_i___loader_a8f3936d69b6c7297131594642bb7037d}{helper()}} method in case the developer has written the plural form of it.
+
+\mbox{\hyperlink{class_c_i___loader_a8f3936d69b6c7297131594642bb7037d}{C\+I\+\_\+\+Loader\+::helper()}} 
+\begin{DoxyParams}{Parameters}
+{\em string$\vert$string\mbox{[}$\,$\mbox{]}} & \$helpers Helper name(s) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_a91836c1d132ac63ef37003d6e02cf4ee}\label{class_c_i___loader_a91836c1d132ac63ef37003d6e02cf4ee}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!initialize@{initialize}}
+\index{initialize@{initialize}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initializer
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]Figure out a way to move this to the constructor without breaking {\itshape package\+\_\+path}() methods.  \mbox{\hyperlink{class_c_i___loader_affd5b69b8d0f2883d89255967eba7129}{C\+I\+\_\+\+Loader\+::\+\_\+ci\+\_\+autoloader()}} -\/by \mbox{\hyperlink{class_c_i___controller_a3934262676ae6c34d3cbd4d1065efe20}{C\+I\+\_\+\+Controller\+::\+\_\+\+\_\+construct()}} \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_acd71bb8962f4ac5cb330488c10aff7c2}\label{class_c_i___loader_acd71bb8962f4ac5cb330488c10aff7c2}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!is\+\_\+loaded@{is\+\_\+loaded}}
+\index{is\+\_\+loaded@{is\+\_\+loaded}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{is\+\_\+loaded()}{is\_loaded()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::is\+\_\+loaded (\begin{DoxyParamCaption}\item[{}]{\$class }\end{DoxyParamCaption})}
+
+Is Loaded
+
+A utility method to test if a class is in the self\+::\$\+\_\+ci\+\_\+classes array.
+
+-\/by Mainly used by Form Helper function \+\_\+get\+\_\+validation\+\_\+object().
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & Class name to check for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$bool Class object name if loaded or F\+A\+L\+SE 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_a113081423f92eee712704dca59e0bba1}\label{class_c_i___loader_a113081423f92eee712704dca59e0bba1}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!language@{language}}
+\index{language@{language}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{language()}{language()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::language (\begin{DoxyParamCaption}\item[{}]{\$files,  }\item[{}]{\$lang = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Language Loader
+
+Loads language files.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string$\vert$string\mbox{[}$\,$\mbox{]}} & \$files List of language file names to load \\
+\hline
+{\em string} & Language name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_a83b0240592edae85ace9467989c33688}\label{class_c_i___loader_a83b0240592edae85ace9467989c33688}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!library@{library}}
+\index{library@{library}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{library()}{library()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::library (\begin{DoxyParamCaption}\item[{}]{\$library,  }\item[{}]{\$params = {\ttfamily NULL},  }\item[{}]{\$object\+\_\+name = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Library Loader
+
+Loads and instantiates libraries. Designed to be called from application controllers.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$library} & Library name \\
+\hline
+array & {\em \$params} & Optional parameters to pass to the library class constructor \\
+\hline
+string & {\em \$object\+\_\+name} & An optional object name to assign to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_a09e93ffd92b6ec19c0a7913a5a45d098}\label{class_c_i___loader_a09e93ffd92b6ec19c0a7913a5a45d098}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!model@{model}}
+\index{model@{model}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{model()}{model()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::model (\begin{DoxyParamCaption}\item[{}]{\$model,  }\item[{}]{\$name = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$db\+\_\+conn = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Model Loader
+
+Loads and instantiates models.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$model} & Model name \\
+\hline
+string & {\em \$name} & An optional object name to assign to \\
+\hline
+bool & {\em \$db\+\_\+conn} & An optional database connection configuration to initialize \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_a44ebb8da6ab6cb3b07fcb5f0f48d11e5}\label{class_c_i___loader_a44ebb8da6ab6cb3b07fcb5f0f48d11e5}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!remove\+\_\+package\+\_\+path@{remove\+\_\+package\+\_\+path}}
+\index{remove\+\_\+package\+\_\+path@{remove\+\_\+package\+\_\+path}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{remove\+\_\+package\+\_\+path()}{remove\_package\_path()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::remove\+\_\+package\+\_\+path (\begin{DoxyParamCaption}\item[{}]{\$path = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Remove Package Path
+
+Remove a path from the library, model, helper and/or config path arrays if it exists. If no path is provided, the most recently added path will be removed removed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & Path to remove \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_a25d97e2518910ee0790d3dbbac1c013f}\label{class_c_i___loader_a25d97e2518910ee0790d3dbbac1c013f}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!vars@{vars}}
+\index{vars@{vars}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{vars()}{vars()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::vars (\begin{DoxyParamCaption}\item[{}]{\$vars,  }\item[{}]{\$val = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Set Variables
+
+Once variables are set they become available within the controller class and its \char`\"{}view\char`\"{} files.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | object | string & {\em \$vars} & An associative array or object containing values to be set, or a value\textquotesingle{}s name if string \\
+\hline
+string & {\em \$val} & Value to set, only used if \$vars is a string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___loader_a25fa5a0e0ff940b7859bbf89ce77f719}\label{class_c_i___loader_a25fa5a0e0ff940b7859bbf89ce77f719}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!view@{view}}
+\index{view@{view}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{view()}{view()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::view (\begin{DoxyParamCaption}\item[{}]{\$view,  }\item[{}]{\$vars = {\ttfamily array()},  }\item[{}]{\$return = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+View Loader
+
+Loads \char`\"{}view\char`\"{} files.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$view} & View name \\
+\hline
+array & {\em \$vars} & An associative array of data to be extracted for use in the view \\
+\hline
+bool & {\em \$return} & Whether to return the view output or leave it to the Output class \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object$\vert$string 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_i___loader_aad66a9bc50678a01397e85a77f2d4efe}\label{class_c_i___loader_aad66a9bc50678a01397e85a77f2d4efe}} 
+\index{C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}!\$\+\_\+ci\+\_\+varmap@{\$\+\_\+ci\+\_\+varmap}}
+\index{\$\+\_\+ci\+\_\+varmap@{\$\+\_\+ci\+\_\+varmap}!C\+I\+\_\+\+Loader@{C\+I\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{\$\+\_\+ci\+\_\+varmap}{$\_ci\_varmap}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Loader\+::\$\+\_\+ci\+\_\+varmap\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=   array(
+        \textcolor{stringliteral}{'unit\_test'} => \textcolor{stringliteral}{'unit'},
+        \textcolor{stringliteral}{'user\_agent'} => \textcolor{stringliteral}{'agent'}
+    )
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/core/Loader.\+php\end{DoxyCompactItemize}

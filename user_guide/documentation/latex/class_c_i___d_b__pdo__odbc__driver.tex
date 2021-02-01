@@ -1,0 +1,142 @@
+\hypertarget{class_c_i___d_b__pdo__odbc__driver}{}\section{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver Class Reference}
+\label{class_c_i___d_b__pdo__odbc__driver}\index{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver}}
+Inheritance diagram for C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_i___d_b__pdo__odbc__driver}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___d_b__pdo__odbc__driver_ab9b440e8235b717b5fb073773782e7bc}{\+\_\+\+\_\+construct}} (\$params)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__pdo__odbc__driver_a3c1ca0b05e314d55bf1d2d001fb6cb4e}{is\+\_\+write\+\_\+type}} (\$sql)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__pdo__odbc__driver_a4a047710f30348e5398b511b109d9eab}\label{class_c_i___d_b__pdo__odbc__driver_a4a047710f30348e5398b511b109d9eab}} 
+{\bfseries \$subdriver} = \textquotesingle{}odbc\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__pdo__odbc__driver_a95c9cde0c7883d0f39dc79215c96fff4}\label{class_c_i___d_b__pdo__odbc__driver_a95c9cde0c7883d0f39dc79215c96fff4}} 
+{\bfseries \$schema} = \textquotesingle{}public\textquotesingle{}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___d_b__pdo__odbc__driver_a1cab1022ffa6703fea41afce5f4251ae}{\+\_\+escape\+\_\+str}} (\$str)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__pdo__odbc__driver_a28ecbc447e1bb596bd6467d4d7687900}{\+\_\+list\+\_\+tables}} (\$prefix\+\_\+limit=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__pdo__odbc__driver_aab84b252b1074b3090c726736582d00c}{\+\_\+list\+\_\+columns}} (\$table=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__pdo__odbc__driver_ad3317ee445b6e50bc48dc303c8ee9eb6}\label{class_c_i___d_b__pdo__odbc__driver_ad3317ee445b6e50bc48dc303c8ee9eb6}} 
+{\bfseries \$\+\_\+escape\+\_\+char} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__pdo__odbc__driver_ad35f2a8ae2c28b648f29a12fbd5696a2}\label{class_c_i___d_b__pdo__odbc__driver_ad35f2a8ae2c28b648f29a12fbd5696a2}} 
+{\bfseries \$\+\_\+like\+\_\+escape\+\_\+str} = \char`\"{} \{escape \textquotesingle{}\%s\textquotesingle{}\} \char`\"{}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__pdo__odbc__driver_ab0952fb61d9668b0c2daa407f3f5e5fe}\label{class_c_i___d_b__pdo__odbc__driver_ab0952fb61d9668b0c2daa407f3f5e5fe}} 
+{\bfseries \$\+\_\+random\+\_\+keyword} = array(\textquotesingle{}R\+ND()\textquotesingle{}, \textquotesingle{}R\+ND(\%d)\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_i___d_b__pdo__odbc__driver_ab9b440e8235b717b5fb073773782e7bc}\label{class_c_i___d_b__pdo__odbc__driver_ab9b440e8235b717b5fb073773782e7bc}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$params }\end{DoxyParamCaption})}
+
+Class constructor
+
+Builds the D\+SN if not already set.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___d_b__pdo__odbc__driver_a1cab1022ffa6703fea41afce5f4251ae}\label{class_c_i___d_b__pdo__odbc__driver_a1cab1022ffa6703fea41afce5f4251ae}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver}!\+\_\+escape\+\_\+str@{\+\_\+escape\+\_\+str}}
+\index{\+\_\+escape\+\_\+str@{\+\_\+escape\+\_\+str}!C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+escape\+\_\+str()}{\_escape\_str()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver\+::\+\_\+escape\+\_\+str (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Platform-\/dependent string escape
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__pdo__odbc__driver_aab84b252b1074b3090c726736582d00c}\label{class_c_i___d_b__pdo__odbc__driver_aab84b252b1074b3090c726736582d00c}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver}!\+\_\+list\+\_\+columns@{\+\_\+list\+\_\+columns}}
+\index{\+\_\+list\+\_\+columns@{\+\_\+list\+\_\+columns}!C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+list\+\_\+columns()}{\_list\_columns()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver\+::\+\_\+list\+\_\+columns (\begin{DoxyParamCaption}\item[{}]{\$table = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Show column query
+
+Generates a platform-\/specific query string so that the column names can be fetched
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__pdo__odbc__driver_a28ecbc447e1bb596bd6467d4d7687900}\label{class_c_i___d_b__pdo__odbc__driver_a28ecbc447e1bb596bd6467d4d7687900}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver}!\+\_\+list\+\_\+tables@{\+\_\+list\+\_\+tables}}
+\index{\+\_\+list\+\_\+tables@{\+\_\+list\+\_\+tables}!C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+list\+\_\+tables()}{\_list\_tables()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver\+::\+\_\+list\+\_\+tables (\begin{DoxyParamCaption}\item[{}]{\$prefix\+\_\+limit = {\ttfamily FALSE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Show table query
+
+Generates a platform-\/specific query string so that the table names can be fetched
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$prefix\+\_\+limit} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__pdo__odbc__driver_a3c1ca0b05e314d55bf1d2d001fb6cb4e}\label{class_c_i___d_b__pdo__odbc__driver_a3c1ca0b05e314d55bf1d2d001fb6cb4e}} 
+\index{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver}!is\+\_\+write\+\_\+type@{is\+\_\+write\+\_\+type}}
+\index{is\+\_\+write\+\_\+type@{is\+\_\+write\+\_\+type}!C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver@{C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver}}
+\subsubsection{\texorpdfstring{is\+\_\+write\+\_\+type()}{is\_write\_type()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+D\+B\+\_\+pdo\+\_\+odbc\+\_\+driver\+::is\+\_\+write\+\_\+type (\begin{DoxyParamCaption}\item[{}]{\$sql }\end{DoxyParamCaption})}
+
+Determines if a query is a \char`\"{}write\char`\"{} type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & An S\+QL query string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/database/drivers/pdo/subdrivers/pdo\+\_\+odbc\+\_\+driver.\+php\end{DoxyCompactItemize}

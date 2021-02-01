@@ -1,0 +1,130 @@
+\hypertarget{class_c_i___session__driver}{}\section{C\+I\+\_\+\+Session\+\_\+driver Class Reference}
+\label{class_c_i___session__driver}\index{C\+I\+\_\+\+Session\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+driver}}
+Inheritance diagram for C\+I\+\_\+\+Session\+\_\+driver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.121212cm]{class_c_i___session__driver}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___session__driver_afa22ae0e78b82ad90c5a3a812a582d93}{\+\_\+\+\_\+construct}} (\&\$params)
+\item 
+\mbox{\hyperlink{class_c_i___session__driver_a718760da63eb472c10d6c2a48fe39cd1}{php5\+\_\+validate\+\_\+id}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___session__driver_ab7a440d6b7a814bf6179e1f03ce4c8f3}\label{class_c_i___session__driver_ab7a440d6b7a814bf6179e1f03ce4c8f3}} 
+{\bfseries \$\+\_\+failure}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___session__driver_ae5e9ee5230b7c36a93591df8192169ce}{\+\_\+cookie\+\_\+destroy}} ()
+\item 
+\mbox{\hyperlink{class_c_i___session__driver_a18248b58343fd8e63a9538fc7d478a49}{\+\_\+get\+\_\+lock}} (\$session\+\_\+id)
+\item 
+\mbox{\hyperlink{class_c_i___session__driver_a411934e8312e6c66f0c6a398c8dfe7b4}{\+\_\+release\+\_\+lock}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___session__driver_a116c735f6922ccc22e0d84e06bc4c299}\label{class_c_i___session__driver_a116c735f6922ccc22e0d84e06bc4c299}} 
+{\bfseries \$\+\_\+config}
+\item 
+\mbox{\Hypertarget{class_c_i___session__driver_a095e6524519dda4b480b460f4c0ba127}\label{class_c_i___session__driver_a095e6524519dda4b480b460f4c0ba127}} 
+{\bfseries \$\+\_\+fingerprint}
+\item 
+\mbox{\Hypertarget{class_c_i___session__driver_aebc05320b6b0cd1e88ac7ea08aa6dab7}\label{class_c_i___session__driver_aebc05320b6b0cd1e88ac7ea08aa6dab7}} 
+{\bfseries \$\+\_\+lock} = F\+A\+L\+SE
+\item 
+\mbox{\Hypertarget{class_c_i___session__driver_a9e94c7496f05e45e5a56e3f42af2ff8a}\label{class_c_i___session__driver_a9e94c7496f05e45e5a56e3f42af2ff8a}} 
+{\bfseries \$\+\_\+session\+\_\+id}
+\item 
+\mbox{\Hypertarget{class_c_i___session__driver_a8d9ec5a72fa5f8769af4642ffcddc0fb}\label{class_c_i___session__driver_a8d9ec5a72fa5f8769af4642ffcddc0fb}} 
+{\bfseries \$\+\_\+success}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_i___session__driver_afa22ae0e78b82ad90c5a3a812a582d93}\label{class_c_i___session__driver_afa22ae0e78b82ad90c5a3a812a582d93}} 
+\index{C\+I\+\_\+\+Session\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+driver}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+Session\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Session\+\_\+driver\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\&}]{\$params }\end{DoxyParamCaption})}
+
+Class constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & Configuration parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___session__driver_ae5e9ee5230b7c36a93591df8192169ce}\label{class_c_i___session__driver_ae5e9ee5230b7c36a93591df8192169ce}} 
+\index{C\+I\+\_\+\+Session\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+driver}!\+\_\+cookie\+\_\+destroy@{\+\_\+cookie\+\_\+destroy}}
+\index{\+\_\+cookie\+\_\+destroy@{\+\_\+cookie\+\_\+destroy}!C\+I\+\_\+\+Session\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+cookie\+\_\+destroy()}{\_cookie\_destroy()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Session\+\_\+driver\+::\+\_\+cookie\+\_\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Cookie destroy
+
+Internal method to force removal of a cookie by the client when session\+\_\+destroy() is called.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___session__driver_a18248b58343fd8e63a9538fc7d478a49}\label{class_c_i___session__driver_a18248b58343fd8e63a9538fc7d478a49}} 
+\index{C\+I\+\_\+\+Session\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+driver}!\+\_\+get\+\_\+lock@{\+\_\+get\+\_\+lock}}
+\index{\+\_\+get\+\_\+lock@{\+\_\+get\+\_\+lock}!C\+I\+\_\+\+Session\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+get\+\_\+lock()}{\_get\_lock()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Session\+\_\+driver\+::\+\_\+get\+\_\+lock (\begin{DoxyParamCaption}\item[{}]{\$session\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get lock
+
+A dummy method allowing drivers with no locking functionality (databases other than Postgre\+S\+QL and My\+S\+QL) to act as if they do acquire a lock.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$session\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___session__driver_a411934e8312e6c66f0c6a398c8dfe7b4}\label{class_c_i___session__driver_a411934e8312e6c66f0c6a398c8dfe7b4}} 
+\index{C\+I\+\_\+\+Session\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+driver}!\+\_\+release\+\_\+lock@{\+\_\+release\+\_\+lock}}
+\index{\+\_\+release\+\_\+lock@{\+\_\+release\+\_\+lock}!C\+I\+\_\+\+Session\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+driver}}
+\subsubsection{\texorpdfstring{\+\_\+release\+\_\+lock()}{\_release\_lock()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Session\+\_\+driver\+::\+\_\+release\+\_\+lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Release lock
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___session__driver_a718760da63eb472c10d6c2a48fe39cd1}\label{class_c_i___session__driver_a718760da63eb472c10d6c2a48fe39cd1}} 
+\index{C\+I\+\_\+\+Session\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+driver}!php5\+\_\+validate\+\_\+id@{php5\+\_\+validate\+\_\+id}}
+\index{php5\+\_\+validate\+\_\+id@{php5\+\_\+validate\+\_\+id}!C\+I\+\_\+\+Session\+\_\+driver@{C\+I\+\_\+\+Session\+\_\+driver}}
+\subsubsection{\texorpdfstring{php5\+\_\+validate\+\_\+id()}{php5\_validate\_id()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Session\+\_\+driver\+::php5\+\_\+validate\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+P\+HP 5.\+x validate ID
+
+Enforces session.\+use\+\_\+strict\+\_\+mode
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/libraries/\+Session/Session\+\_\+driver.\+php\end{DoxyCompactItemize}

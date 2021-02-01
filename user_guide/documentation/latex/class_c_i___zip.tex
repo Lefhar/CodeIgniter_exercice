@@ -1,0 +1,323 @@
+\hypertarget{class_c_i___zip}{}\section{C\+I\+\_\+\+Zip Class Reference}
+\label{class_c_i___zip}\index{C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___zip_a5b39d7c382fd6be6a44005e091fb7abd}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_c_i___zip_a56cd825c1133c573c5c148a13befb29e}{add\+\_\+dir}} (\$directory)
+\item 
+\mbox{\hyperlink{class_c_i___zip_a79058ef4065ce856fdbae187e4121cdc}{add\+\_\+data}} (\$filepath, \$data=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___zip_a137e7c1159071c08cc6c139261c8048b}{read\+\_\+file}} (\$path, \$archive\+\_\+filepath=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___zip_a24e6d765a787a3036b089f1e5384757d}{read\+\_\+dir}} (\$path, \$preserve\+\_\+filepath=T\+R\+UE, \$root\+\_\+path=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___zip_a8c51b65277a512961ece0d155643badf}{get\+\_\+zip}} ()
+\item 
+\mbox{\hyperlink{class_c_i___zip_ab694c07bb5d1b91a847b1dfac6701e05}{archive}} (\$filepath)
+\item 
+\mbox{\hyperlink{class_c_i___zip_adbaee3f609125a672af00ed0f9706944}{download}} (\$filename=\textquotesingle{}backup.\+zip\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___zip_a570efcbd88d425ecb7f06f35ef68bf80}{clear\+\_\+data}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___zip_a508ded64faec4c5e56ed8db0c691a730}\label{class_c_i___zip_a508ded64faec4c5e56ed8db0c691a730}} 
+{\bfseries \$zipdata} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___zip_a3ec44f1a5f515c7413d22e99cf961d7c}\label{class_c_i___zip_a3ec44f1a5f515c7413d22e99cf961d7c}} 
+{\bfseries \$directory} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___zip_aa7abb0e2feb9d9e5dcdabf425355084a}\label{class_c_i___zip_aa7abb0e2feb9d9e5dcdabf425355084a}} 
+{\bfseries \$entries} = 0
+\item 
+\mbox{\Hypertarget{class_c_i___zip_a1af446618a6e011e05db9724bde556c4}\label{class_c_i___zip_a1af446618a6e011e05db9724bde556c4}} 
+{\bfseries \$file\+\_\+num} = 0
+\item 
+\mbox{\Hypertarget{class_c_i___zip_a9350a073674ee320f36612fcabd39259}\label{class_c_i___zip_a9350a073674ee320f36612fcabd39259}} 
+{\bfseries \$offset} = 0
+\item 
+\mbox{\Hypertarget{class_c_i___zip_a72e3970472e6385383f8ae04b01d9082}\label{class_c_i___zip_a72e3970472e6385383f8ae04b01d9082}} 
+{\bfseries \$now}
+\item 
+\mbox{\Hypertarget{class_c_i___zip_aa7f2b6156f0208a7a8d8039c2591eab5}\label{class_c_i___zip_aa7f2b6156f0208a7a8d8039c2591eab5}} 
+{\bfseries \$compression\+\_\+level} = 2
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___zip_a73862e9ae153a3035ba5a695311db810}{\+\_\+get\+\_\+mod\+\_\+time}} (\$dir)
+\item 
+\mbox{\hyperlink{class_c_i___zip_abcf3b2939062f3519a88df10bb4e7aee}{\+\_\+add\+\_\+dir}} (\$dir, \$file\+\_\+mtime, \$file\+\_\+mdate)
+\item 
+\mbox{\hyperlink{class_c_i___zip_a5f9aee83829fa88a567a475ad5d8039f}{\+\_\+add\+\_\+data}} (\$filepath, \$data, \$file\+\_\+mtime, \$file\+\_\+mdate)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_c_i___zip_a912580a36adf81345cfe4b48aa426b37}{strlen}} (\$str)
+\item 
+static \mbox{\hyperlink{class_c_i___zip_ac8366a931d5e4737b6a93ffb499b8e24}{substr}} (\$str, \$start, \$length=N\+U\+LL)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___zip_a1e5e6bd3088583958f25a1ca083b6c5b}\label{class_c_i___zip_a1e5e6bd3088583958f25a1ca083b6c5b}} 
+static {\bfseries \$func\+\_\+overload}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_i___zip_a5b39d7c382fd6be6a44005e091fb7abd}\label{class_c_i___zip_a5b39d7c382fd6be6a44005e091fb7abd}} 
+\index{C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Zip\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialize zip compression class
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___zip_a5f9aee83829fa88a567a475ad5d8039f}\label{class_c_i___zip_a5f9aee83829fa88a567a475ad5d8039f}} 
+\index{C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}!\+\_\+add\+\_\+data@{\+\_\+add\+\_\+data}}
+\index{\+\_\+add\+\_\+data@{\+\_\+add\+\_\+data}!C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}}
+\subsubsection{\texorpdfstring{\+\_\+add\+\_\+data()}{\_add\_data()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Zip\+::\+\_\+add\+\_\+data (\begin{DoxyParamCaption}\item[{}]{\$filepath,  }\item[{}]{\$data,  }\item[{}]{\$file\+\_\+mtime,  }\item[{}]{\$file\+\_\+mdate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add Data to Zip
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filepath} & the file name/path \\
+\hline
+string & {\em \$data} & the data to be encoded \\
+\hline
+int & {\em \$file\+\_\+mtime} & \\
+\hline
+int & {\em \$file\+\_\+mdate} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___zip_abcf3b2939062f3519a88df10bb4e7aee}\label{class_c_i___zip_abcf3b2939062f3519a88df10bb4e7aee}} 
+\index{C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}!\+\_\+add\+\_\+dir@{\+\_\+add\+\_\+dir}}
+\index{\+\_\+add\+\_\+dir@{\+\_\+add\+\_\+dir}!C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}}
+\subsubsection{\texorpdfstring{\+\_\+add\+\_\+dir()}{\_add\_dir()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Zip\+::\+\_\+add\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{\$dir,  }\item[{}]{\$file\+\_\+mtime,  }\item[{}]{\$file\+\_\+mdate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add Directory
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dir} & the directory name \\
+\hline
+int & {\em \$file\+\_\+mtime} & \\
+\hline
+int & {\em \$file\+\_\+mdate} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___zip_a73862e9ae153a3035ba5a695311db810}\label{class_c_i___zip_a73862e9ae153a3035ba5a695311db810}} 
+\index{C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}!\+\_\+get\+\_\+mod\+\_\+time@{\+\_\+get\+\_\+mod\+\_\+time}}
+\index{\+\_\+get\+\_\+mod\+\_\+time@{\+\_\+get\+\_\+mod\+\_\+time}!C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}}
+\subsubsection{\texorpdfstring{\+\_\+get\+\_\+mod\+\_\+time()}{\_get\_mod\_time()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Zip\+::\+\_\+get\+\_\+mod\+\_\+time (\begin{DoxyParamCaption}\item[{}]{\$dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get file/directory modification time
+
+If this is a newly created file/dir, we will set the time to \textquotesingle{}now\textquotesingle{}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dir} & path to file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array filemtime/filemdate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___zip_a79058ef4065ce856fdbae187e4121cdc}\label{class_c_i___zip_a79058ef4065ce856fdbae187e4121cdc}} 
+\index{C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}!add\+\_\+data@{add\+\_\+data}}
+\index{add\+\_\+data@{add\+\_\+data}!C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}}
+\subsubsection{\texorpdfstring{add\+\_\+data()}{add\_data()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Zip\+::add\+\_\+data (\begin{DoxyParamCaption}\item[{}]{\$filepath,  }\item[{}]{\$data = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Add Data to Zip
+
+Lets you add files to the archive. If the path is included in the filename it will be placed within a directory. Make sure you use \mbox{\hyperlink{class_c_i___zip_a56cd825c1133c573c5c148a13befb29e}{add\+\_\+dir()}} first to create the folder.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$filepath} & A single filepath or an array of file =$>$ data pairs \\
+\hline
+string & {\em \$data} & Single file contents \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___zip_a56cd825c1133c573c5c148a13befb29e}\label{class_c_i___zip_a56cd825c1133c573c5c148a13befb29e}} 
+\index{C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}!add\+\_\+dir@{add\+\_\+dir}}
+\index{add\+\_\+dir@{add\+\_\+dir}!C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}}
+\subsubsection{\texorpdfstring{add\+\_\+dir()}{add\_dir()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Zip\+::add\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{\$directory }\end{DoxyParamCaption})}
+
+Add Directory
+
+Lets you add a virtual directory into which you can place files.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$directory} & the directory name. Can be string or array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___zip_ab694c07bb5d1b91a847b1dfac6701e05}\label{class_c_i___zip_ab694c07bb5d1b91a847b1dfac6701e05}} 
+\index{C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}!archive@{archive}}
+\index{archive@{archive}!C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}}
+\subsubsection{\texorpdfstring{archive()}{archive()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Zip\+::archive (\begin{DoxyParamCaption}\item[{}]{\$filepath }\end{DoxyParamCaption})}
+
+Write File to the specified directory
+
+Lets you write a file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filepath} & the file name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___zip_a570efcbd88d425ecb7f06f35ef68bf80}\label{class_c_i___zip_a570efcbd88d425ecb7f06f35ef68bf80}} 
+\index{C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}!clear\+\_\+data@{clear\+\_\+data}}
+\index{clear\+\_\+data@{clear\+\_\+data}!C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}}
+\subsubsection{\texorpdfstring{clear\+\_\+data()}{clear\_data()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Zip\+::clear\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialize Data
+
+Lets you clear current zip data. Useful if you need to create multiple zips with different data.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_i___zip}{C\+I\+\_\+\+Zip}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___zip_adbaee3f609125a672af00ed0f9706944}\label{class_c_i___zip_adbaee3f609125a672af00ed0f9706944}} 
+\index{C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}!download@{download}}
+\index{download@{download}!C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}}
+\subsubsection{\texorpdfstring{download()}{download()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Zip\+::download (\begin{DoxyParamCaption}\item[{}]{\$filename = {\ttfamily \textquotesingle{}backup.zip\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Download
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & the file name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___zip_a8c51b65277a512961ece0d155643badf}\label{class_c_i___zip_a8c51b65277a512961ece0d155643badf}} 
+\index{C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}!get\+\_\+zip@{get\+\_\+zip}}
+\index{get\+\_\+zip@{get\+\_\+zip}!C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}}
+\subsubsection{\texorpdfstring{get\+\_\+zip()}{get\_zip()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Zip\+::get\+\_\+zip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the Zip file
+
+\begin{DoxyReturn}{Returns}
+string (binary encoded) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___zip_a24e6d765a787a3036b089f1e5384757d}\label{class_c_i___zip_a24e6d765a787a3036b089f1e5384757d}} 
+\index{C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}!read\+\_\+dir@{read\+\_\+dir}}
+\index{read\+\_\+dir@{read\+\_\+dir}!C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}}
+\subsubsection{\texorpdfstring{read\+\_\+dir()}{read\_dir()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Zip\+::read\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$preserve\+\_\+filepath = {\ttfamily TRUE},  }\item[{}]{\$root\+\_\+path = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Read a directory and add it to the zip.
+
+This function recursively reads a folder and everything it contains (including sub-\/folders) and creates a zip based on it. Whatever directory structure is in the original file path will be recreated in the zip file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & path to source directory \\
+\hline
+bool & {\em \$preserve\+\_\+filepath} & \\
+\hline
+string & {\em \$root\+\_\+path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___zip_a137e7c1159071c08cc6c139261c8048b}\label{class_c_i___zip_a137e7c1159071c08cc6c139261c8048b}} 
+\index{C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}!read\+\_\+file@{read\+\_\+file}}
+\index{read\+\_\+file@{read\+\_\+file}!C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}}
+\subsubsection{\texorpdfstring{read\+\_\+file()}{read\_file()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Zip\+::read\+\_\+file (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$archive\+\_\+filepath = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Read the contents of a file and add it to the zip
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+bool & {\em \$archive\+\_\+filepath} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___zip_a912580a36adf81345cfe4b48aa426b37}\label{class_c_i___zip_a912580a36adf81345cfe4b48aa426b37}} 
+\index{C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}!strlen@{strlen}}
+\index{strlen@{strlen}!C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}}
+\subsubsection{\texorpdfstring{strlen()}{strlen()}}
+{\footnotesize\ttfamily static C\+I\+\_\+\+Zip\+::strlen (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Byte-\/safe \mbox{\hyperlink{class_c_i___zip_a912580a36adf81345cfe4b48aa426b37}{strlen()}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___zip_ac8366a931d5e4737b6a93ffb499b8e24}\label{class_c_i___zip_ac8366a931d5e4737b6a93ffb499b8e24}} 
+\index{C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}!substr@{substr}}
+\index{substr@{substr}!C\+I\+\_\+\+Zip@{C\+I\+\_\+\+Zip}}
+\subsubsection{\texorpdfstring{substr()}{substr()}}
+{\footnotesize\ttfamily static C\+I\+\_\+\+Zip\+::substr (\begin{DoxyParamCaption}\item[{}]{\$str,  }\item[{}]{\$start,  }\item[{}]{\$length = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Byte-\/safe \mbox{\hyperlink{class_c_i___zip_ac8366a931d5e4737b6a93ffb499b8e24}{substr()}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+int & {\em \$start} & \\
+\hline
+int & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/libraries/Zip.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,199 @@
+\hypertarget{class_c_i___cache__wincache}{}\section{C\+I\+\_\+\+Cache\+\_\+wincache Class Reference}
+\label{class_c_i___cache__wincache}\index{C\+I\+\_\+\+Cache\+\_\+wincache@{C\+I\+\_\+\+Cache\+\_\+wincache}}
+Inheritance diagram for C\+I\+\_\+\+Cache\+\_\+wincache\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_i___cache__wincache}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___cache__wincache_abf1ed6f7d95ae8d31d31a00451f79b3c}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_c_i___cache__wincache_a167dd867cc9f9fad7b3b45371c9ce7f4}{get}} (\$id)
+\item 
+\mbox{\hyperlink{class_c_i___cache__wincache_af7ab63d42c2b10467235228816da8bc2}{save}} (\$id, \$data, \$ttl=60, \$raw=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___cache__wincache_a6c501e7743de6350b7d9f9a74282b5d3}{delete}} (\$id)
+\item 
+\mbox{\hyperlink{class_c_i___cache__wincache_a0c6cb70aee456aab499eaf846818735d}{increment}} (\$id, \$offset=1)
+\item 
+\mbox{\hyperlink{class_c_i___cache__wincache_aa4e71d34016d96df4d0b8c833928dafe}{decrement}} (\$id, \$offset=1)
+\item 
+\mbox{\hyperlink{class_c_i___cache__wincache_a6e3ee9784ffc886a444b033868c0cbeb}{clean}} ()
+\item 
+\mbox{\hyperlink{class_c_i___cache__wincache_a22f6cbd9c6436a4c30b49c7d20fbf520}{cache\+\_\+info}} ()
+\item 
+\mbox{\hyperlink{class_c_i___cache__wincache_aaa61d1a457bd3db6009761ae059fce2b}{get\+\_\+metadata}} (\$id)
+\item 
+\mbox{\hyperlink{class_c_i___cache__wincache_ae40040edea23d47424580b3d51c7d070}{is\+\_\+supported}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_i___cache__wincache_abf1ed6f7d95ae8d31d31a00451f79b3c}\label{class_c_i___cache__wincache_abf1ed6f7d95ae8d31d31a00451f79b3c}} 
+\index{C\+I\+\_\+\+Cache\+\_\+wincache@{C\+I\+\_\+\+Cache\+\_\+wincache}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+Cache\+\_\+wincache@{C\+I\+\_\+\+Cache\+\_\+wincache}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cache\+\_\+wincache\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Class constructor
+
+Only present so that an error message is logged if A\+PC is not available.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___cache__wincache_a22f6cbd9c6436a4c30b49c7d20fbf520}\label{class_c_i___cache__wincache_a22f6cbd9c6436a4c30b49c7d20fbf520}} 
+\index{C\+I\+\_\+\+Cache\+\_\+wincache@{C\+I\+\_\+\+Cache\+\_\+wincache}!cache\+\_\+info@{cache\+\_\+info}}
+\index{cache\+\_\+info@{cache\+\_\+info}!C\+I\+\_\+\+Cache\+\_\+wincache@{C\+I\+\_\+\+Cache\+\_\+wincache}}
+\subsubsection{\texorpdfstring{cache\+\_\+info()}{cache\_info()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cache\+\_\+wincache\+::cache\+\_\+info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Cache Info
+
+\begin{DoxyReturn}{Returns}
+mixed array on success, false on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__wincache_a6e3ee9784ffc886a444b033868c0cbeb}\label{class_c_i___cache__wincache_a6e3ee9784ffc886a444b033868c0cbeb}} 
+\index{C\+I\+\_\+\+Cache\+\_\+wincache@{C\+I\+\_\+\+Cache\+\_\+wincache}!clean@{clean}}
+\index{clean@{clean}!C\+I\+\_\+\+Cache\+\_\+wincache@{C\+I\+\_\+\+Cache\+\_\+wincache}}
+\subsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cache\+\_\+wincache\+::clean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clean the cache
+
+\begin{DoxyReturn}{Returns}
+bool false on failure/true on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__wincache_aa4e71d34016d96df4d0b8c833928dafe}\label{class_c_i___cache__wincache_aa4e71d34016d96df4d0b8c833928dafe}} 
+\index{C\+I\+\_\+\+Cache\+\_\+wincache@{C\+I\+\_\+\+Cache\+\_\+wincache}!decrement@{decrement}}
+\index{decrement@{decrement}!C\+I\+\_\+\+Cache\+\_\+wincache@{C\+I\+\_\+\+Cache\+\_\+wincache}}
+\subsubsection{\texorpdfstring{decrement()}{decrement()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cache\+\_\+wincache\+::decrement (\begin{DoxyParamCaption}\item[{}]{\$id,  }\item[{}]{\$offset = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+Decrement a raw value
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & Cache ID \\
+\hline
+int & {\em \$offset} & Step/value to reduce by \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed New value on success or F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__wincache_a6c501e7743de6350b7d9f9a74282b5d3}\label{class_c_i___cache__wincache_a6c501e7743de6350b7d9f9a74282b5d3}} 
+\index{C\+I\+\_\+\+Cache\+\_\+wincache@{C\+I\+\_\+\+Cache\+\_\+wincache}!delete@{delete}}
+\index{delete@{delete}!C\+I\+\_\+\+Cache\+\_\+wincache@{C\+I\+\_\+\+Cache\+\_\+wincache}}
+\subsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cache\+\_\+wincache\+::delete (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Delete from Cache
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & unique identifier of the item in the cache \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true on success/false on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__wincache_a167dd867cc9f9fad7b3b45371c9ce7f4}\label{class_c_i___cache__wincache_a167dd867cc9f9fad7b3b45371c9ce7f4}} 
+\index{C\+I\+\_\+\+Cache\+\_\+wincache@{C\+I\+\_\+\+Cache\+\_\+wincache}!get@{get}}
+\index{get@{get}!C\+I\+\_\+\+Cache\+\_\+wincache@{C\+I\+\_\+\+Cache\+\_\+wincache}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cache\+\_\+wincache\+::get (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Get
+
+Look for a value in the cache. If it exists, return the data, if not, return F\+A\+L\+SE
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & Cache Ide \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Value that is stored/\+F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__wincache_aaa61d1a457bd3db6009761ae059fce2b}\label{class_c_i___cache__wincache_aaa61d1a457bd3db6009761ae059fce2b}} 
+\index{C\+I\+\_\+\+Cache\+\_\+wincache@{C\+I\+\_\+\+Cache\+\_\+wincache}!get\+\_\+metadata@{get\+\_\+metadata}}
+\index{get\+\_\+metadata@{get\+\_\+metadata}!C\+I\+\_\+\+Cache\+\_\+wincache@{C\+I\+\_\+\+Cache\+\_\+wincache}}
+\subsubsection{\texorpdfstring{get\+\_\+metadata()}{get\_metadata()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cache\+\_\+wincache\+::get\+\_\+metadata (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Get Cache Metadata
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & key to get cache metadata on \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed array on success/false on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__wincache_a0c6cb70aee456aab499eaf846818735d}\label{class_c_i___cache__wincache_a0c6cb70aee456aab499eaf846818735d}} 
+\index{C\+I\+\_\+\+Cache\+\_\+wincache@{C\+I\+\_\+\+Cache\+\_\+wincache}!increment@{increment}}
+\index{increment@{increment}!C\+I\+\_\+\+Cache\+\_\+wincache@{C\+I\+\_\+\+Cache\+\_\+wincache}}
+\subsubsection{\texorpdfstring{increment()}{increment()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cache\+\_\+wincache\+::increment (\begin{DoxyParamCaption}\item[{}]{\$id,  }\item[{}]{\$offset = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+Increment a raw value
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & Cache ID \\
+\hline
+int & {\em \$offset} & Step/value to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed New value on success or F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__wincache_ae40040edea23d47424580b3d51c7d070}\label{class_c_i___cache__wincache_ae40040edea23d47424580b3d51c7d070}} 
+\index{C\+I\+\_\+\+Cache\+\_\+wincache@{C\+I\+\_\+\+Cache\+\_\+wincache}!is\+\_\+supported@{is\+\_\+supported}}
+\index{is\+\_\+supported@{is\+\_\+supported}!C\+I\+\_\+\+Cache\+\_\+wincache@{C\+I\+\_\+\+Cache\+\_\+wincache}}
+\subsubsection{\texorpdfstring{is\+\_\+supported()}{is\_supported()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cache\+\_\+wincache\+::is\+\_\+supported (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_c_i___cache__wincache_ae40040edea23d47424580b3d51c7d070}{is\+\_\+supported()}}
+
+Check to see if Win\+Cache is available on this system, bail if it isn\textquotesingle{}t.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__wincache_af7ab63d42c2b10467235228816da8bc2}\label{class_c_i___cache__wincache_af7ab63d42c2b10467235228816da8bc2}} 
+\index{C\+I\+\_\+\+Cache\+\_\+wincache@{C\+I\+\_\+\+Cache\+\_\+wincache}!save@{save}}
+\index{save@{save}!C\+I\+\_\+\+Cache\+\_\+wincache@{C\+I\+\_\+\+Cache\+\_\+wincache}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cache\+\_\+wincache\+::save (\begin{DoxyParamCaption}\item[{}]{\$id,  }\item[{}]{\$data,  }\item[{}]{\$ttl = {\ttfamily 60},  }\item[{}]{\$raw = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Cache Save
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & Cache ID \\
+\hline
+mixed & {\em \$data} & Data to store \\
+\hline
+int & {\em \$ttl} & Time to live (in seconds) \\
+\hline
+bool & {\em \$raw} & Whether to store the raw value (unused) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true on success/false on failure 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/libraries/\+Cache/drivers/Cache\+\_\+wincache.\+php\end{DoxyCompactItemize}

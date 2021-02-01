@@ -1,0 +1,184 @@
+\hypertarget{class_c_i___cache__dummy}{}\section{C\+I\+\_\+\+Cache\+\_\+dummy Class Reference}
+\label{class_c_i___cache__dummy}\index{C\+I\+\_\+\+Cache\+\_\+dummy@{C\+I\+\_\+\+Cache\+\_\+dummy}}
+Inheritance diagram for C\+I\+\_\+\+Cache\+\_\+dummy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_i___cache__dummy}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___cache__dummy_ad83f249353ef5fe1aae7519d32ffa436}{get}} (\$id)
+\item 
+\mbox{\hyperlink{class_c_i___cache__dummy_a5b5d58b1842d33b79363e4f4da24dbf2}{save}} (\$id, \$data, \$ttl=60, \$raw=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___cache__dummy_a8facf3a34546f4284085f68916a10ba4}{delete}} (\$id)
+\item 
+\mbox{\hyperlink{class_c_i___cache__dummy_a6979b8f31c503e6cc4e7c95fd1b2406c}{increment}} (\$id, \$offset=1)
+\item 
+\mbox{\hyperlink{class_c_i___cache__dummy_a7651c44e7e75dcfc400b0ef88e7f6bf0}{decrement}} (\$id, \$offset=1)
+\item 
+\mbox{\hyperlink{class_c_i___cache__dummy_a8a103d7c67427bdc5a29774af921cc0a}{clean}} ()
+\item 
+\mbox{\hyperlink{class_c_i___cache__dummy_a18b7eb603cd5a9953f76f25e99691a8f}{cache\+\_\+info}} (\$type=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___cache__dummy_affc9022795c57f2e9eba2cf3a9708cab}{get\+\_\+metadata}} (\$id)
+\item 
+\mbox{\hyperlink{class_c_i___cache__dummy_afa3bacf1085768a6bd94161b2b87a24e}{is\+\_\+supported}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_i___cache__dummy_a18b7eb603cd5a9953f76f25e99691a8f}\label{class_c_i___cache__dummy_a18b7eb603cd5a9953f76f25e99691a8f}} 
+\index{C\+I\+\_\+\+Cache\+\_\+dummy@{C\+I\+\_\+\+Cache\+\_\+dummy}!cache\+\_\+info@{cache\+\_\+info}}
+\index{cache\+\_\+info@{cache\+\_\+info}!C\+I\+\_\+\+Cache\+\_\+dummy@{C\+I\+\_\+\+Cache\+\_\+dummy}}
+\subsubsection{\texorpdfstring{cache\+\_\+info()}{cache\_info()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cache\+\_\+dummy\+::cache\+\_\+info (\begin{DoxyParamCaption}\item[{}]{\$type = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Cache Info
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & user/filehits \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool F\+A\+L\+SE 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__dummy_a8a103d7c67427bdc5a29774af921cc0a}\label{class_c_i___cache__dummy_a8a103d7c67427bdc5a29774af921cc0a}} 
+\index{C\+I\+\_\+\+Cache\+\_\+dummy@{C\+I\+\_\+\+Cache\+\_\+dummy}!clean@{clean}}
+\index{clean@{clean}!C\+I\+\_\+\+Cache\+\_\+dummy@{C\+I\+\_\+\+Cache\+\_\+dummy}}
+\subsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cache\+\_\+dummy\+::clean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clean the cache
+
+\begin{DoxyReturn}{Returns}
+bool T\+R\+UE, simulating success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__dummy_a7651c44e7e75dcfc400b0ef88e7f6bf0}\label{class_c_i___cache__dummy_a7651c44e7e75dcfc400b0ef88e7f6bf0}} 
+\index{C\+I\+\_\+\+Cache\+\_\+dummy@{C\+I\+\_\+\+Cache\+\_\+dummy}!decrement@{decrement}}
+\index{decrement@{decrement}!C\+I\+\_\+\+Cache\+\_\+dummy@{C\+I\+\_\+\+Cache\+\_\+dummy}}
+\subsubsection{\texorpdfstring{decrement()}{decrement()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cache\+\_\+dummy\+::decrement (\begin{DoxyParamCaption}\item[{}]{\$id,  }\item[{}]{\$offset = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+Decrement a raw value
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & Cache ID \\
+\hline
+int & {\em \$offset} & Step/value to reduce by \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed New value on success or F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__dummy_a8facf3a34546f4284085f68916a10ba4}\label{class_c_i___cache__dummy_a8facf3a34546f4284085f68916a10ba4}} 
+\index{C\+I\+\_\+\+Cache\+\_\+dummy@{C\+I\+\_\+\+Cache\+\_\+dummy}!delete@{delete}}
+\index{delete@{delete}!C\+I\+\_\+\+Cache\+\_\+dummy@{C\+I\+\_\+\+Cache\+\_\+dummy}}
+\subsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cache\+\_\+dummy\+::delete (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Delete from Cache
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & unique identifier of the item in the cache \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool T\+R\+UE, simulating success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__dummy_ad83f249353ef5fe1aae7519d32ffa436}\label{class_c_i___cache__dummy_ad83f249353ef5fe1aae7519d32ffa436}} 
+\index{C\+I\+\_\+\+Cache\+\_\+dummy@{C\+I\+\_\+\+Cache\+\_\+dummy}!get@{get}}
+\index{get@{get}!C\+I\+\_\+\+Cache\+\_\+dummy@{C\+I\+\_\+\+Cache\+\_\+dummy}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cache\+\_\+dummy\+::get (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Get
+
+Since this is the dummy class, it\textquotesingle{}s always going to return F\+A\+L\+SE.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool F\+A\+L\+SE 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__dummy_affc9022795c57f2e9eba2cf3a9708cab}\label{class_c_i___cache__dummy_affc9022795c57f2e9eba2cf3a9708cab}} 
+\index{C\+I\+\_\+\+Cache\+\_\+dummy@{C\+I\+\_\+\+Cache\+\_\+dummy}!get\+\_\+metadata@{get\+\_\+metadata}}
+\index{get\+\_\+metadata@{get\+\_\+metadata}!C\+I\+\_\+\+Cache\+\_\+dummy@{C\+I\+\_\+\+Cache\+\_\+dummy}}
+\subsubsection{\texorpdfstring{get\+\_\+metadata()}{get\_metadata()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cache\+\_\+dummy\+::get\+\_\+metadata (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Get Cache Metadata
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & key to get cache metadata on \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool F\+A\+L\+SE 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__dummy_a6979b8f31c503e6cc4e7c95fd1b2406c}\label{class_c_i___cache__dummy_a6979b8f31c503e6cc4e7c95fd1b2406c}} 
+\index{C\+I\+\_\+\+Cache\+\_\+dummy@{C\+I\+\_\+\+Cache\+\_\+dummy}!increment@{increment}}
+\index{increment@{increment}!C\+I\+\_\+\+Cache\+\_\+dummy@{C\+I\+\_\+\+Cache\+\_\+dummy}}
+\subsubsection{\texorpdfstring{increment()}{increment()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cache\+\_\+dummy\+::increment (\begin{DoxyParamCaption}\item[{}]{\$id,  }\item[{}]{\$offset = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+Increment a raw value
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & Cache ID \\
+\hline
+int & {\em \$offset} & Step/value to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed New value on success or F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__dummy_afa3bacf1085768a6bd94161b2b87a24e}\label{class_c_i___cache__dummy_afa3bacf1085768a6bd94161b2b87a24e}} 
+\index{C\+I\+\_\+\+Cache\+\_\+dummy@{C\+I\+\_\+\+Cache\+\_\+dummy}!is\+\_\+supported@{is\+\_\+supported}}
+\index{is\+\_\+supported@{is\+\_\+supported}!C\+I\+\_\+\+Cache\+\_\+dummy@{C\+I\+\_\+\+Cache\+\_\+dummy}}
+\subsubsection{\texorpdfstring{is\+\_\+supported()}{is\_supported()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cache\+\_\+dummy\+::is\+\_\+supported (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is this caching driver supported on the system? Of course this one is.
+
+\begin{DoxyReturn}{Returns}
+bool T\+R\+UE 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__dummy_a5b5d58b1842d33b79363e4f4da24dbf2}\label{class_c_i___cache__dummy_a5b5d58b1842d33b79363e4f4da24dbf2}} 
+\index{C\+I\+\_\+\+Cache\+\_\+dummy@{C\+I\+\_\+\+Cache\+\_\+dummy}!save@{save}}
+\index{save@{save}!C\+I\+\_\+\+Cache\+\_\+dummy@{C\+I\+\_\+\+Cache\+\_\+dummy}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily C\+I\+\_\+\+Cache\+\_\+dummy\+::save (\begin{DoxyParamCaption}\item[{}]{\$id,  }\item[{}]{\$data,  }\item[{}]{\$ttl = {\ttfamily 60},  }\item[{}]{\$raw = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Cache Save
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Unique Key \\
+\hline
+{\em mixed} & Data to store \\
+\hline
+{\em int} & Length of time (in seconds) to cache the data \\
+\hline
+{\em bool} & Whether to store the raw value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool T\+R\+UE, Simulating success 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/wamp64/racine/www/ci/system/libraries/\+Cache/drivers/Cache\+\_\+dummy.\+php\end{DoxyCompactItemize}
