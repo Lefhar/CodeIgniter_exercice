@@ -496,7 +496,7 @@ class usersModel extends CI_Model
     }
 
     /**
-     * \brief resendemail charge la vu de resendemail c'est la page recevoir de nouveau le lien de validaiton de l'adresse email
+     * \brief resendemail charge la vu de resendemail c'est la page recevoir de nouveau le lien de validation de l'adresse email
      * \return vu resendemail
      * \author Harold lefebvre
      * \date 01/02/2021
