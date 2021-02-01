@@ -5,7 +5,12 @@ class usersModel extends CI_Model
 {
     public $_user;
 
-
+    /**
+     * \brief construct recupére les données de l'utilisateur par la session
+     * \return $_user tableau qui retourne toute les informations de l'utilisateur
+     * \author Harold lefebvre
+     * \date 01/02/2021
+     */
     public function __construct()
     {
         if (!empty($_COOKIE['jt_jarditou'])) {
@@ -36,11 +41,24 @@ class usersModel extends CI_Model
         // echo $this->_user;
     }
 
+    /**
+     * \brief getUser affiche les données du construct
+     * \return _user tableau qui retourne toute les informations de l'utilisateur
+     * \author Harold lefebvre
+     * \date 01/02/2021
+     */
     public function getUser()
     {
         return $this->_user;
     }
 
+
+    /**
+     * \brief connexion charge la vu de connexion
+     * \return connexion
+     * \author Harold lefebvre
+     * \date 01/02/2021
+     */
     public function connexion()
     {
         $this->load->helper('form', 'url', 'cookie');
@@ -97,6 +115,13 @@ class usersModel extends CI_Model
         $this->load->view('footer');
     }
 
+
+    /**
+     * \brief inscription charge la vu de inscription et recupére en post les informations du formulaire
+     * \return vu inscription
+     * \author Harold lefebvre
+     * \date 01/02/2021
+     */
     public function inscription()
     {
 
@@ -233,6 +258,14 @@ class usersModel extends CI_Model
         }
     }
 
+
+    /**
+     * \brief validationemail charge la vu de validationemail c'est la page de vu pour la validation d'email
+     * \param  $jeton   recupération dans l'url pour retrouver en base
+     * \return vu error
+     * \author Harold lefebvre
+     * \date 01/02/2021
+     */
     public function validationemail($jeton)
     {
 
@@ -277,6 +310,13 @@ class usersModel extends CI_Model
 
     }
 
+
+    /**
+     * \brief deconnexion charge la vu de deconnexion c'est la page de vu pour la deconnexion
+     * \return redirige sur produits/liste
+     * \author Harold lefebvre
+     * \date 01/02/2021
+     */
     public function deconnexion()
     {
 
@@ -301,6 +341,13 @@ class usersModel extends CI_Model
         $this->load->view('footer');
     }
 
+
+    /**
+     * \brief inscriptionvalide charge la vu de inscriptionvalide c'est la page de vu après l'inscription
+     * \return redirige sur produits/liste
+     * \author Harold lefebvre
+     * \date 01/02/2021
+     */
     public function inscriptionvalide()
     {
 
@@ -309,6 +356,14 @@ class usersModel extends CI_Model
         $this->load->view('footer');
     }
 
+
+    /**
+     * \brief resetpassword charge la vu de resetpassword c'est la page de vu pour refaire le mot de passe
+     * \param  $jeton   recupération dans l'url pour retrouver en base
+     * \return redirection users/connexion
+     * \author Harold lefebvre
+     * \date 01/02/2021
+     */
     public function resetpassword($jeton)
     {
         $users = $this->db->query("SELECT u_id, u_reset_hash FROM users WHERE u_reset_hash = ?", $jeton);
@@ -348,7 +403,12 @@ class usersModel extends CI_Model
 
     }
 
-
+    /**
+     * \brief lostpassword charge la vu de lostpassword c'est la page pour recevoir un lien pour refaire le mot de passe
+     * \return vu lostpassword
+     * \author Harold lefebvre
+     * \date 01/02/2021
+     */
     public function lostpassword()
     {
 
@@ -435,7 +495,12 @@ class usersModel extends CI_Model
         }
     }
 
-
+    /**
+     * \brief resendemail charge la vu de resendemail c'est la page recevoir de nouveau le lien de validaiton de l'adresse email
+     * \return vu resendemail
+     * \author Harold lefebvre
+     * \date 01/02/2021
+     */
     public  function resendemail()
     {
         $aViewHeader = ["title" => "Renvoyer le lien de confirmation"];

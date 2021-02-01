@@ -5,6 +5,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class contactModel extends CI_Model
 {
+
+
+    /**
+     * \brief charge la vu par defaut de contact (le formulaire)
+     * \return vu contact par defaut
+     * \author Harold lefebvre
+     * \date 01/02/2021
+     */
     public function index()
     {
 
@@ -103,6 +111,13 @@ redirect('contact/sendok');
         $this->load->view('footer');
     }
 
+
+    /**
+     * \brief charge la vu par sendok de contact (validation de l'envoi du message)
+     * \return vu sendok de contact
+     * \author Harold lefebvre
+     * \date 01/02/2021
+     */
     public function sendok()
     {
             $aViewHeader = $this->usersModel->getUser();

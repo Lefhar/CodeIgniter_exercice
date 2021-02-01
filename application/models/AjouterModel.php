@@ -6,6 +6,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class ajouterModel extends CI_Model 
 {
 
+
+    /**
+     * \brief charge la vu ajouter
+     * \return vu ajouter
+     * \author Harold lefebvre
+     * \date 01/02/2021
+     */
     public function ajouter()
     {
        // Chargement des assistants 'form' et 'url'

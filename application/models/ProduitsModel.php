@@ -6,6 +6,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class produitsModel extends CI_Model 
 {
 
+
+    /**
+     * \brief produitsModel charge la fonction liste des produits
+     * \param  $champs    le type dans l'url cat, prix, id etc
+     * \param  $order    recupére si desc et asc
+     * \return la vu liste
+     * \author Harold lefebvre
+     * \date 01/02/2021
+     */
     public function liste($champs,$order)
     {
 

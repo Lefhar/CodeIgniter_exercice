@@ -18,6 +18,14 @@ class Contact extends CI_Controller {
      * map to /index.php/welcome/<method_name>
      * @see https://codeigniter.com/user_guide/general/urls.html
      */
+
+
+    /**
+     * \brief vu par defaut contact
+     * \return page par defaut de contact charge le modéle contactModel et usersModel pour si l'utilisateur est connecté
+     * \author Harold lefebvre
+     * \date 01/02/2021
+     */
     public function index()
     {
         $this->load->model('usersModel');
@@ -30,6 +38,12 @@ class Contact extends CI_Controller {
       $this->contactModel->index();
     }
 
+    /**
+     * \brief vu email envoyé contact
+     * \return page si l'email est bien envoyé de contact charge le modéle contactModel et usersModel pour si l'utilisateur est connecté
+     * \author Harold lefebvre
+     * \date 01/02/2021
+     */
     public function sendok()
     {
 

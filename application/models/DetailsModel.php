@@ -6,6 +6,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class detailsModel extends CI_Model 
 {
 
+
+    /**
+     * \brief charge la vu de detail par detailsModel (édition de produit)
+     * \return redirection sur produits/liste
+     * \author Harold lefebvre
+     * \date 01/02/2021
+     */
     public function detail()
     {
             // Charge la librairie 'database'

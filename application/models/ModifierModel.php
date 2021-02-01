@@ -5,6 +5,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class modifierModel extends CI_Model 
 {
+
+
+    /**
+     * \brief modifierModel charge la fonction modifier pour modifier un produit
+     * \param  $id     id du produit
+     * \return redirection produits/liste
+     * \author Harold lefebvre
+     * \date 01/02/2021
+     */
     public function modifier($id)
     {
         // Chargement des assistants 'form' et 'url'

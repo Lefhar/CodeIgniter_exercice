@@ -5,6 +5,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class deleteModel extends CI_Model 
 {
+
+
+    /**
+     * \brief charge la vu par delete de deleteModel (suppréssion de produit)
+     * \param  $id     id du produit
+     * \return redirection sur produits/liste
+     * \author Harold lefebvre
+     * \date 01/02/2021
+     */
     public function delete($id)
     {
         // Chargement des assistants 'form' et 'url'
