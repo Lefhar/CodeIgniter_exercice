@@ -13,8 +13,7 @@ class functionModel extends CI_Model {
    public function salt($number)
     {
         if(!empty($number)&&$number>=10){
-            $salt = bin2hex(random_bytes($number));
-            return bin2hex($salt) ;
+            return   bin2hex(random_bytes($number));
         }
     }
 

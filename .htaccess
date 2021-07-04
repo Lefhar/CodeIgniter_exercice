@@ -1,7 +1,8 @@
+AddDefaultCharset UTF-8
 RewriteEngine on
 RewriteBase /
 # Hide the application and system directories by redirecting the request to index.php
 RewriteRule ^(application|system|\.svn) index.php/$1 [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ ci/index.php/$1 [L]
+RewriteRule ^(.*)$ index.php?/$1 [L]

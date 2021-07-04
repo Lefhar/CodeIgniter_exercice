@@ -47,7 +47,7 @@
                     <div class="form-group">
                         <label for="prenom">Votre prénom* :  </label>
                         <input type="text" id="prenom" name="prenom" class="form-control" placeholder="Votre prénom"  required  value="<?php echo set_value('prenom');?>">
-                        <div id="dprenom"></div><br>
+                        <div id="dprenom"></div>
                         <?php echo form_error('prenom');?>
                     </div>
 

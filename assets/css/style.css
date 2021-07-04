@@ -1,90 +1,138 @@
-.imgtd{
-    width: 100px;
- }
- .table-striped-warning tbody tr:nth-of-type(odd) {
-    background-color:#ffc107;
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  margin-top: auto;
+}
+.imgtd {
+  width: 100px;
+}
+.table-striped-warning tbody tr:nth-of-type(odd) {
+  background-color: #ffc107;
 }
 .dropdown-submenu {
-    position: relative;
+  position: relative;
 }
 .bg-jarditou {
-    background-color: #5da75d;
-    color : #f0f0f0;
+  background-color: #5da75d;
+  color: #f0f0f0;
 }
 
 .btn-jarditou {
-    background-color: #5da75d;
-    color : #f0f0f0;
+  background-color: #5da75d;
+  color: #f0f0f0;
 }
-.navbar-jarditou a{
-    color : #f0f0f0;
+.nav-item a {
+  color: #f0f0f0;
+}
+.dropdown-item-jarditou a {
+  color: #ffffff;
+}
 
-}
-.dropdown-item-jarditou a{
- color: #ffffff;
-}
-
-.dropdown-item-jarditou li{
-    color: #ffffff;
+.dropdown-item-jarditou li {
+  color: #ffffff;
 }
 .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .custom-toggler.navbar-toggler {
-    border-color: rgb(255,255,255);
+  border-color: rgb(255, 255, 255);
 }
-.dropdown-submenu>.dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: -6px;
-    margin-left: -1px;
-    -webkit-border-radius: 0 6px 6px 6px;
-    -moz-border-radius: 0 6px 6px;
-    border-radius: 0 6px 6px 6px;
+.custom-qte {
+  max-width: 54px !important;
 }
-
-.dropdown-submenu:hover>.dropdown-menu {
-    display: block;
-}
-
-.dropdown-submenu>a:after {
-    display: block;
-    content: " ";
-    float: right;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 5px 0 5px 5px;
-    border-left-color: #ccc;
-    margin-top: 5px;
-    margin-right: -10px;
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px;
+  border-radius: 0 6px 6px 6px;
 }
 
-.dropdown-submenu:hover>a:after {
-    border-left-color: #fff;
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu > a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #ccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+
+.dropdown-submenu:hover > a:after {
+  border-left-color: #fff;
 }
 
 .dropdown-submenu.pull-left {
-    float: none;
+  float: none;
 }
 
-.dropdown-submenu.pull-left>.dropdown-menu {
-    left: -100%;
-    margin-left: 10px;
-    -webkit-border-radius: 6px 0 6px 6px;
-    -moz-border-radius: 6px 0 6px 6px;
-    border-radius: 6px 0 6px 6px;
+.dropdown-submenu.pull-left > .dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  -webkit-border-radius: 6px 0 6px 6px;
+  -moz-border-radius: 6px 0 6px 6px;
+  border-radius: 6px 0 6px 6px;
 }
-.counter span{
-    color:green;
+.counter span {
+  color: green;
 }
-.counter span.warning{
-    color:red;
+.counter span.warning {
+  color: red;
 }
 
 .bloque {
-    color:white;
-    background-color: red;
+  color: white;
+  background-color: red;
 }
+
+#resultat {
+  background-color: white;
+  position: absolute;
+  z-index: 1000;
+  height: auto;
+  top: 48px;
+  width: 199px;
+}
+@media (max-width: 640px) {
+  #resultat {
+    top: 284px;
+  }
+}
+
+.link_search {
+  color: #212529;
+  text-decoration: none;
+}
+.link_search:hover a {
+  text-decoration: none;
+}
+.link_search:hover > a:after {
+  text-decoration: none;
+}
+.rowProd:hover {
+  background-color: rgb(194, 235, 141);
+}
+.rowProd a {
+  text-decoration: none;
+}
+
+/* top: 284px; */

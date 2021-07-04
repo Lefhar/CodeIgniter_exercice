@@ -21,10 +21,11 @@ if(!empty($infoprod)) {
       <p class="card-text">Stock : ' . $stock . ' Produit disponible</p>
       <p class="card-text">Référence : ' . $row->pro_ref . '</p>
       <p class="card-text">catégorie : ' . $row->cat_nom . '</p>
-      <p class="card-text">Ajouté le : ' . $row->pro_d_ajout . '</p>
+      <p class="card-text">Ajouté le : ' . $row->pro_d_ajout . '</p>';
+      if(!empty($user)){  echo '
       <a href="' . site_url('produits/modifier/' . $row->pro_id) . '" class="btn btn-primary">Modifier</a>   <a href="' . site_url('produits/delete/' . $row->pro_id . '') . '"   class="btn btn-danger">Supprimer le produit</a>
   
-  ';
+  ';}
 
     }
 }

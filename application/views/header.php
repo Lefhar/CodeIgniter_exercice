@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo base_url("assets/css/style.css?id=2"); ?>">
+    <link rel="stylesheet" href="<?php echo base_url("assets/css/style.css?id=".date('si').""); ?>">
     <link rel="stylesheet" href="<?php echo base_url("assets/css/font-awesome.css"); ?>"> 
     <link rel="stylesheet" href="<?php echo base_url("assets/css/font-awesome.min.css"); ?>"> 
 </head>
 <body>
-    
+     
 <header>
    <!--
         header
@@ -38,7 +38,7 @@
     -->
     <nav class="navbar navbar-expand-lg navbar-jarditou bg-jarditou">
             <!--bouton sur mobile-->
-            <a class="nav-brand navbar-text" href="">Jarditou</a>
+            <a class="nav-brand navbar-text text-light" href="">Jarditou</a>
               <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -84,10 +84,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                 <form class="form-inline ml-auto">
-                  <div class="md-form my-0">
-                    <input class="form-control" id="search"  name="search" type="text" placeholder="Votre promotion" aria-label="Search">
-                  </div>
-                  <button class="btn btn-outline-light btn-md my-0 ml-sm-2" type="submit">Rechercher</button>
+                <div class="form-group">
+<div class="md-form my-0">
+<input class="form-control" id="search" name="search" type="text" placeholder="Votre promotion" aria-label="Search" autocomplete="off">
+</div>
+<button class="btn btn-outline-light btn-md my-0 ml-sm-2" type="submit">Rechercher</button>
+    <div id="resultat"></div>
+    </div>
                 </form>
             
               </div>

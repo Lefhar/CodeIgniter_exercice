@@ -97,7 +97,7 @@ if(!empty($liste_produits)) {
                 <span class="fa fa-minus"></span>
               </button>
           </span>
-          <input type="text" id="pro_qte[' . $row->pro_id . ']" name="pro_qte" class="form-control input-number sm" value="' . set_value('pro_qte', '1') . '" min="1" max="' . $row->pro_stock . '">
+          <input type="text" id="pro_qte[' . $row->pro_id . ']" name="pro_qte" class="form-control input-number sm custom-qte" value="' . set_value('pro_qte', '1') . '" min="1" max="' . $row->pro_stock . '">
           <span class="input-group-btn">
               <button type="button" class="btn btn-success btn-number d-none d-md-block" data-type="plus" data-field="pro_qte[' . $row->pro_id . ']">
                   <span class="fa fa-plus"></span>

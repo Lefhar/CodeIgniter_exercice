@@ -1,7 +1,7 @@
 <?php
 // application/controllers/Produits.php
 
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 class stockageModel extends CI_Model
 {
@@ -18,18 +18,20 @@ class stockageModel extends CI_Model
     {
 
 
-        $results = $this->db->query("SELECT pro_id, cat_nom , pro_libelle, pro_prix, pro_couleur, pro_photo, pro_ref, pro_stock, pro_d_ajout, pro_d_modif, pro_bloque  FROM produits join categories on cat_id = pro_cat_id  WHERE pro_cat_id = ?",(int)$champs);
 
-        // Récupération des résultats    
-        $aListe = $results->result();
-
-        // Ajoute des résultats de la requête au tableau des variables à transmettre à la vue   
+        $this->db->select('pro_id, cat_nom , pro_libelle, pro_prix, pro_couleur, pro_photo, pro_ref, pro_stock, pro_d_ajout, pro_d_modif, pro_bloque');
+        $this->db->from('produits');
+        $this->db->join('categories', 'cat_id = pro_cat_id');
+        $this->db->where('pro_cat_id',$champs);
+        $result = $this->db->get();
+        $aListe = $result->result();
+        // Ajoute des résultats de la requête au tableau des variables à transmettre à la vue
         $aView["liste_produits"] = $aListe;
-        $this->load->view('stock', $aView);
+
 
         /* On pourrait très bien avoir des variables à passer au morceau de vue 'footer', 
         * mais, juste pour vous embêter, ce n'est pas le cas dans cet exemple ! 
         */
-
+        return $aView;
     }
 }
