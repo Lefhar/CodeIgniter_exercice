@@ -65,7 +65,6 @@ class Contact extends CI_Controller
         }
         $this->load->view('footer');
 
-
     }
 
     /**
